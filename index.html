@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f2e2a">
+<title>Agenda cultural</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>
+:root{
+  --fondo:#eef1ef;
+  --panel:#ffffff;
+  --tinta:#14201e;
+  --suave:#5d6b68;
+  --linea:#d8ded9;
+  --mar:#0f6e63;
+  --ambar:#a86200;
+  --ambar-fondo:#fdf3e2;
+  --rojo:#9d2b20;
+  --rojo-fondo:#fbeceb;
+  --sombra:0 1px 2px rgba(20,32,30,.06);
+  --radio:12px;
+  --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --fondo:#101715;
+    --panel:#18211f;
+    --tinta:#e8eeeb;
+    --suave:#9aa8a4;
+    --linea:#2a3633;
+    --mar:#5fbfae;
+    --ambar:#e0a33c;
+    --ambar-fondo:#2b2113;
+    --rojo:#e28579;
+    --rojo-fondo:#2d1815;
+    --sombra:none;
+  }
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--fondo);color:var(--tinta);
+  font-family:var(--sans);font-size:16px;line-height:1.45;
+  padding-bottom:calc(74px + env(safe-area-inset-bottom));
+}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:none;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--mar);outline-offset:2px}
+
+/* ---------- cabecera ---------- */
+header{
+  position:sticky;top:0;z-index:20;background:var(--fondo);
+  padding:calc(10px + env(safe-area-inset-top)) 14px 0;
+  border-bottom:1px solid var(--linea);
+}
+.titulo-fila{display:flex;align-items:baseline;gap:8px}
+h1{
+  margin:0;font-family:var(--serif);font-size:21px;font-weight:400;
+  letter-spacing:-.01em;flex:1
+}
+.ajustes{font-size:19px;line-height:1;padding:4px 2px}
+.rango{
+  font-size:11px;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--suave);margin:2px 0 8px;font-variant-numeric:tabular-nums
+}
+.filtros{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
+.filtros::-webkit-scrollbar{display:none}
+.filtro{
+  flex:0 0 auto;padding:5px 12px;border:1px solid var(--linea);border-radius:999px;
+  font-size:13px;color:var(--suave);background:var(--panel);white-space:nowrap
+}
+.filtro[aria-pressed="true"]{background:var(--mar);border-color:var(--mar);color:#fff;font-weight:500}
+@media (prefers-color-scheme:dark){.filtro[aria-pressed="true"]{color:#0d1615}}
+
+/* ---------- avisos ---------- */
+.aviso{
+  margin:12px 14px 0;padding:10px 12px;border-radius:var(--radio);
+  background:var(--ambar-fondo);border:1px solid var(--ambar);
+  color:var(--ambar);font-size:13px
+}
+
+/* ---------- listado ---------- */
+main{padding:0 14px}
+.semana{
+  margin:22px 0 10px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--suave);display:flex;align-items:center;gap:10px
+}
+.semana:after{content:"";flex:1;height:1px;background:var(--linea)}
+.bloque-pronto{margin:18px 0 10px}
+.bloque-pronto h2{
+  margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ambar)
+}
+
+.ev{
+  background:var(--panel);border:1px solid var(--linea);border-radius:var(--radio);
+  box-shadow:var(--sombra);margin-bottom:10px;display:flex;overflow:hidden
+}
+.ev.urgente{border-color:var(--ambar)}
+.ev.venta{border-color:var(--rojo)}
+.ev.descartado{opacity:.45}
+
+/* raíl de fecha: el dato que ordena la lista, a la izquierda */
+.rail{
+  flex:0 0 58px;padding:12px 0 12px 12px;text-align:left;
+  border-right:1px solid var(--linea);display:flex;flex-direction:column;justify-content:flex-start
+}
+.rail .dia{font-family:var(--serif);font-size:26px;line-height:1;font-variant-numeric:tabular-nums}
+.rail .dsem{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--suave);margin-top:3px}
+.rail .hora{font-size:12px;color:var(--suave);margin-top:6px;font-variant-numeric:tabular-nums}
+.rail .mes{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--suave)}
+.rail.rango{justify-content:center}
+.rail.rango .cuenta{font-size:11px;color:var(--ambar);margin-top:6px;line-height:1.2}
+
+.cuerpo{flex:1;min-width:0;padding:12px}
+.cuerpo h3{margin:0 0 4px;font-family:var(--serif);font-size:17px;font-weight:400;line-height:1.25}
+.cuerpo h3 a{text-decoration:none;border-bottom:1px solid var(--linea)}
+.lugar{font-size:13px;color:var(--suave);margin:0}
+.recurrente{font-size:13px;color:var(--suave);margin:2px 0 0;font-style:italic}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.chip{
+  font-size:11px;padding:2px 7px;border-radius:999px;border:1px solid var(--linea);color:var(--suave);
+  text-transform:uppercase;letter-spacing:.05em
+}
+.chip.alerta{color:var(--rojo);border-color:var(--rojo);background:var(--rojo-fondo)}
+.chip.gratis{color:var(--mar);border-color:var(--mar)}
+
+.acciones{display:flex;gap:6px;margin-top:10px;align-items:center}
+.marca{
+  border:1px solid var(--linea);border-radius:999px;padding:4px 10px;font-size:12px;color:var(--suave);
+  background:var(--panel)
+}
+.marca[aria-pressed="true"]{border-color:var(--mar);color:var(--mar);font-weight:500}
+.marca.no[aria-pressed="true"]{border-color:var(--suave);color:var(--suave)}
+.otra{font-size:11px;color:var(--suave);margin-left:auto;text-align:right;line-height:1.2}
+
+.vacio{
+  margin:40px 0;text-align:center;color:var(--suave);font-size:14px
+}
+.vacio strong{display:block;font-family:var(--serif);font-size:17px;color:var(--tinta);font-weight:400;margin-bottom:4px}
+
+/* ---------- barra inferior ---------- */
+.barra{
+  position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;
+  background:var(--panel);border-top:1px solid var(--linea);
+  padding-bottom:env(safe-area-inset-bottom)
+}
+.barra button{flex:1;padding:11px 0 12px;text-align:center;color:var(--suave)}
+.barra .icono{display:block;font-size:19px;line-height:1.1}
+.barra .txt{font-size:11px;letter-spacing:.04em}
+.barra button[aria-pressed="true"]{color:var(--mar);font-weight:600}
+
+/* ---------- modal ---------- */
+.velo{
+  position:fixed;inset:0;z-index:40;background:rgba(10,16,15,.55);
+  display:flex;align-items:flex-end
+}
+.velo[hidden]{display:none}
+.modal{
+  background:var(--panel);width:100%;border-radius:16px 16px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom));
+  max-height:85vh;overflow:auto
+}
+.modal h2{margin:0 0 14px;font-family:var(--serif);font-size:19px;font-weight:400}
+.campo{display:block;margin-bottom:12px}
+.campo span{display:block;font-size:12px;color:var(--suave);margin-bottom:4px}
+.campo input{
+  width:100%;padding:9px 10px;border:1px solid var(--linea);border-radius:8px;
+  background:var(--fondo);color:var(--tinta);font:inherit
+}
+.quien{display:flex;gap:8px;margin-bottom:14px}
+.quien button{flex:1;padding:9px;border:1px solid var(--linea);border-radius:8px;font-size:14px;color:var(--suave)}
+.quien button[aria-pressed="true"]{border-color:var(--mar);color:var(--mar);font-weight:600}
+.opcion{display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:14px}
+.cerrar{width:100%;padding:12px;background:var(--mar);color:#fff;border-radius:10px;font-weight:600}
+@media (prefers-color-scheme:dark){.cerrar{color:#0d1615}}
+.nota{font-size:12px;color:var(--suave);margin:14px 0 0}
+@media (prefers-reduced-motion:no-preference){
+  .ev{animation:entra .18s ease both}
+  @keyframes entra{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="titulo-fila">
+    <h1 id="h1">Agenda</h1>
+    <button class="ajustes" id="btnAjustes" aria-label="Ajustes">⚙️</button>
+  </div>
+  <p class="rango" id="rango">Cargando…</p>
+  <div class="filtros" id="filtros"></div>
+</header>
+
+<div id="avisos"></div>
+<main id="lista"></main>
+
+<nav class="barra">
+  <button id="tabAgenda" aria-pressed="true"><span class="icono">🗓️</span><span class="txt">Agenda</span></button>
+  <button id="tabCartel" aria-pressed="false"><span class="icono">🖼️</span><span class="txt">En cartel</span></button>
+</nav>
+
+<div class="velo" id="velo" hidden>
+  <div class="modal" role="dialog" aria-label="Ajustes">
+    <h2>Ajustes</h2>
+    <label class="campo"><span>Nombre 1</span><input id="in1" type="text" autocomplete="off"></label>
+    <label class="campo"><span>Nombre 2</span><input id="in2" type="text" autocomplete="off"></label>
+    <p class="campo"><span>Quién usa este móvil</span></p>
+    <div class="quien">
+      <button id="yo1" aria-pressed="false"></button>
+      <button id="yo2" aria-pressed="false"></button>
+    </div>
+    <label class="opcion"><input type="checkbox" id="chkDesc"> Ver también los descartados</label>
+    <button class="cerrar" id="btnCerrar">Guardar y cerrar</button>
+    <p class="nota" id="notaVer"></p>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ------------------------------------------------------------------ *
+ * Estado
+ * ------------------------------------------------------------------ */
+var ST = {
+  vista: "agenda",
+  filtroA: "todo",
+  filtroC: "todo",
+  agenda: null,
+  cartel: null,
+  errores: [],
+  marcas: {},                 /* "idEvento|p1" -> {estado:"interesa", ts:0} */
+  cfg: { p1:"Persona 1", p2:"Persona 2", yo:"p1", verDesc:false }
+};
+
+var LS_MARCAS = "agenda.marcas";
+var LS_CFG    = "agenda.cfg";
+
+var FILTROS_AGENDA = [
+  {k:"todo",    t:"Todo"},
+  {k:"charlas", t:"Charlas"},
+  {k:"teatro",  t:"Teatro"},
+  {k:"cine",    t:"Cine"},
+  {k:"musica",  t:"Música"},
+  {k:"varios",  t:"Varios"}
+];
+var FILTROS_CARTEL = [
+  {k:"todo",         t:"Todo"},
+  {k:"exposiciones", t:"Exposiciones"},
+  {k:"foto",         t:"Foto"},
+  {k:"fiestas",      t:"Fiestas"}
+];
+
+var DIAS  = ["dom","lun","mar","mié","jue","vie","sáb"];
+var MESES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+var MESES_LARGO = ["enero","febrero","marzo","abril","mayo","junio","julio",
+                   "agosto","septiembre","octubre","noviembre","diciembre"];
+
+/* ------------------------------------------------------------------ *
+ * Utilidades
+ * ------------------------------------------------------------------ */
+function $(id){ return document.getElementById(id); }
+
+function esc(s){
+  if (s === null || s === undefined) return "";
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")
+                  .replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+/* "2026-09-02" -> Date local a las 00:00. Nunca new Date(string): en iOS
+   se interpreta como UTC y el evento salta un día. */
+function fecha(s){
+  if (!s || typeof s !== "string") return null;
+  var p = s.split("-");
+  if (p.length !== 3) return null;
+  var d = new Date(+p[0], +p[1]-1, +p[2]);
+  return isNaN(d.getTime()) ? null : d;
+}
+function hoy(){
+  var d = new Date();
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+}
+function dias(a, b){ return Math.round((b - a) / 86400000); }
+
+function lunes(d){
+  var x = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  var w = x.getDay();                 /* 0 = domingo */
+  x.setDate(x.getDate() - (w === 0 ? 6 : w - 1));
+  return x;
+}
+function claveSemana(d){
+  var l = lunes(d);
+  return l.getFullYear() + "-" + l.getMonth() + "-" + l.getDate();
+}
+function rotuloSemana(d){
+  var l = lunes(d), f = new Date(l); f.setDate(f.getDate()+6);
+  if (l.getMonth() === f.getMonth()) {
+    return "Semana del " + l.getDate() + " al " + f.getDate() + " de " + MESES_LARGO[f.getMonth()];
+  }
+  return "Semana del " + l.getDate() + " de " + MESES_LARGO[l.getMonth()] +
+         " al " + f.getDate() + " de " + MESES_LARGO[f.getMonth()];
+}
+function fechaCorta(d){ return d.getDate() + " " + MESES[d.getMonth()]; }
+
+/* ------------------------------------------------------------------ *
+ * Persistencia local (la capa que luego sustituye/complementa Supabase)
+ * ------------------------------------------------------------------ */
+function leerLS(clave, porDefecto){
+  try {
+    var v = localStorage.getItem(clave);
+    return v ? JSON.parse(v) : porDefecto;
+  } catch(e){ return porDefecto; }
+}
+function guardarLS(clave, valor){
+  try { localStorage.setItem(clave, JSON.stringify(valor)); } catch(e){}
+}
+
+function claveMarca(id, persona){ return id + "|" + persona; }
+
+function estadoDe(id, persona){
+  var m = ST.marcas[claveMarca(id, persona)];
+  return m ? m.estado : "";
+}
+
+/* Una marca = una fila futura en Supabase: {evento, persona, estado, ts}. */
+function marcar(id, estado){
+  var yo = ST.cfg.yo;
+  var k  = claveMarca(id, yo);
+  var actual = ST.marcas[k] ? ST.marcas[k].estado : "";
+  if (actual === estado) { delete ST.marcas[k]; }
+  else { ST.marcas[k] = { evento:id, persona:yo, estado:estado, ts:Date.now() }; }
+  guardarLS(LS_MARCAS, ST.marcas);
+  pintar();
+}
+
+function nombre(p){ return p === "p1" ? ST.cfg.p1 : ST.cfg.p2; }
+function otra(){ return ST.cfg.yo === "p1" ? "p2" : "p1"; }
+
+/* ------------------------------------------------------------------ *
+ * Carga del catálogo
+ * ------------------------------------------------------------------ */
+function traer(url){
+  /* sin ?t=: el sw ya va network-first y así la copia en caché sirve offline */
+  return fetch(url, {cache:"no-store"}).then(function(r){
+    if (!r.ok) throw new Error(url + ": " + r.status);
+    return r.json();
+  });
+}
+
+function cargar(){
+  var pendientes = 2;
+  function fin(){ if (--pendientes === 0) pintar(); }
+
+  traer("agenda.json").then(function(j){
+    ST.agenda = j;
+  })["catch"](function(e){
+    ST.agenda = {eventos:[]};
+    ST.errores.push("No se ha podido leer agenda.json (" + e.message + ").");
+  }).then(fin);
+
+  traer("cartel.json").then(function(j){
+    ST.cartel = j;
+  })["catch"](function(e){
+    ST.cartel = {eventos:[]};
+    ST.errores.push("No se ha podido leer cartel.json (" + e.message + ").");
+  }).then(fin);
+}
+
+/* ------------------------------------------------------------------ *
+ * Selección de eventos
+ * ------------------------------------------------------------------ */
+function eventosAgenda(){
+  var h = hoy(), out = [], ev = (ST.agenda && ST.agenda.eventos) || [], i, e, f;
+  for (i = 0; i < ev.length; i++) {
+    e = ev[i];
+    f = fecha(e.fecha);
+    if (!f || !e.id) continue;          /* sin fecha válida o sin id, fuera */
+    if (f < h) continue;
+    e._f = f;
+    out.push(e);
+  }
+  out.sort(function(a,b){
+    if (a._f - b._f !== 0) return a._f - b._f;
+    return (a.hora || "99:99").localeCompare(b.hora || "99:99");
+  });
+  return out;
+}
+
+function eventosCartel(){
+  var h = hoy(), out = [], ev = (ST.cartel && ST.cartel.eventos) || [], i, e, ini, fin;
+  for (i = 0; i < ev.length; i++) {
+    e = ev[i];
+    ini = fecha(e.inicio); fin = fecha(e.fin);
+    if (!fin || !e.id) continue;
+    if (fin < h) continue;
+    e._ini = ini; e._fin = fin;
+    e._quedan = dias(h, fin);
+    out.push(e);
+  }
+  out.sort(function(a,b){ return a._fin - b._fin; });   /* por cierre, no por inicio */
+  return out;
+}
+
+function pasaFiltroAgenda(e){
+  return ST.filtroA === "todo" || e.seccion === ST.filtroA;
+}
+function pasaFiltroCartel(e){
+  if (ST.filtroC === "todo") return true;
+  if (ST.filtroC === "foto") {
+    var t = e.etiquetas || [];
+    for (var i = 0; i < t.length; i++) if (t[i] === "foto") return true;
+    return false;
+  }
+  return e.seccion === ST.filtroC;
+}
+function visible(e){
+  if (ST.cfg.verDesc) return true;
+  return estadoDe(e.id, ST.cfg.yo) !== "descartado";
+}
+
+/* ------------------------------------------------------------------ *
+ * Pintado
+ * ------------------------------------------------------------------ */
+function chipsComunes(e){
+  var s = "";
+  if (e.seccion) s += '<span class="chip">' + esc(e.seccion) + "</span>";
+  if (e.ciudad)  s += '<span class="chip">' + esc(e.ciudad) + "</span>";
+  if (e.precio)  s += '<span class="chip' + (/gratis|libre/i.test(e.precio) ? " gratis" : "") + '">' + esc(e.precio) + "</span>";
+  return s;
+}
+
+/* entradas: libre = nada; venta = aviso; pocas/agotado = alerta */
+function chipEntradas(e){
+  var t = e.entradas;
+  if (!t || t === "libre") return "";
+  if (t === "venta")   return '<span class="chip alerta">entradas a la venta</span>';
+  if (t === "pocas")   return '<span class="chip alerta">quedan pocas</span>';
+  if (t === "agotado") return '<span class="chip alerta">agotado</span>';
+  return '<span class="chip">' + esc(t) + "</span>";
+}
+
+function bloqueAcciones(e){
+  var mio = estadoDe(e.id, ST.cfg.yo);
+  var suyo = estadoDe(e.id, otra());
+  var s = '<div class="acciones">';
+  s += '<button class="marca" data-ev="' + esc(e.id) + '" data-estado="interesa" aria-pressed="' + (mio==="interesa") + '">★ Me interesa</button>';
+  s += '<button class="marca" data-ev="' + esc(e.id) + '" data-estado="compradas" aria-pressed="' + (mio==="compradas") + '">🎟 Compradas</button>';
+  s += '<button class="marca no" data-ev="' + esc(e.id) + '" data-estado="descartado" aria-pressed="' + (mio==="descartado") + '">✕</button>';
+  if (suyo) {
+    var txt = suyo === "interesa" ? "le interesa"
+            : suyo === "compradas" ? "tiene entradas" : "lo ha descartado";
+    s += '<span class="otra">' + esc(nombre(otra())) + "<br>" + txt + "</span>";
+  }
+  s += "</div>";
+  return s;
+}
+
+function tarjetaAgenda(e){
+  var cl = "ev";
+  if (e.entradas === "pocas" || e.entradas === "agotado") cl += " venta";
+  if (estadoDe(e.id, ST.cfg.yo) === "descartado") cl += " descartado";
+
+  var s = '<article class="' + cl + '">';
+  s += '<div class="rail"><span class="dia">' + e._f.getDate() + '</span>' +
+       '<span class="dsem">' + DIAS[e._f.getDay()] + " " + MESES[e._f.getMonth()] + "</span>" +
+       (e.hora ? '<span class="hora">' + esc(e.hora) + "</span>" : "") + "</div>";
+  s += '<div class="cuerpo">';
+  s += "<h3>" + (e.enlace
+        ? '<a href="' + esc(e.enlace) + '" target="_blank" rel="noopener">' + esc(e.titulo) + "</a>"
+        : esc(e.titulo)) + "</h3>";
+  if (e.lugar) s += '<p class="lugar">' + esc(e.lugar) + "</p>";
+  s += '<div class="chips">' + chipsComunes(e) + chipEntradas(e) + "</div>";
+  s += bloqueAcciones(e);
+  s += "</div></article>";
+  return s;
+}
+
+function tarjetaCartel(e, urgente){
+  var cl = "ev";
+  if (urgente) cl += " urgente";
+  if (estadoDe(e.id, ST.cfg.yo) === "descartado") cl += " descartado";
+  var h = hoy();
+  var futuro = e._ini && e._ini > h;
+
+  var s = '<article class="' + cl + '">';
+  s += '<div class="rail rango">';
+  s += '<span class="mes">hasta</span>';
+  s += '<span class="dia">' + e._fin.getDate() + "</span>";
+  s += '<span class="dsem">' + MESES[e._fin.getMonth()] + "</span>";
+  if (urgente) {
+    s += '<span class="cuenta">' + (e._quedan === 0 ? "último día"
+        : e._quedan === 1 ? "queda 1 día" : "quedan " + e._quedan + " días") + "</span>";
+  }
+  s += "</div>";
+  s += '<div class="cuerpo">';
+  s += "<h3>" + (e.enlace
+        ? '<a href="' + esc(e.enlace) + '" target="_blank" rel="noopener">' + esc(e.titulo) + "</a>"
+        : esc(e.titulo)) + "</h3>";
+  if (e.lugar) s += '<p class="lugar">' + esc(e.lugar) + "</p>";
+  if (e.recurrente) s += '<p class="recurrente">' + esc(e.recurrente) + "</p>";
+  if (futuro) s += '<p class="lugar">Empieza el ' + fechaCorta(e._ini) + "</p>";
+  s += '<div class="chips">' + chipsComunes(e) + "</div>";
+  s += bloqueAcciones(e);
+  s += "</div></article>";
+  return s;
+}
+
+function pintarFiltros(){
+  var defs = ST.vista === "agenda" ? FILTROS_AGENDA : FILTROS_CARTEL;
+  var actual = ST.vista === "agenda" ? ST.filtroA : ST.filtroC;
+  var s = "", i;
+  for (i = 0; i < defs.length; i++) {
+    s += '<button class="filtro" data-filtro="' + defs[i].k + '" aria-pressed="' +
+         (defs[i].k === actual) + '">' + defs[i].t + "</button>";
+  }
+  $("filtros").innerHTML = s;
+}
+
+function pintarAvisos(){
+  var s = "", i;
+  for (i = 0; i < ST.errores.length; i++) {
+    s += '<div class="aviso">' + esc(ST.errores[i]) + "</div>";
+  }
+  if (!ST.agenda || !ST.cartel) { $("avisos").innerHTML = s; return; }
+
+  var fa = fecha(ST.agenda.actualizado), fc = fecha(ST.cartel.actualizado);
+  var vieja = null;
+  if (fa && fc) vieja = fa < fc ? fa : fc; else vieja = fa || fc;
+  if (vieja) {
+    var d = dias(vieja, hoy());
+    if (d > 20) s += '<div class="aviso">El catálogo se actualizó hace ' + d + ' días. Toca revisar fuentes.</div>';
+  }
+  var total = eventosAgenda().length + eventosCartel().length;
+  if (total < 5) {
+    s += '<div class="aviso">Quedan ' + total + ' eventos vigentes. Toca ampliar el catálogo.</div>';
+  }
+  $("avisos").innerHTML = s;
+}
+
+function vacio(titulo, texto){
+  return '<p class="vacio"><strong>' + esc(titulo) + "</strong>" + esc(texto) + "</p>";
+}
+
+function pintarAgenda(){
+  var ev = eventosAgenda(), s = "", semana = "", i, e, n = 0;
+  for (i = 0; i < ev.length; i++) {
+    e = ev[i];
+    if (!pasaFiltroAgenda(e) || !visible(e)) continue;
+    var k = claveSemana(e._f);
+    if (k !== semana) { semana = k; s += '<h2 class="semana">' + rotuloSemana(e._f) + "</h2>"; }
+    s += tarjetaAgenda(e);
+    n++;
+  }
+  if (!n) s = vacio("Nada por aquí", ST.filtroA === "todo"
+      ? "No hay eventos con fecha en el catálogo."
+      : "Prueba con otro filtro o revisa el catálogo.");
+  $("lista").innerHTML = s;
+}
+
+function pintarCartel(){
+  var ev = eventosCartel(), pronto = [], resto = [], i, e, n = 0;
+  for (i = 0; i < ev.length; i++) {
+    e = ev[i];
+    if (!pasaFiltroCartel(e) || !visible(e)) continue;
+    n++;
+    /* las fiestas son rangos, pero no llevan cuenta atrás */
+    if (e.seccion !== "fiestas" && e._quedan <= 14) pronto.push(e); else resto.push(e);
+  }
+  var s = "";
+  if (pronto.length) {
+    s += '<div class="bloque-pronto"><h2>Acaban pronto</h2></div>';
+    for (i = 0; i < pronto.length; i++) s += tarjetaCartel(pronto[i], true);
+  }
+  if (resto.length) {
+    if (pronto.length) s += '<h2 class="semana">Con tiempo</h2>';
+    for (i = 0; i < resto.length; i++) s += tarjetaCartel(resto[i], false);
+  }
+  if (!n) s = vacio("Nada en cartel", "No hay nada abierto que encaje con este filtro.");
+  $("lista").innerHTML = s;
+}
+
+function pintarRango(){
+  var t;
+  if (ST.vista === "agenda") {
+    t = (ST.agenda && ST.agenda.ventana) ? ST.agenda.ventana.replace(" / ", " → ") : "";
+    if (!t && ST.agenda && ST.agenda.actualizado) t = "Actualizado " + ST.agenda.actualizado;
+  } else {
+    t = (ST.cartel && ST.cartel.actualizado) ? "Actualizado " + ST.cartel.actualizado : "";
+  }
+  $("rango").textContent = t || "—";
+}
+
+function pintar(){
+  $("h1").textContent = ST.vista === "agenda" ? "Agenda" : "En cartel";
+  $("tabAgenda").setAttribute("aria-pressed", ST.vista === "agenda");
+  $("tabCartel").setAttribute("aria-pressed", ST.vista === "cartel");
+  pintarFiltros();
+  pintarRango();
+  pintarAvisos();
+  if (ST.vista === "agenda") pintarAgenda(); else pintarCartel();
+}
+
+/* ------------------------------------------------------------------ *
+ * Eventos de interfaz
+ * ------------------------------------------------------------------ */
+function irA(v){
+  if (ST.vista === v) { window.scrollTo(0,0); return; }
+  ST.vista = v;
+  window.scrollTo(0,0);
+  pintar();
+}
+
+$("tabAgenda").addEventListener("click", function(){ irA("agenda"); });
+$("tabCartel").addEventListener("click", function(){ irA("cartel"); });
+
+$("filtros").addEventListener("click", function(ev){
+  var b = ev.target.closest ? ev.target.closest("[data-filtro]") : null;
+  if (!b) return;
+  if (ST.vista === "agenda") ST.filtroA = b.getAttribute("data-filtro");
+  else ST.filtroC = b.getAttribute("data-filtro");
+  pintar();
+});
+
+$("lista").addEventListener("click", function(ev){
+  var b = ev.target.closest ? ev.target.closest(".marca") : null;
+  if (!b) return;
+  marcar(b.getAttribute("data-ev"), b.getAttribute("data-estado"));
+});
+
+/* ---- ajustes ---- */
+function abrirAjustes(){
+  $("in1").value = ST.cfg.p1;
+  $("in2").value = ST.cfg.p2;
+  $("chkDesc").checked = !!ST.cfg.verDesc;
+  refrescarQuien();
+  $("velo").hidden = false;
+}
+function refrescarQuien(){
+  $("yo1").textContent = $("in1").value || "Nombre 1";
+  $("yo2").textContent = $("in2").value || "Nombre 2";
+  $("yo1").setAttribute("aria-pressed", ST.cfg.yo === "p1");
+  $("yo2").setAttribute("aria-pressed", ST.cfg.yo === "p2");
+}
+$("btnAjustes").addEventListener("click", abrirAjustes);
+$("in1").addEventListener("input", refrescarQuien);
+$("in2").addEventListener("input", refrescarQuien);
+$("yo1").addEventListener("click", function(){ ST.cfg.yo = "p1"; refrescarQuien(); });
+$("yo2").addEventListener("click", function(){ ST.cfg.yo = "p2"; refrescarQuien(); });
+$("btnCerrar").addEventListener("click", function(){
+  ST.cfg.p1 = $("in1").value.trim() || "Persona 1";
+  ST.cfg.p2 = $("in2").value.trim() || "Persona 2";
+  ST.cfg.verDesc = $("chkDesc").checked;
+  guardarLS(LS_CFG, ST.cfg);
+  $("velo").hidden = true;
+  pintar();
+});
+$("velo").addEventListener("click", function(ev){
+  if (ev.target === $("velo")) $("velo").hidden = true;
+});
+
+/* ------------------------------------------------------------------ *
+ * Arranque
+ * ------------------------------------------------------------------ */
+ST.marcas = leerLS(LS_MARCAS, {});
+var cfg = leerLS(LS_CFG, null);
+if (cfg) {
+  ST.cfg.p1 = cfg.p1 || ST.cfg.p1;
+  ST.cfg.p2 = cfg.p2 || ST.cfg.p2;
+  ST.cfg.yo = cfg.yo === "p2" ? "p2" : "p1";
+  ST.cfg.verDesc = !!cfg.verDesc;
+}
+$("notaVer").textContent = "Marcas guardadas solo en este móvil. La sincronización llega después.";
+
+pintar();
+cargar();
+
+/* al volver a la app, recargar el catálogo por si se ha actualizado */
+document.addEventListener("visibilitychange", function(){
+  if (!document.hidden) cargar();
+});
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function(){
+    navigator.serviceWorker.register("sw.js")["catch"](function(){});
+  });
+}
+})();
+</script>
+</body>
+</html>
