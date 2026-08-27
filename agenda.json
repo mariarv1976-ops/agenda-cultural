@@ -43,6 +43,15 @@
       "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/la-marca-de-nuestra-tierra.pdf"
     },
     {
+      "id": "adda-corda-polsada-0913",
+      "fecha": "2026-09-13",
+      "titulo": "Federació Alacantina de Corda Polsada «Mar i Muntanya»",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/federacio-alacantina-de-corda-polsada-mar-i-muntanya-facp/"
+    },
+    {
       "id": "sede-financiacion-autonomica-0915",
       "fecha": "2026-09-15",
       "hora": "19:00",
@@ -99,6 +108,24 @@
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/cine/xx-ciclo-de-cine-psicoanalisis-y-cultura-el-psicoanalisis-entre-sujeto-del-inconsciente-y-sujeto-social.html"
     },
     {
+      "id": "adda-banda-ciudad-de-asis-0920",
+      "fecha": "2026-09-20",
+      "titulo": "XIII Ciclo Las bandas de la provincia: Unión Musical Ciudad de Asís de Alicante",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-union-musical-ciudad-de-asis-de-alicante/"
+    },
+    {
+      "id": "adda-banda-benidorm-0920",
+      "fecha": "2026-09-20",
+      "titulo": "XIII Ciclo Las bandas de la provincia: Unión Musical de Benidorm",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-union-musical-de-benidorm/"
+    },
+    {
       "id": "sede-espla-expandido-0922",
       "fecha": "2026-09-22",
       "titulo": "Conferencia y concierto «Óscar Esplá y sus contemporáneos». Ciclo Esplá expandido",
@@ -117,15 +144,6 @@
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2025-2026/jornadas-y-ciclos-de-conferencias/camino-del-centenario-1928-2028.html"
     },
     {
-      "id": "sede-julio-just-0923",
-      "fecha": "2026-09-23",
-      "titulo": "Jornada «Julio Just Gimeno. La herencia de la Segunda República», con Emilio Rosillo",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/julio-just-gimeno-la-herencia-de-la-segunda-republica.pdf"
-    },
-    {
       "id": "sede-corrupcion-espana-0923",
       "fecha": "2026-09-23",
       "hora": "19:15",
@@ -136,6 +154,15 @@
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/septiembre/septiembre-en-la-sede-2026.html"
     },
     {
+      "id": "sede-julio-just-0923",
+      "fecha": "2026-09-23",
+      "titulo": "Jornada «Julio Just Gimeno. La herencia de la Segunda República», con Emilio Rosillo",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/julio-just-gimeno-la-herencia-de-la-segunda-republica.pdf"
+    },
+    {
       "id": "sede-parlem-educacio-0924",
       "fecha": "2026-09-24",
       "titulo": "«Parlem d'educació: construïm la mobilització». Inicio de curso de la Cívica - Escola Valenciana de l'Alacantí",
@@ -143,6 +170,167 @@
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/parlem-d-educacio-construim-la-mobilitzacio.pdf"
+    },
+    {
+      "id": "adda-anillo-sin-palabras-0926",
+      "fecha": "2026-09-26",
+      "hora": "20:00",
+      "titulo": "«El anillo sin palabras» (Wagner). ADDA Simfònica, Josep Vicent",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://addaalicante.es/concierto/el-anillo-sin-palabras/"
+    },
+    {
+      "id": "tp-la-partenaire-1002",
+      "fecha": "2026-10-02",
+      "titulo": "«La Partenaire», de LaMedinaEs",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/la-partenaire/"
+    },
+    {
+      "id": "adda-sueno-de-eros-1003",
+      "fecha": "2026-10-03",
+      "titulo": "«El sueño de Eros». Óscar Esplá 50",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://addaalicante.es/concierto/el-sueno-de-eros-oscar-espla-50/"
+    },
+    {
+      "id": "tp-gigante-1003",
+      "fecha": "2026-10-03",
+      "titulo": "«Gigante», de Mark Rosenblatt",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/gigante/"
+    },
+    {
+      "id": "tp-orquesta-jovenes-1004",
+      "fecha": "2026-10-04",
+      "titulo": "Orquesta de Jóvenes de la Provincia de Alicante",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/orquesta-de-jovenes-de-la-provincia-de-alicante-2/"
+    },
+    {
+      "id": "tp-la-cubana-1008",
+      "fecha": "2026-10-08",
+      "titulo": "La Cubana: «La cuisine de ma cousine» (funciones del 8 al 18 de octubre)",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/la-cubana/"
+    },
+    {
+      "id": "adda-zen-garden-1016",
+      "fecha": "2026-10-16",
+      "titulo": "«Zen Garden». Naturaleza, vida y amor I",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://addaalicante.es/concierto/zen-garden-naturaleza-vida-y-amor-i/"
+    },
+    {
+      "id": "tp-callas-pilar-jurado-1022",
+      "fecha": "2026-10-22",
+      "titulo": "«Callas», por Pilar Jurado",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/callas-by-pilar-jurado/"
+    },
+    {
+      "id": "tp-panorama-desde-el-puente-1023",
+      "fecha": "2026-10-23",
+      "titulo": "«Panorama desde el puente», de Arthur Miller",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/panorama-desde-el-puente/"
+    },
+    {
+      "id": "tp-dani-mateo-1024",
+      "fecha": "2026-10-24",
+      "titulo": "Dani Mateo: «¿Por qué no te callas?»",
+      "seccion": "varios",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/dani-mateo/"
+    },
+    {
+      "id": "tp-circarte-1025",
+      "fecha": "2026-10-25",
+      "titulo": "17º Festival de circo: Gran Gala de Circo Circarte",
+      "seccion": "varios",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/gran-gala-de-circo-circarte/"
+    },
+    {
+      "id": "adda-cielo-y-tierra-1026",
+      "fecha": "2026-10-26",
+      "titulo": "«Cielo y Tierra»",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://addaalicante.es/concierto/cielo-y-tierra/"
+    },
+    {
+      "id": "tp-flauta-magica-1027",
+      "fecha": "2026-10-27",
+      "titulo": "«La flauta mágica», de W. A. Mozart",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/la-flauta-magica/"
+    },
+    {
+      "id": "tp-sheryl-youngblood-1029",
+      "fecha": "2026-10-29",
+      "titulo": "Sheryl Youngblood Blues Band: «A Meeting with the Blues»",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/sheryl-youngblood-blues-band/"
+    },
+    {
+      "id": "tp-comicas-1030",
+      "fecha": "2026-10-30",
+      "titulo": "«Cómicas»: Martita de Graná, Patricia Espejo y Antonia Triviño",
+      "seccion": "varios",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/comicas/"
+    },
+    {
+      "id": "tp-rey-pasmado-1031",
+      "fecha": "2026-10-31",
+      "titulo": "«Crónica del rey pasmado», de Gonzalo Torrente Ballester",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/cronica-del-rey-pasmado/"
     }
   ]
 }
