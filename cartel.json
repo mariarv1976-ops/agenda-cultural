@@ -1,4 +1,26 @@
 {
   "actualizado": "2026-08-27",
-  "eventos": []
+  "eventos": [
+    {
+      "id": "sede-una-sede-con-vida",
+      "inicio": "2026-09-18",
+      "fin": "2026-10-02",
+      "titulo": "«Una Sede con vida». Exposición de fotografías del concurso",
+      "seccion": "exposiciones",
+      "etiquetas": ["foto"],
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/exposiciones/exposicion-concurso-una-sede-con-vida.html"
+    },
+    {
+      "id": "sede-mentira-contra-verdad",
+      "inicio": "2026-09-25",
+      "fin": "2026-12-17",
+      "titulo": "«Mentira contra verdad», de Pepe Calvo",
+      "seccion": "exposiciones",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/exposiciones/mentira-contra-verdad.-pepe-calvo.html"
+    }
+  ]
 }

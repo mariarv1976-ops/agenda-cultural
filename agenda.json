@@ -1,5 +1,148 @@
 {
   "actualizado": "2026-08-27",
   "ventana": "2026-09-01 / 2026-10-31",
-  "eventos": []
+  "eventos": [
+    {
+      "id": "sede-mercurio-rojo-0902",
+      "fecha": "2026-09-02",
+      "hora": "19:00",
+      "titulo": "Presentación del libro «El secreto del mercurio rojo. La hermandad del templo de Debod», de Ernesto Hernández",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/sede-ciudad-de-alicante_noticias.html"
+    },
+    {
+      "id": "sede-movilidad-sostenible-0903",
+      "fecha": "2026-09-03",
+      "hora": "10:00",
+      "titulo": "Jornada «La sostenibilidad en la movilidad al trabajo: derecho y obligación»",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/la-sostenibilidad-en-la-movilidad-al-trabajo.pdf"
+    },
+    {
+      "id": "sede-cine-ideal-0910",
+      "fecha": "2026-09-10",
+      "hora": "19:00",
+      "titulo": "Mesa redonda «100 anys del cine Ideal d'Alacant»",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/100-anys-del-cine-ideal-d-alacant.pdf"
+    },
+    {
+      "id": "sede-elia-barcelo-0911",
+      "fecha": "2026-09-11",
+      "hora": "19:00",
+      "titulo": "Encuentro con Elia Barceló: «La marca de nuestra tierra». Ciclo Las comarcas de Alicante",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/la-marca-de-nuestra-tierra.pdf"
+    },
+    {
+      "id": "sede-financiacion-autonomica-0915",
+      "fecha": "2026-09-15",
+      "hora": "19:00",
+      "titulo": "Conferencia «Financiación autonómica: ¿podremos acabar el sudoku?», con Antonio Mira-Perceval",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/financiacion-autonomica.pdf"
+    },
+    {
+      "id": "sede-nunca-pierdas-esencia-0915",
+      "fecha": "2026-09-15",
+      "titulo": "Festival poético musical «Nunca pierdas tu esencia». Asociación Crisálida",
+      "seccion": "musica",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/nunca-pierdas-tu-esencia.pdf"
+    },
+    {
+      "id": "sede-fuego-amigo-0916",
+      "fecha": "2026-09-16",
+      "hora": "19:00",
+      "titulo": "Presentación del libro «Fuego amigo. ¿Nuevos discursos en favor del feminismo?», con Luisa Posada Kubissa",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/sede-ciudad-de-alicante_noticias.html"
+    },
+    {
+      "id": "sede-conferencia-inaugural-0917",
+      "fecha": "2026-09-17",
+      "titulo": "Apertura de curso: «¿Cómo aprender a vivir cuando el mundo cambia tan deprisa?», con Ana Laguna",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/conferencia-inaugural-como-aprender-a-vivir-cuando-el-mundo-cambia-tan-deprisa.html"
+    },
+    {
+      "id": "sede-geografas-viajeras-0918",
+      "fecha": "2026-09-18",
+      "titulo": "Conferencia «Geógrafas viajeras». Ciclo Científicas de Letras",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/observatorios-y-aulas-debate/cientificas-de-letras.html"
+    },
+    {
+      "id": "sede-laberinto-fauno-0918",
+      "fecha": "2026-09-18",
+      "titulo": "XX Ciclo de cine, psicoanálisis y cultura: «El laberinto del fauno», de Guillermo del Toro",
+      "seccion": "cine",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/cine/xx-ciclo-de-cine-psicoanalisis-y-cultura-el-psicoanalisis-entre-sujeto-del-inconsciente-y-sujeto-social.html"
+    },
+    {
+      "id": "sede-espla-expandido-0922",
+      "fecha": "2026-09-22",
+      "titulo": "Conferencia y concierto «Óscar Esplá y sus contemporáneos». Ciclo Esplá expandido",
+      "seccion": "musica",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/espla-expandido.-musica-creacion-y-dialogo-entre-las-artes.html"
+    },
+    {
+      "id": "sede-camino-centenario-0922",
+      "fecha": "2026-09-22",
+      "titulo": "Camino del Centenario 1928-2028: «Fogueres 1933 y 1934. Crecimiento, desarrollo y diversificación»",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2025-2026/jornadas-y-ciclos-de-conferencias/camino-del-centenario-1928-2028.html"
+    },
+    {
+      "id": "sede-julio-just-0923",
+      "fecha": "2026-09-23",
+      "titulo": "Jornada «Julio Just Gimeno. La herencia de la Segunda República», con Emilio Rosillo",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/julio-just-gimeno-la-herencia-de-la-segunda-republica.pdf"
+    },
+    {
+      "id": "sede-corrupcion-espana-0923",
+      "fecha": "2026-09-23",
+      "hora": "19:15",
+      "titulo": "Presentación del libro «La corrupción en España: un problema enquistado», con Joaquim Bosch y Fernando Jiménez",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/septiembre/septiembre-en-la-sede-2026.html"
+    },
+    {
+      "id": "sede-parlem-educacio-0924",
+      "fecha": "2026-09-24",
+      "titulo": "«Parlem d'educació: construïm la mobilització». Inicio de curso de la Cívica - Escola Valenciana de l'Alacantí",
+      "seccion": "varios",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/parlem-d-educacio-construim-la-mobilitzacio.pdf"
+    }
+  ]
 }
