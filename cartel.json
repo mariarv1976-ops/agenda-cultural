@@ -2,12 +2,24 @@
   "actualizado": "2026-08-27",
   "eventos": [
     {
+      "id": "cvongd-uraqi-terra",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "titulo": "«Uraqi, terra». Exposición de CERAI",
+      "seccion": "exposiciones",
+      "lugar": "Biblioteca Central del Campus de Vera, Universitat Politècnica de València",
+      "ciudad": "Valencia",
+      "enlace": "https://www.cvongd.org/es/agenda/exposicion-uraqi-terra-en-la-universitat-politecnica-de-valencia/"
+    },
+    {
       "id": "sede-una-sede-con-vida",
       "inicio": "2026-09-18",
       "fin": "2026-10-02",
       "titulo": "«Una Sede con vida». Exposición de fotografías del concurso",
       "seccion": "exposiciones",
-      "etiquetas": ["foto"],
+      "etiquetas": [
+        "foto"
+      ],
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/exposiciones/exposicion-concurso-una-sede-con-vida.html"
