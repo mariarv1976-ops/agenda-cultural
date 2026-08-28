@@ -1,6 +1,6 @@
 /* Agenda cultural — service worker network-first.
    Subir la versión al publicar cambios: obliga a limpiar cachés viejas. */
-var VERSION = "agenda-v1";
+var VERSION = "agenda-v2";
 var BASE = [
   "./",
   "./index.html",
