@@ -1,694 +1,2307 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0f2e2a">
-<title>Agenda cultural</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Menú Semanal</title>
+<!-- PWA -->
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Menú">
+<meta name="theme-color" content="#3a7d5a">
+<link rel="apple-touch-icon" href="icon-192.png">
 <style>
-:root{
-  --fondo:#eef1ef;
-  --panel:#ffffff;
-  --tinta:#14201e;
-  --suave:#5d6b68;
-  --linea:#d8ded9;
-  --mar:#0f6e63;
-  --ambar:#a86200;
-  --ambar-fondo:#fdf3e2;
-  --rojo:#9d2b20;
-  --rojo-fondo:#fbeceb;
-  --sombra:0 1px 2px rgba(20,32,30,.06);
-  --radio:12px;
-  --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
-  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap');
+:root {
+  --v:#3a7d5a; --vc:#d4eade; --am:#f0c84b; --na:#e8824a;
+  --cr:#f0eeea; --tx:#1a2e22; --gr:#6a8a78; --bl:#ffffff;
+  --sh:0 4px 20px rgba(26,46,34,.13);
 }
-@media (prefers-color-scheme:dark){
-  :root{
-    --fondo:#101715;
-    --panel:#18211f;
-    --tinta:#e8eeeb;
-    --suave:#9aa8a4;
-    --linea:#2a3633;
-    --mar:#5fbfae;
-    --ambar:#e0a33c;
-    --ambar-fondo:#2b2113;
-    --rojo:#e28579;
-    --rojo-fondo:#2d1815;
-    --sombra:none;
-  }
-}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;padding:0}
-body{
-  background:var(--fondo);color:var(--tinta);
-  font-family:var(--sans);font-size:16px;line-height:1.45;
-  padding-bottom:calc(74px + env(safe-area-inset-bottom));
-}
-a{color:inherit}
-button{font:inherit;color:inherit;background:none;border:none;padding:0;cursor:pointer}
-:focus-visible{outline:2px solid var(--mar);outline-offset:2px}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+body{font-family:'DM Sans',sans-serif;background:var(--cr);color:var(--tx);min-height:100vh;padding-bottom:90px;}
 
-/* ---------- cabecera ---------- */
-header{
-  position:sticky;top:0;z-index:20;background:var(--fondo);
-  padding:calc(10px + env(safe-area-inset-top)) 14px 0;
-  border-bottom:1px solid var(--linea);
-}
-.titulo-fila{display:flex;align-items:baseline;gap:8px}
-h1{
-  margin:0;font-family:var(--serif);font-size:21px;font-weight:400;
-  letter-spacing:-.01em;flex:1
-}
-.ajustes{font-size:19px;line-height:1;padding:4px 2px}
-.rango{
-  font-size:11px;text-transform:uppercase;letter-spacing:.09em;
-  color:var(--suave);margin:2px 0 8px;font-variant-numeric:tabular-nums
-}
-.filtros{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
-.filtros::-webkit-scrollbar{display:none}
-.filtro{
-  flex:0 0 auto;padding:5px 12px;border:1px solid var(--linea);border-radius:999px;
-  font-size:13px;color:var(--suave);background:var(--panel);white-space:nowrap
-}
-.filtro[aria-pressed="true"]{background:var(--mar);border-color:var(--mar);color:#fff;font-weight:500}
-@media (prefers-color-scheme:dark){.filtro[aria-pressed="true"]{color:#0d1615}}
+/* HEADER */
+header{background:var(--v);padding:12px 14px 10px;display:flex;flex-direction:column;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.15);}
+header h1{font-family:'Fraunces',serif;font-weight:300;font-size:24px;color:#fff;letter-spacing:-.3px;}
+header h1 em{font-style:italic;color:var(--am);}
+.hbtns{display:flex;gap:6px;justify-content:space-between;}
+.hbtn{flex:1;background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:14px;padding:9px 0;font-size:18px;line-height:1;font-weight:500;cursor:pointer;transition:.2s;font-family:'DM Sans',sans-serif;}
+.hbtn:hover,.hbtn.on{background:var(--am);color:var(--tx);border-color:var(--am);}
 
-/* ---------- avisos ---------- */
-.aviso{
-  margin:12px 14px 0;padding:10px 12px;border-radius:var(--radio);
-  background:var(--ambar-fondo);border:1px solid var(--ambar);
-  color:var(--ambar);font-size:13px
-}
+/* NAV TABS */
+.tabs{display:grid;grid-template-columns:repeat(10,1fr);background:#fff;border-bottom:2px solid var(--vc);padding:0 6px;}
+.tab{grid-column:span 2;padding:11px 2px;font-size:13px;font-weight:500;color:var(--gr);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;text-align:center;transition:.2s;font-family:'DM Sans',sans-serif;overflow:hidden;text-overflow:ellipsis;}
+.tab.finde{grid-column:span 5;font-size:14.5px;padding:10px 2px;}
+.tab.on{color:#1e5235;border-bottom-color:#1e5235;font-weight:700;}
 
-/* ---------- listado ---------- */
-main{padding:0 14px}
-.semana{
-  margin:22px 0 10px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;
-  color:var(--suave);display:flex;align-items:center;gap:10px
-}
-.semana:after{content:"";flex:1;height:1px;background:var(--linea)}
-.bloque-pronto{margin:18px 0 10px}
-.bloque-pronto h2{
-  margin:0;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ambar)
-}
+/* MAIN */
+.main{padding:14px;max-width:500px;margin:0 auto;}
+.vista{display:none;}.vista.on{display:block;}
 
-.ev{
-  background:var(--panel);border:1px solid var(--linea);border-radius:var(--radio);
-  box-shadow:var(--sombra);margin-bottom:10px;display:flex;overflow:hidden
-}
-.ev.urgente{border-color:var(--ambar)}
-.ev.venta{border-color:var(--rojo)}
-.ev.descartado{opacity:.45}
+/* DÍA CARD */
+.dia-card{background:#fff;border-radius:16px;margin-bottom:10px;overflow:hidden;box-shadow:var(--sh);}
+.dia-head{background:var(--v);padding:14px 16px;display:flex;align-items:center;justify-content:space-between;}
+.dia-nom{font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:#fff;}
+.dia-right{display:flex;align-items:center;gap:8px;}
+.dia-num{background:var(--am);color:var(--tx);border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;}
+.btn-regen{background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:50%;width:34px;height:34px;font-size:17px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s;}
+.btn-regen:hover{background:rgba(255,255,255,.35);}
+.comida{display:flex;align-items:center;padding:13px 14px;border-bottom:1px solid #c8dfd0;gap:9px;transition:.15s;}
+.comida:last-child{border-bottom:none;}
+.comida.cr{cursor:pointer;}.comida.cr:hover{background:var(--vc);}
+.c-h{font-size:13px;color:#2d5a3d;font-weight:600;min-width:38px;text-align:center;background:#c5e0cc;border-radius:6px;padding:3px 6px;}
+.c-t{font-size:12px;font-weight:700;color:#2d6b4a;text-transform:uppercase;letter-spacing:.5px;min-width:68px;}
+.c-n{font-size:16px;flex:1;line-height:1.4;}
+.c-i{font-size:14px;color:var(--na);}
 
-/* raíl de fecha: el dato que ordena la lista, a la izquierda */
-.rail{
-  flex:0 0 58px;padding:12px 0 12px 12px;text-align:left;
-  border-right:1px solid var(--linea);display:flex;flex-direction:column;justify-content:flex-start
-}
-.rail .dia{font-family:var(--serif);font-size:26px;line-height:1;font-variant-numeric:tabular-nums}
-.rail .dsem{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--suave);margin-top:3px}
-.rail .hora{font-size:12px;color:var(--suave);margin-top:6px;font-variant-numeric:tabular-nums}
-.rail .mes{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--suave)}
-.rail.rango{justify-content:center}
-.rail.rango .cuenta{font-size:11px;color:var(--ambar);margin-top:6px;line-height:1.2}
+/* BADGE sáb/dom */
+.badge-finde{background:#fff3e0;color:#b85c00;font-size:13px;font-weight:600;border-radius:8px;padding:2px 7px;margin-left:6px;}
 
-.cuerpo{flex:1;min-width:0;padding:12px}
-.cuerpo h3{margin:0 0 4px;font-family:var(--serif);font-size:17px;font-weight:400;line-height:1.25}
-.cuerpo h3 a{text-decoration:none;border-bottom:1px solid var(--linea)}
-.lugar{font-size:13px;color:var(--suave);margin:0}
-.recurrente{font-size:13px;color:var(--suave);margin:2px 0 0;font-style:italic}
-.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
-.chip{
-  font-size:11px;padding:2px 7px;border-radius:999px;border:1px solid var(--linea);color:var(--suave);
-  text-transform:uppercase;letter-spacing:.05em
-}
-.chip.alerta{color:var(--rojo);border-color:var(--rojo);background:var(--rojo-fondo)}
-.chip.gratis{color:var(--mar);border-color:var(--mar)}
+/* COMPRA */
+.compra-top{background:#fff;border-radius:14px;padding:13px 15px;margin-bottom:10px;box-shadow:var(--sh);display:flex;align-items:center;justify-content:space-between;}
+.compra-top h2{font-family:'Fraunces',serif;font-size:22px;font-weight:600;}
+.badge-sem{background:var(--v);color:#fff;border-radius:18px;padding:4px 11px;font-size:12px;}
+.prog-bar{background:#fff;border-radius:14px;padding:10px 15px;margin-bottom:10px;box-shadow:var(--sh);}
+.prog-label{display:flex;justify-content:space-between;font-size:12px;color:var(--gr);margin-bottom:6px;}
+.prog-track{background:#c5e0cc;border-radius:10px;height:10px;}
+.prog-fill{background:#2d6b4a;border-radius:10px;height:10px;transition:width .4s;}
+.cat-blk{background:#fff;border-radius:14px;margin-bottom:8px;overflow:hidden;box-shadow:var(--sh);}
+.cat-tit{background:#c5e0cc;padding:10px 15px;font-size:12px;font-weight:700;color:#1e5235;text-transform:uppercase;letter-spacing:.7px;}
+.ci{display:flex;align-items:center;padding:13px 15px;border-bottom:1px solid #c8dfd0;gap:10px;cursor:pointer;transition:.15s;}
+.ci:last-child{border-bottom:none;}
+.ci:hover{background:var(--vc);}
+.ci.done{opacity:.4;}
+.ci.done .ci-n{text-decoration:line-through;}
+.ci-box{width:22px;height:22px;border:2px solid #2d6b4a;border-radius:5px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;transition:.15s;}
+.ci.done .ci-box{background:var(--v);color:#fff;}
+.ci-n{flex:1;font-size:16px;}
+.ci-c{font-size:14px;color:var(--gr);font-weight:500;}
 
-.acciones{display:flex;gap:6px;margin-top:10px;align-items:center}
-.marca{
-  border:1px solid var(--linea);border-radius:999px;padding:4px 10px;font-size:12px;color:var(--suave);
-  background:var(--panel)
-}
-.marca[aria-pressed="true"]{border-color:var(--mar);color:var(--mar);font-weight:500}
-.marca.no[aria-pressed="true"]{border-color:var(--suave);color:var(--suave)}
-.otra{font-size:11px;color:var(--suave);margin-left:auto;text-align:right;line-height:1.2}
+/* RECETARIO */
+.search-bar{background:#fff;border-radius:14px;padding:12px 15px;margin-bottom:10px;box-shadow:var(--sh);display:flex;align-items:center;gap:10px;border:1.5px solid #c8dfd0;}
+.search-bar input{flex:1;border:none;outline:none;font-family:'DM Sans',sans-serif;font-size:16px;background:transparent;color:var(--tx);}
+.search-bar input::placeholder{color:var(--gr);}
+.filtros{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;}
+.ftag{background:#fff;border:1px solid var(--vc);border-radius:18px;padding:8px 15px;font-size:14px;font-weight:500;color:var(--gr);cursor:pointer;transition:.2s;font-family:'DM Sans',sans-serif;}
+.ftag.on{background:var(--v);color:#fff;border-color:var(--v);}
+.rec-card{background:#fff;border-radius:14px;padding:13px 15px;margin-bottom:8px;box-shadow:var(--sh);cursor:pointer;transition:.15s;display:flex;align-items:center;gap:12px;}
+.rec-card:hover{background:#d4eade;}
+.rec-emoji{font-size:24px;width:40px;text-align:center;}
+.rec-info{flex:1;}
+.rec-nom{font-size:16px;font-weight:500;line-height:1.3;}
+.rec-sub{font-size:13px;color:var(--gr);margin-top:2px;}
+.rec-tag{font-size:10px;font-weight:600;border-radius:8px;padding:2px 8px;}
+.tag-dieta{background:var(--vc);color:var(--v);}
+.tag-finde{background:#fff3e0;color:#b85c00;}
+.tag-recetario{background:#f3e8ff;color:#6b21a8;}
+.rec-arr{color:var(--gr);font-size:16px;}
 
-.vacio{
-  margin:40px 0;text-align:center;color:var(--suave);font-size:14px
-}
-.vacio strong{display:block;font-family:var(--serif);font-size:17px;color:var(--tinta);font-weight:400;margin-bottom:4px}
+/* MODAL */
+.overlay{display:none;position:fixed;inset:0;background:rgba(26,46,34,.6);z-index:200;align-items:flex-end;justify-content:center;}
+.overlay.on{display:flex;}
+.modal{background:#fff;border-radius:22px 22px 0 0;width:100%;max-width:500px;max-height:88vh;overflow-y:auto;padding-bottom:30px;animation:up .28s ease;}
+@keyframes up{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.m-handle{width:36px;height:4px;background:#ddd;border-radius:2px;margin:11px auto 0;}
+.m-head{padding:14px 18px 10px;border-bottom:1px solid var(--vc);display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
+.m-tit{font-family:'Fraunces',serif;font-size:22px;font-weight:600;flex:1;line-height:1.2;}
+.m-x{background:var(--vc);border:none;border-radius:50%;width:30px;height:30px;font-size:16px;cursor:pointer;color:var(--v);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.m-body{padding:14px 18px;}
+.m-sec{margin-bottom:18px;}
+.m-sec h4{font-size:11px;font-weight:700;color:var(--gr);text-transform:uppercase;letter-spacing:1px;margin-bottom:7px;}
+.ing{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--vc);font-size:15px;align-items:center;}
+.ing:last-child{border-bottom:none;}
+.ing-c{font-weight:600;color:var(--v);text-align:right;min-width:90px;}
+.pasos{counter-reset:p;}
+.paso{padding:11px 0 11px 36px;position:relative;border-bottom:1px solid var(--vc);font-size:15px;line-height:1.6;counter-increment:p;}
+.paso:last-child{border-bottom:none;}
+.paso::before{content:counter(p);position:absolute;left:0;top:9px;background:var(--v);color:#fff;width:21px;height:21px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;}
+.chips{display:flex;flex-wrap:wrap;gap:5px;}
+.chip{background:#fff3e0;color:#b85c00;border-radius:18px;padding:4px 10px;font-size:11px;font-weight:500;}
 
-/* ---------- barra inferior ---------- */
-.barra{
-  position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;
-  background:var(--panel);border-top:1px solid var(--linea);
-  padding-bottom:env(safe-area-inset-bottom)
-}
-.barra button{flex:1;padding:11px 0 12px;text-align:center;color:var(--suave)}
-.barra .icono{display:block;font-size:19px;line-height:1.1}
-.barra .txt{font-size:11px;letter-spacing:.04em}
-.barra button[aria-pressed="true"]{color:var(--mar);font-weight:600}
+/* FAB */
+.fab{position:fixed;bottom:22px;right:18px;background:var(--na);color:#fff;border:none;border-radius:26px;padding:16px 22px;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:600;cursor:pointer;box-shadow:0 6px 18px rgba(232,130,74,.4);display:flex;align-items:center;gap:6px;z-index:150;transition:.2s;}
+.fab:hover{transform:translateY(-2px);}
+.fab-hidden{display:none!important;}
 
-/* ---------- modal ---------- */
-.velo{
-  position:fixed;inset:0;z-index:40;background:rgba(10,16,15,.55);
-  display:flex;align-items:flex-end
+/* TOAST */
+.toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:var(--tx);color:#fff;padding:9px 18px;border-radius:18px;font-size:13px;z-index:300;opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap;}
+.toast.on{opacity:1;}
+
+/* empty state */
+.empty{text-align:center;padding:40px 20px;color:var(--gr);}
+.empty .e-ico{font-size:40px;margin-bottom:10px;}
+.empty p{font-size:14px;}
+
+/* DARK MODE */
+body.dark {
+  --cr:#1a2420;
+  --bl:#242f2a;
+  --tx:#e8f0eb;
+  --gr:#8aab96;
+  --vc:#2a3d32;
+  --sh:0 4px 20px rgba(0,0,0,.35);
 }
-.velo[hidden]{display:none}
-.modal{
-  background:var(--panel);width:100%;border-radius:16px 16px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom));
-  max-height:85vh;overflow:auto
-}
-.modal h2{margin:0 0 14px;font-family:var(--serif);font-size:19px;font-weight:400}
-.campo{display:block;margin-bottom:12px}
-.campo span{display:block;font-size:12px;color:var(--suave);margin-bottom:4px}
-.campo input{
-  width:100%;padding:9px 10px;border:1px solid var(--linea);border-radius:8px;
-  background:var(--fondo);color:var(--tinta);font:inherit
-}
-.quien{display:flex;gap:8px;margin-bottom:14px}
-.quien button{flex:1;padding:9px;border:1px solid var(--linea);border-radius:8px;font-size:14px;color:var(--suave)}
-.quien button[aria-pressed="true"]{border-color:var(--mar);color:var(--mar);font-weight:600}
-.opcion{display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:14px}
-.cerrar{width:100%;padding:12px;background:var(--mar);color:#fff;border-radius:10px;font-weight:600}
-@media (prefers-color-scheme:dark){.cerrar{color:#0d1615}}
-.nota{font-size:12px;color:var(--suave);margin:14px 0 0}
-@media (prefers-reduced-motion:no-preference){
-  .ev{animation:entra .18s ease both}
-  @keyframes entra{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
-}
+body.dark header { background:#1a3028; }
+body.dark .tabs { background:#242f2a; border-bottom-color:#2a3d32; }
+body.dark .tab { color:#8aab96; }
+body.dark .tab.on { color:#6fcf8e; border-bottom-color:#6fcf8e; }
+body.dark .dia-card, body.dark .cat-blk, body.dark .compra-top,
+body.dark .prog-bar, body.dark .search-bar, body.dark .rec-card { background:#242f2a; }
+body.dark .dia-head { background:#1a3028; }
+body.dark .comida { border-bottom-color:#2a3d32; }
+body.dark .comida.cr:hover { background:#2a3d32; }
+body.dark .c-h { background:#2a3d32; color:#a8d4b4; }
+body.dark .c-t { color:#6fcf8e; }
+body.dark .c-n { color:#e8f0eb; }
+body.dark .c-i { color:#f0a070; }
+body.dark .cat-tit { background:#2a3d32; color:#6fcf8e; }
+body.dark .ci { border-bottom-color:#2a3d32; }
+body.dark .ci:hover { background:#2a3d32; }
+body.dark .ci-n { color:#e8f0eb; }
+body.dark .ci-c { color:#8aab96; }
+body.dark .ci-box { border-color:#6fcf8e; }
+body.dark .ci.done .ci-box { background:#6fcf8e; color:#1a2420; }
+body.dark .prog-track { background:#2a3d32; }
+body.dark .prog-fill { background:#6fcf8e; }
+body.dark .prog-label { color:#8aab96; }
+body.dark .search-bar { border-color:#2a3d32; }
+body.dark .search-bar input { color:#e8f0eb; }
+body.dark .search-bar input::placeholder { color:#8aab96; }
+body.dark .ftag { background:#242f2a; border-color:#2a3d32; color:#8aab96; }
+body.dark .ftag.on { background:#1a3028; color:#6fcf8e; border-color:#6fcf8e; }
+body.dark .rec-card:hover { background:#2a3d32; }
+body.dark .rec-nom { color:#e8f0eb; }
+body.dark .rec-sub { color:#8aab96; }
+body.dark .rec-arr { color:#8aab96; }
+body.dark .tag-dieta { background:#1a3028; color:#6fcf8e; }
+body.dark .tag-finde { background:#3d2a1a; color:#f0a070; }
+body.dark .tag-recetario { background:#2a1a3d; color:#c4a0f0; }
+body.dark .badge-finde { background:#3d2a1a; color:#f0a070; }
+body.dark .modal { background:#242f2a; }
+body.dark .m-tit { color:#e8f0eb; }
+body.dark .m-x { background:#2a3d32; color:#6fcf8e; }
+body.dark .m-sec h4 { color:#8aab96; }
+body.dark .ing { border-bottom-color:#2a3d32; color:#e8f0eb; }
+body.dark .ing-c { color:#6fcf8e; }
+body.dark .paso { border-bottom-color:#2a3d32; color:#e8f0eb; }
+body.dark .paso::before { background:#1a3028; }
+body.dark .chip { background:#3d2a1a; color:#f0a070; }
+body.dark .compra-top h2 { color:#e8f0eb; }
+body.dark .badge-sem { background:#1a3028; }
+body.dark .overlay { background:rgba(0,0,0,.75); }
+body.dark .m-handle { background:#2a3d32; }
+body.dark .dia-nom { color:#e8f0eb; }
+body.dark .empty { color:#8aab96; }
+
+/* ── AÑADIDOS: sync, modo ensaladas, reparto ── */
+.sdot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#9aa;margin-left:8px;vertical-align:middle;transition:.3s;}
+.sdot.ok{background:#5fd68a;box-shadow:0 0 8px rgba(95,214,138,.8);}
+.sdot.err{background:#e8824a;}
+header h1{display:flex;align-items:center;}
+
+.modo-bar{background:#fff5e0;border:1px dashed var(--na);color:#8a5a2a;border-radius:12px;padding:9px 13px;font-size:13.5px;margin-bottom:12px;display:flex;align-items:center;gap:8px;line-height:1.45;}
+body.dark .modo-bar{background:#3a2f22;border-color:#c9713f;color:#f0c89a;}
+
+.chip-cocina{background:var(--vc);color:var(--v);border:1px solid transparent;border-radius:14px;padding:4px 10px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap;margin-top:6px;display:inline-block;}
+.chip-cocina.aA{background:#d9ecff;color:#1c5aa8;border-color:#8fbdf0;}
+.chip-cocina.aB{background:#ffe4ec;color:#a8215a;border-color:#f09ab8;}
+body.dark .chip-cocina{background:#2a3d32;color:#8ad0a0;}
+body.dark .chip-cocina.aA{background:#1e3350;color:#9fc9f5;border-color:#3f6a9e;}
+body.dark .chip-cocina.aB{background:#4a1f31;color:#f2a8c2;border-color:#94456a;}
+
+.ci{position:relative;}
+.ci-q{background:transparent;border:1px solid #cfd8d2;color:#8a9e93;border-radius:12px;padding:2px 8px;font-size:11px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;margin-left:8px;white-space:nowrap;}
+.ci-q.aA{background:#d9ecff;color:#1c5aa8;border-color:#8fbdf0;}
+.ci-q.aB{background:#ffe4ec;color:#a8215a;border-color:#f09ab8;}
+body.dark .ci-q{border-color:#3a4d42;color:#8aab96;}
+
+.m-alino{display:block;width:100%;text-align:left;background:var(--vc);border:1px solid var(--v);color:var(--v);border-radius:12px;padding:11px 14px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;margin-bottom:14px;}
+body.dark .m-alino{background:#2a3d32;color:#8ad0a0;border-color:#4a6d56;}
+
+.cfg-f{margin-bottom:14px;}
+.cfg-f label{display:block;font-size:13px;font-weight:600;color:var(--gr);margin-bottom:5px;}
+.cfg-f input{width:100%;padding:11px 13px;border:1px solid #d8e0da;border-radius:10px;font-size:15px;font-family:'DM Sans',sans-serif;background:#fff;color:var(--tx);}
+body.dark .cfg-f input{background:#1e2a24;border-color:#3a4d42;color:#e8f0eb;}
+.cfg-yo{display:flex;gap:8px;}
+.cfg-yo button{flex:1;padding:11px;border-radius:10px;border:1px solid #d8e0da;background:#fff;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;color:var(--gr);}
+.cfg-yo button.on{background:var(--v);color:#fff;border-color:var(--v);}
+body.dark .cfg-yo button{background:#1e2a24;border-color:#3a4d42;color:#8aab96;}
+.cfg-btn{width:100%;padding:14px;border:none;border-radius:12px;background:var(--v);color:#fff;font-size:16px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;margin-top:6px;}
+.cfg-btn.sec{background:transparent;border:1px solid var(--v);color:var(--v);margin-top:8px;}
+.cfg-help{font-size:12.5px;color:var(--gr);line-height:1.5;margin-bottom:16px;}
+.cfg-sep{border-top:1px solid #e0e6e2;margin:18px 0 16px;}
+body.dark .cfg-sep{border-color:#3a4d42;}
+
+/* ── SEGUIMIENTO ── */
+.seg-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.seg-top h2{font-family:'Fraunces',serif;font-size:23px;font-weight:600;color:var(--v);}
+.seg-yo{background:var(--vc);color:var(--v);border-radius:12px;padding:4px 10px;font-size:12.5px;font-weight:600;}
+body.dark .seg-top h2{color:#8ad0a0;} body.dark .seg-yo{background:#2a3d32;color:#8ad0a0;}
+.seg-form{background:#fff;border-radius:16px;padding:14px;box-shadow:var(--sh);margin-bottom:16px;}
+body.dark .seg-form{background:#1e2a24;}
+.seg-fila{display:flex;gap:8px;align-items:center;margin-bottom:10px;}
+.seg-fila:last-child{margin-bottom:0;}
+.seg-fila label{font-size:13px;font-weight:600;color:var(--gr);min-width:64px;}
+.seg-fila input,.seg-fila select{flex:1;min-width:0;padding:10px 11px;border:1px solid #d8e0da;border-radius:10px;font-size:15px;font-family:'DM Sans',sans-serif;background:#fff;color:var(--tx);}
+body.dark .seg-fila input,body.dark .seg-fila select{background:#141d18;border-color:#3a4d42;color:#e8f0eb;}
+.seg-ok{background:var(--v);color:#fff;border:none;border-radius:10px;padding:10px 15px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;}
+.seg-card{background:#fff;border-radius:16px;padding:14px;box-shadow:var(--sh);margin-bottom:14px;}
+body.dark .seg-card{background:#1e2a24;}
+.seg-nom{font-family:'Fraunces',serif;font-size:19px;font-weight:600;color:var(--v);margin-bottom:2px;}
+body.dark .seg-nom{color:#8ad0a0;}
+.seg-cifra{font-size:30px;font-weight:600;line-height:1.1;}
+.seg-sub{font-size:12.5px;color:var(--gr);margin-bottom:8px;}
+.seg-tend{font-size:13px;font-weight:600;margin-top:4px;}
+.seg-svg{width:100%;height:auto;display:block;margin-top:6px;color:var(--v);}
+body.dark .seg-svg{color:#6fcf8e;}
+.seg-vacio{font-size:13.5px;color:var(--gr);line-height:1.5;}
+.seg-racha{display:flex;gap:4px;margin-top:12px;flex-wrap:wrap;}
+.seg-dia{width:24px;height:24px;line-height:24px;text-align:center;font-size:11px;font-weight:700;border-radius:7px;background:var(--v);color:#fff;}
+.seg-dia.off{background:#dde5e0;color:#8a9e93;}
+body.dark .seg-dia.off{background:#2a3d32;color:#6a8a78;}
+.seg-nota{background:#fff5e0;border:1px dashed var(--na);color:#8a5a2a;border-radius:12px;padding:9px 13px;font-size:13px;line-height:1.45;margin-top:10px;}
+body.dark .seg-nota{background:#3a2f22;border-color:#c9713f;color:#f0c89a;}
+.seg-borrar{background:transparent;border:none;color:var(--na);font-size:12.5px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;padding:4px 0;margin-top:6px;}
+.seg-hoy{background:var(--v);color:#fff;border-radius:16px;padding:15px;margin-bottom:12px;box-shadow:var(--sh);}
+.seg-hoy-tit{font-family:'Fraunces',serif;font-size:19px;font-weight:600;margin-bottom:9px;}
+.seg-ej{list-style:none;}
+.seg-ej li{font-size:14px;line-height:1.5;padding:5px 0 5px 16px;position:relative;border-bottom:1px solid rgba(255,255,255,.15);}
+.seg-ej li:last-child{border-bottom:none;}
+.seg-ej li:before{content:'•';position:absolute;left:2px;color:var(--am);}
+.seg-hoy-nota{font-size:12.5px;line-height:1.45;opacity:.85;margin-top:8px;}
+.seg-cuadro{background:#fff;border-radius:16px;padding:12px 14px;box-shadow:var(--sh);margin-bottom:14px;}
+body.dark .seg-cuadro{background:#1e2a24;}
+.seg-cuadro summary{font-size:14px;font-weight:600;color:var(--v);cursor:pointer;}
+body.dark .seg-cuadro summary{color:#8ad0a0;}
+.seg-cf{display:flex;justify-content:space-between;font-size:13.5px;padding:7px 0;border-bottom:1px solid #eef2ef;}
+body.dark .seg-cf{border-color:#2a3d32;}
+.seg-cf:last-of-type{border-bottom:none;}
+.seg-cf.hoy{font-weight:700;color:var(--v);}
+body.dark .seg-cf.hoy{color:#6fcf8e;}
+.seg-cf span:last-child{color:var(--gr);}
+.seg-cf.hoy span:last-child{color:inherit;}
+.seg-cuenta{font-size:13.5px;color:var(--gr);margin-top:12px;padding-top:10px;border-top:1px solid #eef2ef;}
+body.dark .seg-cuenta{border-color:#2a3d32;}
+.seg-cuenta strong{color:var(--v);font-size:15px;}
+body.dark .seg-cuenta strong{color:#8ad0a0;}
+.seg-animo{background:#eef8f1;border-left:3px solid var(--v);border-radius:0 10px 10px 0;padding:9px 12px;font-size:13.5px;line-height:1.5;margin-top:9px;color:#2d5a3d;}
+body.dark .seg-animo{background:#22322a;color:#a8d8bb;border-left-color:#6fcf8e;}
+
+/* ── PROTEÍNA / LEGUMBRE / ESTEROLES ── */
+.prot-bar{background:#fff;border-radius:14px;padding:11px 14px;box-shadow:var(--sh);margin-bottom:10px;display:flex;align-items:center;gap:7px;flex-wrap:wrap;}
+body.dark .prot-bar{background:#1e2a24;}
+.prot-lab{font-size:13px;font-weight:600;color:var(--gr);}
+.prot-o{width:16px;height:16px;border-radius:50%;border:2px solid var(--v);display:inline-block;flex:0 0 auto;}
+body.dark .prot-o{border-color:#6fcf8e;}
+.prot-o.full{background:var(--v);} body.dark .prot-o.full{background:#6fcf8e;}
+.prot-o.half{background:linear-gradient(90deg,var(--v) 50%,transparent 50%);}
+body.dark .prot-o.half{background:linear-gradient(90deg,#6fcf8e 50%,transparent 50%);}
+.prot-num{font-size:13px;font-weight:600;margin-left:2px;}
+.prot-tip{font-size:13px;cursor:help;}
+.sem-cont{background:#fff;border-radius:14px;padding:11px 14px;box-shadow:var(--sh);margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;font-size:13.5px;color:var(--gr);}
+body.dark .sem-cont{background:#1e2a24;}
+.sem-cont strong{font-size:15px;color:var(--na);}
+.sem-cont strong.ok{color:var(--v);} body.dark .sem-cont strong.ok{color:#6fcf8e;}
+.est-bloque{background:#fff;border-radius:14px;padding:11px 14px;box-shadow:var(--sh);margin-bottom:10px;display:flex;align-items:center;gap:11px;cursor:pointer;border:2px solid transparent;}
+body.dark .est-bloque{background:#1e2a24;}
+.est-bloque.on{border-color:var(--v);} body.dark .est-bloque.on{border-color:#6fcf8e;}
+.est-check{width:24px;height:24px;flex:0 0 auto;border-radius:8px;border:2px solid #cfd8d2;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;}
+.est-bloque.on .est-check{background:var(--v);border-color:var(--v);}
+body.dark .est-bloque.on .est-check{background:#6fcf8e;border-color:#6fcf8e;color:#14201a;}
+.est-txt{display:flex;flex-direction:column;}
+.est-txt strong{font-size:14px;} .est-txt span{font-size:12.5px;color:var(--gr);}
+
 </style>
 </head>
 <body>
 
 <header>
-  <div class="titulo-fila">
-    <h1 id="h1">Agenda</h1>
-    <button class="ajustes" id="btnAjustes" aria-label="Ajustes">⚙️</button>
+  <h1>Mi <em>cocina</em><span class="sdot" id="syncDot" title="Sincronizacion"></span></h1>
+  <div class="hbtns">
+    <button class="hbtn on" id="btnM" onclick="nav('menu')" title="Menú">📅</button>
+    <button class="hbtn" id="btnC" onclick="nav('compra')" title="Compra">🛒</button>
+    <button class="hbtn" id="btnR" onclick="nav('recetario')" title="Recetario">📖</button>
+    <button class="hbtn" id="btnS" onclick="nav('seg')" title="Seguimiento">📈</button>
+    <button class="hbtn" id="btnEns" onclick="toggleModo()" title="Quincena de ensaladas">🥗</button>
+    <button class="hbtn" id="btnDark" onclick="toggleDark()" title="Modo noche">🌙</button>
+    <button class="hbtn" id="btnCfg" onclick="abrirCfg()" title="Ajustes">⚙️</button>
   </div>
-  <p class="rango" id="rango">Cargando…</p>
-  <div class="filtros" id="filtros"></div>
 </header>
 
-<div id="avisos"></div>
-<main id="lista"></main>
+<div class="tabs" id="tabs"></div>
 
-<nav class="barra">
-  <button id="tabAgenda" aria-pressed="true"><span class="icono">🗓️</span><span class="txt">Agenda</span></button>
-  <button id="tabCartel" aria-pressed="false"><span class="icono">🖼️</span><span class="txt">En cartel</span></button>
-</nav>
-
-<div class="velo" id="velo" hidden>
-  <div class="modal" role="dialog" aria-label="Ajustes">
-    <h2>Ajustes</h2>
-    <label class="campo"><span>Nombre 1</span><input id="in1" type="text" autocomplete="off"></label>
-    <label class="campo"><span>Nombre 2</span><input id="in2" type="text" autocomplete="off"></label>
-    <p class="campo"><span>Quién usa este móvil</span></p>
-    <div class="quien">
-      <button id="yo1" aria-pressed="false"></button>
-      <button id="yo2" aria-pressed="false"></button>
+<div class="main">
+  <div class="vista on" id="vMenu"></div>
+  <div class="vista" id="vCompra">
+    <div class="compra-top">
+      <h2>Lista de la compra</h2>
+      <span class="badge-sem" id="badgeSem">Semana 1</span>
     </div>
-    <label class="opcion"><input type="checkbox" id="chkDesc"> Ver también los descartados</label>
-    <button class="cerrar" id="btnCerrar">Guardar y cerrar</button>
-    <p class="nota" id="notaVer"></p>
+    <div class="prog-bar">
+      <div class="prog-label"><span>Progreso</span><span id="progTxt">0 / 0</span></div>
+      <div class="prog-track"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
+    </div>
+    <div id="listaCompra"></div>
+  </div>
+  <div class="vista" id="vRecetario">
+    <div class="search-bar">
+      <span>🔍</span>
+      <input type="text" id="searchInput" placeholder="Buscar receta..." oninput="renderRecetario()">
+    </div>
+    <div class="filtros" id="filtros"></div>
+    <div id="listaRecetas"></div>
+  </div>
+  <div class="vista" id="vSeg"></div>
+</div>
+
+<button class="fab" id="fab" onclick="nuevaSemana()">🔀 Nueva semana</button>
+
+<div class="overlay" id="overlay" onclick="cerrarOverlay(event)">
+  <div class="modal" id="modal">
+    <div class="m-handle"></div>
+    <div class="m-head">
+      <div class="m-tit" id="mTit"></div>
+      <button class="m-x" onclick="cerrarModal()">✕</button>
+    </div>
+    <div class="m-body" id="mBody"></div>
   </div>
 </div>
 
-<script>
-(function(){
-"use strict";
+<div class="overlay" id="overlayCfg" onclick="cerrarOverlayCfg(event)">
+  <div class="modal">
+    <div class="m-handle"></div>
+    <div class="m-head">
+      <div class="m-tit">Ajustes</div>
+      <button class="m-x" onclick="cerrarCfg()">✕</button>
+    </div>
+    <div class="m-body">
+      <div class="cfg-f">
+        <label>Tu nombre</label>
+        <input type="text" id="cfgNomA" placeholder="María">
+      </div>
+      <div class="cfg-f">
+        <label>Nombre de la otra persona</label>
+        <input type="text" id="cfgNomB" placeholder="Pareja">
+      </div>
+      <div class="cfg-f">
+        <label>¿Quién eres tú en este móvil?</label>
+        <div class="cfg-yo">
+          <button id="cfgYoA" onclick="setYo('A')">Persona 1</button>
+          <button id="cfgYoB" onclick="setYo('B')">Persona 2</button>
+        </div>
+      </div>
+      <div class="cfg-f">
+        <label>Raciones de proteína al día (objetivo)</label>
+        <input type="number" id="cfgProt" min="2" max="8" step="1" placeholder="4">
+      </div>
+      <div class="cfg-help" style="margin-top:-6px">
+        Una ración ≈ 25-30 g: una pechuga, un filete de pescado, tres huevos
+        o dos yogures griegos. Un plato de legumbre cuenta media. Es un suelo
+        que alcanzar, no un límite: pasarse no importa.
+      </div>
+      <div class="cfg-sep"></div>
+      <div class="cfg-help">
+        <strong>Sincronización entre los dos móviles.</strong><br>
+        Pega aquí los datos de tu proyecto de Supabase e inventa un código de hogar.
+        Los <em>tres</em> campos deben ser <em>idénticos</em> en los dos móviles.
+      </div>
+      <div class="cfg-f">
+        <label>Código de hogar</label>
+        <input type="text" id="cfgHogar" placeholder="casa-maria">
+      </div>
+      <div class="cfg-f">
+        <label>Supabase URL</label>
+        <input type="text" id="cfgUrl" placeholder="https://xxxx.supabase.co">
+      </div>
+      <div class="cfg-f">
+        <label>Supabase anon key</label>
+        <input type="text" id="cfgKey" placeholder="eyJhbGciOi...">
+      </div>
+      <button class="cfg-btn" onclick="guardarCfg()">Guardar</button>
+      <button class="cfg-btn sec" onclick="probarSync()">Probar conexión</button>
+    </div>
+  </div>
+</div>
 
-/* ------------------------------------------------------------------ *
- * Estado
- * ------------------------------------------------------------------ */
-var ST = {
-  vista: "agenda",
-  filtroA: "todo",
-  filtroC: "todo",
-  agenda: null,
-  cartel: null,
-  errores: [],
-  marcas: {},                 /* "idEvento|p1" -> {estado:"interesa", ts:0} */
-  cfg: { p1:"Persona 1", p2:"Persona 2", yo:"p1", verDesc:false }
+<div class="toast" id="toast"></div>
+
+<script>
+// ============================================================
+// DATOS — Para añadir una receta nueva, copia un bloque
+// existente dentro de RECETAS y rellena los campos.
+// "tipo": "dieta" = cualquier día
+//         "finde" = solo sábado y domingo (platos más calóricos)
+//         "recetario" = solo aparece en el recetario, no en el menú
+// "cat":  categoría para filtrar en el recetario
+// ============================================================
+var RECETAS = {
+
+  // ── RECETAS DE LA DIETA (entre semana y finde) ─────────────
+
+  "Ensalada de garbanzos mixta": {
+    prot:0.5, tipo:"dieta", cat:"ensalada", emoji:"🥗",
+    ing:[["Aceite de oliva","5 g"],["Cebolla","30 g"],["Lechuga","40 g"],["Tomate","75 g"],["Zanahoria","40 g"],["Garbanzos cocidos","150 g"]],
+    pasos:["Escurrir los garbanzos y pasarlos bajo agua fría.","Añadir zanahoria, tomate, lechuga y cebolla troceados. Mezclar bien.","Aliñar con aceite de oliva en crudo."],
+    alerg:""
+  },
+  "Pechuga de pavo a la plancha con berenjena": {
+    prot:1.25, tipo:"dieta", cat:"carne", emoji:"🍗",
+    ing:[["Aceite de oliva","8 g"],["Berenjena","150 g"],["Pavo, pechuga fresca","150 g"]],
+    pasos:["Asar a la plancha el filete de pechuga de pavo.","En sartén con el aceite asar la berenjena en rodajas.","Emplatar el pavo con la berenjena asada."],
+    alerg:""
+  },
+  "Pollo asado en su jugo": {
+    prot:1.75, tipo:"dieta", cat:"carne", emoji:"🍗",
+    ing:[["Aceite de oliva","10 g"],["Ajo","10 g (2 dientes)"],["Pollo muslo/contramuslo","270 g"],["Laurel","al gusto"],["Vino de Jerez","50 g"]],
+    pasos:["Colocar el muslo sin piel en fuente de horno. Agregar aceite, laurel, ajos y vino.","Horno a 190ºC, 20 min. Dar la vuelta y regar con los jugos.","Otros 20 min, dar la vuelta y asar 15 min más.","Emplatar y aliñar con el jugo del fondo."],
+    alerg:"Sulfitos"
+  },
+  "Ensalada de tomate, judías verdes, espárragos y queso fresco": {
+    prot:0.5, tipo:"dieta", cat:"ensalada", emoji:"🥗",
+    ing:[["Tomate","180 g"],["Judía verde","100 g"],["Espárrago","100 g"],["Queso Burgos 0% MG","110 g"],["Aceite de oliva","10 g"]],
+    pasos:["Escaldar espárragos y judías 5 min. Escurrir.","Trocear el tomate y mezclar con las verduras.","Añadir queso fresco en dados y aliñar con aceite."],
+    alerg:"Lácteos"
+  },
+  "Hamburguesa de pollo con champiñones": {
+    prot:1, tipo:"dieta", cat:"carne", emoji:"🍔",
+    ing:[["Aceite de oliva","5 g"],["Champiñón","100 g"],["Hamburguesa de pollo","150 g"]],
+    pasos:["Asar la hamburguesa a la plancha.","Saltear el champiñón en cuartos con el aceite.","Emplatar juntos."],
+    alerg:""
+  },
+  "Sepia con pesto de guisantes": {
+    prot:1, tipo:"dieta", cat:"pescado", emoji:"🦑",
+    ing:[["Sepia","125 g"],["Queso parmesano","15 g"],["Aceite de oliva","8 g"],["Guisantes congelados","50 g"],["Pistacho","5 g"],["Ajo","3 g"],["Albahaca","5 g"],["Limón","½ unidad"]],
+    pasos:["Cocer los guisantes 8 min. Escurrir.","Triturar guisantes, parmesano, pistachos, ajo, albahaca, aceite y zumo de limón.","Asar la sepia en sartén caliente 2 min por lado.","Servir sobre el pesto."],
+    alerg:"Lácteos, frutos secos, moluscos"
+  },
+  "Bacalao al ajoarriero": {
+    prot:1, tipo:"dieta", cat:"pescado", emoji:"🐟",
+    ing:[["Pimiento rojo","50 g"],["Pimiento verde","50 g"],["Aceite de oliva","10 g"],["Ajo","5 g"],["Cebolla blanca","50 g"],["Bacalao salado remojado","150 g"],["Tomate en puré","45 g"]],
+    pasos:["Remojar el bacalao la noche anterior.","Pochar los pimientos, ajo y cebolla.","Añadir el tomate y cocinar 5 min.","Dorar el bacalao y romperlo en lascas.","Incorporar al sofrito y cocer 10 min a fuego suave."],
+    alerg:"Pescado"
+  },
+  "Ensalada mixta con atún y maíz": {
+    prot:0.75, tipo:"dieta", cat:"ensalada", emoji:"🥗",
+    ing:[["Aceite de oliva","10 g"],["Cebolleta","70 g"],["Lechuga","50 g"],["Tomate","150 g"],["Zanahoria","80 g"],["Atún en agua","75 g"],["Maíz dulce","40 g"]],
+    pasos:["Lavar y trocear las hortalizas.","Emplatar con el maíz y atún escurridos.","Aliñar con aceite."],
+    alerg:"Pescado"
+  },
+  "Lomo de cerdo a la plancha con verduras": {
+    prot:1, tipo:"dieta", cat:"carne", emoji:"🥩",
+    ing:[["Aceite de oliva","10 g"],["Ajo","5 g"],["Calabacín","75 g"],["Cebolla","70 g"],["Espárrago","75 g"],["Lomo de cerdo","130 g"],["Pimiento rojo","75 g"],["Perejil","al gusto"]],
+    pasos:["Asar las hortalizas troceadas en parrilla con aceite.","Asar el lomo en plancha caliente.","Untar el lomo con majado de ajo y perejil.","Emplatar con la parrillada de verduras."],
+    alerg:""
+  },
+  "Ensalada de canónigos con maíz, aceitunas y pavo": {
+    prot:0.75, tipo:"dieta", cat:"ensalada", emoji:"🥗",
+    ing:[["Aceite de oliva","8 g"],["Canónigos","40 g"],["Aceituna negra","20 g"],["Pavo pechuga fresca","100 g"],["Maíz dulce","30 g"]],
+    pasos:["Asar la pechuga de pavo en plancha. Cortar en trozos.","Emplatar canónigos, añadir maíz, aceitunas y pavo.","Aliñar con aceite."],
+    alerg:""
+  },
+  "Macarrones a la pimienta con carne picada y calabacín": {
+    prot:0.75, tipo:"dieta", cat:"pasta", emoji:"🍝",
+    ing:[["Macarrones","60 g"],["Calabacín","75 g"],["Aceite de oliva","5 g"],["Cebolla","50 g"],["Pimienta negra","al gusto"],["Carne picada ternera","60 g"]],
+    pasos:["Cocer los macarrones 12 min. Escurrir.","Pochar cebolla y calabacín; añadir la carne picada y rehogar.","Mezclar con los macarrones."],
+    alerg:"Gluten"
+  },
+  "Fajitas de pollo con aguacate y queso": {
+    prot:1.25, tipo:"dieta", cat:"carne", emoji:"🌮",
+    ing:[["Cebolla","35 g"],["Pollo, pechuga","125 g"],["Queso Havarti Light","30 g"],["Aguacate","75 g"],["Maíz dulce","20 g"],["Fajita integral","1 unidad (40 g)"],["Aceite de oliva","5 g"]],
+    pasos:["Cocinar el pollo en sartén y desmenuzar en tiras.","Mezclar pollo, cebolla, maíz y aguacate aplastado. Salpimentar.","Extender la fajita, poner queso, rellenar y enrollar."],
+    alerg:"Lácteos, gluten"
+  },
+  "Lenguado con champiñones y romero": {
+    prot:1, tipo:"dieta", cat:"pescado", emoji:"🐟",
+    ing:[["Lenguado","300 g"],["Cebolla blanca","60 g"],["Champiñón","150 g"],["Aceite de oliva","10 g"],["Romero","al gusto"],["Vino blanco","75 g"]],
+    pasos:["Salpimentar el lenguado y cortar en trozos.","Pochar cebolla, añadir champiñones y saltear 3 min.","Incorporar el lenguado, romero y vino. Cocinar hasta que esté hecho.","Servir con los champiñones y la salsa."],
+    alerg:"Pescado, sulfitos"
+  },
+  "Sartén de patatas y huevos con espárragos": {
+    prot:0.25, tipo:"dieta", cat:"huevos", emoji:"🥚",
+    ing:[["Huevo","1 unidad talla M"],["Aceite de oliva","5 g"],["Espárrago","125 g"],["Patata","200 g"],["Cebolla blanca","30 g"]],
+    pasos:["Hervir las patatas en dados 15 min.","Cortar los espárragos en trozos.","Rehogar cebolla, patatas y espárragos en sartén 5 min.","Cascar el huevo en un hueco y cocinar tapado hasta que cuaje."],
+    alerg:"Huevos"
+  },
+  "Pisto con garbanzos": {
+    prot:0.5, tipo:"dieta", cat:"verduras", emoji:"🫘",
+    ing:[["Garbanzos cocidos","150 g"],["Calabacín grande","1 unidad"],["Berenjena","1 unidad"],["Tomates maduros","½ kg"],["Pimiento verde grande","1 unidad"],["Cebolla","1 unidad"],["Ajo","1 diente"],["Aceite, azúcar, sal","al gusto"]],
+    pasos:["Salar la berenjena en dados y dejarla escurrir 1 hora.","Escaldar los tomates, pelarlos y cortarlos.","Dorar cebolla, pimiento y ajo. Añadir calabacín y berenjena.","Incorporar el tomate. Disolver el ajo, añadir azúcar y sal.","Agregar los garbanzos y cocer a fuego suave 15 min."],
+    alerg:""
+  },
+  "Arroz con repollo": {
+    prot:0.25, tipo:"dieta", cat:"arroz", emoji:"🍚",
+    ing:[["Repollo","1 unidad pequeña"],["Arroz","al gusto"],["Cebolla morada","1 unidad"],["Tomates pelados","4 unidades"],["Pimienta","al gusto"]],
+    pasos:["Hervir el repollo troceado 10-12 min. Escurrir.","En la misma olla cocer el arroz.","En sartén sofreír cebolla, añadir tomates, repollo y jamón.","Mezclar con el arroz y servir con pimienta."],
+    alerg:""
+  },
+  "Nidos de calabacín y huevo": {
+    prot:0.5, tipo:"dieta", cat:"huevos", emoji:"🥚",
+    ing:[["Calabacín","2 unidades"],["Huevos","4 unidades"],["Queso parmesano","15 g"],["Aceite de oliva","20 ml"],["Sal, pimienta, orégano","al gusto"]],
+    pasos:["Cortar el calabacín en espiral tipo fideos. Mezclar con sal, pimienta, orégano y aceite.","Formar 4 nidos en bandeja de horno con papel.","Hornear 10 min a 180ºC.","Hacer un hueco en cada nido y cascar un huevo. Hornear 10 min más."],
+    alerg:"Huevos, lácteos"
+  },
+
+  // ── RECETAS DE FINDE (sábado y domingo) ────────────────────
+
+  "Pad Thai": {
+    prot:0.75, tipo:"finde", cat:"asian", emoji:"🍜",
+    ing:[["Fideos de arroz finos","50 g"],["Pollo o gambas","30 g"],["Tofu firme","20 g"],["Cebollino o cebolleta","10 g"],["Brotes de soja","30 g"],["Chalota","1 cdita"],["Gambas secas","1 cdita"],["Huevo","1 unidad"],["Aceite","2 cdas"],["Salsa de ostras","1 cda"],["Salsa de pescado","1 cda"],["Salsa de tamarindo","1 cdita"],["Azúcar","1 cdita"],["Agua","100 ml"]],
+    pasos:["Freír el tofu hasta que esté dorado. Añadir la chalota y el pollo, sofreír.","Romper el huevo y remover hasta cuajar.","Añadir los fideos, gambas secas, rábano encurtido y el agua. Remover bien.","Sazonar con salsa de ostras, de pescado, tamarindo y azúcar. Cocinar hasta que los fideos estén tiernos.","Añadir brotes de soja y cebollino. Mezclar y servir."],
+    alerg:"Gluten, mariscos, pescado, huevos"
+  },
+  "Pollo salteado con anacardos": {
+    prot:0.5, tipo:"finde", cat:"asian", emoji:"🍗",
+    ing:[["Pechuga de pollo","50 g"],["Maíz tierno baby","30 g"],["Cebolla grande","30 g"],["Setas de oreja","30 g"],["Cebollino","10 g"],["Chile o guindilla","1 unidad"],["Anacardos","1 cda"],["Ajo picado","1 cda"],["Aceite","1,5 cdas"],["Azúcar","½ cdita"],["Salsa de ostras","1 cda"],["Salsa de pescado","½ cda"],["Agua","¼ taza"]],
+    pasos:["Sofreír el ajo hasta que esté fragante. Añadir el pollo y saltear hasta que esté hecho.","Añadir el maíz, la cebolla, las setas y el chile. Remover bien.","Añadir agua y sazonar con azúcar, salsa de ostras y de pescado.","Incorporar los anacardos y el cebollino. Mezclar y apagar el fuego."],
+    alerg:"Frutos secos, mariscos, pescado"
+  },
+  "Pollo salteado con albahaca tailandesa": {
+    prot:0.75, tipo:"finde", cat:"asian", emoji:"🍗",
+    ing:[["Pechuga de pollo picada","80 g"],["Cebolla grande","30 g"],["Albahaca tailandesa","20 g"],["Chile fresco","2-3 unidades"],["Ajo picado","1 cda"],["Aceite","1,5 cdas"],["Agua","3 cdas"],["Salsa de ostras","1 cda"],["Salsa de pescado","½ cda"]],
+    pasos:["Sofreír el ajo y el chile fresco hasta que estén fragantes.","Añadir el pollo y saltear hasta que esté hecho.","Incorporar la albahaca y sazonar con salsa de pescado, ostras y agua. Mezclar bien.","Apagar el fuego. Servir sobre arroz con huevo frito encima."],
+    alerg:"Mariscos, pescado, huevos"
+  },
+  "Ensalada de papaya verde (Som Tam)": {
+    prot:0.25, tipo:"finde", cat:"asian", emoji:"🥗",
+    ing:[["Papaya verde rallada","100 g"],["Ajo","1-3 dientes"],["Chile fresco","1-3 unidades"],["Judías verdes largas","20 g"],["Tomate","30 g"],["Azúcar de palma","1 cdita"],["Salsa de pescado","1 cda"],["Lima","1 cda de zumo"],["Salsa de tamarindo","1 cdita"],["Cacahuetes tostados","1 cda"]],
+    pasos:["Machacar el ajo y el chile en el mortero.","Añadir las judías y machacar hasta que estén rotas.","Incorporar azúcar, salsa de pescado, zumo de lima y tamarindo. Machacar.","Añadir el tomate y la papaya. Mezclar machacando suavemente.","Coronar con los cacahuetes tostados."],
+    alerg:"Frutos secos, pescado"
+  },
+  "Cous cous de Zahra": {
+    prot:1, tipo:"finde", cat:"magreb", emoji:"🫕",
+    ing:[["Zanahoria","2 unidades"],["Calabacín","1 unidad"],["Calabaza","1 trozo"],["Nabo","1 unidad"],["Tomate","2 unidades"],["Cebolla","1 unidad"],["Carne (cordero o pollo)","al gusto"],["Cous cous","al gusto"],["Aceite, jengibre, colorante, pimienta","al gusto"],["Para la cebolla caramelizada: 2 cebollas, azúcar, pasas, canela",""]],
+    pasos:["Sofreír la carne con la cebolla, tomate y especias. Rehogar hasta que el tomate se haga.","Añadir agua y luego zanahoria y nabo. Dejar cocer.","Preparar el cous cous con un poco de aceite y sal. Poner al baño maría y añadir agua poco a poco removiendo.","Añadir calabaza y calabacín. Cuando esté todo hecho, añadir tomate natural rallado.","Para la cebolla caramelizada: sofreír 2 cebollas en juliana, añadir azúcar, pasas y canela."],
+    alerg:"Gluten"
+  },
+  "Lombarda con manzana, pasas y piñones": {
+    prot:0.25, tipo:"finde", cat:"verduras", emoji:"🥬",
+    ing:[["Lombarda","1 unidad pequeña"],["Cebolla","2 unidades"],["Manzana Gala","2 unidades"],["Vino blanco","1 vaso"],["Piñones","30 g"],["Pasas","60 g"],["Vinagre de vino","3 cdas o ½ vaso"],["Agua","1 vaso"],["Aceite, sal, pimienta","al gusto"]],
+    pasos:["Pelar cebollas, cortar en tiras finas y sofreír con aceite y sal hasta dorar. Poner las pasas a remojar en vino.","Quitar el tronco a la lombarda y cortar en tiras finas. Añadir a la olla y dar vueltas 5 min.","Añadir la manzana en dados. Salpimentar, subir fuego y añadir vinagre. Remover hasta que evapore.","Añadir agua (1 vaso), tapar y cocer 30 min a fuego lento.","Añadir pasas, vino y piñones tostados en sartén sin aceite. Cocer 5 min destapado."],
+    alerg:"Frutos secos, sulfitos"
+  },
+  "Aloo Gobi (curry de patata y coliflor)": {
+    prot:0.5, tipo:"finde", cat:"asian", emoji:"🍛",
+    ing:[["Coliflor","½ unidad"],["Patatas grandes","2 unidades"],["Tomates maduros","3 unidades"],["Cebolla grande","1 unidad"],["Ajo","2 dientes"],["Anacardos","60 g"],["Cúrcuma","1 cdita"],["Garam masala","½ cdita"],["Comino","1 cdita"],["Caldo de verduras","1 litro"],["Sal y pimienta","al gusto"]],
+    pasos:["La noche anterior dejar los anacardos en remojo.","Pelar y cortar patatas en dados. Escaldar la coliflor 5 min y reservar.","Sofreír cebolla en dados. Añadir ajo triturado y saltear 1 min.","Añadir cúrcuma, comino, garam masala y pimienta. Saltear 5 min.","Triturar los anacardos con 80 ml de agua hasta obtener una crema.","Añadir la crema a la sartén junto con los tomates. Incorporar coliflor y patatas. Cocer con el caldo 5-7 min."],
+    alerg:"Frutos secos"
+  },
+
+  // ── SOLO RECETARIO ─────────────────────────────────────────
+
+  "Habas con jamón": {
+    tipo:"recetario", cat:"verduras", emoji:"🫘",
+    ing:[["Habas","al gusto"],["Jamón serrano","al gusto"],["Ajetes tiernos","al gusto"],["Azúcar","1 cdita"],["Sal y pimienta","al gusto"]],
+    pasos:["Sofreír los ajetes con las habas.","Añadir el jamón y continuar sofriendo.","Cuando estén tiernas, añadir azúcar y pimienta.","Acompañar con huevo frito."],
+    alerg:""
+  },
+  "Pimientos del piquillo rellenos de lechuga y atún": {
+    tipo:"recetario", cat:"entrantes", emoji:"🫑",
+    ing:[["Lechuga","al gusto"],["Atún en lata","al gusto"],["Mayonesa","al gusto"],["Pimientos del piquillo","al gusto"],["Pepinillo","al gusto"]],
+    pasos:["Mezclar lechuga picada, atún, mayonesa y pepinillo troceado al gusto.","Rellenar los pimientos del piquillo con la mezcla.","Servir fríos."],
+    alerg:"Pescado, huevos"
+  },
+  "Ensalada marroquí de calabacín": {
+    tipo:"recetario", cat:"ensalada", emoji:"🥗",
+    ing:[["Calabacín","800 g"],["Ajo","2 dientes"],["Pimentón de la Vera","1 cda"],["Comino molido","½ cdita"],["Vinagre de Jerez","2 cdas"],["Aceite de oliva","4 cdas"],["Sal","al gusto"]],
+    pasos:["Cortar los calabacines sin pelar en dados de 1-2 cm. Poner en cazuela.","Añadir ajo aplastado, 2 cdas de aceite, pimentón y sal. Cubrir con agua.","Cuando hierva y quede casi sin agua, añadir vinagre y comino. Reducir del todo.","Retirar del fuego, añadir las otras 2 cdas de aceite. Dejar enfriar.","Corregir de vinagre y sal al gusto. Servir a temperatura ambiente."],
+    alerg:""
+  },
+  "Salsa boloñesa de soja": {
+    tipo:"recetario", cat:"salsas", emoji:"🫙",
+    ing:[["Soja texturizada fina","60 g"],["Tomate triturado","1 lata grande"],["Concentrado de tomate","2 cdas"],["Cebolla","1 unidad"],["Ajo","2 dientes machacados"],["Salsa de soja espesa","1 cda"],["Pimentón dulce","1 cdita"],["Orégano","1 cda"],["Tomillo","1 cdita"],["Azúcar","1 cda"],["Aceite, sal, pimienta","al gusto"]],
+    pasos:["Remojar la soja 10 min en agua con salsa de soja y pimentón. Colar y reservar.","Sofreír cebolla con los ajos machacados.","Cuando esté tierna, añadir orégano, tomillo y soja texturizada.","Añadir el tomate triturado. Cuando empiece a hervir, bajar a fuego medio.","Diluir el concentrado de tomate en 2 cdas de agua e incorporar con el azúcar.","Sazonar al gusto y cocer 20 min a fuego medio-bajo."],
+    alerg:"Gluten, soja"
+  },
+  "Ensalada de patata con hierbas frescas": {
+    tipo:"recetario", cat:"ensalada", emoji:"🥗",
+    ing:[["Patatas pequeñas o Yukon Gold","600 g"],["Mostaza de Dijon","1 cdita"],["Vinagre de vino blanco","3 cdas"],["Zumo de limón","2 cdas"],["Aceite de oliva virgen extra","¼ taza"],["Ajo","2 dientes"],["Zanahoria rallada","⅓ taza"],["Eneldo picado","¼ taza"],["Sal y pimienta","al gusto"]],
+    pasos:["Cortar las patatas a la mitad y hervir con sal 10-15 min. Escurrir.","Mezclar en un vaso el ajo picado, mostaza, vinagre, zumo de limón y aceite.","Poner las patatas en un bol. Añadir el aliño y mezclar.","Incorporar zanahoria, eneldo, sal y pimienta.","Dejar reposar en la nevera ½ hora. Si se seca, añadir aceite y vinagre."],
+    alerg:""
+  },
+  "Bolitas de calabacín al horno": {
+    tipo:"recetario", cat:"verduras", emoji:"🥬",
+    ing:[["Calabacines medianos","3 (unos 500 g)"],["Huevo","1 unidad"],["Pan rallado","100 g"],["Queso curado rallado","50 g"],["Ajo","2 dientes"],["Pimentón","1 pellizco"],["Aceite de oliva","al gusto"],["Sal y pimienta","al gusto"]],
+    pasos:["Rallar los calabacines con rallador grueso. Salar y dejar escurrir 1 hora.","Exprimir bien el calabacín para quitarle el agua.","Mezclar en un bol con huevo batido, pan rallado, queso, ajo majado, pimentón y pimienta.","Ajustar consistencia: si está muy blanda añadir pan rallado; si muy seca, un poco del líquido.","Formar bolitas y colocar en bandeja. Pintar con aceite.","Hornear a 200ºC con ventilador 20-25 min dando la vuelta a mitad."],
+    alerg:"Huevos, lácteos, gluten"
+  },
+
+  // ══════════════════════════════════════════════════════════
+  // 🥗 LAS 20 ENSALADAS (para 2 personas)
+  // tipo:"ensalada" = entran en el modo Quincena de ensaladas
+  // ══════════════════════════════════════════════════════════
+
+  "Ensalada de pollo y calabacín a la plancha": {
+    prot:1.25, tipo:"ensalada", cat:"ensalada", emoji:"🍗", alino:"Vinagreta Dijon-miel emulsionada",
+    ing:[["Pechuga de pollo","300 g"],["Calabacín","1 mediano (250 g)"],["Lechuga","150 g"],["Zanahoria coreana","150 g"],["Maíz dulce","120 g"],["Aceite de oliva","10 g"],["Sal y pimienta","al gusto"]],
+    pasos:["Cortar el pollo en tiras gruesas, salpimentar y hacer a la plancha bien caliente 3-4 min por lado. Reservar.","Cortar el calabacín en tacos de 2 cm y pasarlos por la plancha con un hilo de aceite hasta que estén dorados por fuera y tiernos dentro (6-8 min).","Poner la lechuga cortada en juliana como base.","Repartir encima el pollo, el calabacín, la zanahoria coreana y el maíz escurrido.","Aliñar con la vinagreta Dijon-miel justo antes de servir y remover."],
+    alerg:"Mostaza"
+  },
+  "Ensalada campera de atún": {
+    prot:1.25, tipo:"ensalada", cat:"ensalada", emoji:"🥔", alino:"Vinagreta de mostaza a la antigua y perejil",
+    ing:[["Patata","400 g"],["Atún en aceite","2 latas (150 g escurrido)"],["Huevo","2 unidades"],["Lechuga","100 g"],["Canónigos","60 g"],["Cebolla morada","½ unidad"],["Sal","al gusto"]],
+    pasos:["Cocer las patatas enteras con piel en agua con sal 20-25 min. Pelar en caliente y cortar en dados. Dejar templar.","Cocer los huevos 10 min, enfriar y cortar en cuartos.","Cortar la cebolla morada en pluma fina y dejarla 5 min en agua fría con un chorrito de vinagre para suavizarla. Escurrir.","Mezclar en una fuente la patata, la lechuga en juliana, los canónigos y la cebolla.","Coronar con el atún desmigado y el huevo. Aliñar con la vinagreta."],
+    alerg:"Pescado, huevos, mostaza"
+  },
+  "Ensalada de salmón y espárragos verdes": {
+    prot:1.25, tipo:"ensalada", cat:"ensalada", emoji:"🐟", alino:"Vinagreta de eneldo y mostaza",
+    ing:[["Salmón fresco","300 g"],["Espárragos verdes","250 g"],["Espinacas baby","120 g"],["Almendras","30 g"],["Cebolla morada","½ unidad"],["Aceite de oliva","10 g"],["Sal y pimienta","al gusto"]],
+    pasos:["Salpimentar el salmón y hacerlo a la plancha 3 min por el lado de la piel y 2 min por el otro. Dejar templar y desmigar en lascas gruesas.","Cortar la parte dura de los espárragos. Saltearlos en la misma sartén 4-5 min, que queden al dente y con marca.","Tostar las almendras en seco 2 min y picarlas gruesas.","Montar sobre una base de espinacas: espárragos, salmón en lascas, cebolla morada en pluma fina y almendras.","Aliñar con la vinagreta de eneldo."],
+    alerg:"Pescado, frutos secos, mostaza"
+  },
+  "Ensalada de garbanzos y tomate seco": {
+    prot:0.5, tipo:"ensalada", cat:"ensalada", emoji:"🫘", alino:"Vinagreta de ajo asado",
+    ing:[["Garbanzos cocidos","400 g"],["Tomate seco en aceite","50 g"],["Pimiento rojo","1 unidad"],["Cebolla morada","½ unidad"],["Espinacas baby","80 g"],["Aceite de oliva","5 g"]],
+    pasos:["Asar el pimiento rojo entero al horno a 200ºC unos 35 min, dándole la vuelta a mitad. Tapar 10 min, pelar y cortar en tiras.","Escurrir los garbanzos y pasarlos por agua fría. Secarlos bien con un paño (así absorben mejor el aliño).","Picar el tomate seco en tiras finas y la cebolla morada muy fina.","Mezclar todo con las espinacas y el pimiento asado.","Aliñar con la vinagreta de ajo asado y dejar reposar 10 min antes de servir."],
+    alerg:""
+  },
+  "Cuscús mediterráneo con calabacín": {
+    prot:0.5, tipo:"ensalada", cat:"ensalada", emoji:"🌾", alino:"Vinagreta de limón y hierbas",
+    ing:[["Cuscús","120 g"],["Caldo de verduras o agua","130 ml"],["Calabacín","1 mediano"],["Pimiento rojo","½ unidad"],["Pimiento verde","½ unidad"],["Guisantes","100 g"],["Almendras","30 g"],["Aceite de oliva","10 g"],["Sal","al gusto"]],
+    pasos:["Hervir el caldo, verterlo sobre el cuscús, tapar y dejar 5 min. Soltar los granos con un tenedor y un hilo de aceite. Dejar enfriar.","Cortar el calabacín y los pimientos en dados pequeños. Saltear a fuego fuerte 6-8 min con un poco de aceite y sal.","Cocer los guisantes 4 min en agua hirviendo con sal y enfriarlos en agua con hielo para que queden verdes.","Tostar las almendras y picarlas.","Mezclar el cuscús con las verduras, los guisantes y las almendras. Aliñar con la vinagreta de limón."],
+    alerg:"Gluten, frutos secos"
+  },
+  "Cuscús moruno de zanahoria y melocotón": {
+    prot:0.75, tipo:"ensalada", cat:"ensalada", emoji:"🥕", alino:"Salsa de yogur, limón y comino",
+    ing:[["Cuscús","120 g"],["Caldo de verduras o agua","130 ml"],["Zanahoria marroquí","200 g"],["Garbanzos cocidos","250 g"],["Melocotón","1 unidad"],["Almendras","30 g"],["Cilantro o perejil fresco","al gusto"]],
+    pasos:["Hidratar el cuscús con el caldo hirviendo 5 min, tapado. Soltar con un tenedor y enfriar.","Escurrir los garbanzos y secarlos.","Cortar el melocotón en gajos finos (que no esté demasiado maduro, tiene que aguantar).","Mezclar el cuscús con los garbanzos, la zanahoria marroquí, el melocotón y las almendras tostadas.","Aliñar con la salsa de yogur al comino y terminar con cilantro fresco picado."],
+    alerg:"Gluten, frutos secos, lácteos"
+  },
+  "Coleslaw de lombarda y piña con pollo": {
+    prot:1.25, tipo:"ensalada", cat:"ensalada", emoji:"🥬", alino:"Vinagreta de piña y jengibre",
+    ing:[["Lombarda","200 g"],["Col blanca","200 g"],["Zanahoria","200 g"],["Pechuga de pollo","250 g"],["Piña natural","200 g"],["Almendras","30 g"],["Sal","al gusto"]],
+    pasos:["Cortar la lombarda y la col en juliana muy fina (mandolina si tienes). Salarlas ligeramente y dejarlas 15 min en un colador para que suelten agua. Secar.","Rallar la zanahoria en tiras largas.","Hacer el pollo a la plancha salpimentado y cortarlo en tiras al hilo.","Cortar la piña en dados pequeños.","Mezclar todo en un bol grande, aliñar con la vinagreta de piña y jengibre y dejar reposar 15 min en la nevera. Terminar con las almendras tostadas."],
+    alerg:"Frutos secos"
+  },
+  "Ensalada de jamón y melocotón": {
+    prot:0.75, tipo:"ensalada", cat:"ensalada", emoji:"🍑", alino:"Vinagreta de miel y Jerez",
+    ing:[["Taquitos de jamón serrano","120 g"],["Melocotón","2 unidades"],["Canónigos","120 g"],["Almendras","30 g"],["Cebolla morada","½ unidad"],["Aceite de oliva","5 g"]],
+    pasos:["Saltear los taquitos de jamón en una sartén sin aceite 2-3 min hasta que estén crujientes. Escurrir sobre papel.","Cortar el melocotón en gajos y marcarlos 1 min por lado en la misma sartén (el azúcar caramelizado es lo que hace esta ensalada).","Cortar la cebolla morada en pluma muy fina.","Montar sobre los canónigos: melocotón, jamón crujiente, cebolla y almendras tostadas.","Aliñar con la vinagreta de miel y Jerez, en poca cantidad."],
+    alerg:"Frutos secos, sulfitos"
+  },
+  "Ensalada tropical de pollo y piña": {
+    prot:1.25, tipo:"ensalada", cat:"ensalada", emoji:"🍍", alino:"Salsa de yogur, lima y cilantro",
+    ing:[["Pechuga de pollo","300 g"],["Piña natural","250 g"],["Maíz dulce","120 g"],["Lechuga","150 g"],["Zanahoria","100 g"],["Aceite de oliva","10 g"],["Sal y pimienta","al gusto"]],
+    pasos:["Cortar el pollo en dados, salpimentar y saltear a fuego fuerte hasta que esté dorado.","Cortar la piña en dados y marcarla en la sartén 2 min (opcional pero recomendable).","Rallar la zanahoria en tiras y cortar la lechuga en juliana.","Mezclar todo con el maíz escurrido.","Aliñar con la salsa de yogur, lima y cilantro."],
+    alerg:"Lácteos"
+  },
+  "Ensalada de champiñones salteados, espinacas y jamón": {
+    prot:1.25, tipo:"ensalada", cat:"ensalada", emoji:"🍄", alino:"Vinagreta templada de ajo y Jerez",
+    ing:[["Champiñones","300 g"],["Espinacas baby","120 g"],["Taquitos de jamón serrano","100 g"],["Huevo","2 unidades"],["Ajo","2 dientes"],["Aceite de oliva","10 g"],["Sal y pimienta","al gusto"]],
+    pasos:["Cocer los huevos 10 min, enfriar y cortar en cuartos.","Laminar los champiñones. Saltearlos a fuego MUY fuerte y sin sal hasta que se doren (si los sales antes, sueltan agua y se cuecen). Salar al final.","En la misma sartén dorar el ajo laminado y los taquitos de jamón 2 min.","Poner las espinacas en la fuente y volcar encima los champiñones y el jamón aún calientes: las espinacas se atemperan un poco y quedan perfectas.","Añadir el huevo duro y aliñar con la vinagreta templada."],
+    alerg:"Huevos, sulfitos"
+  },
+  "Ensalada de patata, judías verdes y salmón": {
+    prot:1.5, tipo:"ensalada", cat:"ensalada", emoji:"🥔", alino:"Vinagreta de alcaparras y perejil",
+    ing:[["Salmón fresco","300 g"],["Patata","350 g"],["Judías verdes","250 g"],["Huevo","2 unidades"],["Cebolla morada","½ unidad"],["Aceite de oliva","10 g"],["Sal","al gusto"]],
+    pasos:["Cocer las patatas con piel 20 min. Pelar y cortar en rodajas gruesas.","Cocer las judías verdes despuntadas 6-8 min en agua con sal y enfriarlas de golpe en agua con hielo (así quedan verdes y crujientes).","Cocer los huevos 10 min.","Hacer el salmón a la plancha y desmigarlo en lascas.","Montar la fuente en capas: patata, judías, salmón, huevo en cuartos y cebolla morada muy fina. Aliñar con la vinagreta de alcaparras."],
+    alerg:"Pescado, huevos"
+  },
+  "Ensalada rusa ligera de atún": {
+    prot:1.25, tipo:"ensalada", cat:"ensalada", emoji:"🥣", alino:"Mayonesa ligera de yogur y mostaza",
+    ing:[["Patata","300 g"],["Zanahoria","200 g"],["Guisantes","150 g"],["Maíz dulce","100 g"],["Huevo","2 unidades"],["Atún en aceite","2 latas (150 g escurrido)"],["Sal","al gusto"]],
+    pasos:["Cocer juntas la patata y la zanahoria peladas y en dados, 12-15 min hasta que estén tiernas pero enteras. Escurrir bien y dejar enfriar del todo.","Cocer los guisantes 4 min y enfriarlos en agua con hielo.","Cocer los huevos 10 min y picarlos.","Mezclar todo con el maíz y el atún desmigado.","Añadir la mayonesa ligera de yogur y mezclar con cuidado para no romper las verduras. Enfriar 1 h en la nevera."],
+    alerg:"Pescado, huevos, lácteos, mostaza"
+  },
+  "Ensalada de espinacas, melocotón y salmón": {
+    prot:1.25, tipo:"ensalada", cat:"ensalada", emoji:"🌿", alino:"Vinagreta agridulce de melocotón",
+    ing:[["Salmón fresco","300 g"],["Espinacas baby","150 g"],["Melocotón","1 unidad"],["Cebolla morada","½ unidad"],["Almendras","30 g"],["Aceite de oliva","10 g"],["Sal y pimienta","al gusto"]],
+    pasos:["Hacer el salmón a la plancha, dejarlo templar y desmigarlo en lascas grandes.","Cortar el melocotón en gajos finos.","Laminar la cebolla morada muy fina.","Montar sobre las espinacas: salmón, melocotón, cebolla y almendras tostadas.","Aliñar con la vinagreta agridulce de melocotón."],
+    alerg:"Pescado, frutos secos"
+  },
+  "Ensalada de espárragos verdes y huevo duro": {
+    prot:0.75, tipo:"ensalada", cat:"ensalada", emoji:"🥚", alino:"Ajoblanco corto (salsa de almendra y ajo)",
+    ing:[["Espárragos verdes","350 g"],["Huevo","3 unidades"],["Canónigos","100 g"],["Cebolla morada","½ unidad"],["Almendras","20 g"],["Aceite de oliva","10 g"],["Sal","al gusto"]],
+    pasos:["Cocer los huevos 10 min, enfriar y pelar. Reservar.","Cortar la parte leñosa de los espárragos. Marcarlos en la plancha con aceite y sal 5-6 min, que queden al dente.","Extender el ajoblanco en el fondo de la fuente como una crema (el aliño va DEBAJO, no encima: es lo que hace que el plato funcione).","Colocar encima los espárragos, los canónigos y el huevo partido por la mitad.","Terminar con cebolla morada muy fina, almendras picadas y un hilo de aceite."],
+    alerg:"Huevos, frutos secos"
+  },
+  "Ensalada de garbanzos, espinacas y champiñones al ajillo": {
+    prot:0.75, tipo:"ensalada", cat:"ensalada", emoji:"🧄", alino:"Salsa de almendra tostada",
+    ing:[["Garbanzos cocidos","400 g"],["Champiñones","250 g"],["Espinacas baby","120 g"],["Ajo","3 dientes"],["Aceite de oliva","15 g"],["Pimentón dulce","1 pellizco"],["Sal","al gusto"]],
+    pasos:["Escurrir los garbanzos y secarlos bien.","Laminar los champiñones y saltearlos a fuego muy fuerte sin sal hasta dorar. Salar al final y reservar.","En la misma sartén, dorar el ajo laminado en el aceite. Fuera del fuego añadir el pimentón (que no se queme).","Volcar los garbanzos en la sartén y saltearlos 2 min con el ajo para que cojan sabor.","Mezclar en caliente con las espinacas y los champiñones. Servir sobre la salsa de almendra tostada."],
+    alerg:"Frutos secos"
+  },
+  "Ensalada de pasta vegetal con atún": {
+    prot:1.25, tipo:"ensalada", cat:"ensalada", emoji:"🍝", alino:"Pesto rojo de tomate seco y almendra",
+    ing:[["Pasta vegetal","180 g en seco"],["Atún en aceite","2 latas (150 g escurrido)"],["Maíz dulce","120 g"],["Tomate seco en aceite","40 g"],["Pimiento rojo","1 unidad"],["Sal","al gusto"]],
+    pasos:["Cocer la pasta en abundante agua con sal, 1 min MENOS de lo que diga el paquete (en frío la pasta se endurece, así queda perfecta).","Escurrir y enfriar bajo el grifo. Escurrir muy bien y mezclar con un hilo de aceite para que no se apelmace.","Cortar el pimiento rojo en dados pequeños y el tomate seco en tiras.","Mezclar la pasta con el atún desmigado, el maíz, el pimiento y el tomate seco.","Añadir el pesto rojo y remover bien. Mejor si reposa 30 min."],
+    alerg:"Pescado, gluten, frutos secos"
+  },
+  "Ensalada de judías verdes y patata con huevo": {
+    prot:0.5, tipo:"ensalada", cat:"ensalada", emoji:"🫛", alino:"Salsa tonnata (sin anchoa)",
+    ing:[["Judías verdes","350 g"],["Patata","350 g"],["Huevo","3 unidades"],["Cebolla","½ unidad"],["Pimiento verde","½ unidad"],["Aceite de oliva","10 g"],["Sal","al gusto"]],
+    pasos:["Cocer las patatas peladas y en dados 12-15 min. Escurrir y dejar enfriar.","Cocer las judías despuntadas 6-8 min y enfriarlas de golpe en agua con hielo.","Cocer los huevos 10 min y cortar en cuartos.","Picar la cebolla y el pimiento verde muy finos.","Mezclar todo en una fuente y cubrir con la salsa tonnata. Un hilo de aceite por encima."],
+    alerg:"Huevos, pescado, mostaza"
+  },
+  "Ensalada de pimientos asados y garbanzos": {
+    prot:0.5, tipo:"ensalada", cat:"ensalada", emoji:"🫑", alino:"Vinagreta de comino y pimentón",
+    ing:[["Pimiento rojo","2 unidades"],["Pimiento verde","1 unidad"],["Garbanzos cocidos","400 g"],["Tomate seco en aceite","40 g"],["Cebolla","1 unidad"],["Ajo","2 dientes"],["Aceite de oliva","15 g"],["Sal","al gusto"]],
+    pasos:["Asar los pimientos y la cebolla enteros al horno a 200ºC unos 40 min, dando la vuelta a mitad.","Sacar, tapar con papel de aluminio 10 min (el vapor hace que se pelen solos) y pelar. Cortar en tiras y guardar el jugo que sueltan.","Escurrir y secar los garbanzos.","Mezclar los pimientos, la cebolla asada, los garbanzos, el tomate seco en tiras y el ajo muy picado.","Aliñar con la vinagreta de comino y pimentón + el jugo del asado. Reposar 30 min: gana muchísimo."],
+    alerg:""
+  },
+  "Ensalada de pasta vegetal con pollo y champiñones": {
+    prot:1.5, tipo:"ensalada", cat:"ensalada", emoji:"🍗", alino:"Salsa cremosa de mostaza y estragón",
+    ing:[["Pasta vegetal","180 g en seco"],["Pechuga de pollo","250 g"],["Champiñones","200 g"],["Guisantes","120 g"],["Pimiento rojo","½ unidad"],["Aceite de oliva","10 g"],["Sal y pimienta","al gusto"]],
+    pasos:["Cocer la pasta 1 min menos que el paquete. Escurrir, enfriar y engrasar con un hilo de aceite.","Saltear el pollo en dados salpimentado hasta dorar. Reservar.","Saltear los champiñones laminados a fuego fuerte sin sal hasta dorar.","Cocer los guisantes 4 min y enfriarlos en agua con hielo.","Mezclar todo con el pimiento en dados y la salsa cremosa de mostaza y estragón."],
+    alerg:"Gluten, lácteos, mostaza"
+  },
+  "Ensalada de col, zanahoria coreana y salmón": {
+    prot:1, tipo:"ensalada", cat:"ensalada", emoji:"🥢", alino:"Vinagreta de sésamo y soja",
+    ing:[["Col blanca","250 g"],["Zanahoria coreana","150 g"],["Salmón fresco","250 g"],["Canónigos","80 g"],["Almendras","30 g"],["Cebolleta","1 unidad"],["Sal","al gusto"]],
+    pasos:["Cortar la col en juliana muy fina. Salarla ligeramente y dejarla 15 min en un colador. Secar bien.","Hacer el salmón a la plancha, dejar templar y desmigar en lascas.","Mezclar la col con la zanahoria coreana y los canónigos.","Añadir el salmón por encima, la cebolleta en aros finos y las almendras tostadas.","Aliñar con la vinagreta de sésamo y soja."],
+    alerg:"Pescado, frutos secos, sésamo, soja, gluten"
+  },
+
+  // ══════════════════════════════════════════════════════════
+  // 🥕 BASES Y ENCURTIDOS (se preparan una vez, duran días)
+  // ══════════════════════════════════════════════════════════
+
+  "Zanahoria coreana": {
+    tipo:"recetario", cat:"bases", emoji:"🥕",
+    ing:[["Zanahoria","1 kg"],["Sal","1 cucharada"],["Azúcar","1 cucharada"],["Vinagre blanco","3-5 cucharadas"],["Cebolla","2-3 medianas"],["Aceite de girasol (sin olor)","4-5 cucharadas"],["Guindilla o pimiento rojo picante","1 unidad"],["Ajo","3-4 dientes"],["Cilantro molido","1 cucharadita"],["Pimienta negra molida","un poco"],["Cilantro fresco","opcional"]],
+    pasos:["Cortar el kilo de zanahoria en tiras largas y finas (rallador coreano o mandolina).","Añadir 1 cucharada de sal y 1 de azúcar. Masajear con las manos para que suelte el jugo.","Añadir 3-5 cucharadas de vinagre blanco y mezclar.","Picar 2-3 cebollas medianas muy finas y sofreírlas en aceite sin olor hasta que estén blandas.","Añadir la guindilla picada a la cebolla y freír 1 minuto más.","Volcar el sofrito CALIENTE sobre la zanahoria (el aceite caliente es lo que 'cocina' la zanahoria y da el sabor).","Añadir 3-4 dientes de ajo prensados, 1 cucharadita de cilantro molido y un poco de pimienta negra.","Rectificar de sal, azúcar y vinagre al gusto. Añadir cilantro fresco picado si se quiere.","Compactar en un tarro de cristal y dejar reposar unas horas (mejor de un día para otro). Aguanta 1 semana en la nevera."],
+    alerg:""
+  },
+  "Zanahoria marroquí": {
+    tipo:"recetario", cat:"bases", emoji:"🥕",
+    ing:[["Zanahoria","600 g"],["Ajo","3 dientes"],["Comino molido","1 cucharadita"],["Pimentón dulce","1 cucharadita"],["Guindilla o pimentón picante","1 pellizco"],["Zumo de limón","1 limón"],["Aceite de oliva virgen extra","4 cucharadas"],["Cilantro fresco","1 manojo"],["Perejil fresco","unas ramas"],["Sal","al gusto"]],
+    pasos:["Pelar las zanahorias y cortarlas en rodajas gruesas al bies.","Cocerlas en agua con sal 8-10 min: tienen que quedar AL DENTE, no blandas. Escurrir bien.","Machacar el ajo en el mortero con un poco de sal hasta hacer una pasta.","Mezclar el ajo con el comino, el pimentón, la guindilla, el zumo de limón y el aceite.","Volcar el aliño sobre las zanahorias aún templadas (absorben mucho mejor en caliente) y remover.","Añadir el cilantro y el perejil picados generosamente.","Dejar reposar mínimo 2 horas en la nevera. Aguanta 4-5 días y mejora cada día."],
+    alerg:""
+  },
+
+  // ══════════════════════════════════════════════════════════
+  // 🫙 LOS 20 ALIÑOS (cantidades para 2 raciones de ensalada)
+  // ══════════════════════════════════════════════════════════
+
+  "Vinagreta Dijon-miel emulsionada": {
+    tipo:"recetario", cat:"salsas", emoji:"🫙",
+    ing:[["Mostaza de Dijon","1 cucharada"],["Miel","1 cucharadita"],["Vinagre de manzana","1 cucharada"],["Aceite de oliva virgen extra","3 cucharadas"],["Chalota o cebolla morada","1 cucharadita picada"],["Sal y pimienta","al gusto"]],
+    pasos:["Poner en un tarro con tapa la mostaza, la miel, el vinagre, la chalota picadísima, sal y pimienta.","Cerrar y agitar 10 segundos.","Añadir el aceite y volver a agitar 20 segundos con fuerza: la mostaza actúa de emulsionante y la salsa queda cremosa, no separada.","Si queda muy espesa, un chorrito de agua fría."],
+    alerg:"Mostaza"
+  },
+  "Vinagreta de mostaza a la antigua y perejil": {
+    tipo:"recetario", cat:"salsas", emoji:"🫙",
+    ing:[["Mostaza a la antigua (en grano)","1 cucharada"],["Vinagre de vino blanco","1 cucharada"],["Aceite de oliva virgen extra","3 cucharadas"],["Perejil fresco","2 cucharadas picado"],["Ajo","½ diente"],["Sal y pimienta","al gusto"]],
+    pasos:["Majar el medio diente de ajo con sal en el mortero.","Añadir la mostaza en grano y el vinagre, mezclar.","Incorporar el aceite en hilo mientras se remueve.","Terminar con el perejil picado muy fino y pimienta."],
+    alerg:"Mostaza"
+  },
+  "Vinagreta de eneldo y mostaza": {
+    tipo:"recetario", cat:"salsas", emoji:"🫙",
+    ing:[["Mostaza de Dijon","2 cucharaditas"],["Eneldo fresco","2 cucharadas picado"],["Zumo de limón","1 cucharada"],["Miel","½ cucharadita"],["Aceite de oliva virgen extra","3 cucharadas"],["Sal y pimienta","al gusto"]],
+    pasos:["Mezclar la mostaza, el limón, la miel, sal y pimienta.","Añadir el aceite poco a poco batiendo con un tenedor hasta que ligue.","Incorporar el eneldo picado al final para que no se oxide.","Es la salsa clásica del salmón nórdico: dulce, ácida y herbácea a la vez."],
+    alerg:"Mostaza"
+  },
+  "Vinagreta de ajo asado": {
+    tipo:"recetario", cat:"salsas", emoji:"🫙",
+    ing:[["Ajo","1 cabeza entera"],["Vinagre de Jerez","1 cucharada"],["Aceite de oliva virgen extra","4 cucharadas"],["Tomillo","1 pellizco"],["Sal y pimienta","al gusto"]],
+    pasos:["Cortar la punta de la cabeza de ajos, regarla con aceite y sal, envolver en papel de aluminio.","Hornear a 190ºC durante 40 min. Sale un ajo dulce, cremoso y sin nada de picor.","Exprimir los dientes asados (salen solos) y machacarlos hasta hacer una pasta.","Mezclar con el vinagre, el tomillo y el aceite. Batir hasta que ligue.","Guarda en la nevera hasta 1 semana. Merece la pena asar dos cabezas de una vez."],
+    alerg:"Sulfitos"
+  },
+  "Vinagreta de limón y hierbas": {
+    tipo:"recetario", cat:"salsas", emoji:"🫙",
+    ing:[["Zumo de limón","2 cucharadas"],["Ralladura de limón","½ limón"],["Aceite de oliva virgen extra","4 cucharadas"],["Perejil y menta frescos","3 cucharadas picados"],["Ajo","½ diente"],["Sal y pimienta","al gusto"]],
+    pasos:["Rallar la piel del limón (solo la parte amarilla, la blanca amarga).","Mezclar la ralladura con el zumo, el ajo rallado, sal y pimienta.","Añadir el aceite batiendo.","Incorporar las hierbas picadas justo antes de aliñar."],
+    alerg:""
+  },
+  "Salsa de yogur, limón y comino": {
+    tipo:"recetario", cat:"salsas", emoji:"🥣",
+    ing:[["Yogur natural griego","150 g"],["Zumo de limón","1 cucharada"],["Comino molido","1 cucharadita"],["Ajo","1 diente"],["Aceite de oliva virgen extra","1 cucharada"],["Cilantro fresco","2 cucharadas picado"],["Sal","al gusto"]],
+    pasos:["Tostar el comino en una sartén seca 30 segundos: cambia por completo, se vuelve mucho más aromático.","Mezclar el yogur con el comino, el ajo rallado, el limón, sal y el aceite.","Añadir el cilantro picado.","Dejar reposar 10 min para que el ajo se integre."],
+    alerg:"Lácteos"
+  },
+  "Vinagreta de piña y jengibre": {
+    tipo:"recetario", cat:"salsas", emoji:"🍍",
+    ing:[["Zumo de piña natural","4 cucharadas"],["Jengibre fresco rallado","1 cucharadita"],["Vinagre de manzana","1 cucharada"],["Aceite de oliva suave","3 cucharadas"],["Mostaza de Dijon","½ cucharadita"],["Sal","al gusto"]],
+    pasos:["Triturar unos trozos de piña y colar para sacar el zumo (o usar zumo natural).","Reducir el zumo en un cazo a fuego medio hasta que quede a la mitad y se vuelva almibarado (3-4 min). Enfriar.","Mezclar con el jengibre rallado, el vinagre, la mostaza y la sal.","Emulsionar con el aceite batiendo."],
+    alerg:"Mostaza"
+  },
+  "Vinagreta de miel y Jerez": {
+    tipo:"recetario", cat:"salsas", emoji:"🍯",
+    ing:[["Vinagre de Jerez","1 cucharada"],["Miel","1 cucharadita"],["Aceite de oliva virgen extra","3 cucharadas"],["Mostaza de Dijon","½ cucharadita"],["Sal y pimienta","al gusto"]],
+    pasos:["Deshacer la miel en el vinagre de Jerez (si está muy espesa, templar 10 segundos).","Añadir la mostaza, sal y pimienta.","Emulsionar con el aceite batiendo enérgicamente.","El Jerez es clave aquí: tiene más profundidad que el vinagre de vino y aguanta el dulzor de la fruta."],
+    alerg:"Mostaza, sulfitos"
+  },
+  "Salsa de yogur, lima y cilantro": {
+    tipo:"recetario", cat:"salsas", emoji:"🥣",
+    ing:[["Yogur natural griego","150 g"],["Zumo de lima","1 unidad"],["Cilantro fresco","1 manojo pequeño"],["Ajo","½ diente"],["Miel","½ cucharadita"],["Aceite de oliva","1 cucharada"],["Sal","al gusto"]],
+    pasos:["Triturar el cilantro con el aceite, el ajo y el zumo de lima hasta obtener una pasta verde.","Mezclar con el yogur y la miel.","Salar y dejar reposar 15 min en la nevera.","Queda de un verde precioso y funciona con cualquier ensalada con fruta."],
+    alerg:"Lácteos"
+  },
+  "Vinagreta templada de ajo y Jerez": {
+    tipo:"recetario", cat:"salsas", emoji:"🧄",
+    ing:[["Ajo","3 dientes"],["Aceite de oliva virgen extra","4 cucharadas"],["Vinagre de Jerez","1 cucharada"],["Pimentón dulce","½ cucharadita"],["Sal","al gusto"]],
+    pasos:["Laminar los ajos y dorarlos lentamente en el aceite a fuego suave hasta que estén dorados (no negros: amargarían).","Retirar del fuego. Esperar 20 segundos y añadir el pimentón removiendo (si está muy caliente se quema).","Añadir el vinagre: chisporroteará. Remover y salar.","Verter templada sobre la ensalada. El calor hace que las hojas se atemperen y absorban la salsa."],
+    alerg:"Sulfitos"
+  },
+  "Vinagreta de alcaparras y perejil": {
+    tipo:"recetario", cat:"salsas", emoji:"🫒",
+    ing:[["Alcaparras","2 cucharadas"],["Perejil fresco","3 cucharadas picado"],["Chalota o cebolla morada","1 cucharada picada"],["Vinagre de vino blanco","1 cucharada"],["Mostaza de Dijon","½ cucharadita"],["Aceite de oliva virgen extra","4 cucharadas"],["Sal y pimienta","al gusto"]],
+    pasos:["Enjuagar las alcaparras bajo el grifo para quitarles el exceso de sal y picarlas.","Mezclar con la chalota picada, el vinagre y la mostaza. Dejar 5 min.","Añadir el aceite batiendo y el perejil.","Rectificar de sal con cuidado: las alcaparras ya salan."],
+    alerg:"Mostaza"
+  },
+  "Mayonesa ligera de yogur y mostaza": {
+    tipo:"recetario", cat:"salsas", emoji:"🥣",
+    ing:[["Yogur natural griego","150 g"],["Mostaza de Dijon","1 cucharadita"],["Zumo de limón","1 cucharada"],["Aceite de oliva suave","2 cucharadas"],["Cebollino o eneldo","1 cucharada picado"],["Sal y pimienta","al gusto"]],
+    pasos:["Batir el yogur con la mostaza, el limón, sal y pimienta.","Incorporar el aceite en hilo mientras se bate: coge cuerpo de mayonesa sin llevar huevo.","Añadir el cebollino picado.","Mucho más ligera que la mayonesa clásica y con más chispa por la mostaza."],
+    alerg:"Lácteos, mostaza"
+  },
+  "Vinagreta agridulce de melocotón": {
+    tipo:"recetario", cat:"salsas", emoji:"🍑",
+    ing:[["Melocotón maduro","½ unidad"],["Vinagre de Jerez","1 cucharada"],["Miel","½ cucharadita"],["Aceite de oliva virgen extra","3 cucharadas"],["Mostaza de Dijon","½ cucharadita"],["Sal y pimienta","al gusto"]],
+    pasos:["Triturar el medio melocotón pelado con el vinagre y la mostaza hasta obtener un puré fino.","Añadir la miel, sal y pimienta.","Emulsionar con el aceite batiendo.","Debe quedar espesa como una crema ligera. Si no, un poco más de aceite."],
+    alerg:"Mostaza, sulfitos"
+  },
+  "Ajoblanco corto (salsa de almendra y ajo)": {
+    tipo:"recetario", cat:"salsas", emoji:"🥛",
+    ing:[["Almendra cruda pelada","80 g"],["Ajo","1 diente pequeño"],["Vinagre de vino blanco","1 cucharada"],["Aceite de oliva virgen extra","4 cucharadas"],["Agua muy fría","4-6 cucharadas"],["Sal","al gusto"]],
+    pasos:["Dejar las almendras en remojo en agua fría 4 horas (o hervirlas 5 min si tienes prisa).","Triturar las almendras escurridas con el ajo, la sal y un poco de agua hasta hacer una pasta fina.","Con la batidora en marcha, añadir el aceite en hilo: emulsiona y se vuelve blanca y cremosa.","Añadir el vinagre y agua fría poco a poco hasta lograr textura de crema espesa (tipo hummus líquido), no de sopa.","Se extiende en el fondo del plato y la ensalada se monta encima."],
+    alerg:"Frutos secos"
+  },
+  "Salsa de almendra tostada": {
+    tipo:"recetario", cat:"salsas", emoji:"🌰",
+    ing:[["Almendra tostada","60 g"],["Pimiento rojo asado","½ unidad"],["Ajo","1 diente"],["Vinagre de Jerez","1 cucharada"],["Pimentón dulce","½ cucharadita"],["Aceite de oliva virgen extra","4 cucharadas"],["Sal","al gusto"]],
+    pasos:["Tostar las almendras en el horno a 170ºC unos 8 min (o en sartén seca), hasta que huelan.","Triturarlas con el pimiento asado, el ajo, el pimentón y el vinagre.","Añadir el aceite en hilo con la batidora en marcha hasta obtener una salsa espesa.","Es un romesco corto: da un sabor tostado y profundo que levanta cualquier ensalada de legumbre."],
+    alerg:"Frutos secos, sulfitos"
+  },
+  "Pesto rojo de tomate seco y almendra": {
+    tipo:"recetario", cat:"salsas", emoji:"🔴",
+    ing:[["Tomate seco en aceite","60 g"],["Almendra tostada","40 g"],["Ajo","1 diente"],["Albahaca fresca","unas hojas"],["Aceite de oliva virgen extra","4 cucharadas"],["Vinagre de vino blanco","1 cucharadita"],["Pimienta","al gusto"]],
+    pasos:["Escurrir el tomate seco (reservar un poco de su aceite, que tiene mucho sabor).","Triturar el tomate con las almendras, el ajo y la albahaca.","Añadir el aceite (el de oliva + un poco del aceite del tomate) hasta obtener una pasta.","Ajustar con el vinagre y pimienta. No suele hacer falta sal: el tomate seco ya la lleva.","Aguanta 1 semana en la nevera cubierto de aceite."],
+    alerg:"Frutos secos"
+  },
+  "Salsa tonnata (sin anchoa)": {
+    tipo:"recetario", cat:"salsas", emoji:"🐟",
+    ing:[["Atún en aceite","1 lata (80 g escurrido)"],["Yogur natural griego","100 g"],["Alcaparras","1 cucharada"],["Mostaza de Dijon","1 cucharadita"],["Zumo de limón","1 cucharada"],["Aceite de oliva virgen extra","2 cucharadas"],["Pimienta","al gusto"]],
+    pasos:["Triturar el atún escurrido con el yogur, la mostaza, las alcaparras enjuagadas y el limón.","Añadir el aceite en hilo hasta que quede una crema fina y sedosa.","Rectificar de pimienta. Sal, probablemente no haga falta.","Es la tonnata italiana pero sin anchoa y aligerada con yogur: sabe a mar sin ser salada."],
+    alerg:"Pescado, lácteos, mostaza"
+  },
+  "Vinagreta de comino y pimentón": {
+    tipo:"recetario", cat:"salsas", emoji:"🌶️",
+    ing:[["Comino molido","1 cucharadita"],["Pimentón de la Vera","1 cucharadita"],["Ajo","1 diente"],["Vinagre de Jerez","1 cucharada"],["Aceite de oliva virgen extra","4 cucharadas"],["Sal","al gusto"]],
+    pasos:["Tostar el comino en sartén seca 30 segundos hasta que huela.","Majar el ajo con sal en el mortero. Añadir el comino y el pimentón.","Incorporar el vinagre y remover.","Añadir el aceite poco a poco majando hasta que quede ligada.","El pimentón de la Vera (ahumado) es lo que la diferencia de una vinagreta normal."],
+    alerg:"Sulfitos"
+  },
+  "Salsa cremosa de mostaza y estragón": {
+    tipo:"recetario", cat:"salsas", emoji:"🌿",
+    ing:[["Yogur natural griego","120 g"],["Mostaza de Dijon","1 cucharada"],["Estragón fresco o seco","1 cucharada"],["Zumo de limón","1 cucharada"],["Miel","½ cucharadita"],["Aceite de oliva","1 cucharada"],["Sal y pimienta","al gusto"]],
+    pasos:["Mezclar el yogur con la mostaza, el limón y la miel.","Añadir el estragón picado (si es seco, frotarlo entre los dedos para que suelte aroma).","Emulsionar con el aceite.","Dejar reposar 15 min: el estragón necesita tiempo para soltar su sabor anisado."],
+    alerg:"Lácteos, mostaza"
+  },
+  "Vinagreta de sésamo y soja": {
+    tipo:"recetario", cat:"salsas", emoji:"🥢",
+    ing:[["Salsa de soja","1 cucharada"],["Aceite de sésamo tostado","1 cucharadita"],["Vinagre de arroz o de manzana","1 cucharada"],["Miel","1 cucharadita"],["Jengibre fresco rallado","1 cucharadita"],["Ajo","½ diente"],["Aceite de girasol","2 cucharadas"],["Sésamo tostado","1 cucharada"]],
+    pasos:["Mezclar la soja, el vinagre, la miel, el jengibre y el ajo rallados.","Añadir el aceite de sésamo (poquito: es muy potente) y el de girasol. Batir.","Terminar con las semillas de sésamo tostadas.","No lleva sal: la soja ya sala de sobra."],
+    alerg:"Soja, gluten, sésamo"
+  }
+,
+
+  // ══════════════════════════════════════════════════════════
+  // 🫘 ENSALADAS DE LEGUMBRE (agosto 2026)
+  // Añadidas para subir la legumbre a 4-5 veces por semana: la fibra
+  // soluble de la legumbre es de las palancas que más bajan el LDL.
+  // Todas para 2 personas, como el resto de ensaladas.
+  // ══════════════════════════════════════════════════════════
+
+  "Ensalada de lentejas pardinas y cebolla morada": {
+    prot:0.75, tipo:"ensalada", cat:"ensalada", emoji:"🫘", alino:"Vinagreta de mostaza a la antigua y perejil",
+    ing:[["Lentejas pardinas cocidas","400 g"],["Cebolla morada","1 unidad"],["Pimiento verde italiano","1 unidad"],["Zanahoria","1 unidad"],["Canónigos","80 g"],["Nueces","30 g"],["Sal y pimienta","al gusto"]],
+    pasos:["Escurrir las lentejas y pasarlas por agua fría. Secarlas bien con un paño: mojadas no cogen el aliño.","Cortar la cebolla morada en pluma muy fina y dejarla 5 min en agua fría con un chorrito de vinagre para que pierda el picor. Escurrir.","Picar el pimiento verde en dados pequeños y rallar la zanahoria en juliana gruesa.","Tostar las nueces en seco 2 min en la sartén y picarlas gruesas.","Mezclar las lentejas con la verdura, añadir los canónigos y aliñar. Dejar reposar 10 min antes de servir."],
+    alerg:"Frutos secos, mostaza"
+  },
+  "Ensalada de garbanzos, espinaca y comino": {
+    prot:0.5, tipo:"ensalada", cat:"ensalada", emoji:"🫘", alino:"Vinagreta de comino y pimentón",
+    ing:[["Garbanzos cocidos","400 g"],["Espinacas baby","120 g"],["Calabacín","1 mediano"],["Cebolleta","1 unidad"],["Pasas","30 g"],["Aceite de oliva virgen extra","10 g"],["Sal y pimienta","al gusto"]],
+    pasos:["Escurrir los garbanzos, aclarar y secar bien.","Cortar el calabacín en medias lunas finas y hacerlo a la plancha con un hilo de aceite hasta que esté dorado (6-8 min).","Hidratar las pasas 10 min en agua templada y escurrir.","Picar la cebolleta muy fina, incluida la parte verde.","Mezclar los garbanzos templados con el calabacín, la cebolleta y las pasas. Añadir las espinacas al final para que no se lacien.","Aliñar con la vinagreta de comino y pimentón."],
+    alerg:""
+  },
+  "Ensalada de alubia blanca y pimiento asado": {
+    prot:1, tipo:"ensalada", cat:"ensalada", emoji:"🫘", alino:"Vinagreta de ajo asado",
+    ing:[["Alubia blanca cocida","400 g"],["Pimiento rojo","1 unidad"],["Pimiento verde","1 unidad"],["Cebolla","1 unidad"],["Huevo","2 unidades"],["Perejil fresco","1 puñado"],["Aceite de oliva virgen extra","10 g"]],
+    pasos:["Asar los pimientos y la cebolla enteros al horno a 200ºC unos 40 min, dándoles la vuelta a mitad.","Tapar 10 min al salir del horno, pelar y cortar en tiras. Reservar el jugo del asado: va al aliño.","Cocer los huevos 10 min, enfriar y cortar en cuartos.","Escurrir y aclarar las alubias con cuidado, que no se rompan. Secar.","Mezclar las alubias con las verduras asadas y el jugo, aliñar y coronar con el huevo y el perejil picado."],
+    alerg:"Huevos"
+  },
+  "Ensalada de lentejas, calabaza asada y nueces": {
+    prot:0.75, tipo:"ensalada", cat:"ensalada", emoji:"🎃", alino:"Vinagreta de miel y Jerez",
+    ing:[["Lentejas pardinas cocidas","400 g"],["Calabaza","400 g"],["Rúcula","80 g"],["Nueces","40 g"],["Cebolla morada","½ unidad"],["Comino molido","½ cdita"],["Aceite de oliva virgen extra","10 g"],["Sal y pimienta","al gusto"]],
+    pasos:["Pelar la calabaza y cortarla en dados de 2 cm. Aliñar con aceite, comino, sal y pimienta.","Asar a 200ºC unos 25 min, hasta que esté tierna y con los bordes dorados. Dejar templar.","Escurrir y secar las lentejas.","Tostar las nueces en seco 2 min y picarlas gruesas.","Montar sobre base de rúcula: lentejas, calabaza, cebolla en pluma fina y nueces por encima.","Aliñar con la vinagreta de miel y Jerez justo antes de servir."],
+    alerg:"Frutos secos"
+  },
+  "Ensalada de judía verde, garbanzo y tomate seco": {
+    prot:0.5, tipo:"ensalada", cat:"ensalada", emoji:"🫛", alino:"Vinagreta de limón y hierbas",
+    ing:[["Judía verde plana","300 g"],["Garbanzos cocidos","300 g"],["Tomate seco en aceite","40 g"],["Patata","2 pequeñas"],["Cebolleta","1 unidad"],["Almendras","30 g"],["Sal","al gusto"]],
+    pasos:["Despuntar las judías y cortarlas en trozos de 4 cm. Cocer en agua con sal 8-10 min, que queden al dente.","Cortar el corte con agua fría y hielo para que mantengan el verde. Escurrir bien.","Cocer las patatas con piel 20 min, pelar en caliente y cortar en dados.","Escurrir y secar los garbanzos. Picar el tomate seco en tiras finas y la cebolleta muy fina.","Tostar las almendras en seco y picarlas gruesas.","Mezclar todo templado y aliñar con la vinagreta de limón y hierbas."],
+    alerg:"Frutos secos"
+  },
+  "Ensalada de alubia pinta, atún y cebolleta": {
+    prot:1.5, tipo:"ensalada", cat:"ensalada", emoji:"🫘", alino:"Vinagreta de alcaparras y perejil",
+    ing:[["Alubia pinta cocida","400 g"],["Atún en aceite","2 latas (150 g escurrido)"],["Cebolleta","2 unidades"],["Pimiento verde italiano","1 unidad"],["Zanahoria","1 unidad"],["Lechuga","100 g"],["Huevo","2 unidades"]],
+    pasos:["Escurrir y aclarar las alubias con suavidad. Secarlas.","Cocer los huevos 10 min, enfriar y cortar en cuartos.","Picar la cebolleta y el pimiento verde en dados pequeños. Rallar la zanahoria gruesa.","Mezclar las alubias con la verdura picada y dejar reposar 10 min con parte del aliño.","Montar sobre base de lechuga en juliana, coronar con el atún desmigado y el huevo.","Terminar con el resto de la vinagreta de alcaparras."],
+    alerg:"Pescado, huevos"
+  },
+  "Granola de avena y nueces (freidora de aire)": {
+    prot:0.25, tipo:"recetario", cat:"entrantes", emoji:"🥣",
+    ing:[["Copos de avena","250 g"],["Nueces","100 g"],["Nueces de macadamia u otro fruto seco","50 g"],["Semillas de chía","30 g"],["Miel","35 g"],["Aceite de oliva virgen extra suave","30 ml"],["Canela molida","3 g"],["Esencia de vainilla","5 ml"],["Sal","1 pellizco"]],
+    pasos:["Trocear los frutos secos a cuchillo, no muy finos.","Mezclar en un bol los copos de avena, los frutos secos y la chía.","Añadir la canela, la miel, el aceite, la vainilla y el pellizco de sal. Remover hasta que todo quede impregnado.","Retirar la rejilla de la freidora de aire y volcar la mezcla directamente en la cubeta.","Programar 6 min a 150ºC, abriendo a mitad para remover. Tiene que quedar ligeramente dorada, no marrón.","Dejar enfriar del todo antes de guardarla: cruje al enfriar, no al salir. En bote hermético y armario oscuro aguanta dos semanas.","RACIÓN: 50 g, unas 10 raciones por tanda. Pésala las primeras veces, a cucharadas se va al doble sin notarlo.","Una ración aporta 25 g de avena y 15 g de nuez. Para llegar a los objetivos del día, añade 15 g de nueces sueltas sobre el yogur y saca el resto de la avena del desayuno."],
+    alerg:"Frutos secos"
+  },
+
+  // ── AÑADE AQUÍ NUEVAS RECETAS ──────────────────────────────
+  // Copia este bloque y rellena los campos:
+  // "Nombre de la receta": {
+  //   tipo:"dieta",   // dieta | finde | recetario
+  //   cat:"carne",    // carne | pescado | ensalada | pasta | arroz | verduras | huevos | asian | magreb | entrantes | salsas
+  //   emoji:"🍽️",
+  //   ing:[["ingrediente","cantidad"],...],
+  //   pasos:["paso 1","paso 2",...],
+  //   alerg:"Gluten, lácteos..."  // o "" si no tiene
+  // },
+
 };
 
-var LS_MARCAS = "agenda.marcas";
-var LS_CFG    = "agenda.cfg";
+// ── PLANTILLAS DE DÍAS ──────────────────────────────────────
+// Cada plantilla define desayuno, media mañana, comida, merienda y cena.
+// "comida" y "cena" tienen un campo "r" con el nombre exacto de la receta.
 
-var FILTROS_AGENDA = [
-  {k:"todo",    t:"Todo"},
-  {k:"charlas", t:"Charlas"},
-  {k:"teatro",  t:"Teatro"},
-  {k:"cine",    t:"Cine"},
-  {k:"musica",  t:"Música"},
-  {k:"varios",  t:"Varios"}
-];
-var FILTROS_CARTEL = [
-  {k:"todo",         t:"Todo"},
-  {k:"exposiciones", t:"Exposiciones"},
-  {k:"foto",         t:"Foto"},
-  {k:"fiestas",      t:"Fiestas"}
-];
-
-var DIAS  = ["dom","lun","mar","mié","jue","vie","sáb"];
-var MESES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
-var MESES_LARGO = ["enero","febrero","marzo","abril","mayo","junio","julio",
-                   "agosto","septiembre","octubre","noviembre","diciembre"];
-
-/* ------------------------------------------------------------------ *
- * Utilidades
- * ------------------------------------------------------------------ */
-function $(id){ return document.getElementById(id); }
-
-function esc(s){
-  if (s === null || s === undefined) return "";
-  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")
-                  .replace(/>/g,"&gt;").replace(/"/g,"&quot;");
-}
-
-/* "2026-09-02" -> Date local a las 00:00. Nunca new Date(string): en iOS
-   se interpreta como UTC y el evento salta un día. */
-function fecha(s){
-  if (!s || typeof s !== "string") return null;
-  var p = s.split("-");
-  if (p.length !== 3) return null;
-  var d = new Date(+p[0], +p[1]-1, +p[2]);
-  return isNaN(d.getTime()) ? null : d;
-}
-function hoy(){
-  var d = new Date();
-  return new Date(d.getFullYear(), d.getMonth(), d.getDate());
-}
-function dias(a, b){ return Math.round((b - a) / 86400000); }
-
-function lunes(d){
-  var x = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-  var w = x.getDay();                 /* 0 = domingo */
-  x.setDate(x.getDate() - (w === 0 ? 6 : w - 1));
-  return x;
-}
-function claveSemana(d){
-  var l = lunes(d);
-  return l.getFullYear() + "-" + l.getMonth() + "-" + l.getDate();
-}
-function rotuloSemana(d){
-  var l = lunes(d), f = new Date(l); f.setDate(f.getDate()+6);
-  if (l.getMonth() === f.getMonth()) {
-    return "Semana del " + l.getDate() + " al " + f.getDate() + " de " + MESES_LARGO[f.getMonth()];
+var PLANTILLAS = [
+  {
+    desayuno:{h:"08:30",p:"Café con leche desnatada + Tostada de pan molde con aguacate y pavo"},
+    media:{h:"10:30",p:"Bebida de almendras con avena + Plátano"},
+    comida:{h:"14:00",p:"Ensalada de garbanzos mixta + Piña natural",r:"Ensalada de garbanzos mixta"},
+    merienda:{h:"17:30",p:"Natillas proteicas (120 g)"},
+    cena:{h:"21:30",p:"Pechuga de pavo a la plancha con berenjena",r:"Pechuga de pavo a la plancha con berenjena"}
+  },
+  {
+    desayuno:{h:"08:30",p:"Café con leche desnatada + Tostada de pan de barra con huevos revueltos y jamón serrano"},
+    media:{h:"10:30",p:"Sandía (395 g)"},
+    comida:{h:"14:00",p:"Pollo asado en su jugo + Espárragos",r:"Pollo asado en su jugo"},
+    merienda:{h:"17:30",p:"Sándwich mixto"},
+    cena:{h:"21:30",p:"Ensalada de tomate, judías verdes, espárragos y queso fresco",r:"Ensalada de tomate, judías verdes, espárragos y queso fresco"}
+  },
+  {
+    desayuno:{h:"08:30",p:"Café con leche desnatada + Tostada de pan molde con aguacate y pavo"},
+    media:{h:"10:30",p:"Bebida de almendras con avena + Plátano"},
+    comida:{h:"14:00",p:"Hamburguesa de pollo con champiñones + Piña natural",r:"Hamburguesa de pollo con champiñones"},
+    merienda:{h:"17:30",p:"Yogur proteico (120 g)"},
+    cena:{h:"21:30",p:"Sepia con pesto de guisantes",r:"Sepia con pesto de guisantes"}
+  },
+  {
+    desayuno:{h:"08:30",p:"Café con leche desnatada + Pan de centeno con hummus"},
+    media:{h:"10:30",p:"Sandía (395 g)"},
+    comida:{h:"14:00",p:"Bacalao al ajoarriero + Piña natural",r:"Bacalao al ajoarriero"},
+    merienda:{h:"17:30",p:"Natillas proteicas (120 g)"},
+    cena:{h:"21:30",p:"Ensalada mixta con atún y maíz",r:"Ensalada mixta con atún y maíz"}
+  },
+  {
+    desayuno:{h:"08:30",p:"Café con leche desnatada + Tostada de pan de barra con huevos revueltos y jamón serrano"},
+    media:{h:"10:30",p:"Bebida de almendras con avena + Plátano"},
+    comida:{h:"14:00",p:"Lomo de cerdo a la plancha con verduras",r:"Lomo de cerdo a la plancha con verduras"},
+    merienda:{h:"17:30",p:"Sándwich mixto"},
+    cena:{h:"21:30",p:"Ensalada de canónigos con maíz, aceitunas y pavo",r:"Ensalada de canónigos con maíz, aceitunas y pavo"}
+  },
+  {
+    desayuno:{h:"08:30",p:"Café con leche desnatada + Tostada de pan molde con aguacate y pavo"},
+    media:{h:"10:30",p:"Sandía (395 g)"},
+    comida:{h:"14:00",p:"Macarrones a la pimienta con carne picada y calabacín",r:"Macarrones a la pimienta con carne picada y calabacín"},
+    merienda:{h:"17:30",p:"Yogur proteico (120 g)"},
+    cena:{h:"21:30",p:"Pisto con garbanzos",r:"Pisto con garbanzos"}
+  },
+  {
+    desayuno:{h:"08:30",p:"Café con leche desnatada + Pan de centeno con hummus"},
+    media:{h:"10:30",p:"Piña natural (200 g)"},
+    comida:{h:"14:00",p:"Lenguado con champiñones y romero",r:"Lenguado con champiñones y romero"},
+    merienda:{h:"17:30",p:"Natillas proteicas (120 g)"},
+    cena:{h:"21:30",p:"Sartén de patatas y huevos con espárragos",r:"Sartén de patatas y huevos con espárragos"}
+  },
+  {
+    desayuno:{h:"08:30",p:"Café con leche desnatada + Tostada de pan molde con aguacate y pavo"},
+    media:{h:"10:30",p:"Bebida de almendras con avena + Plátano"},
+    comida:{h:"14:00",p:"Arroz con repollo",r:"Arroz con repollo"},
+    merienda:{h:"17:30",p:"Yogur proteico (120 g)"},
+    cena:{h:"21:30",p:"Nidos de calabacín y huevo",r:"Nidos de calabacín y huevo"}
+  },
+  // PLANTILLAS DE FINDE (para sábado y domingo)
+  {
+    desayuno:{h:"09:00",p:"Café con leche + Tostada con tomate y aceite"},
+    media:{h:"11:30",p:"Fruta de temporada"},
+    comida:{h:"14:30",p:"Pad Thai",r:"Pad Thai"},
+    merienda:{h:"18:00",p:"Fruta o yogur"},
+    cena:{h:"21:30",p:"Ensalada de papaya verde (Som Tam)",r:"Ensalada de papaya verde (Som Tam)"}
+  },
+  {
+    desayuno:{h:"09:00",p:"Café con leche + Tostada con tomate y aceite"},
+    media:{h:"11:30",p:"Fruta de temporada"},
+    comida:{h:"14:30",p:"Pollo salteado con anacardos + Arroz",r:"Pollo salteado con anacardos"},
+    merienda:{h:"18:00",p:"Fruta o yogur"},
+    cena:{h:"21:30",p:"Lombarda con manzana, pasas y piñones",r:"Lombarda con manzana, pasas y piñones"}
+  },
+  {
+    desayuno:{h:"09:00",p:"Café con leche + Tostada con tomate y aceite"},
+    media:{h:"11:30",p:"Fruta de temporada"},
+    comida:{h:"14:30",p:"Cous cous de Zahra",r:"Cous cous de Zahra"},
+    merienda:{h:"18:00",p:"Fruta o yogur"},
+    cena:{h:"21:30",p:"Pollo salteado con albahaca tailandesa",r:"Pollo salteado con albahaca tailandesa"}
+  },
+  {
+    desayuno:{h:"09:00",p:"Café con leche + Tostada con tomate y aceite"},
+    media:{h:"11:30",p:"Fruta de temporada"},
+    comida:{h:"14:30",p:"Aloo Gobi (curry de patata y coliflor) + Arroz",r:"Aloo Gobi (curry de patata y coliflor)"},
+    merienda:{h:"18:00",p:"Fruta o yogur"},
+    cena:{h:"21:30",p:"Fajitas de pollo con aguacate y queso",r:"Fajitas de pollo con aguacate y queso"}
   }
-  return "Semana del " + l.getDate() + " de " + MESES_LARGO[l.getMonth()] +
-         " al " + f.getDate() + " de " + MESES_LARGO[f.getMonth()];
-}
-function fechaCorta(d){ return d.getDate() + " " + MESES[d.getMonth()]; }
+];
 
-/* ------------------------------------------------------------------ *
- * Persistencia local (la capa que luego sustituye/complementa Supabase)
- * ------------------------------------------------------------------ */
-function leerLS(clave, porDefecto){
+// Índices de plantillas de entre semana (lun-vie) y finde (sáb-dom)
+var IDX_SEMANA = [0,1,2,3,4,5,6,7];
+var IDX_FINDE  = [8,9,10,11];
+
+// ── COMPRA BASE ─────────────────────────────────────────────
+var COMPRA = [
+  {cat:"🥦 Frutas y verduras", items:[
+    ["Plátano","510 g (≈3 uds)"],["Aguacate","225 g (≈1½ pieza)"],["Sandía","1185 g"],
+    ["Piña natural","800 g"],["Limón","60 g"],["Lechuga","90 g"],
+    ["Tomate","405 g"],["Zanahoria","120 g"],["Berenjena","150 g"],
+    ["Espárrago","540 g"],["Champiñón","250 g"],["Calabacín","150 g"],
+    ["Pimiento rojo","125 g"],["Pimiento verde","50 g"],
+    ["Cebolla / cebolleta","395 g"],["Canónigos","40 g"],
+    ["Judía verde","100 g"],["Ajo","1 cabeza"]
+  ]},
+  {cat:"🥩 Carnes, pescados y huevos", items:[
+    ["Pechuga de pavo (fiambre)","90 g"],["Pavo pechuga fresca","250 g"],
+    ["Pollo muslo","270 g"],["Pollo pechuga","125 g"],
+    ["Hamburguesa de pollo","150 g"],["Lomo de cerdo","130 g"],
+    ["Carne picada ternera","60 g"],["Jamón serrano","60 g"],
+    ["Jamón cocido","30 g"],["Bacalao salado","150 g"],
+    ["Lenguado","300 g"],["Sepia","125 g"],
+    ["Atún en agua","75 g (1 lata)"],["Huevos talla M","3 unidades"]
+  ]},
+  {cat:"🥛 Lácteos y bebidas", items:[
+    ["Leche desnatada UHT","3,5 litros"],["Yogur proteico","4 unidades"],
+    ["Natillas proteicas","3 tarrinas"],["Bebida de almendras","450 g"],
+    ["Queso Havarti Light","70 g"],["Queso Burgos 0% MG","110 g"],
+    ["Queso parmesano","15 g"]
+  ]},
+  {cat:"🍞 Cereales y derivados", items:[
+    ["Pan de molde","240 g"],["Pan blanco","140 g"],
+    ["Pan de centeno","140 g"],["Avena","45 g"],
+    ["Macarrones","60 g"],["Fajita integral","1 unidad"],
+    ["Maíz dulce enlatado","90 g"]
+  ]},
+  {cat:"🫘 Legumbres y otros", items:[
+    ["Garbanzos cocidos","150 g"],["Guisantes congelados","50 g"],
+    ["Hummus","60 g"],["Patata","200 g"],
+    ["Pistachos","5 g"],["Aceitunas negras","20 g"]
+  ]},
+  {cat:"🫒 Aceites y condimentos", items:[
+    ["Aceite de oliva","115 g"],["Vino de Jerez (cocinar)","50 g"],
+    ["Vino blanco (cocinar)","75 g"],["Laurel, pimienta, romero, albahaca","al gusto"]
+  ]}
+];
+
+// ── ESTADO ──────────────────────────────────────────────────
+var DIAS = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo'];
+var diaAct = 0;
+var filtroAct = 'todo';
+
+// Estado compartido (se guarda en localStorage y se sincroniza con Supabase)
+var ST = {
+  modo:'normal',                 // 'normal' | 'ensaladas'
+  semana:1,
+  menuIdx:[0,1,2,3,4,8,9],       // índices de PLANTILLAS (modo normal)
+  menuEns:null,                  // [[comida,cena] x7] (modo ensaladas)
+  quincena:1,                    // 1 o 2 dentro de la quincena de ensaladas
+  cocina:{},                     // "0_comida" -> {v:'A'|'B'|'', t:ms}
+  checks:{},                     // clave -> {v:bool, t:ms, by:'A'|'B'}
+  quien:{},                      // clave -> {v:'A'|'B'|'', t:ms}
+  seg:{},                        // "peso|A|2026-08-28" -> {v:num|str|null, t:ms}
+  protObj:4,                     // raciones de proteína objetivo al día
+  nombres:{A:'María', B:'Pareja'},
+  ts:0                           // marca de tiempo del menú
+};
+
+// Config local de cada móvil (NO se sincroniza)
+var CFG = { url:'', key:'', hogar:'', yo:'A' };
+var pushTimer = null;
+
+// ── PERSISTENCIA LOCAL ──────────────────────────────────────
+function cargarLocal() {
   try {
-    var v = localStorage.getItem(clave);
-    return v ? JSON.parse(v) : porDefecto;
-  } catch(e){ return porDefecto; }
+    var s = localStorage.getItem('estadoApp');
+    if (s) { var o = JSON.parse(s); for (var k in o) if (o[k] !== undefined) ST[k] = o[k]; }
+  } catch(e) {}
+  try {
+    var c = localStorage.getItem('cfgSync');
+    if (c) { var d = JSON.parse(c); for (var k2 in d) CFG[k2] = d[k2]; }
+  } catch(e) {}
 }
-function guardarLS(clave, valor){
-  try { localStorage.setItem(clave, JSON.stringify(valor)); } catch(e){}
+function guardarLocal() {
+  try { localStorage.setItem('estadoApp', JSON.stringify(ST)); } catch(e) {}
 }
+function guardar() { guardarLocal(); empujarRemoto(); }
+function tocarMenu() { ST.ts = Date.now(); }
 
-function claveMarca(id, persona){ return id + "|" + persona; }
-
-function estadoDe(id, persona){
-  var m = ST.marcas[claveMarca(id, persona)];
-  return m ? m.estado : "";
+// ── SINCRONIZACIÓN SUPABASE ─────────────────────────────────
+function syncActivo() {
+  return !!(CFG.url && CFG.key && CFG.hogar && typeof fetch !== 'undefined');
 }
-
-/* Una marca = una fila futura en Supabase: {evento, persona, estado, ts}. */
-function marcar(id, estado){
-  var yo = ST.cfg.yo;
-  var k  = claveMarca(id, yo);
-  var actual = ST.marcas[k] ? ST.marcas[k].estado : "";
-  if (actual === estado) { delete ST.marcas[k]; }
-  else { ST.marcas[k] = { evento:id, persona:yo, estado:estado, ts:Date.now() }; }
-  guardarLS(LS_MARCAS, ST.marcas);
-  pintar();
-}
-
-function nombre(p){ return p === "p1" ? ST.cfg.p1 : ST.cfg.p2; }
-function otra(){ return ST.cfg.yo === "p1" ? "p2" : "p1"; }
-
-/* ------------------------------------------------------------------ *
- * Carga del catálogo
- * ------------------------------------------------------------------ */
-function traer(url){
-  /* sin ?t=: el sw ya va network-first y así la copia en caché sirve offline */
-  return fetch(url, {cache:"no-store"}).then(function(r){
-    if (!r.ok) throw new Error(url + ": " + r.status);
-    return r.json();
-  });
-}
-
-function cargar(){
-  var pendientes = 2;
-  function fin(){ if (--pendientes === 0) pintar(); }
-
-  traer("agenda.json").then(function(j){
-    ST.agenda = j;
-  })["catch"](function(e){
-    ST.agenda = {eventos:[]};
-    ST.errores.push("No se ha podido leer agenda.json (" + e.message + ").");
-  }).then(fin);
-
-  traer("cartel.json").then(function(j){
-    ST.cartel = j;
-  })["catch"](function(e){
-    ST.cartel = {eventos:[]};
-    ST.errores.push("No se ha podido leer cartel.json (" + e.message + ").");
-  }).then(fin);
-}
-
-/* ------------------------------------------------------------------ *
- * Selección de eventos
- * ------------------------------------------------------------------ */
-function eventosAgenda(){
-  var h = hoy(), out = [], ev = (ST.agenda && ST.agenda.eventos) || [], i, e, f;
-  for (i = 0; i < ev.length; i++) {
-    e = ev[i];
-    f = fecha(e.fecha);
-    if (!f || !e.id) continue;          /* sin fecha válida o sin id, fuera */
-    if (f < h) continue;
-    e._f = f;
-    out.push(e);
+function baseUrl() { return CFG.url.replace(/\/+$/, ''); }
+function cabeceras(escribir) {
+  var h = { 'apikey':CFG.key, 'Authorization':'Bearer '+CFG.key };
+  if (escribir) {
+    h['Content-Type'] = 'application/json';
+    h['Prefer'] = 'resolution=merge-duplicates,return=minimal';
   }
-  out.sort(function(a,b){
-    if (a._f - b._f !== 0) return a._f - b._f;
-    return (a.hora || "99:99").localeCompare(b.hora || "99:99");
-  });
+  return h;
+}
+function pintarSync(estado) {
+  var d = document.getElementById('syncDot');
+  if (!d) return;
+  if (!syncActivo()) { d.className = 'sdot'; d.title = 'Solo en este móvil'; return; }
+  d.className = 'sdot ' + (estado ? 'ok' : 'err');
+  d.title = estado ? 'Sincronizado' : 'Sin conexión (se guardó en el móvil)';
+}
+
+function empujarRemoto() {
+  if (!syncActivo()) { pintarSync(false); return; }
+  if (pushTimer) clearTimeout(pushTimer);
+  pushTimer = setTimeout(function() {
+    fetch(baseUrl() + '/rest/v1/hogares', {
+      method:'POST',
+      headers:cabeceras(true),
+      body: JSON.stringify([{ id: CFG.hogar, data: ST }])
+    }).then(function(r) { pintarSync(r.ok); })
+      .catch(function() { pintarSync(false); });
+  }, 700);
+}
+
+function fusionarMapa(local, remoto) {
+  var cambio = false;
+  for (var k in remoto) {
+    var r = remoto[k];
+    if (!r || typeof r.t === 'undefined') continue;
+    if (!local[k] || (r.t > (local[k].t || 0))) { local[k] = r; cambio = true; }
+  }
+  return cambio;
+}
+function fusionar(rem) {
+  if (!rem) return false;
+  var cambio = false;
+  // El menú va por marca de tiempo global: gana el último que lo cambió
+  if ((rem.ts || 0) > (ST.ts || 0)) {
+    ST.modo     = rem.modo;
+    ST.semana   = rem.semana;
+    ST.quincena = rem.quincena || 1;
+    ST.menuIdx  = rem.menuIdx;
+    ST.menuEns  = rem.menuEns;
+    ST.nombres  = rem.nombres || ST.nombres;
+    ST.protObj  = rem.protObj || ST.protObj;
+    ST.ts       = rem.ts;
+    cambio = true;
+  }
+  // Los checks y el reparto se fusionan casilla a casilla (por si compráis a la vez)
+  if (fusionarMapa(ST.checks, rem.checks || {})) cambio = true;
+  if (fusionarMapa(ST.cocina, rem.cocina || {})) cambio = true;
+  if (fusionarMapa(ST.quien,  rem.quien  || {})) cambio = true;
+  // El seguimiento va aquí a propósito: si fuese por ST.ts global, la pesada
+  // de una pisaría la de la otra cuando las dos registran el mismo día.
+  if (!ST.seg) ST.seg = {};
+  if (fusionarMapa(ST.seg,    rem.seg    || {})) cambio = true;
+  return cambio;
+}
+
+function traerRemoto(cb) {
+  if (!syncActivo()) { pintarSync(false); if (cb) cb(false); return; }
+  fetch(baseUrl() + '/rest/v1/hogares?id=eq.' + encodeURIComponent(CFG.hogar) + '&select=data',
+        { headers: cabeceras(false) })
+    .then(function(r) { if (!r.ok) throw new Error('http'); return r.json(); })
+    .then(function(rows) {
+      pintarSync(true);
+      if (!rows || !rows.length) { empujarRemoto(); if (cb) cb(true); return; }
+      if (fusionar(rows[0].data)) { guardarLocal(); repintarTodo(); }
+      if (cb) cb(true);
+    })
+    .catch(function() { pintarSync(false); if (cb) cb(false); });
+}
+
+// ── UTILIDADES ──────────────────────────────────────────────
+function shuffle(arr) {
+  var a = arr.slice();
+  for (var i = a.length-1; i > 0; i--) {
+    var j = Math.floor(Math.random()*(i+1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+function nombreDe(letra) { return ST.nombres[letra] || (letra === 'A' ? 'Persona 1' : 'Persona 2'); }
+function cicla(v) { return v === '' ? 'A' : (v === 'A' ? 'B' : ''); }
+
+// ── HISTORIAL (modo normal) ─────────────────────────────────
+function getHistorial() {
+  try { return JSON.parse(localStorage.getItem('menuHistorial') || '[]'); }
+  catch(e) { return []; }
+}
+function saveHistorial(h) {
+  try { localStorage.setItem('menuHistorial', JSON.stringify(h)); } catch(e){}
+}
+function guardarSemanaEnHistorial(idx) {
+  var h = getHistorial();
+  h.push(idx.slice());
+  if (h.length > 2) h.shift();
+  saveHistorial(h);
+}
+
+function generarMenuSemana() {
+  var hist = getHistorial();
+  var usados = [];
+  for (var i = 0; i < hist.length; i++) {
+    for (var j = 0; j < hist[i].length; j++) usados.push(hist[i][j]);
+  }
+  var disponSemana = [];
+  for (var a = 0; a < IDX_SEMANA.length; a++) {
+    if (usados.indexOf(IDX_SEMANA[a]) === -1) disponSemana.push(IDX_SEMANA[a]);
+  }
+  if (disponSemana.length < 5) disponSemana = IDX_SEMANA.slice();
+  disponSemana = shuffle(disponSemana);
+
+  var disponFinde = [];
+  for (var b = 0; b < IDX_FINDE.length; b++) {
+    if (usados.indexOf(IDX_FINDE[b]) === -1) disponFinde.push(IDX_FINDE[b]);
+  }
+  if (disponFinde.length < 2) disponFinde = IDX_FINDE.slice();
+  disponFinde = shuffle(disponFinde);
+
+  ST.menuIdx = [
+    disponSemana[0], disponSemana[1], disponSemana[2],
+    disponSemana[3], disponSemana[4],
+    disponFinde[0], disponFinde[1]
+  ];
+  tocarMenu();
+}
+
+// ── MODO ENSALADAS ──────────────────────────────────────────
+var LIGERO = {
+  des:[
+    'Café con leche + Tostada integral con aguacate',
+    'Café con leche + Yogur con avena y fruta',
+    'Café con leche + Tostada con hummus',
+    'Té + Porridge de avena con plátano',
+    'Café con leche + Tostada con pavo y aguacate',
+    'Café con leche + Yogur con almendras y miel',
+    'Café con leche + Tostada de pan de centeno con hummus'
+  ],
+  med:['Fruta de temporada','Puñado de almendras','Yogur natural','Zumo natural + almendras','Fruta de temporada','Yogur natural','Fruta de temporada'],
+  mer:['Yogur natural con almendras','Fruta + infusión','Tostada con hummus','Yogur proteico','Fruta de temporada','Puñado de almendras','Yogur natural con miel']
+};
+
+function listaEnsaladas() {
+  var out = [];
+  for (var k in RECETAS) if (RECETAS[k].tipo === 'ensalada') out.push(k);
   return out;
 }
-
-function eventosCartel(){
-  var h = hoy(), out = [], ev = (ST.cartel && ST.cartel.eventos) || [], i, e, ini, fin;
-  for (i = 0; i < ev.length; i++) {
-    e = ev[i];
-    ini = fecha(e.inicio); fin = fecha(e.fin);
-    if (!fin || !e.id) continue;
-    if (fin < h) continue;
-    e._ini = ini; e._fin = fin;
-    e._quedan = dias(h, fin);
-    out.push(e);
+function getHistEns() {
+  try { return JSON.parse(localStorage.getItem('histEns') || '[]'); } catch(e) { return []; }
+}
+function generarSemanaEnsaladas() {
+  var pool = listaEnsaladas();
+  var hist = getHistEns();
+  var nuevas = [], repes = [];
+  for (var i = 0; i < pool.length; i++) {
+    if (hist.indexOf(pool[i]) === -1) nuevas.push(pool[i]); else repes.push(pool[i]);
   }
-  out.sort(function(a,b){ return a._fin - b._fin; });   /* por cierre, no por inicio */
-  return out;
-}
+  // Primero las que NO se comieron la semana pasada, luego el resto
+  var orden = shuffle(nuevas).concat(shuffle(repes));
+  var sel = orden.slice(0, 14);
+  while (sel.length < 14) sel = sel.concat(shuffle(pool)).slice(0, 14);
 
-function pasaFiltroAgenda(e){
-  return ST.filtroA === "todo" || e.seccion === ST.filtroA;
+  try { localStorage.setItem('histEns', JSON.stringify(sel)); } catch(e) {}
+
+  var dias = [];
+  for (var d = 0; d < 7; d++) dias.push([sel[d*2], sel[d*2+1]]);
+  ST.menuEns = dias;
+  tocarMenu();
 }
-function pasaFiltroCartel(e){
-  if (ST.filtroC === "todo") return true;
-  if (ST.filtroC === "foto") {
-    var t = e.etiquetas || [];
-    for (var i = 0; i < t.length; i++) if (t[i] === "foto") return true;
-    return false;
+function usadasEstaSemana(salvoDia) {
+  var u = [];
+  for (var i = 0; i < 7; i++) {
+    if (i === salvoDia) continue;
+    u.push(ST.menuEns[i][0]); u.push(ST.menuEns[i][1]);
   }
-  return e.seccion === ST.filtroC;
+  return u;
 }
-function visible(e){
-  if (ST.cfg.verDesc) return true;
-  return estadoDe(e.id, ST.cfg.yo) !== "descartado";
-}
-
-/* ------------------------------------------------------------------ *
- * Pintado
- * ------------------------------------------------------------------ */
-function chipsComunes(e){
-  var s = "";
-  if (e.seccion) s += '<span class="chip">' + esc(e.seccion) + "</span>";
-  if (e.ciudad)  s += '<span class="chip">' + esc(e.ciudad) + "</span>";
-  if (e.precio)  s += '<span class="chip' + (/gratis|libre/i.test(e.precio) ? " gratis" : "") + '">' + esc(e.precio) + "</span>";
-  return s;
-}
-
-/* entradas: libre = nada; venta = aviso; pocas/agotado = alerta */
-function chipEntradas(e){
-  var t = e.entradas;
-  if (!t || t === "libre") return "";
-  if (t === "venta")   return '<span class="chip alerta">entradas a la venta</span>';
-  if (t === "pocas")   return '<span class="chip alerta">quedan pocas</span>';
-  if (t === "agotado") return '<span class="chip alerta">agotado</span>';
-  return '<span class="chip">' + esc(t) + "</span>";
-}
-
-function bloqueAcciones(e){
-  var mio = estadoDe(e.id, ST.cfg.yo);
-  var suyo = estadoDe(e.id, otra());
-  var s = '<div class="acciones">';
-  s += '<button class="marca" data-ev="' + esc(e.id) + '" data-estado="interesa" aria-pressed="' + (mio==="interesa") + '">★ Me interesa</button>';
-  s += '<button class="marca" data-ev="' + esc(e.id) + '" data-estado="compradas" aria-pressed="' + (mio==="compradas") + '">🎟 Compradas</button>';
-  s += '<button class="marca no" data-ev="' + esc(e.id) + '" data-estado="descartado" aria-pressed="' + (mio==="descartado") + '">✕</button>';
-  if (suyo) {
-    var txt = suyo === "interesa" ? "le interesa"
-            : suyo === "compradas" ? "tiene entradas" : "lo ha descartado";
-    s += '<span class="otra">' + esc(nombre(otra())) + "<br>" + txt + "</span>";
-  }
-  s += "</div>";
-  return s;
-}
-
-function tarjetaAgenda(e){
-  var cl = "ev";
-  if (e.entradas === "pocas" || e.entradas === "agotado") cl += " venta";
-  if (estadoDe(e.id, ST.cfg.yo) === "descartado") cl += " descartado";
-
-  var s = '<article class="' + cl + '">';
-  s += '<div class="rail"><span class="dia">' + e._f.getDate() + '</span>' +
-       '<span class="dsem">' + DIAS[e._f.getDay()] + " " + MESES[e._f.getMonth()] + "</span>" +
-       (e.hora ? '<span class="hora">' + esc(e.hora) + "</span>" : "") + "</div>";
-  s += '<div class="cuerpo">';
-  s += "<h3>" + (e.enlace
-        ? '<a href="' + esc(e.enlace) + '" target="_blank" rel="noopener">' + esc(e.titulo) + "</a>"
-        : esc(e.titulo)) + "</h3>";
-  if (e.lugar) s += '<p class="lugar">' + esc(e.lugar) + "</p>";
-  s += '<div class="chips">' + chipsComunes(e) + chipEntradas(e) + "</div>";
-  s += bloqueAcciones(e);
-  s += "</div></article>";
-  return s;
-}
-
-function tarjetaCartel(e, urgente){
-  var cl = "ev";
-  if (urgente) cl += " urgente";
-  if (estadoDe(e.id, ST.cfg.yo) === "descartado") cl += " descartado";
-  var h = hoy();
-  var futuro = e._ini && e._ini > h;
-
-  var s = '<article class="' + cl + '">';
-  s += '<div class="rail rango">';
-  s += '<span class="mes">hasta</span>';
-  s += '<span class="dia">' + e._fin.getDate() + "</span>";
-  s += '<span class="dsem">' + MESES[e._fin.getMonth()] + "</span>";
-  if (urgente) {
-    s += '<span class="cuenta">' + (e._quedan === 0 ? "último día"
-        : e._quedan === 1 ? "queda 1 día" : "quedan " + e._quedan + " días") + "</span>";
-  }
-  s += "</div>";
-  s += '<div class="cuerpo">';
-  s += "<h3>" + (e.enlace
-        ? '<a href="' + esc(e.enlace) + '" target="_blank" rel="noopener">' + esc(e.titulo) + "</a>"
-        : esc(e.titulo)) + "</h3>";
-  if (e.lugar) s += '<p class="lugar">' + esc(e.lugar) + "</p>";
-  if (e.recurrente) s += '<p class="recurrente">' + esc(e.recurrente) + "</p>";
-  if (futuro) s += '<p class="lugar">Empieza el ' + fechaCorta(e._ini) + "</p>";
-  s += '<div class="chips">' + chipsComunes(e) + "</div>";
-  s += bloqueAcciones(e);
-  s += "</div></article>";
-  return s;
-}
-
-function pintarFiltros(){
-  var defs = ST.vista === "agenda" ? FILTROS_AGENDA : FILTROS_CARTEL;
-  var actual = ST.vista === "agenda" ? ST.filtroA : ST.filtroC;
-  var s = "", i;
-  for (i = 0; i < defs.length; i++) {
-    s += '<button class="filtro" data-filtro="' + defs[i].k + '" aria-pressed="' +
-         (defs[i].k === actual) + '">' + defs[i].t + "</button>";
-  }
-  $("filtros").innerHTML = s;
-}
-
-function pintarAvisos(){
-  var s = "", i;
-  for (i = 0; i < ST.errores.length; i++) {
-    s += '<div class="aviso">' + esc(ST.errores[i]) + "</div>";
-  }
-  if (!ST.agenda || !ST.cartel) { $("avisos").innerHTML = s; return; }
-
-  var fa = fecha(ST.agenda.actualizado), fc = fecha(ST.cartel.actualizado);
-  var vieja = null;
-  if (fa && fc) vieja = fa < fc ? fa : fc; else vieja = fa || fc;
-  if (vieja) {
-    var d = dias(vieja, hoy());
-    if (d > 20) s += '<div class="aviso">El catálogo se actualizó hace ' + d + ' días. Toca revisar fuentes.</div>';
-  }
-  var total = eventosAgenda().length + eventosCartel().length;
-  if (total < 5) {
-    s += '<div class="aviso">Quedan ' + total + ' eventos vigentes. Toca ampliar el catálogo.</div>';
-  }
-  $("avisos").innerHTML = s;
-}
-
-function vacio(titulo, texto){
-  return '<p class="vacio"><strong>' + esc(titulo) + "</strong>" + esc(texto) + "</p>";
-}
-
-function pintarAgenda(){
-  var ev = eventosAgenda(), s = "", semana = "", i, e, n = 0;
-  for (i = 0; i < ev.length; i++) {
-    e = ev[i];
-    if (!pasaFiltroAgenda(e) || !visible(e)) continue;
-    var k = claveSemana(e._f);
-    if (k !== semana) { semana = k; s += '<h2 class="semana">' + rotuloSemana(e._f) + "</h2>"; }
-    s += tarjetaAgenda(e);
-    n++;
-  }
-  if (!n) s = vacio("Nada por aquí", ST.filtroA === "todo"
-      ? "No hay eventos con fecha en el catálogo."
-      : "Prueba con otro filtro o revisa el catálogo.");
-  $("lista").innerHTML = s;
-}
-
-function pintarCartel(){
-  var ev = eventosCartel(), pronto = [], resto = [], i, e, n = 0;
-  for (i = 0; i < ev.length; i++) {
-    e = ev[i];
-    if (!pasaFiltroCartel(e) || !visible(e)) continue;
-    n++;
-    /* las fiestas son rangos, pero no llevan cuenta atrás */
-    if (e.seccion !== "fiestas" && e._quedan <= 14) pronto.push(e); else resto.push(e);
-  }
-  var s = "";
-  if (pronto.length) {
-    s += '<div class="bloque-pronto"><h2>Acaban pronto</h2></div>';
-    for (i = 0; i < pronto.length; i++) s += tarjetaCartel(pronto[i], true);
-  }
-  if (resto.length) {
-    if (pronto.length) s += '<h2 class="semana">Con tiempo</h2>';
-    for (i = 0; i < resto.length; i++) s += tarjetaCartel(resto[i], false);
-  }
-  if (!n) s = vacio("Nada en cartel", "No hay nada abierto que encaje con este filtro.");
-  $("lista").innerHTML = s;
-}
-
-function pintarRango(){
-  var t;
-  if (ST.vista === "agenda") {
-    t = (ST.agenda && ST.agenda.ventana) ? ST.agenda.ventana.replace(" / ", " → ") : "";
-    if (!t && ST.agenda && ST.agenda.actualizado) t = "Actualizado " + ST.agenda.actualizado;
+function toggleModo() {
+  if (ST.modo === 'normal') {
+    ST.modo = 'ensaladas';
+    ST.quincena = 1;
+    generarSemanaEnsaladas();
+    toast('🥗 Quincena de ensaladas — semana 1');
   } else {
-    t = (ST.cartel && ST.cartel.actualizado) ? "Actualizado " + ST.cartel.actualizado : "";
+    ST.modo = 'normal';
+    tocarMenu();
+    toast('Menú normal');
   }
-  $("rango").textContent = t || "—";
+  ST.checks = {}; ST.quien = {}; ST.cocina = {};
+  diaAct = 0;
+  guardar();
+  repintarTodo();
 }
 
-function pintar(){
-  $("h1").textContent = ST.vista === "agenda" ? "Agenda" : "En cartel";
-  $("tabAgenda").setAttribute("aria-pressed", ST.vista === "agenda");
-  $("tabCartel").setAttribute("aria-pressed", ST.vista === "cartel");
-  pintarFiltros();
-  pintarRango();
-  pintarAvisos();
-  if (ST.vista === "agenda") pintarAgenda(); else pintarCartel();
+// ── REGENERAR ───────────────────────────────────────────────
+function regenDia(i) {
+  if (ST.modo === 'ensaladas') {
+    var pool = listaEnsaladas();
+    var usadas = usadasEstaSemana(i);
+    var libres = [];
+    for (var j = 0; j < pool.length; j++) if (usadas.indexOf(pool[j]) === -1) libres.push(pool[j]);
+    if (libres.length < 2) libres = shuffle(pool);
+    libres = shuffle(libres);
+    ST.menuEns[i] = [libres[0], libres[1]];
+  } else {
+    var esFinde = (i === 5 || i === 6);
+    var p = esFinde ? IDX_FINDE.slice() : IDX_SEMANA.slice();
+    var otros = ST.menuIdx.slice(); otros.splice(i, 1);
+    var cand = [];
+    for (var k = 0; k < p.length; k++) if (otros.indexOf(p[k]) === -1) cand.push(p[k]);
+    if (cand.length === 0) cand = p;
+    cand = shuffle(cand);
+    ST.menuIdx[i] = cand[0];
+  }
+  tocarMenu();
+  // el día cambia -> se recalcula la compra
+  ST.checks = {}; ST.quien = {};
+  guardar();
+  renderDia(i); renderCompra();
+  toast('Día cambiado 🔄');
 }
 
-/* ------------------------------------------------------------------ *
- * Eventos de interfaz
- * ------------------------------------------------------------------ */
-function irA(v){
-  if (ST.vista === v) { window.scrollTo(0,0); return; }
-  ST.vista = v;
-  window.scrollTo(0,0);
-  pintar();
+function nuevaSemana() {
+  if (ST.modo === 'ensaladas') {
+    generarSemanaEnsaladas();
+    ST.quincena = (ST.quincena === 1) ? 2 : 1;
+    ST.semana++;
+    toast(ST.quincena === 2 ? '🥗 Semana 2 de la quincena' : '🥗 Nueva quincena de ensaladas');
+  } else {
+    guardarSemanaEnHistorial(ST.menuIdx);
+    generarMenuSemana();
+    ST.semana++;
+    toast('¡Nueva semana generada 🎉');
+  }
+  ST.checks = {}; ST.quien = {}; ST.cocina = {};
+  diaAct = 0;
+  guardar();
+  repintarTodo();
 }
 
-$("tabAgenda").addEventListener("click", function(){ irA("agenda"); });
-$("tabCartel").addEventListener("click", function(){ irA("cartel"); });
-
-$("filtros").addEventListener("click", function(ev){
-  var b = ev.target.closest ? ev.target.closest("[data-filtro]") : null;
-  if (!b) return;
-  if (ST.vista === "agenda") ST.filtroA = b.getAttribute("data-filtro");
-  else ST.filtroC = b.getAttribute("data-filtro");
-  pintar();
-});
-
-$("lista").addEventListener("click", function(ev){
-  var b = ev.target.closest ? ev.target.closest(".marca") : null;
-  if (!b) return;
-  marcar(b.getAttribute("data-ev"), b.getAttribute("data-estado"));
-});
-
-/* ---- ajustes ---- */
-function abrirAjustes(){
-  $("in1").value = ST.cfg.p1;
-  $("in2").value = ST.cfg.p2;
-  $("chkDesc").checked = !!ST.cfg.verDesc;
-  refrescarQuien();
-  $("velo").hidden = false;
+// ── DATOS DE UN DÍA ─────────────────────────────────────────
+function diaDatos(idx) {
+  if (ST.modo === 'ensaladas' && ST.menuEns) {
+    var par = ST.menuEns[idx];
+    return {
+      desayuno:{h:'08:30', p:LIGERO.des[idx % LIGERO.des.length]},
+      media:   {h:'11:00', p:LIGERO.med[idx % LIGERO.med.length]},
+      comida:  {h:'14:00', p:par[0], r:par[0]},
+      merienda:{h:'17:30', p:LIGERO.mer[idx % LIGERO.mer.length]},
+      cena:    {h:'21:00', p:par[1], r:par[1]}
+    };
+  }
+  return PLANTILLAS[ST.menuIdx[idx]];
 }
-function refrescarQuien(){
-  $("yo1").textContent = $("in1").value || "Nombre 1";
-  $("yo2").textContent = $("in2").value || "Nombre 2";
-  $("yo1").setAttribute("aria-pressed", ST.cfg.yo === "p1");
-  $("yo2").setAttribute("aria-pressed", ST.cfg.yo === "p2");
+
+// ── RENDER MENÚ ─────────────────────────────────────────────
+function renderTabs() {
+  var html = '';
+  for (var i = 0; i < 7; i++) {
+    html += '<div class="tab'+(i>=5?' finde':'')+(i===diaAct?' on':'')+'" data-i="'+i+'">'+DIAS[i]+'</div>';
+  }
+  var t = document.getElementById('tabs');
+  t.innerHTML = html;
+  t.onclick = function(e) {
+    if (e.target.classList.contains('tab')) {
+      diaAct = parseInt(e.target.getAttribute('data-i'));
+      renderTabs(); renderDia(diaAct);
+    }
+  };
 }
-$("btnAjustes").addEventListener("click", abrirAjustes);
-$("in1").addEventListener("input", refrescarQuien);
-$("in2").addEventListener("input", refrescarQuien);
-$("yo1").addEventListener("click", function(){ ST.cfg.yo = "p1"; refrescarQuien(); });
-$("yo2").addEventListener("click", function(){ ST.cfg.yo = "p2"; refrescarQuien(); });
-$("btnCerrar").addEventListener("click", function(){
-  ST.cfg.p1 = $("in1").value.trim() || "Persona 1";
-  ST.cfg.p2 = $("in2").value.trim() || "Persona 2";
-  ST.cfg.verDesc = $("chkDesc").checked;
-  guardarLS(LS_CFG, ST.cfg);
-  $("velo").hidden = true;
-  pintar();
-});
-$("velo").addEventListener("click", function(ev){
-  if (ev.target === $("velo")) $("velo").hidden = true;
-});
 
-/* ------------------------------------------------------------------ *
- * Arranque
- * ------------------------------------------------------------------ */
-ST.marcas = leerLS(LS_MARCAS, {});
-var cfg = leerLS(LS_CFG, null);
-if (cfg) {
-  ST.cfg.p1 = cfg.p1 || ST.cfg.p1;
-  ST.cfg.p2 = cfg.p2 || ST.cfg.p2;
-  ST.cfg.yo = cfg.yo === "p2" ? "p2" : "p1";
-  ST.cfg.verDesc = !!cfg.verDesc;
+/* ── PROTEÍNA ───────────────────────────────────────────────
+   1 ración ≈ 25-30 g de proteína: una pechuga, un filete de pescado,
+   tres huevos, dos yogures griegos. Las recetas llevan el valor en su
+   campo "prot". Desayunos, medias mañanas y meriendas son texto libre,
+   así que se estiman por palabras clave.
+   Es una estimación por raciones, no una cuenta al gramo: sirve para
+   ver "hoy voy corta", nada más. */
+var PROT_TEXTO = [
+  [/natillas proteicas|yogur proteico/i, 0.75],
+  [/huevos revueltos|jam[oó]n serrano/i, 0.5],
+  [/s[aá]ndwich mixto/i, 0.5],
+  [/pavo|hummus/i, 0.25],
+  [/yogur|porridge|avena/i, 0.25],
+  [/almendra|nueces|frutos secos/i, 0.25],
+  [/leche/i, 0.25]
+];
+function protTexto(txt) {
+  if (!txt) return 0;
+  var t = 0;
+  for (var i = 0; i < PROT_TEXTO.length; i++) {
+    if (PROT_TEXTO[i][0].test(txt)) { t += PROT_TEXTO[i][1]; }
+  }
+  return Math.min(1, t);
 }
-$("notaVer").textContent = "Marcas guardadas solo en este móvil. La sincronización llega después.";
+function protDia(pl) {
+  var t = 0, k, campos = ['desayuno','media','comida','merienda','cena'];
+  for (var i = 0; i < campos.length; i++) {
+    k = pl[campos[i]];
+    if (!k) continue;
+    if (k.r && RECETAS[k.r] && typeof RECETAS[k.r].prot === 'number') t += RECETAS[k.r].prot;
+    else t += protTexto(k.p);
+  }
+  return Math.round(t*4)/4;
+}
+/* Objetivo por persona, configurable en ⚙️. Es un suelo, no un techo:
+   pasarse no importa, quedarse corta mientras se recorta comida sí,
+   porque entonces el déficit se lleva músculo por delante. */
+function protObjetivo() { return (ST.protObj || 4); }
 
-pintar();
-cargar();
+function protBarra(v) {
+  var obj = protObjetivo(), h = '<div class="prot-bar"><span class="prot-lab">Proteína</span>';
+  for (var i = 1; i <= obj; i++) {
+    var lleno = v >= i, medio = (!lleno && v >= i - 0.5);
+    h += '<span class="prot-o'+(lleno?' full':(medio?' half':''))+'"></span>';
+  }
+  h += '<span class="prot-num">'+v+' de '+obj+'</span>';
+  if (v < obj - 0.5) h += '<span class="prot-tip" title="Completa con un yogur griego, un huevo duro o un puñado de frutos secos">ℹ️</span>';
+  return h + '</div>';
+}
 
-/* al volver a la app, recargar el catálogo por si se ha actualizado */
-document.addEventListener("visibilitychange", function(){
-  if (!document.hidden) cargar();
-});
+/* ── LEGUMBRE Y ESTEROLES ───────────────────────────────────── */
+function esLegumbre(nom) {
+  var r = RECETAS[nom];
+  if (!r) return false;
+  for (var i = 0; i < r.ing.length; i++) {
+    if (/garbanzo|lenteja|alubia|jud[ií]a blanca|jud[ií]a pinta|frijol|soja texturizada/i.test(r.ing[i][0])) return true;
+  }
+  return false;
+}
+function legumbresSemana() {
+  var n = 0;
+  for (var d = 0; d < 7; d++) {
+    var pl = diaDatos(d), hay = false;
+    if (pl.comida.r && esLegumbre(pl.comida.r)) hay = true;
+    if (pl.cena.r   && esLegumbre(pl.cena.r))   hay = true;
+    if (hay) n++;
+  }
+  return n;
+}
 
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function(){
-    navigator.serviceWorker.register("sw.js")["catch"](function(){});
+/* ── ESTEROLES ───────────────────────────────────────────────
+   2 g al día. Es lo más rentable del plan (-8/-10 % de LDL en tres
+   semanas) y lo más fácil de olvidar. El efecto desaparece al dejarlos,
+   así que lo que importa es la racha, no el total. */
+function esterolHoy() {
+  if (!ST.seg) ST.seg = {};
+  var e = ST.seg['esterol|'+CFG.yo+'|'+segHoy()];
+  return !!(e && e.v);
+}
+function esterolToggle() {
+  segPon('esterol', CFG.yo, segHoy(), esterolHoy() ? null : 1);
+  renderDia(diaAct);
+  if (document.getElementById('vSeg').className.indexOf('on') !== -1) renderSeg();
+}
+function esterolRacha(letra) {
+  var d = new Date(), n = 0, i, k;
+  if (!ST.seg) return 0;
+  for (i = 0; i < 400; i++) {
+    k = 'esterol|'+letra+'|'+d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);
+    if (ST.seg[k] && ST.seg[k].v) n++;
+    else if (i > 0) break;          // el día de hoy aún puede estar sin marcar
+    d.setDate(d.getDate()-1);
+  }
+  return n;
+}
+function esterolesBloque() {
+  var hecho = esterolHoy(), r = esterolRacha(CFG.yo);
+  return '<div class="est-bloque'+(hecho?' on':'')+'" onclick="esterolToggle()">'+
+    '<span class="est-check">'+(hecho ? '✓' : '')+'</span>'+
+    '<div class="est-txt"><strong>Esteroles vegetales de hoy</strong>'+
+    '<span>2 g con una comida'+(r > 1 ? ' · '+r+' días seguidos' : '')+'</span></div></div>';
+}
+
+function chipCocina(idx, slot) {  var k = idx + '_' + slot;
+  var v = (ST.cocina[k] && ST.cocina[k].v) || '';
+  var txt = v ? '👩‍🍳 ' + nombreDe(v) : '👩‍🍳 ¿quién cocina?';
+  return '<button class="chip-cocina'+(v?' a'+v:'')+'" data-cok="'+k+'">'+txt+'</button>';
+}
+
+function renderDia(idx) {
+  var pl = diaDatos(idx);
+  var esFinde = (idx === 5 || idx === 6);
+  var ens = (ST.modo === 'ensaladas');
+  var tipos = [
+    {tipo:'Desayuno',     d:pl.desayuno, slot:'desayuno'},
+    {tipo:'Media mañana', d:pl.media,    slot:'media'},
+    {tipo:'Comida',       d:pl.comida,   slot:'comida'},
+    {tipo:'Merienda',     d:pl.merienda, slot:'merienda'},
+    {tipo:'Cena',         d:pl.cena,     slot:'cena'}
+  ];
+  var html = '';
+  if (ens) {
+    html += '<div class="modo-bar">🥗 <span><strong>Quincena de ensaladas</strong> — semana '+ST.quincena+' de 2. '+
+            'Comida y cena son ensaladas distintas. Pulsa 🥗 arriba para volver al menú normal.</span></div>';
+  }
+  html += '<div class="dia-card">';
+  html += '<div class="dia-head">';
+  html += '<div class="dia-nom">'+DIAS[idx]+((esFinde && !ens) ? '<span class="badge-finde">fin de semana</span>' : '')+'</div>';
+  html += '<div class="dia-right">';
+  html += '<button class="btn-regen" data-dia="'+idx+'" title="Cambiar este día">🔄</button>';
+  html += '<div class="dia-num">'+(idx+1)+'</div>';
+  html += '</div></div>';
+  for (var i = 0; i < tipos.length; i++) {
+    var t = tipos[i]; var rec = t.d.r || '';
+    html += '<div class="comida'+(rec?' cr':'')+'"'+(rec?' data-r="'+rec+'"':'')+'>';
+    html += '<div class="c-h">'+t.d.h+'</div>';
+    html += '<div class="c-t">'+t.tipo+'</div>';
+    html += '<div class="c-n">'+t.d.p;
+    if (t.slot === 'comida' || t.slot === 'cena') html += '<br>'+chipCocina(idx, t.slot);
+    html += '</div>';
+    if (rec) html += '<div class="c-i">📖</div>';
+    html += '</div>';
+  }
+  html += '</div>';
+  html += protBarra(protDia(pl));
+  var lg = legumbresSemana();
+  html += '<div class="sem-cont"><span>🫘 Legumbre esta semana</span>'+
+          '<strong class="'+(lg >= 4 ? 'ok' : '')+'">'+lg+' de 4</strong></div>';
+  html += esterolesBloque();
+  var v = document.getElementById('vMenu');
+  v.innerHTML = html;
+  v.onclick = function(e) {
+    var el = e.target;
+    while (el && el !== this) {
+      if (el.classList.contains('chip-cocina')) {
+        var k = el.getAttribute('data-cok');
+        var act = (ST.cocina[k] && ST.cocina[k].v) || '';
+        ST.cocina[k] = { v: cicla(act), t: Date.now() };
+        guardar(); renderDia(diaAct); return;
+      }
+      if (el.classList.contains('btn-regen')) { regenDia(parseInt(el.getAttribute('data-dia'))); return; }
+      if (el.classList.contains('cr')) { abrirReceta(el.getAttribute('data-r')); return; }
+      el = el.parentElement;
+    }
+  };
+}
+
+// ── LISTA DE LA COMPRA ──────────────────────────────────────
+var GRUPOS = [
+  ['🥦 Frutas y verduras', ['lechuga','canónigo','espinaca','lombarda','col blanca','calabacín','cebolla','cebolleta','chalota','ajo','zanahoria','pimiento rojo','pimiento verde','guindilla','judía','guisante','champiñ','espárrago','patata','piña','melocotón','limón','lima','jengibre','perejil','cilantro','eneldo','albahaca','menta','estragón','tomillo','cebollino','aguacate','fruta']],
+  ['🥩 Carnes, pescados y huevos', ['pollo','salmón','atún','jamón','huevo','pavo']],
+  ['🥛 Lácteos', ['yogur','leche']],
+  ['🌾 Despensa', ['cuscús','pasta','garbanzo','maíz','avena','almendra','caldo','tomate seco','hummus','pan']],
+  ['🫙 Aliños y especias', ['aceite','vinagre','mostaza','miel','soja','sésamo','sal','pimienta','comino','pimentón','azúcar','alcaparra','laurel']],
+  ['🥕 Preparar en casa (base)', ['zanahoria coreana','zanahoria marroquí']]
+];
+var ORDEN_G = [5,1,2,0,3,4];   // bases y proteína primero: "salmón" antes que "sal", "atún en aceite" antes que "aceite"
+function grupoDe(nombre) {
+  var n = nombre.toLowerCase();
+  for (var o = 0; o < ORDEN_G.length; o++) {
+    var g = ORDEN_G[o], kws = GRUPOS[g][1];
+    for (var i = 0; i < kws.length; i++) {
+      if (n.indexOf(kws[i]) !== -1) return g;
+    }
+  }
+  return 3;
+}
+function esBase(nombre) {
+  var r = RECETAS[nombre];
+  return !!(r && r.cat === 'bases');
+}
+// Normaliza la unidad: "diente pequeño" -> dientes, "mediano" -> unidades, etc.
+var UNI = {
+  'g':'g','gr':'g','gramo':'g','gramos':'g','kg':'kg','ml':'ml','l':'l',
+  'diente':'dientes','dientes':'dientes',
+  'cabeza':'cabezas','cabezas':'cabezas',
+  'unidad':'unidades','unidades':'unidades','ud':'unidades','uds':'unidades',
+  'mediano':'unidades','medianos':'unidades','mediana':'unidades','medianas':'unidades',
+  'grande':'unidades','grandes':'unidades','pequeño':'unidades','pequeña':'unidades',
+  'limón':'unidades','limones':'unidades','manojo':'manojos','manojos':'manojos',
+  'lata':'latas','latas':'latas',
+  'cucharada':'cucharadas','cucharadas':'cucharadas','cda':'cucharadas','cdas':'cucharadas',
+  'cucharadita':'cucharaditas','cucharaditas':'cucharaditas','cdita':'cucharaditas','cditas':'cucharaditas',
+  'pellizco':'pellizcos','pellizcos':'pellizcos','rama':'ramas','ramas':'ramas',
+  'hoja':'hojas','hojas':'hojas','puñado':'puñados','puñados':'puñados'
+};
+var SING = {
+  'dientes':'diente','cabezas':'cabeza','unidades':'unidad','latas':'lata','manojos':'manojo',
+  'cucharadas':'cucharada','cucharaditas':'cucharadita','pellizcos':'pellizco','ramas':'rama',
+  'hojas':'hoja','puñados':'puñado'
+};
+function normUni(u) {
+  if (!u) return '';
+  var limpio = u.replace(/\(.*?\)/g, '').trim().toLowerCase();
+  var pal = limpio.split(/\s+/)[0].replace(/[.,;]/g, '');
+  return UNI[pal] || limpio;
+}
+// Nombres que se unifican para no duplicar filas en la compra
+var ALIAS = {
+  'Chalota o cebolla morada':'Cebolla morada',
+  'Cilantro o perejil fresco':'Cilantro fresco',
+  'Guindilla o pimiento rojo picante':'Guindilla',
+  'Guindilla o pimentón picante':'Guindilla',
+  'Pimiento rojo asado':'Pimiento rojo',
+  'Melocotón maduro':'Melocotón',
+  'Aceite de girasol (sin olor)':'Aceite de girasol',
+  'Aceite de oliva suave':'Aceite de oliva',
+  'Perejil y menta frescos':'Perejil fresco',
+  'Estragón fresco o seco':'Estragón',
+  'Vinagre de arroz o de manzana':'Vinagre de manzana',
+  'Almendra cruda pelada':'Almendras',
+  'Caldo de verduras o agua':'Caldo de verduras',
+  'Mostaza a la antigua (en grano)':'Mostaza a la antigua',
+  'Atún en aceite':'Atún en lata',
+  'Pimentón de la Vera':'Pimentón dulce'
+};
+// No se compran: se tienen en casa o vienen con otro ingrediente
+var IGNORAR = /^(sal|pimienta|sal y pimienta|pimienta negra molida|agua|agua muy fría|ralladura de limón|al gusto)$/i;
+var CONV = { 'cucharadas':['cucharaditas', 3], 'kg':['g',1000], 'l':['ml',1000] };
+function canon(n, u) {
+  var c = CONV[u];
+  if (c) return { n: n * c[1], u: c[0] };
+  return { n: n, u: u };
+}
+function numDe(txt) {
+  var s = String(txt).replace('½','0.5').replace('¼','0.25').replace('¾','0.75').replace('⅓','0.33').replace('⅔','0.66');
+  var m = /^\s*(\d+(?:[.,]\d+)?)(?:\s*[-–]\s*\d+(?:[.,]\d+)?)?\s*(.*)$/.exec(s);
+  if (!m) return null;
+  return canon(parseFloat(m[1].replace(',','.')), normUni(m[2]));
+}
+function fmtNum(n) {
+  var r = Math.round(n * 100) / 100;
+  return (r % 1 === 0) ? String(r) : String(r).replace('.', ',');
+}
+function fmtCant(n, u) {
+  if (!u) return fmtNum(n);
+  // las cucharaditas se muestran como cucharadas cuando hay suficientes
+  if (u === 'cucharaditas') {
+    if (n >= 3) { n = Math.round(n / 3 * 2) / 2; u = 'cucharadas'; }
+    else { n = Math.round(n * 2) / 2; }
+  }
+  var r = Math.round(n * 100) / 100;
+  var un = (r === 1 && SING[u]) ? SING[u] : u;
+  return fmtNum(r) + ' ' + un;
+}
+function compraDeEnsaladas() {
+  var acc = {};   // nombre||unidad -> {nom, uni, n}
+  var bases = {}; // bases ya añadidas a la compra
+  var libres = {}; // nombre -> texto (sin cantidad numérica)
+  function meter(ing) {
+    for (var i = 0; i < ing.length; i++) {
+      var nom = ALIAS[ing[i][0]] || ing[i][0], can = ing[i][1];
+      if (IGNORAR.test(nom)) continue;
+      var q = numDe(can);
+      if (!q) { libres[nom] = can; continue; }
+      var k = nom + '||' + q.u;
+      if (!acc[k]) acc[k] = { nom:nom, uni:q.u, n:0 };
+      acc[k].n += q.n;
+    }
+  }
+  for (var d = 0; d < 7; d++) {
+    for (var m = 0; m < 2; m++) {
+      var nomR = ST.menuEns[d][m];
+      var r = RECETAS[nomR];
+      if (!r) continue;
+      meter(r.ing);
+      // el aliño se cuenta una vez por cada ensalada que lo usa
+      if (r.alino && RECETAS[r.alino]) meter(RECETAS[r.alino].ing);
+      // si la ensalada usa una base (zanahoria coreana/marroquí), añadir su compra UNA vez
+      for (var z = 0; z < r.ing.length; z++) {
+        var ib = r.ing[z][0];
+        if (esBase(ib) && !bases[ib]) { bases[ib] = true; meter(RECETAS[ib].ing); }
+      }
+    }
+  }
+  // montar grupos
+  var out = [];
+  for (var g = 0; g < GRUPOS.length; g++) out.push({ cat: GRUPOS[g][0], items: [] });
+  for (var k2 in acc) {
+    var it = acc[k2];
+    out[grupoDe(it.nom)].items.push([it.nom, fmtCant(it.n, it.uni)]);
+  }
+  for (var k3 in libres) {
+    var yaEsta = false;
+    for (var k4 in acc) { if (acc[k4].nom === k3) { yaEsta = true; break; } }
+    if (!yaEsta) out[grupoDe(k3)].items.push([k3, libres[k3]]);
+  }
+  var fin = [];
+  for (var g2 = 0; g2 < out.length; g2++) {
+    if (out[g2].items.length) {
+      out[g2].items.sort(function(a,b){ return a[0] < b[0] ? -1 : 1; });
+      fin.push(out[g2]);
+    }
+  }
+  return fin;
+}
+function listaCompraActual() {
+  return (ST.modo === 'ensaladas' && ST.menuEns) ? compraDeEnsaladas() : COMPRA;
+}
+
+function renderCompra() {
+  var lista = listaCompraActual();
+  var ens = (ST.modo === 'ensaladas');
+  document.getElementById('badgeSem').textContent = ens
+    ? ('Ensaladas · sem. ' + ST.quincena + '/2')
+    : ('Semana ' + ST.semana);
+  var total = 0, hechos = 0, html = '';
+  if (ens) {
+    html += '<div class="modo-bar">🥗 <span>Lista calculada a partir de las <strong>14 ensaladas</strong> de esta semana, aliños incluidos. Para 2 personas.</span></div>';
+  }
+  for (var c = 0; c < lista.length; c++) {
+    var cat = lista[c];
+    html += '<div class="cat-blk"><div class="cat-tit">'+cat.cat+'</div>';
+    for (var i = 0; i < cat.items.length; i++) {
+      var k = ST.modo + '_' + c + '_' + i;
+      var ch = ST.checks[k];
+      var done = !!(ch && ch.v);
+      var q = (ST.quien[k] && ST.quien[k].v) || '';
+      total++; if (done) hechos++;
+      html += '<div class="ci'+(done?' done':'')+'" data-k="'+k+'">';
+      html += '<div class="ci-box">'+(done?'✓':'')+'</div>';
+      html += '<div class="ci-n">'+cat.items[i][0];
+      html += '<button class="ci-q'+(q?' a'+q:'')+'" data-q="'+k+'">'+(q ? nombreDe(q) : '+ quién')+'</button>';
+      html += '</div>';
+      html += '<div class="ci-c">'+cat.items[i][1]+'</div>';
+      html += '</div>';
+    }
+    html += '</div>';
+  }
+  var cont = document.getElementById('listaCompra');
+  cont.innerHTML = html;
+  cont.onclick = function(e) {
+    var el = e.target;
+    while (el && el !== this) {
+      if (el.classList.contains('ci-q')) {
+        var kq = el.getAttribute('data-q');
+        var act = (ST.quien[kq] && ST.quien[kq].v) || '';
+        ST.quien[kq] = { v: cicla(act), t: Date.now() };
+        guardar(); renderCompra(); return;
+      }
+      if (el.classList.contains('ci')) {
+        var k2 = el.getAttribute('data-k');
+        var cur = !!(ST.checks[k2] && ST.checks[k2].v);
+        ST.checks[k2] = { v: !cur, t: Date.now(), by: CFG.yo };
+        guardar(); renderCompra(); return;
+      }
+      el = el.parentElement;
+    }
+  };
+  document.getElementById('progTxt').textContent = hechos+' / '+total;
+  document.getElementById('progFill').style.width = (total > 0 ? Math.round(hechos/total*100) : 0)+'%';
+}
+
+// ── RECETARIO ───────────────────────────────────────────────
+var CATS = {
+  'todo':'Todas',
+  'ensalada':'🥗 Ensaladas',
+  'salsas':'🫙 Aliños',
+  'bases':'🥕 Bases',
+  'dieta':'🥦 Dieta',
+  'finde':'🎉 Finde',
+  'recetario':'📚 Recetario',
+  'carne':'🥩 Carne',
+  'pescado':'🐟 Pescado',
+  'pasta':'🍝 Pasta',
+  'arroz':'🍚 Arroz',
+  'verduras':'🌿 Verduras',
+  'huevos':'🥚 Huevos',
+  'asian':'🌏 Asiática',
+  'magreb':'🫕 Magreb',
+  'entrantes':'🫑 Entrantes'
+};
+function renderFiltros() {
+  var html = '', keys = Object.keys(CATS);
+  for (var i = 0; i < keys.length; i++) {
+    var k = keys[i];
+    html += '<button class="ftag'+(filtroAct===k?' on':'')+'" data-f="'+k+'">'+CATS[k]+'</button>';
+  }
+  var f = document.getElementById('filtros');
+  f.innerHTML = html;
+  f.onclick = function(e) {
+    if (e.target.classList.contains('ftag')) {
+      filtroAct = e.target.getAttribute('data-f');
+      renderFiltros(); renderRecetario();
+    }
+  };
+}
+function renderRecetario() {
+  var q = document.getElementById('searchInput').value.toLowerCase();
+  var keys = Object.keys(RECETAS), html = '', count = 0;
+  for (var i = 0; i < keys.length; i++) {
+    var nom = keys[i], r = RECETAS[nom];
+    var matchF = filtroAct === 'todo' || filtroAct === r.tipo || filtroAct === r.cat;
+    var matchQ = !q || nom.toLowerCase().indexOf(q) !== -1;
+    if (!matchF || !matchQ) continue;
+    count++;
+    var tagTxt = r.tipo === 'dieta' ? 'Dieta' : r.tipo === 'finde' ? 'Finde' : r.tipo === 'ensalada' ? 'Ensalada' : 'Recetario';
+    var tagCls = 'tag-' + (r.tipo === 'ensalada' ? 'dieta' : r.tipo);
+    html += '<div class="rec-card" data-r="'+nom+'">';
+    html += '<div class="rec-emoji">'+r.emoji+'</div>';
+    html += '<div class="rec-info"><div class="rec-nom">'+nom+'</div>';
+    html += '<div class="rec-sub"><span class="rec-tag '+tagCls+'">'+tagTxt+'</span></div></div>';
+    html += '<div class="rec-arr">›</div>';
+    html += '</div>';
+  }
+  if (count === 0) html = '<div class="empty"><div class="e-ico">🔍</div><p>No se encontraron recetas</p></div>';
+  var l = document.getElementById('listaRecetas');
+  l.innerHTML = html;
+  l.onclick = function(e) {
+    var el = e.target;
+    while (el && el !== this) {
+      if (el.classList.contains('rec-card')) { abrirReceta(el.getAttribute('data-r')); return; }
+      el = el.parentElement;
+    }
+  };
+}
+
+// ── MODAL RECETA ────────────────────────────────────────────
+function abrirReceta(nom) {
+  var r = RECETAS[nom];
+  if (!r) return;
+  document.getElementById('mTit').textContent = nom;
+  var html = '';
+  if (r.alino && RECETAS[r.alino]) {
+    html += '<button class="m-alino" data-al="'+r.alino+'">🫙 Aliño: '+r.alino+' ›</button>';
+  }
+  html += '<div class="m-sec"><h4>Ingredientes</h4>';
+  for (var i = 0; i < r.ing.length; i++) {
+    html += '<div class="ing"><span>'+r.ing[i][0]+'</span><span class="ing-c">'+r.ing[i][1]+'</span></div>';
+  }
+  html += '</div>';
+  html += '<div class="m-sec"><h4>Preparación</h4><div class="pasos">';
+  for (var j = 0; j < r.pasos.length; j++) html += '<div class="paso">'+r.pasos[j]+'</div>';
+  html += '</div></div>';
+  if (r.alerg) {
+    var chips = r.alerg.split(',');
+    html += '<div class="m-sec"><h4>Alérgenos</h4><div class="chips">';
+    for (var k = 0; k < chips.length; k++) html += '<span class="chip">'+chips[k].trim()+'</span>';
+    html += '</div></div>';
+  }
+  var body = document.getElementById('mBody');
+  body.innerHTML = html;
+  body.scrollTop = 0;
+  body.onclick = function(e) {
+    var el = e.target;
+    while (el && el !== this) {
+      if (el.classList.contains('m-alino')) { abrirReceta(el.getAttribute('data-al')); return; }
+      el = el.parentElement;
+    }
+  };
+  document.getElementById('overlay').classList.add('on');
+}
+function cerrarOverlay(e) { if (e.target === document.getElementById('overlay')) cerrarModal(); }
+function cerrarModal() { document.getElementById('overlay').classList.remove('on'); }
+
+// ── AJUSTES ─────────────────────────────────────────────────
+function abrirCfg() {
+  document.getElementById('cfgNomA').value  = ST.nombres.A || '';
+  document.getElementById('cfgNomB').value  = ST.nombres.B || '';
+  document.getElementById('cfgProt').value  = ST.protObj || 4;
+  document.getElementById('cfgHogar').value = CFG.hogar || '';
+  document.getElementById('cfgUrl').value   = CFG.url || '';
+  document.getElementById('cfgKey').value   = CFG.key || '';
+  setYo(CFG.yo || 'A');
+  document.getElementById('overlayCfg').classList.add('on');
+}
+function cerrarCfg() { document.getElementById('overlayCfg').classList.remove('on'); }
+function cerrarOverlayCfg(e) { if (e.target === document.getElementById('overlayCfg')) cerrarCfg(); }
+function setYo(v) {
+  CFG.yo = v;
+  document.getElementById('cfgYoA').className = (v === 'A') ? 'on' : '';
+  document.getElementById('cfgYoB').className = (v === 'B') ? 'on' : '';
+}
+function guardarCfg() {
+  ST.nombres = {
+    A: document.getElementById('cfgNomA').value.trim() || 'Persona 1',
+    B: document.getElementById('cfgNomB').value.trim() || 'Persona 2'
+  };
+  var po = parseInt(document.getElementById('cfgProt').value, 10);
+  ST.protObj = (po >= 2 && po <= 8) ? po : 4;
+  CFG.hogar = document.getElementById('cfgHogar').value.trim();
+  CFG.url   = document.getElementById('cfgUrl').value.trim();
+  CFG.key   = document.getElementById('cfgKey').value.trim();
+  try { localStorage.setItem('cfgSync', JSON.stringify(CFG)); } catch(e) {}
+  tocarMenu();
+  guardar();
+  pintarSync(syncActivo());
+  arrancarSync();
+  repintarTodo();
+  cerrarCfg();
+  toast(syncActivo() ? 'Ajustes guardados · sincronizando' : 'Ajustes guardados (solo este móvil)');
+}
+function probarSync() {
+  CFG.hogar = document.getElementById('cfgHogar').value.trim();
+  CFG.url   = document.getElementById('cfgUrl').value.trim();
+  CFG.key   = document.getElementById('cfgKey').value.trim();
+  if (!syncActivo()) { toast('Faltan datos de Supabase'); return; }
+  toast('Probando…');
+  traerRemoto(function(ok) { toast(ok ? '✅ Conexión correcta' : '❌ No conecta: revisa URL, key y tabla'); });
+}
+
+var syncInt = null;
+function arrancarSync() {
+  if (syncInt) clearInterval(syncInt);
+  if (!syncActivo()) { pintarSync(false); return; }
+  traerRemoto();
+  syncInt = setInterval(traerRemoto, 8000);
+}
+
+// ── SEGUIMIENTO ─────────────────────────────────────────────
+/* Cada sesión lleva dentro sus ejercicios. Así el desplegable deja de pedir
+   que elijas algo explicado en otro documento. */
+var SEG_TIPOS = {
+  'pierna1': {
+    n:'Pesas: piernas (1)', l:'P', corto:'Piernas 1',
+    ej:['Sentadilla — 4 × 8-12',
+        'Zancadas caminando — 4 × 10 por pierna',
+        'Peso muerto rumano con mancuernas — 4 × 8-12',
+        'Elevación de talones — 4 × 15-20',
+        'Puente de glúteo — 4 × 15'],
+    nota:'90 s de descanso entre series. Las dos primeras semanas, solo peso corporal.'
+  },
+  'pierna2': {
+    n:'Pesas: piernas (2)', l:'P', corto:'Piernas 2',
+    ej:['Sentadilla búlgara — 4 × 8-10 por pierna',
+        'Peso muerto a una pierna — 4 × 8 por pierna',
+        'Step-up a banco o escalón — 4 × 12 por pierna',
+        'Abducción de cadera con goma — 4 × 15 por lado',
+        'Plancha lateral — 4 × 30-45 s por lado'],
+    nota:'Es la sesión de equilibrio. Si te tambaleas, apóyate en la pared con una mano.'
+  },
+  'brazos': {
+    n:'Pesas: brazos y abdomen', l:'B', corto:'Brazos',
+    ej:['Flexiones (de rodillas o contra la pared si hace falta) — 3 × 8-12',
+        'Remo con mancuerna — 3 × 10 por brazo',
+        'Press de hombro — 3 × 10',
+        'Plancha frontal — 3 × 30-45 s',
+        'Bird-dog (cuadrupedia, brazo y pierna contrarios) — 3 × 10 por lado'],
+    nota:''
+  },
+  'andar': {
+    n:'Andar rápido o bici', l:'A', corto:'Andar',
+    ej:['40 min a ritmo vivo: deberías poder hablar, pero no cantar',
+        'A partir de la semana 5: meter cuestas, o intervalos de 2 min fuerte / 3 min suave × 6'],
+    nota:''
+  },
+  'salida': {
+    n:'Salida larga (finde)', l:'S', corto:'Salida',
+    ej:['60-90 min: senderismo, bici o natación',
+        'Ritmo cómodo, lo que cuenta es el rato'],
+    nota:''
+  },
+  'otro':     { n:'Otro ejercicio', l:'O', corto:'Otro',     ej:[], nota:'' },
+  'descanso': { n:'Descanso',       l:'·', corto:'Descanso', ej:[], nota:'El descanso también cuenta: el músculo se construye descansando, no entrenando.' }
+};
+
+/* Qué toca cada día de la semana. 0 = domingo en JS. */
+var SEG_PLAN = ['descanso','pierna1','andar','brazos','andar','pierna2','salida'];
+
+function segTocaHoy() { return SEG_PLAN[new Date().getDay()]; }
+
+function segHoy() {
+  var d = new Date(), m = d.getMonth()+1, dd = d.getDate();
+  return d.getFullYear()+'-'+(m<10?'0':'')+m+'-'+(dd<10?'0':'')+dd;
+}
+function segFmt(f) {
+  var p = f.split('-');
+  return p[2]+'/'+p[1];
+}
+function segPon(tipo, letra, fecha, valor) {
+  if (!ST.seg) ST.seg = {};
+  ST.seg[tipo+'|'+letra+'|'+fecha] = { v: valor, t: Date.now() };
+  guardar();
+}
+function segLee(tipo, letra) {
+  if (!ST.seg) ST.seg = {};
+  var pre = tipo+'|'+letra+'|', out = [], k;
+  for (k in ST.seg) {
+    if (k.indexOf(pre) !== 0) continue;
+    var e = ST.seg[k];
+    if (!e || e.v === null || e.v === undefined || e.v === '') continue;
+    out.push({ f: k.slice(pre.length), v: e.v });
+  }
+  out.sort(function(a,b){ return a.f < b.f ? -1 : (a.f > b.f ? 1 : 0); });
+  return out;
+}
+
+/* Media móvil de 7 días. El peso oscila casi un kilo por agua de un día a
+   otro; sin suavizar, la gráfica no dice nada útil. */
+function segMedia7(s) {
+  var out = [], i, j, sum, n;
+  for (i = 0; i < s.length; i++) {
+    sum = 0; n = 0;
+    for (j = Math.max(0, i-6); j <= i; j++) { sum += s[j].v; n++; }
+    out.push({ f: s[i].f, v: Math.round(sum/n*100)/100 });
+  }
+  return out;
+}
+
+function segGrafica(s) {
+  if (s.length < 2) return '';
+  var W = 300, H = 110, i, min = Infinity, max = -Infinity;
+  for (i = 0; i < s.length; i++) {
+    if (s[i].v < min) min = s[i].v;
+    if (s[i].v > max) max = s[i].v;
+  }
+  var pad = (max - min) * 0.2 || 0.5;
+  min -= pad; max += pad;
+  var pts = [];
+  for (i = 0; i < s.length; i++) {
+    var x = 34 + (s.length === 1 ? 0 : (i/(s.length-1))*(W-44));
+    var y = 12 + (1 - (s[i].v-min)/(max-min))*(H-32);
+    pts.push(Math.round(x*10)/10 + ',' + Math.round(y*10)/10);
+  }
+  return '<svg viewBox="0 0 '+W+' '+H+'" class="seg-svg" preserveAspectRatio="none">'+
+    '<polyline points="'+pts.join(' ')+'" fill="none" stroke="currentColor" '+
+    'stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>'+
+    '<text x="1" y="15" font-size="10" fill="#8a9e93">'+max.toFixed(1)+'</text>'+
+    '<text x="1" y="'+(H-16)+'" font-size="10" fill="#8a9e93">'+min.toFixed(1)+'</text>'+
+    '<text x="34" y="'+(H-2)+'" font-size="9.5" fill="#8a9e93">'+segFmt(s[0].f)+'</text>'+
+    '<text x="'+(W-30)+'" y="'+(H-2)+'" font-size="9.5" fill="#8a9e93">'+segFmt(s[s.length-1].f)+'</text>'+
+    '</svg>';
+}
+
+function segTarjeta(letra) {
+  var pesos = segLee('peso', letra);
+  var h = '<div class="seg-card"><div class="seg-nom">'+nombreDe(letra)+'</div>';
+  if (pesos.length) {
+    var u = pesos[pesos.length-1];
+    h += '<div class="seg-cifra">'+u.v+' kg</div>';
+    h += '<div class="seg-sub">último registro · '+segFmt(u.f)+'</div>';
+    var med = segMedia7(pesos);
+    h += segGrafica(med);
+    if (med.length >= 8) {
+      var ini = med[Math.max(0, med.length-29)];
+      var dif = med[med.length-1].v - ini.v;
+      h += '<div class="seg-tend">'+(dif >= 0 ? '+' : '')+dif.toFixed(2)+
+           ' kg desde el '+segFmt(ini.f)+' <span style="font-weight:400;color:#8a9e93">(media de 7 días)</span></div>';
+    } else {
+      h += '<div class="seg-sub">La tendencia aparece cuando haya 8 pesadas.</div>';
+    }
+  } else {
+    h += '<div class="seg-vacio">Sin pesadas registradas todavía.</div>';
+  }
+
+  // Contador de la semana en curso
+  var sem = segSemana(letra);
+  h += '<div class="seg-cuenta"><strong>'+sem.total+'</strong> '+
+       (sem.total === 1 ? 'sesión' : 'sesiones')+' esta semana · '+
+       '<strong>'+sem.piernas+'</strong> de piernas</div>';
+
+  var an = segAnimo(letra, sem);
+  if (an) h += '<div class="seg-animo">'+an+'</div>';
+
+  var ses = segLee('sesion', letra).slice(-14);
+  if (ses.length) {
+    h += '<div class="seg-racha">';
+    for (var i = 0; i < ses.length; i++) {
+      var t = SEG_TIPOS[ses[i].v];
+      if (!t) continue;
+      h += '<span class="seg-dia'+(ses[i].v === 'descanso' ? ' off' : '')+
+           '" title="'+segFmt(ses[i].f)+' · '+t.n+'">'+t.l+'</span>';
+    }
+    h += '</div><div class="seg-sub" style="margin-top:6px">últimas '+ses.length+' sesiones</div>';
+  }
+  return h + '</div>';
+}
+
+/* Sesiones de los últimos 7 días. */
+function segSemana(letra) {
+  var d = new Date(); d.setDate(d.getDate()-6);
+  var lim = d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);
+  var ses = segLee('sesion', letra), total = 0, piernas = 0, i;
+  for (i = 0; i < ses.length; i++) {
+    if (ses[i].f < lim) continue;
+    if (ses[i].v === 'descanso') continue;
+    total++;
+    if (ses[i].v === 'pierna1' || ses[i].v === 'pierna2') piernas++;
+  }
+  return { total: total, piernas: piernas };
+}
+
+/* Mensajes de ánimo. Van por constancia, no por kilos: la constancia es lo
+   que se puede controlar, y en recomposición el peso no se mueve aunque
+   todo vaya bien. El de peso solo aparece si baja, y nunca hay reproche
+   si sube: el peso oscila solo. */
+function segAnimo(letra, sem) {
+  var msg = [];
+  if (sem.total >= 5)      msg.push('💪 ' + sem.total + ' sesiones esta semana. Estás cumpliendo el plan entero.');
+  else if (sem.total >= 3) msg.push('👏 Vas por buen camino: ' + sem.total + ' sesiones esta semana.');
+  else if (sem.total >= 1) msg.push('🌱 Ya has empezado la semana. La constancia pesa más que la intensidad.');
+
+  if (sem.piernas >= 2)      msg.push('Las dos de piernas hechas: eso es lo que construye músculo.');
+  else if (sem.total >= 3 && sem.piernas === 0)
+    msg.push('Llevas la semana sin sesión de piernas. Es la que más cuesta y la que más cambia las cosas.');
+
+  var med = segMedia7(segLee('peso', letra));
+  if (med.length >= 10) {
+    var dif = med[med.length-1].v - med[Math.max(0, med.length-29)].v;
+    if (dif <= -0.4) msg.push('📉 La media va bajando de forma sostenida. Es exactamente el ritmo que buscabas.');
+    else if (Math.abs(dif) < 0.4 && sem.total >= 3)
+      msg.push('La báscula está plana, pero si el objetivo es ganar músculo eso es el resultado esperado, no un frenazo.');
+  }
+  return msg.join(' ');
+}
+
+function segFicha() {
+  var t = segTocaHoy(), d = SEG_TIPOS[t];
+  var h = '<div class="seg-hoy"><div class="seg-hoy-tit">Hoy toca · '+d.n+'</div>';
+  if (d.ej.length) {
+    h += '<ul class="seg-ej">';
+    for (var i = 0; i < d.ej.length; i++) h += '<li>'+d.ej[i]+'</li>';
+    h += '</ul>';
+  }
+  if (d.nota) h += '<div class="seg-hoy-nota">'+d.nota+'</div>';
+  h += '<button class="seg-ok" style="width:100%;margin-top:10px" onclick="segHecho(\''+t+'\')">✓ Hecho</button>';
+  h += '</div>';
+  return h;
+}
+
+function segCuadro() {
+  var nom = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+  var hoy = new Date().getDay(), i, h = '';
+  h += '<details class="seg-cuadro"><summary>Ver el cuadro de la semana entera</summary>';
+  for (i = 1; i <= 7; i++) {
+    var d = i % 7;
+    h += '<div class="seg-cf'+(d === hoy ? ' hoy' : '')+'"><span>'+nom[d]+'</span><span>'+
+         SEG_TIPOS[SEG_PLAN[d]].corto+'</span></div>';
+  }
+  h += '<div class="seg-hoy-nota" style="margin-top:10px">Cuando las repeticiones salgan '+
+       'cómodas en las cuatro series, sube peso. Cada seis semanas, una semana suave con '+
+       'la mitad de series.</div></details>';
+  return h;
+}
+
+function renderSeg() {
+  var otra = (CFG.yo === 'A') ? 'B' : 'A';
+  var h = '<div class="seg-top"><h2>Seguimiento</h2>'+
+          '<span class="seg-yo">registras como '+nombreDe(CFG.yo)+'</span></div>';
+
+  h += '<div class="seg-form">';
+  h += '<div class="seg-fila"><label>Peso</label>'+
+       '<input type="number" step="0.05" inputmode="decimal" id="segPeso" placeholder="kg">'+
+       '<button class="seg-ok" onclick="segGuardarPeso()">Guardar</button></div>';
+  h += '<div class="seg-fila"><label>Sesión</label><select id="segSesion">';
+  var toca = segTocaHoy();
+  for (var t in SEG_TIPOS) h += '<option value="'+t+'"'+(t === toca ? ' selected' : '')+'>'+SEG_TIPOS[t].n+'</option>';
+  h += '</select><button class="seg-ok" onclick="segGuardarSesion()">Guardar</button></div>';
+  h += '<div class="seg-sub" style="margin:8px 0 0">Se guarda con la fecha de hoy ('+
+       segFmt(segHoy())+'). Si repites, sustituye lo anterior.</div>';
+  h += '<button class="seg-borrar" onclick="segBorrarHoy()">Borrar los registros de hoy</button>';
+  h += '</div>';
+
+  h += segFicha();
+  h += segCuadro();
+
+  h += segTarjeta(CFG.yo);
+  h += segTarjeta(otra);
+
+  h += '<div class="seg-nota">Pésate el mismo día de la semana, en ayunas y con la '+
+       'misma báscula. La gráfica solo pinta la media de 7 días: el peso de un día '+
+       'suelto no significa nada. Y si el objetivo es ganar músculo, la línea plana '+
+       'es el resultado esperado, no un fracaso.</div>';
+
+  document.getElementById('vSeg').innerHTML = h;
+}
+
+function segGuardarPeso() {
+  var el = document.getElementById('segPeso');
+  var v = parseFloat(String(el.value).replace(',', '.'));
+  if (isNaN(v) || v < 20 || v > 250) { toast('Peso no válido'); return; }
+  segPon('peso', CFG.yo, segHoy(), Math.round(v*100)/100);
+  el.value = '';
+  toast('📈 Peso guardado');
+  renderSeg();
+}
+function segHecho(tipo) {
+  segPon('sesion', CFG.yo, segHoy(), tipo);
+  toast('✓ ' + SEG_TIPOS[tipo].n);
+  renderSeg();
+}
+function segGuardarSesion() {
+  var v = document.getElementById('segSesion').value;
+  segPon('sesion', CFG.yo, segHoy(), v);
+  toast('📈 ' + SEG_TIPOS[v].n);
+  renderSeg();
+}
+/* Lápida: guarda null con su marca de tiempo en vez de borrar la clave.
+   Una clave ausente no tiene fecha con la que comparar y el otro móvil la
+   resucitaría en el siguiente sondeo. */
+function segBorrarHoy() {
+  var f = segHoy();
+  segPon('peso',   CFG.yo, f, null);
+  segPon('sesion', CFG.yo, f, null);
+  toast('Registros de hoy borrados');
+  renderSeg();
+}
+
+// ── NAVEGACIÓN / VARIOS ─────────────────────────────────────
+function nav(v) {
+  document.getElementById('vMenu').className     = 'vista'+(v==='menu'     ?' on':'');
+  document.getElementById('vCompra').className   = 'vista'+(v==='compra'   ?' on':'');
+  document.getElementById('vRecetario').className= 'vista'+(v==='recetario'?' on':'');
+  document.getElementById('vSeg').className      = 'vista'+(v==='seg'      ?' on':'');
+  document.getElementById('tabs').style.display  = v==='menu'?'grid':'none';
+  document.getElementById('btnM').className = 'hbtn'+(v==='menu'     ?' on':'');
+  document.getElementById('btnC').className = 'hbtn'+(v==='compra'   ?' on':'');
+  document.getElementById('btnR').className = 'hbtn'+(v==='recetario'?' on':'');
+  document.getElementById('btnS').className = 'hbtn'+(v==='seg'      ?' on':'');
+  document.getElementById('fab').className  = v==='menu'?'fab':'fab fab-hidden';
+  if (v === 'seg') renderSeg();
+}
+function toast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg; t.className = 'toast on';
+  setTimeout(function(){ t.className='toast'; }, 2500);
+}
+function toggleDark() {
+  var body = document.body, btn = document.getElementById('btnDark');
+  if (body.classList.contains('dark')) {
+    body.classList.remove('dark'); btn.textContent = '🌙';
+    try { localStorage.setItem('darkMode','0'); } catch(e){}
+  } else {
+    body.classList.add('dark'); btn.textContent = '☀️';
+    try { localStorage.setItem('darkMode','1'); } catch(e){}
+  }
+}
+function initDark() {
+  try {
+    if (localStorage.getItem('darkMode') === '1') {
+      document.body.classList.add('dark');
+      document.getElementById('btnDark').textContent = '☀️';
+    }
+  } catch(e){}
+}
+function repintarTodo() {
+  document.getElementById('btnEns').className = 'hbtn' + (ST.modo === 'ensaladas' ? ' on' : '');
+  document.getElementById('fab').textContent = (ST.modo === 'ensaladas')
+    ? '🔀 Nueva semana de ensaladas' : '🔀 Nueva semana';
+  renderTabs(); renderDia(diaAct); renderCompra();
+  renderFiltros(); renderRecetario();
+  if (document.getElementById('vSeg').className.indexOf('on') !== -1) renderSeg();
+}
+
+// ── INIT ────────────────────────────────────────────────────
+initDark();
+cargarLocal();
+// Solo genera menú nuevo si no había ninguno guardado
+if (!ST.ts) { generarMenuSemana(); guardarLocal(); }
+if (ST.modo === 'ensaladas' && !ST.menuEns) { generarSemanaEnsaladas(); guardarLocal(); }
+repintarTodo();
+arrancarSync();
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('./sw.js');
   });
 }
-})();
 </script>
 </body>
 </html>
