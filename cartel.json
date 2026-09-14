@@ -1,6 +1,26 @@
 {
-  "actualizado": "2026-08-27",
+  "actualizado": "2026-09-14",
   "eventos": [
+    {
+      "id": "ivam-candiani-radix",
+      "inicio": "2026-04-29",
+      "fin": "2026-09-20",
+      "titulo": "«Tania Candiani. Radix»",
+      "seccion": "exposiciones",
+      "lugar": "IVAM Centre Julio González",
+      "ciudad": "Valencia",
+      "enlace": "https://ivam.es/es/exposiciones/tania-candiani-radix/"
+    },
+    {
+      "id": "mubag-emilio-varela",
+      "inicio": "2026-04-22",
+      "fin": "2026-09-27",
+      "titulo": "«Emilio Varela. Una ensoñación intimista». 75 aniversario",
+      "seccion": "exposiciones",
+      "lugar": "MUBAG",
+      "ciudad": "Alicante",
+      "enlace": "https://agendacultural.diputacionalicante.es/event/emilio-varela-una-ensonacion-intimista-75-aniversario/"
+    },
     {
       "id": "cvongd-uraqi-terra",
       "inicio": "2026-09-01",
@@ -25,6 +45,83 @@
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/exposiciones/exposicion-concurso-una-sede-con-vida.html"
     },
     {
+      "id": "muvim-que-tengo-en-la-cabeza",
+      "inicio": "2026-06-18",
+      "fin": "2026-10-04",
+      "titulo": "«¿Qué tengo en la cabeza?»",
+      "seccion": "exposiciones",
+      "etiquetas": [
+        "foto"
+      ],
+      "lugar": "MuVIM",
+      "ciudad": "Valencia",
+      "precio": "gratis",
+      "enlace": "http://www.muvim.es/es/exposiciones"
+    },
+    {
+      "id": "nau-comics-calatayud",
+      "inicio": "2026-04-23",
+      "fin": "2026-10-11",
+      "titulo": "«Línea, luz, color. Los cómics de Miguel Calatayud»",
+      "seccion": "exposiciones",
+      "lugar": "Centre Cultural La Nau",
+      "ciudad": "Valencia",
+      "enlace": "https://www.uv.es/uvweb/cultura/es/centros-programacion-cultural/centre-cultural-nau/programacion-cultural/programacion-actual-1285874240901.html"
+    },
+    {
+      "id": "ivam-de-middel-apoteosis",
+      "inicio": "2026-05-21",
+      "fin": "2026-10-12",
+      "titulo": "«Cristina de Middel. Apoteosis Now»",
+      "seccion": "exposiciones",
+      "etiquetas": [
+        "foto"
+      ],
+      "lugar": "IVAM Centre Julio González",
+      "ciudad": "Valencia",
+      "enlace": "https://ivam.es/es/exposiciones/cristina-de-middel-apoteosis-now/"
+    },
+    {
+      "id": "ivam-la-albufera",
+      "inicio": "2026-07-08",
+      "fin": "2026-10-18",
+      "titulo": "«La Albufera»",
+      "seccion": "exposiciones",
+      "lugar": "IVAM Centre Julio González",
+      "ciudad": "Valencia",
+      "enlace": "https://ivam.es/es/exposiciones/la-albufera/"
+    },
+    {
+      "id": "marq-lluria-cocentaina",
+      "inicio": "2025-10-14",
+      "fin": "2026-10-19",
+      "titulo": "«Llúria, señores y señoras de la tierra». Exposición del MARQ",
+      "seccion": "exposiciones",
+      "lugar": "Palau Comtal",
+      "ciudad": "Cocentaina",
+      "enlace": "https://agendacultural.diputacionalicante.es/event/marq-en-cocentaina/"
+    },
+    {
+      "id": "mubag-gisbert",
+      "inicio": "2026-06-12",
+      "fin": "2026-10-25",
+      "titulo": "«Gisbert (1834-1901)»",
+      "seccion": "exposiciones",
+      "lugar": "MUBAG",
+      "ciudad": "Alicante",
+      "enlace": "https://agendacultural.diputacionalicante.es/event/gisbert-1834-1901/"
+    },
+    {
+      "id": "ivam-territorios-en-transito",
+      "inicio": "2026-07-16",
+      "fin": "2026-11-29",
+      "titulo": "«Territorios en tránsito / Solo dúo»: Irene Grau y Marco Giordano",
+      "seccion": "exposiciones",
+      "lugar": "IVAM Centre Julio González",
+      "ciudad": "Valencia",
+      "enlace": "https://ivam.es/es/exposiciones/territorios-en-transito-solo-duo-irene-grau-marco-giordano/"
+    },
+    {
       "id": "sede-mentira-contra-verdad",
       "inicio": "2026-09-25",
       "fin": "2026-12-17",
@@ -33,6 +130,26 @@
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/exposiciones/mentira-contra-verdad.-pepe-calvo.html"
+    },
+    {
+      "id": "ivam-melanie-smith",
+      "inicio": "2026-10-07",
+      "fin": "2027-01-17",
+      "titulo": "«Solo una cosa era extraña, seguir pensando como antes», de Melanie Smith",
+      "seccion": "exposiciones",
+      "lugar": "IVAM Centre Julio González",
+      "ciudad": "Valencia",
+      "enlace": "https://ivam.es/es/exposiciones/melanie-smith-solo-una-cosa-era-extrana-seguir-pensando-como-antes/"
+    },
+    {
+      "id": "ivam-regina-de-miguel",
+      "inicio": "2026-10-29",
+      "fin": "2027-04-11",
+      "titulo": "«Regina de Miguel. Aguas intoxicadas»",
+      "seccion": "exposiciones",
+      "lugar": "IVAM Centre Julio González",
+      "ciudad": "Valencia",
+      "enlace": "https://ivam.es/es/exposiciones/regina-de-miguel-aguas-intoxicadas/"
     }
   ]
 }

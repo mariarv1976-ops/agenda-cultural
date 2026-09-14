@@ -1,56 +1,7 @@
 {
-  "actualizado": "2026-08-27",
-  "ventana": "2026-09-01 / 2026-10-31",
+  "actualizado": "2026-09-14",
+  "ventana": "2026-09-14 / 2026-11-14",
   "eventos": [
-    {
-      "id": "sede-mercurio-rojo-0902",
-      "fecha": "2026-09-02",
-      "hora": "19:00",
-      "titulo": "Presentación del libro «El secreto del mercurio rojo. La hermandad del templo de Debod», de Ernesto Hernández",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/sede-ciudad-de-alicante_noticias.html"
-    },
-    {
-      "id": "sede-movilidad-sostenible-0903",
-      "fecha": "2026-09-03",
-      "hora": "10:00",
-      "titulo": "Jornada «La sostenibilidad en la movilidad al trabajo: derecho y obligación»",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/la-sostenibilidad-en-la-movilidad-al-trabajo.pdf"
-    },
-    {
-      "id": "sede-cine-ideal-0910",
-      "fecha": "2026-09-10",
-      "hora": "19:00",
-      "titulo": "Mesa redonda «100 anys del cine Ideal d'Alacant»",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/100-anys-del-cine-ideal-d-alacant.pdf"
-    },
-    {
-      "id": "sede-elia-barcelo-0911",
-      "fecha": "2026-09-11",
-      "hora": "19:00",
-      "titulo": "Encuentro con Elia Barceló: «La marca de nuestra tierra». Ciclo Las comarcas de Alicante",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/la-marca-de-nuestra-tierra.pdf"
-    },
-    {
-      "id": "adda-corda-polsada-0913",
-      "fecha": "2026-09-13",
-      "titulo": "Federació Alacantina de Corda Polsada «Mar i Muntanya»",
-      "seccion": "musica",
-      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://addaalicante.es/concierto/federacio-alacantina-de-corda-polsada-mar-i-muntanya-facp/"
-    },
     {
       "id": "sede-financiacion-autonomica-0915",
       "fecha": "2026-09-15",
@@ -68,7 +19,8 @@
       "seccion": "musica",
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/nunca-pierdas-tu-esencia.pdf"
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/nunca-pierdas-tu-esencia.pdf",
+      "hora": "20:00"
     },
     {
       "id": "sede-fuego-amigo-0916",
@@ -81,13 +33,53 @@
       "enlace": "https://web.ua.es/es/sedealicante/sede-ciudad-de-alicante_noticias.html"
     },
     {
+      "id": "sede-espana-partida-en-dos-0916",
+      "fecha": "2026-09-16",
+      "hora": "19:00",
+      "titulo": "Presentación de «España partida en dos, el cómic», con Julián Casanova, Carles Esquembre y Miguel Casanova",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218477"
+    },
+    {
       "id": "sede-conferencia-inaugural-0917",
       "fecha": "2026-09-17",
       "titulo": "Apertura de curso: «¿Cómo aprender a vivir cuando el mundo cambia tan deprisa?», con Ana Laguna",
       "seccion": "charlas",
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/conferencia-inaugural-como-aprender-a-vivir-cuando-el-mundo-cambia-tan-deprisa.html"
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/conferencia-inaugural-como-aprender-a-vivir-cuando-el-mundo-cambia-tan-deprisa.html",
+      "hora": "18:30"
+    },
+    {
+      "id": "sede-auca-anlmi-0917",
+      "fecha": "2026-09-17",
+      "hora": "19:15",
+      "titulo": "Acto literario AUCA de las Letras–ANLMI: «La importancia de la lengua española en el mundo»",
+      "seccion": "varios",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218516"
+    },
+    {
+      "id": "ua-concierto-bienvenida-rata-0917",
+      "fecha": "2026-09-17",
+      "hora": "21:00",
+      "titulo": "Concierto de bienvenida a la UA: RATA",
+      "seccion": "musica",
+      "lugar": "Anfiteatro del Aulario II, campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218427"
+    },
+    {
+      "id": "fm-documental-espla-0918",
+      "fecha": "2026-09-18",
+      "titulo": "Proyección del documental «Óscar Esplá»",
+      "seccion": "cine",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
     },
     {
       "id": "sede-geografas-viajeras-0918",
@@ -96,7 +88,8 @@
       "seccion": "charlas",
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/observatorios-y-aulas-debate/cientificas-de-letras.html"
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/observatorios-y-aulas-debate/cientificas-de-letras.html",
+      "hora": "17:30"
     },
     {
       "id": "sede-laberinto-fauno-0918",
@@ -105,7 +98,28 @@
       "seccion": "cine",
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/cine/xx-ciclo-de-cine-psicoanalisis-y-cultura-el-psicoanalisis-entre-sujeto-del-inconsciente-y-sujeto-social.html"
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/cine/xx-ciclo-de-cine-psicoanalisis-y-cultura-el-psicoanalisis-entre-sujeto-del-inconsciente-y-sujeto-social.html",
+      "hora": "18:15"
+    },
+    {
+      "id": "cigarreras-fragil-como-bomba-0918",
+      "fecha": "2026-09-18",
+      "hora": "20:30",
+      "titulo": "Alacant a Escena: estreno de «Frágil como una bomba», de Estela Santos",
+      "seccion": "teatro",
+      "lugar": "Centro Cultural Las Cigarreras",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/agenda/alacant-escena-estreno-fragil-como-bomba"
+    },
+    {
+      "id": "cigarreras-doblecapa-oujiang-0919",
+      "fecha": "2026-09-19",
+      "hora": "19:30",
+      "titulo": "Doble concierto: Doblecapa + Ou Jiang",
+      "seccion": "musica",
+      "lugar": "Caja Negra, Centro Cultural Las Cigarreras",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/agenda/doble-concierto-cigarreras"
     },
     {
       "id": "adda-banda-ciudad-de-asis-0920",
@@ -114,7 +128,8 @@
       "seccion": "musica",
       "lugar": "ADDA. Auditorio de la Diputación de Alicante",
       "ciudad": "Alicante",
-      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-union-musical-ciudad-de-asis-de-alicante/"
+      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-union-musical-ciudad-de-asis-de-alicante/",
+      "hora": "10:00"
     },
     {
       "id": "adda-banda-benidorm-0920",
@@ -123,7 +138,27 @@
       "seccion": "musica",
       "lugar": "ADDA. Auditorio de la Diputación de Alicante",
       "ciudad": "Alicante",
-      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-union-musical-de-benidorm/"
+      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-union-musical-de-benidorm/",
+      "hora": "13:00"
+    },
+    {
+      "id": "fm-conferencia-rey-juan-0922",
+      "fecha": "2026-09-22",
+      "titulo": "Conferencia «La pregunta por la herencia en Rey Juan de Shakespeare», con Andreu Jaume",
+      "seccion": "charlas",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
+    },
+    {
+      "id": "ua-jornadas-mujeres-artistas-0922",
+      "fecha": "2026-09-22",
+      "hora": "15:00",
+      "titulo": "III Jornadas «Mujeres artistas y trabajo en colectivos en la provincia de Alicante»",
+      "seccion": "charlas",
+      "lugar": "Aula Magna de la Facultad de Filosofía y Letras (UA)",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218335"
     },
     {
       "id": "sede-espla-expandido-0922",
@@ -132,7 +167,8 @@
       "seccion": "musica",
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/espla-expandido.-musica-creacion-y-dialogo-entre-las-artes.html"
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/espla-expandido.-musica-creacion-y-dialogo-entre-las-artes.html",
+      "hora": "19:15"
     },
     {
       "id": "sede-camino-centenario-0922",
@@ -141,12 +177,12 @@
       "seccion": "charlas",
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2025-2026/jornadas-y-ciclos-de-conferencias/camino-del-centenario-1928-2028.html"
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2025-2026/jornadas-y-ciclos-de-conferencias/camino-del-centenario-1928-2028.html",
+      "hora": "19:45"
     },
     {
       "id": "sede-corrupcion-espana-0923",
       "fecha": "2026-09-23",
-      "hora": "19:15",
       "titulo": "Presentación del libro «La corrupción en España: un problema enquistado», con Joaquim Bosch y Fernando Jiménez",
       "seccion": "charlas",
       "lugar": "Sede Universitaria Ciudad de Alicante",
@@ -160,7 +196,8 @@
       "seccion": "charlas",
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/julio-just-gimeno-la-herencia-de-la-segunda-republica.pdf"
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/julio-just-gimeno-la-herencia-de-la-segunda-republica.pdf",
+      "hora": "11:00"
     },
     {
       "id": "sede-parlem-educacio-0924",
@@ -170,6 +207,74 @@
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/parlem-d-educacio-construim-la-mobilitzacio.pdf"
+    },
+    {
+      "id": "sede-y-que-menos-drama-0924",
+      "fecha": "2026-09-24",
+      "hora": "19:00",
+      "titulo": "Presentación del libro «¿Y qué? El arte de vivir con menos drama», de Andrés Martín Martos",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218492"
+    },
+    {
+      "id": "ua-john-dowland-0924",
+      "fecha": "2026-09-24",
+      "hora": "19:00",
+      "titulo": "Conferencia «John Dowland, les passions de l’ànima»",
+      "seccion": "charlas",
+      "lugar": "Vilamuseu, sala A",
+      "ciudad": "Villajoyosa",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218463"
+    },
+    {
+      "id": "ua-nit-investigacio-0925",
+      "fecha": "2026-09-25",
+      "titulo": "European Researchers’ Night – Nit de la Investigació 2026",
+      "seccion": "varios",
+      "lugar": "Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218459"
+    },
+    {
+      "id": "fm-rey-juan-lectura-0925",
+      "fecha": "2026-09-25",
+      "titulo": "«El rey Juan», de Shakespeare. Lectura dramatizada, Cía. El Club de la Serpiente",
+      "seccion": "teatro",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
+    },
+    {
+      "id": "cigarreras-atronador-fest-0925",
+      "fecha": "2026-09-25",
+      "titulo": "Atronador Fest, 10ª edición: noise, experimental y electrónica (25 y 26 de septiembre)",
+      "seccion": "musica",
+      "lugar": "Centro Cultural Las Cigarreras",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "enlace": "https://www.alicante.es/es/agenda/atronador-fest-3"
+    },
+    {
+      "id": "sede-revista-auca-65-0925",
+      "fecha": "2026-09-25",
+      "hora": "19:00",
+      "titulo": "Presentación del nº 65 de la revista AUCA de las Letras. Homenaje a Adolfo Celdrán",
+      "seccion": "varios",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218493"
+    },
+    {
+      "id": "fm-bourbon-street-stompers-0926",
+      "fecha": "2026-09-26",
+      "titulo": "The Bourbon Street Stompers. Classic New Orleans Jazz, Swing & Blues",
+      "seccion": "musica",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "precio": "18€",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
     },
     {
       "id": "adda-anillo-sin-palabras-0926",
@@ -193,14 +298,14 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/la-partenaire/"
     },
     {
-      "id": "adda-sueno-de-eros-1003",
-      "fecha": "2026-10-03",
-      "titulo": "«El sueño de Eros». Óscar Esplá 50",
+      "id": "fm-festival-blues-1002",
+      "fecha": "2026-10-02",
+      "titulo": "Festival de Blues de Alicante",
       "seccion": "musica",
-      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
       "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://addaalicante.es/concierto/el-sueno-de-eros-oscar-espla-50/"
+      "precio": "15€",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
     },
     {
       "id": "tp-gigante-1003",
@@ -213,6 +318,17 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/gigante/"
     },
     {
+      "id": "adda-sueno-de-eros-1003",
+      "fecha": "2026-10-03",
+      "titulo": "«El sueño de Eros». Óscar Esplá 50",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://addaalicante.es/concierto/el-sueno-de-eros-oscar-espla-50/",
+      "hora": "20:00"
+    },
+    {
       "id": "tp-orquesta-jovenes-1004",
       "fecha": "2026-10-04",
       "titulo": "Orquesta de Jóvenes de la Provincia de Alicante",
@@ -221,6 +337,15 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/orquesta-de-jovenes-de-la-provincia-de-alicante-2/"
+    },
+    {
+      "id": "fm-literatura-gotica-1006",
+      "fecha": "2026-10-06",
+      "titulo": "Conferencia «La sombra de lo extraño. El legado de la literatura gótica en la cultura popular actual», con Antonio Ballesteros",
+      "seccion": "charlas",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
     },
     {
       "id": "tp-la-cubana-1008",
@@ -233,6 +358,46 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/la-cubana/"
     },
     {
+      "id": "cigarreras-circarte-jornada-1010",
+      "fecha": "2026-10-10",
+      "hora": "11:00",
+      "titulo": "Circarte, 17º Festival de circo: jornada completa en Las Cigarreras (de 11:00 a 20:00)",
+      "seccion": "varios",
+      "lugar": "Centro Cultural Las Cigarreras",
+      "ciudad": "Alicante",
+      "enlace": "https://diariodealicante.net/circarte-2026-alicante-espectaculos-octubre/"
+    },
+    {
+      "id": "adda-banda-el-tossal-1011",
+      "fecha": "2026-10-11",
+      "hora": "10:00",
+      "titulo": "XIII Ciclo Las bandas de la provincia: Associació Musical El Tossal",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-associacio-musical-el-tossal/"
+    },
+    {
+      "id": "adda-banda-la-amistad-1011",
+      "fecha": "2026-10-11",
+      "hora": "13:00",
+      "titulo": "XIII Ciclo Las bandas de la provincia: Sociedad Musical La Amistad de Villafranqueza",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-sociedad-musical-la-amistad-de-villafranqueza/"
+    },
+    {
+      "id": "sede-flamenco-rosalia-1015",
+      "fecha": "2026-10-15",
+      "hora": "20:00",
+      "titulo": "Mundo y formas del flamenco: «Rosalía, la vanguardia y la innovación en el capitalismo de las redes», con Pablo Martínez",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
+    },
+    {
       "id": "adda-zen-garden-1016",
       "fecha": "2026-10-16",
       "titulo": "«Zen Garden». Naturaleza, vida y amor I",
@@ -240,7 +405,8 @@
       "lugar": "ADDA. Auditorio de la Diputación de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
-      "enlace": "https://addaalicante.es/concierto/zen-garden-naturaleza-vida-y-amor-i/"
+      "enlace": "https://addaalicante.es/concierto/zen-garden-naturaleza-vida-y-amor-i/",
+      "hora": "20:00"
     },
     {
       "id": "tp-callas-pilar-jurado-1022",
@@ -251,6 +417,16 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/callas-by-pilar-jurado/"
+    },
+    {
+      "id": "sede-flamenco-tecnologias-1022",
+      "fecha": "2026-10-22",
+      "hora": "20:00",
+      "titulo": "Mundo y formas del flamenco: «Tecnologías de creación al servicio del flamenco actual», con Cristina López",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
     },
     {
       "id": "tp-panorama-desde-el-puente-1023",
@@ -282,6 +458,25 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/dani-mateo/"
     },
     {
+      "id": "ua-concierto-chapi-espla-1024",
+      "fecha": "2026-10-24",
+      "titulo": "Concierto homenaje a Ruperto Chapí y Óscar Esplá",
+      "seccion": "musica",
+      "lugar": "Paraninfo de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/concierto-homenaje-a-ruperto-chapi-y-oscar-espla.pdf"
+    },
+    {
+      "id": "fm-festival-flamenco-1024",
+      "fecha": "2026-10-24",
+      "titulo": "X Festival Flamenco Mediterráneo (del 24 de octubre al 28 de noviembre, cuatro citas)",
+      "seccion": "musica",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "precio": "desde 20€",
+      "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
+    },
+    {
       "id": "tp-circarte-1025",
       "fecha": "2026-10-25",
       "titulo": "17º Festival de circo: Gran Gala de Circo Circarte",
@@ -292,6 +487,35 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/gran-gala-de-circo-circarte/"
     },
     {
+      "id": "adda-banda-carolinas-1025",
+      "fecha": "2026-10-25",
+      "hora": "10:00",
+      "titulo": "XIII Ciclo Las bandas de la provincia: Agrupación Musical S.C.D. Carolinas",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-agrupacion-musical-s-c-d-carolinas/"
+    },
+    {
+      "id": "adda-banda-la-paz-1025",
+      "fecha": "2026-10-25",
+      "hora": "13:00",
+      "titulo": "XIII Ciclo Las bandas de la provincia: Sociedad Musical La Paz de Sant Joan d’Alacant",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-sociedad-musical-la-paz-sant-joan-dalacant/"
+    },
+    {
+      "id": "tp-gala-estruch-1026",
+      "fecha": "2026-10-26",
+      "titulo": "X Gala Premios de Temporada José Estruch",
+      "seccion": "varios",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/x-gala-premis-de-temporada-jose-estruch-2026/"
+    },
+    {
       "id": "adda-cielo-y-tierra-1026",
       "fecha": "2026-10-26",
       "titulo": "«Cielo y Tierra»",
@@ -299,7 +523,8 @@
       "lugar": "ADDA. Auditorio de la Diputación de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
-      "enlace": "https://addaalicante.es/concierto/cielo-y-tierra/"
+      "enlace": "https://addaalicante.es/concierto/cielo-y-tierra/",
+      "hora": "20:00"
     },
     {
       "id": "tp-flauta-magica-1027",
@@ -322,6 +547,16 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/sheryl-youngblood-blues-band/"
     },
     {
+      "id": "sede-flamenco-folclore-1029",
+      "fecha": "2026-10-29",
+      "hora": "20:00",
+      "titulo": "Mundo y formas del flamenco: «Una biología musical: huellas del folclore en el flamenco», con Bernat Jiménez de Cisneros",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
+    },
+    {
       "id": "tp-comicas-1030",
       "fecha": "2026-10-30",
       "titulo": "«Cómicas»: Martita de Graná, Patricia Espejo y Antonia Triviño",
@@ -340,6 +575,128 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/cronica-del-rey-pasmado/"
+    },
+    {
+      "id": "tp-don-juan-tenorio-1101",
+      "fecha": "2026-11-01",
+      "titulo": "«Don Juan Tenorio» solidario, de José Zorrilla",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/don-juan-tenorio-solidario/"
+    },
+    {
+      "id": "tp-el-corsario-1102",
+      "fecha": "2026-11-02",
+      "titulo": "«El Corsario», Ballet de Kiev",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/el-corsario/"
+    },
+    {
+      "id": "sede-flamenco-cine-1103",
+      "fecha": "2026-11-03",
+      "hora": "20:00",
+      "titulo": "Mundo y formas del flamenco: «Cine y flamenco», con Remedios Malvárez",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
+    },
+    {
+      "id": "tp-madama-butterfly-1105",
+      "fecha": "2026-11-05",
+      "titulo": "«Madama Butterfly», de Giacomo Puccini",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/madama-butterfly/"
+    },
+    {
+      "id": "tp-david-suarez-1106",
+      "fecha": "2026-11-06",
+      "titulo": "David Suárez: «Humor blanco por última vez»",
+      "seccion": "varios",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/david-suarez/"
+    },
+    {
+      "id": "adda-genesis-1106",
+      "fecha": "2026-11-06",
+      "hora": "20:00",
+      "titulo": "«Génesis». Temporada sinfónica 26/27",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://addaalicante.es/concierto/genesis/"
+    },
+    {
+      "id": "tp-hijo-de-la-comica-1107",
+      "fecha": "2026-11-07",
+      "titulo": "«El hijo de la cómica», de Fernando Fernán-Gómez (funciones 7 y 8 de noviembre)",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/el-hijo-de-la-comica/"
+    },
+    {
+      "id": "tp-julio-iglesias-experience-1111",
+      "fecha": "2026-11-11",
+      "titulo": "«Julio Iglesias Experience», por Julio Iglesias Jr. (funciones 11 y 12 de noviembre)",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/julio-iglesias-experience-por-julio-iglesias-jr/"
+    },
+    {
+      "id": "sede-flamenco-cante-1112",
+      "fecha": "2026-11-12",
+      "hora": "20:00",
+      "titulo": "Mundo y formas del flamenco: «El cante, una creación en acto», con Curro Piñana y Juan Llorente",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
+    },
+    {
+      "id": "tp-vaquero-1113",
+      "fecha": "2026-11-13",
+      "titulo": "J.J. Vaquero: «Vaquero»",
+      "seccion": "varios",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/vaquero/"
+    },
+    {
+      "id": "tp-libres-1114",
+      "fecha": "2026-11-14",
+      "titulo": "«Libres!!!». Un cabaré anarkosicalíptico",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/libres/"
+    },
+    {
+      "id": "adda-la-danza-1114",
+      "fecha": "2026-11-14",
+      "hora": "20:00",
+      "titulo": "«La Danza». Temporada sinfónica 26/27",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://addaalicante.es/concierto/la-danza/"
     }
   ]
 }
