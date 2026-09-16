@@ -1,27 +1,7 @@
 {
-  "actualizado": "2026-09-14",
-  "ventana": "2026-09-14 / 2026-11-14",
+  "actualizado": "2026-09-16",
+  "ventana": "2026-09-16 / 2026-11-16",
   "eventos": [
-    {
-      "id": "sede-financiacion-autonomica-0915",
-      "fecha": "2026-09-15",
-      "hora": "19:00",
-      "titulo": "Conferencia «Financiación autonómica: ¿podremos acabar el sudoku?», con Antonio Mira-Perceval",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/financiacion-autonomica.pdf"
-    },
-    {
-      "id": "sede-nunca-pierdas-esencia-0915",
-      "fecha": "2026-09-15",
-      "titulo": "Festival poético musical «Nunca pierdas tu esencia». Asociación Crisálida",
-      "seccion": "musica",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/nunca-pierdas-tu-esencia.pdf",
-      "hora": "20:00"
-    },
     {
       "id": "sede-fuego-amigo-0916",
       "fecha": "2026-09-16",
@@ -65,10 +45,10 @@
     {
       "id": "ua-concierto-bienvenida-rata-0917",
       "fecha": "2026-09-17",
-      "hora": "21:00",
+      "hora": "20:30",
       "titulo": "Concierto de bienvenida a la UA: RATA",
       "seccion": "musica",
-      "lugar": "Anfiteatro del Aulario II, campus de la UA",
+      "lugar": "Paraninfo, Campus de la UA",
       "ciudad": "San Vicente del Raspeig",
       "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218427"
     },
@@ -100,6 +80,17 @@
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/cine/xx-ciclo-de-cine-psicoanalisis-y-cultura-el-psicoanalisis-entre-sujeto-del-inconsciente-y-sujeto-social.html",
       "hora": "18:15"
+    },
+    {
+      "id": "cm-humor-oralidad-0918",
+      "fecha": "2026-09-18",
+      "hora": "19:00",
+      "titulo": "Ciclo Tradiciones y el Mediterráneo: «Reírnos juntos: códigos del humor y la oralidad para acercar orillas», con Enrique Federman",
+      "seccion": "charlas",
+      "lugar": "Casa Mediterráneo",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
     },
     {
       "id": "cigarreras-fragil-como-bomba-0918",
@@ -142,6 +133,17 @@
       "hora": "13:00"
     },
     {
+      "id": "cm-averroes-dialogo-0921",
+      "fecha": "2026-09-21",
+      "hora": "19:00",
+      "titulo": "«Averroes y el diálogo necesario: la razón como fundamento de la paz», con Carmen Calvo y Emilio González Ferrín. 900 aniversario de Averroes",
+      "seccion": "charlas",
+      "lugar": "Casa Mediterráneo",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
+    },
+    {
       "id": "fm-conferencia-rey-juan-0922",
       "fecha": "2026-09-22",
       "titulo": "Conferencia «La pregunta por la herencia en Rey Juan de Shakespeare», con Andreu Jaume",
@@ -159,6 +161,17 @@
       "lugar": "Aula Magna de la Facultad de Filosofía y Letras (UA)",
       "ciudad": "San Vicente del Raspeig",
       "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218335"
+    },
+    {
+      "id": "cm-rai-oran-0922",
+      "fecha": "2026-09-22",
+      "hora": "19:00",
+      "titulo": "Semana Alicante-Orán: sesión dedicada a la música raï, con José Carlos Cabrera (Ruta Mediterránea)",
+      "seccion": "charlas",
+      "lugar": "Casa Mediterráneo",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
     },
     {
       "id": "sede-espla-expandido-0922",
@@ -200,6 +213,17 @@
       "hora": "11:00"
     },
     {
+      "id": "cm-argelia-magreb-0923",
+      "fecha": "2026-09-23",
+      "hora": "19:00",
+      "titulo": "Semana Alicante-Orán: conferencia «Argelia en el nuevo Magreb» (CEARC y universidades)",
+      "seccion": "charlas",
+      "lugar": "Casa Mediterráneo",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
+    },
+    {
       "id": "sede-parlem-educacio-0924",
       "fecha": "2026-09-24",
       "titulo": "«Parlem d'educació: construïm la mobilització». Inicio de curso de la Cívica - Escola Valenciana de l'Alacantí",
@@ -207,6 +231,16 @@
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/parlem-d-educacio-construim-la-mobilitzacio.pdf"
+    },
+    {
+      "id": "cm-ruta-oranesa-0924",
+      "fecha": "2026-09-24",
+      "hora": "18:00",
+      "titulo": "Ruta por la Alicante oranesa, con la historiadora Belén Cuenca (unas 2 horas), con inscripción previa",
+      "seccion": "varios",
+      "lugar": "Salida desde Casa Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
     },
     {
       "id": "sede-y-que-menos-drama-0924",
@@ -227,6 +261,18 @@
       "lugar": "Vilamuseu, sala A",
       "ciudad": "Villajoyosa",
       "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218463"
+    },
+    {
+      "id": "ceb-ultraderecha-0924",
+      "fecha": "2026-09-24",
+      "hora": "19:00",
+      "titulo": "Coloquio «Más claro agua»: presentación de «Historia de la Ultraderecha en España», con el historiador Gerardo Muñoz",
+      "seccion": "charlas",
+      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "entradas": "libre",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
     },
     {
       "id": "ua-nit-investigacio-0925",
@@ -257,6 +303,15 @@
       "enlace": "https://www.alicante.es/es/agenda/atronador-fest-3"
     },
     {
+      "id": "cm-torre-sarrio-0925",
+      "fecha": "2026-09-25",
+      "titulo": "Charla sobre arquitectura defensiva y torres de vigía, en la reabierta Torre Sarrió",
+      "seccion": "charlas",
+      "lugar": "Torre Sarrió",
+      "ciudad": "Alicante",
+      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
+    },
+    {
       "id": "sede-revista-auca-65-0925",
       "fecha": "2026-09-25",
       "hora": "19:00",
@@ -265,6 +320,17 @@
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218493"
+    },
+    {
+      "id": "cm-cineclub-dia-noche-0925",
+      "fecha": "2026-09-25",
+      "hora": "19:00",
+      "titulo": "Cineclub Mediterráneo: «Lo que el día debe a la noche», de Alexandre Arcady (Argelia colonial e independencia)",
+      "seccion": "cine",
+      "lugar": "Casa Mediterráneo",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
     },
     {
       "id": "fm-bourbon-street-stompers-0926",
@@ -286,6 +352,38 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://addaalicante.es/concierto/el-anillo-sin-palabras/"
+    },
+    {
+      "id": "cm-ruta-oranesa-0927",
+      "fecha": "2026-09-27",
+      "hora": "10:30",
+      "titulo": "Ruta por la Alicante oranesa, con la historiadora Belén Cuenca (segundo pase), con inscripción previa",
+      "seccion": "varios",
+      "lugar": "Salida desde Casa Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
+    },
+    {
+      "id": "cm-europa-levante-0928",
+      "fecha": "2026-09-28",
+      "titulo": "Jornada «Europa y el Mediterráneo: diálogo para el futuro del Levante», de Equipo Europa",
+      "seccion": "charlas",
+      "lugar": "Casa Mediterráneo",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
+    },
+    {
+      "id": "ceb-arte-naturaleza-1001",
+      "fecha": "2026-10-01",
+      "hora": "18:00",
+      "titulo": "Charla-coloquio «El arte y la naturaleza»",
+      "seccion": "charlas",
+      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "entradas": "libre",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
     },
     {
       "id": "tp-la-partenaire-1002",
@@ -398,6 +496,38 @@
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
     },
     {
+      "id": "arniches-antes-de-caer-1016",
+      "fecha": "2026-10-16",
+      "titulo": "«Antes de caer», de Barreto y La Victoria. Circo, estreno absoluto: apertura de temporada del Arniches",
+      "seccion": "teatro",
+      "lugar": "Teatre Arniches (Arniches Espai Cultural)",
+      "ciudad": "Alicante",
+      "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
+    },
+    {
+      "id": "ceb-matinal-banda-1016",
+      "fecha": "2026-10-16",
+      "hora": "11:00",
+      "titulo": "Matinales de la Banda: Banda Sinfónica Municipal de Alicante, con inscripción previa",
+      "seccion": "musica",
+      "lugar": "Las Cigarreras, Casa de la Música",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "enlace": "https://alicantesociocultura.eventbrite.es"
+    },
+    {
+      "id": "ceb-sukijazz-1016",
+      "fecha": "2026-10-16",
+      "hora": "19:00",
+      "titulo": "Concierto de Sukijazz, clausura de la exposición «Plantoj»",
+      "seccion": "musica",
+      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "entradas": "libre",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
       "id": "adda-zen-garden-1016",
       "fecha": "2026-10-16",
       "titulo": "«Zen Garden». Naturaleza, vida y amor I",
@@ -475,6 +605,15 @@
       "ciudad": "Alicante",
       "precio": "desde 20€",
       "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
+    },
+    {
+      "id": "arniches-afines-marcat-1024",
+      "fecha": "2026-10-24",
+      "titulo": "«Afines», de Marcat Dance. Danza",
+      "seccion": "teatro",
+      "lugar": "Teatre Arniches (Arniches Espai Cultural)",
+      "ciudad": "Alicante",
+      "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
     },
     {
       "id": "tp-circarte-1025",
@@ -567,6 +706,15 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/comicas/"
     },
     {
+      "id": "arniches-goya-pinturas-negras-1030",
+      "fecha": "2026-10-30",
+      "titulo": "«Goya, pinturas negras», de Bambalina Teatre Practicable. Títeres, objetos y música en directo",
+      "seccion": "teatro",
+      "lugar": "Teatre Arniches (Arniches Espai Cultural)",
+      "ciudad": "Alicante",
+      "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
+    },
+    {
       "id": "tp-rey-pasmado-1031",
       "fecha": "2026-10-31",
       "titulo": "«Crónica del rey pasmado», de Gonzalo Torrente Ballester",
@@ -648,6 +796,18 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/el-hijo-de-la-comica/"
     },
     {
+      "id": "ceb-tomas-villa-1107",
+      "fecha": "2026-11-07",
+      "hora": "12:00",
+      "titulo": "Concierto de guitarra clásica de Tomás Villa",
+      "seccion": "musica",
+      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "entradas": "libre",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
       "id": "tp-julio-iglesias-experience-1111",
       "fecha": "2026-11-11",
       "titulo": "«Julio Iglesias Experience», por Julio Iglesias Jr. (funciones 11 y 12 de noviembre)",
@@ -678,6 +838,17 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/vaquero/"
     },
     {
+      "id": "ceb-matinal-banda-espla-1113",
+      "fecha": "2026-11-13",
+      "hora": "11:00",
+      "titulo": "Matinales de la Banda: «La huella sonora de Óscar Esplá, 50 años de su legado», con inscripción previa",
+      "seccion": "musica",
+      "lugar": "Las Cigarreras, Casa de la Música",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "enlace": "https://alicantesociocultura.eventbrite.es"
+    },
+    {
       "id": "tp-libres-1114",
       "fecha": "2026-11-14",
       "titulo": "«Libres!!!». Un cabaré anarkosicalíptico",
@@ -686,6 +857,18 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/libres/"
+    },
+    {
+      "id": "ceb-veus-dana-1114",
+      "fecha": "2026-11-14",
+      "hora": "18:00",
+      "titulo": "Muestra de Teatro Español de Autores Contemporáneos: «Veus per a després de la dana»",
+      "seccion": "teatro",
+      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "entradas": "libre",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
     },
     {
       "id": "adda-la-danza-1114",
@@ -697,6 +880,18 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://addaalicante.es/concierto/la-danza/"
+    },
+    {
+      "id": "ceb-flamenco-dia-mundial-1115",
+      "fecha": "2026-11-15",
+      "hora": "12:00",
+      "titulo": "Espectáculo flamenco por el Día Mundial del Flamenco",
+      "seccion": "musica",
+      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "entradas": "libre",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
     }
   ]
 }

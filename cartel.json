@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-14",
+  "actualizado": "2026-09-16",
   "eventos": [
     {
       "id": "ivam-candiani-radix",
@@ -30,6 +30,19 @@
       "lugar": "Biblioteca Central del Campus de Vera, Universitat Politècnica de València",
       "ciudad": "Valencia",
       "enlace": "https://www.cvongd.org/es/agenda/exposicion-uraqi-terra-en-la-universitat-politecnica-de-valencia/"
+    },
+    {
+      "id": "cm-expo-ferrocarriles",
+      "inicio": "2026-09-01",
+      "fin": "2026-09-30",
+      "titulo": "«Alicante: punto de partida de ferrocarriles mediterráneos», de José Vicente Coves",
+      "seccion": "exposiciones",
+      "etiquetas": [],
+      "recurrente": "de 10:00 a 14:00",
+      "lugar": "Casa Mediterráneo",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
     },
     {
       "id": "sede-una-sede-con-vida",
@@ -92,6 +105,18 @@
       "enlace": "https://ivam.es/es/exposiciones/la-albufera/"
     },
     {
+      "id": "ceb-expo-plantoj",
+      "inicio": "2026-09-18",
+      "fin": "2026-10-18",
+      "titulo": "«Plantoj». La contemplación de la naturaleza",
+      "seccion": "exposiciones",
+      "etiquetas": [],
+      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
       "id": "marq-lluria-cocentaina",
       "inicio": "2025-10-14",
       "fin": "2026-10-19",
@@ -110,6 +135,18 @@
       "lugar": "MUBAG",
       "ciudad": "Alicante",
       "enlace": "https://agendacultural.diputacionalicante.es/event/gisbert-1834-1901/"
+    },
+    {
+      "id": "ceb-expo-zapateando",
+      "inicio": "2026-10-22",
+      "fin": "2026-11-15",
+      "titulo": "«Zapateando». Fondos del Museo del Calzado de Elda",
+      "seccion": "exposiciones",
+      "etiquetas": [],
+      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
     },
     {
       "id": "ivam-territorios-en-transito",
