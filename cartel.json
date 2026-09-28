@@ -62,6 +62,16 @@
       "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218651"
     },
     {
+      "id": "mubag-alc-videoart-2026",
+      "inicio": "2026-09-26",
+      "fin": "2026-10-10",
+      "titulo": "VII ALC Videoart Festival, con la videoinstalación «Seyeol 13», de Rafäel",
+      "seccion": "exposiciones",
+      "lugar": "MUBAG (planta baja y La Ventana del Arte)",
+      "ciudad": "Alicante",
+      "enlace": "https://noveldadigital.es/actualidad/765654/el-mubag-se-une-de-nuevo-al-festival-alc-videoart-y-presenta-una-propuesta-inedita-del-artista-rafael/"
+    },
+    {
       "id": "nau-comics-calatayud",
       "inicio": "2026-04-23",
       "fin": "2026-10-11",
@@ -217,6 +227,16 @@
       "lugar": "IVAM Centre Julio González",
       "ciudad": "Valencia",
       "enlace": "https://ivam.es/es/exposiciones/regina-de-miguel-aguas-intoxicadas/"
+    },
+    {
+      "id": "marq-oro-universo",
+      "inicio": "2026-06-29",
+      "fin": "2027-05-02",
+      "titulo": "«El oro y el universo. Saberes indígenas de Colombia»",
+      "seccion": "exposiciones",
+      "lugar": "MARQ. Museo Arqueológico de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://www.marqalicante.com/es/"
     }
   ]
 }

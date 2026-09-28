@@ -35,6 +35,16 @@
       "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
     },
     {
+      "id": "gilalbert-club-comic-0930",
+      "fecha": "2026-09-30",
+      "hora": "19:00",
+      "titulo": "Club de cómic del Gil-Albert: «Autoras de cómic», con Daniel Simón Pla",
+      "seccion": "charlas",
+      "lugar": "Casa Bardin",
+      "ciudad": "Alicante",
+      "enlace": "https://agendacultural.diputacionalicante.es/"
+    },
+    {
       "id": "ceb-arte-naturaleza-1001",
       "fecha": "2026-10-01",
       "hora": "18:00",
@@ -45,6 +55,16 @@
       "precio": "gratis",
       "entradas": "libre",
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "gilalbert-rostros-lopez-sarasua-1001",
+      "fecha": "2026-10-01",
+      "hora": "19:00",
+      "titulo": "Ciclo «Rostros con historia»: Concha López Sarasúa, con Ana Cristina Baidal",
+      "seccion": "charlas",
+      "lugar": "Casa Bardin",
+      "ciudad": "Alicante",
+      "enlace": "https://agendacultural.diputacionalicante.es/"
     },
     {
       "id": "arniches-filmo-rosas-blancas-1001",
@@ -78,6 +98,27 @@
       "ciudad": "Alicante"
     },
     {
+      "id": "gilalbert-musicos-dolores-sendra-1002",
+      "fecha": "2026-10-02",
+      "hora": "19:00",
+      "titulo": "Ciclo «Músicos en el recuerdo»: Dolores Sendra, con Amelia Medina",
+      "seccion": "charlas",
+      "lugar": "Biblioteca municipal de Pego",
+      "ciudad": "Pego",
+      "enlace": "https://agendacultural.diputacionalicante.es/"
+    },
+    {
+      "id": "fm-festival-blues-1002",
+      "fecha": "2026-10-02",
+      "titulo": "Festival de Blues de Alicante: Wax & Boogie",
+      "seccion": "musica",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "precio": "15€",
+      "enlace": "https://fundacionmediterraneo.es/actividades/",
+      "hora": "20:00"
+    },
+    {
       "id": "tp-la-partenaire-1002",
       "fecha": "2026-10-02",
       "titulo": "«La Partenaire», de LaMedinaEs",
@@ -88,14 +129,14 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/la-partenaire/"
     },
     {
-      "id": "fm-festival-blues-1002",
-      "fecha": "2026-10-02",
-      "titulo": "Festival de Blues de Alicante",
-      "seccion": "musica",
-      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
-      "ciudad": "Alicante",
-      "precio": "15€",
-      "enlace": "https://fundacionmediterraneo.es/actividades/"
+      "id": "gilalbert-tastant-granada-1003",
+      "fecha": "2026-10-03",
+      "hora": "19:00",
+      "titulo": "Ciclo «Tastant territori»: la granada mollar, con visita al campo de granados, con inscripción previa",
+      "seccion": "varios",
+      "lugar": "Estación Experimental Agraria de Elche (CV-855, km 1)",
+      "ciudad": "Elche",
+      "enlace": "https://bit.ly/TastantGranada"
     },
     {
       "id": "adda-sueno-de-eros-1003",
@@ -314,6 +355,15 @@
       "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
     },
     {
+      "id": "fm-literatura-gotica-1020",
+      "fecha": "2026-10-20",
+      "titulo": "Ciclo «La sombra de lo extraño» (literatura gótica): conferencia de Julio Ángel Olivares",
+      "seccion": "charlas",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
+    },
+    {
       "id": "sca-janine-jansen-1021",
       "fecha": "2026-10-21",
       "titulo": "Sociedad de Conciertos: Janine Jansen (violín) y Denis Kozhukhin (piano)",
@@ -504,6 +554,16 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/sheryl-youngblood-blues-band/"
     },
     {
+      "id": "adda-enigma-siglo-xxi-1030",
+      "fecha": "2026-10-30",
+      "hora": "20:00",
+      "titulo": "«Enigma del Siglo XXI». ADDA·Simfònica Alicante, Josep Vicent y Javier Eguillor (Festival Contemporáneo)",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/adda%c2%b7simfonica-alicante-josep-vicent-javier-eguillor-enigma-del-siglo-xxi/"
+    },
+    {
       "id": "tp-comicas-1030",
       "fecha": "2026-10-30",
       "titulo": "«Cómicas»: Martita de Graná, Patricia Espejo y Antonia Triviño",
@@ -521,6 +581,15 @@
       "lugar": "Teatre Arniches (Arniches Espai Cultural)",
       "ciudad": "Alicante",
       "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
+    },
+    {
+      "id": "fm-literatura-gotica-1030",
+      "fecha": "2026-10-30",
+      "titulo": "Ciclo «La sombra de lo extraño» (literatura gótica): conferencia de Alberto Martínez, de Noviembre Nocturno",
+      "seccion": "charlas",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
     },
     {
       "id": "tp-rey-pasmado-1031",
@@ -722,6 +791,16 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/libres/"
     },
     {
+      "id": "adda-banda-la-lira-1115",
+      "fecha": "2026-11-15",
+      "hora": "10:00",
+      "titulo": "XIII Ciclo Las bandas de la provincia: Sociedad Musical La Lira de Monforte del Cid",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-sociedad-musical-la-lira-de-monforte-del-cid/"
+    },
+    {
       "id": "ceb-flamenco-dia-mundial-1115",
       "fecha": "2026-11-15",
       "hora": "12:00",
@@ -732,6 +811,16 @@
       "precio": "gratis",
       "entradas": "libre",
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "adda-banda-onil-1115",
+      "fecha": "2026-11-15",
+      "hora": "13:00",
+      "titulo": "XIII Ciclo Las bandas de la provincia: Centro Instructivo Musical de Onil",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-centro-instructivo-musical-de-onil/"
     },
     {
       "id": "ua-poeta-perdido-ny-1119",
@@ -754,6 +843,16 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/el-fantasma-de-la-opera/"
+    },
+    {
+      "id": "adda-natura-1127",
+      "fecha": "2026-11-27",
+      "hora": "20:00",
+      "titulo": "«Natura». ADDA·Simfònica Alicante, Nayden Todorov y Carles Marín. Temporada sinfónica 26/27",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/concierto/natura-naturaleza-vida-y-amor-ii/"
     },
     {
       "id": "arniches-cuerpo-espin-1128",
