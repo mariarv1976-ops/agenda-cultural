@@ -1,367 +1,16 @@
 {
-  "actualizado": "2026-09-16",
-  "ventana": "2026-09-16 / 2026-11-16",
+  "actualizado": "2026-09-28",
+  "ventana": "2026-09-28 / 2026-11-28",
   "eventos": [
     {
-      "id": "sede-fuego-amigo-0916",
-      "fecha": "2026-09-16",
-      "hora": "19:00",
-      "titulo": "Presentación del libro «Fuego amigo. ¿Nuevos discursos en favor del feminismo?», con Luisa Posada Kubissa",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/sede-ciudad-de-alicante_noticias.html"
-    },
-    {
-      "id": "sede-espana-partida-en-dos-0916",
-      "fecha": "2026-09-16",
-      "hora": "19:00",
-      "titulo": "Presentación de «España partida en dos, el cómic», con Julián Casanova, Carles Esquembre y Miguel Casanova",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218477"
-    },
-    {
-      "id": "sede-conferencia-inaugural-0917",
-      "fecha": "2026-09-17",
-      "titulo": "Apertura de curso: «¿Cómo aprender a vivir cuando el mundo cambia tan deprisa?», con Ana Laguna",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/conferencia-inaugural-como-aprender-a-vivir-cuando-el-mundo-cambia-tan-deprisa.html",
-      "hora": "18:30"
-    },
-    {
-      "id": "sede-auca-anlmi-0917",
-      "fecha": "2026-09-17",
-      "hora": "19:15",
-      "titulo": "Acto literario AUCA de las Letras–ANLMI: «La importancia de la lengua española en el mundo»",
-      "seccion": "varios",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218516"
-    },
-    {
-      "id": "ua-concierto-bienvenida-rata-0917",
-      "fecha": "2026-09-17",
-      "hora": "20:30",
-      "titulo": "Concierto de bienvenida a la UA: RATA",
-      "seccion": "musica",
-      "lugar": "Paraninfo, Campus de la UA",
-      "ciudad": "San Vicente del Raspeig",
-      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218427"
-    },
-    {
-      "id": "fm-documental-espla-0918",
-      "fecha": "2026-09-18",
-      "titulo": "Proyección del documental «Óscar Esplá»",
-      "seccion": "cine",
-      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
-      "ciudad": "Alicante",
-      "enlace": "https://fundacionmediterraneo.es/actividades/"
-    },
-    {
-      "id": "sede-geografas-viajeras-0918",
-      "fecha": "2026-09-18",
-      "titulo": "Conferencia «Geógrafas viajeras». Ciclo Científicas de Letras",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/observatorios-y-aulas-debate/cientificas-de-letras.html",
-      "hora": "17:30"
-    },
-    {
-      "id": "sede-laberinto-fauno-0918",
-      "fecha": "2026-09-18",
-      "titulo": "XX Ciclo de cine, psicoanálisis y cultura: «El laberinto del fauno», de Guillermo del Toro",
-      "seccion": "cine",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/cine/xx-ciclo-de-cine-psicoanalisis-y-cultura-el-psicoanalisis-entre-sujeto-del-inconsciente-y-sujeto-social.html",
-      "hora": "18:15"
-    },
-    {
-      "id": "cm-humor-oralidad-0918",
-      "fecha": "2026-09-18",
-      "hora": "19:00",
-      "titulo": "Ciclo Tradiciones y el Mediterráneo: «Reírnos juntos: códigos del humor y la oralidad para acercar orillas», con Enrique Federman",
-      "seccion": "charlas",
-      "lugar": "Casa Mediterráneo",
-      "ciudad": "Alicante",
-      "entradas": "libre",
-      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
-    },
-    {
-      "id": "cigarreras-fragil-como-bomba-0918",
-      "fecha": "2026-09-18",
-      "hora": "20:30",
-      "titulo": "Alacant a Escena: estreno de «Frágil como una bomba», de Estela Santos",
-      "seccion": "teatro",
-      "lugar": "Centro Cultural Las Cigarreras",
-      "ciudad": "Alicante",
-      "enlace": "https://www.alicante.es/es/agenda/alacant-escena-estreno-fragil-como-bomba"
-    },
-    {
-      "id": "cigarreras-doblecapa-oujiang-0919",
-      "fecha": "2026-09-19",
-      "hora": "19:30",
-      "titulo": "Doble concierto: Doblecapa + Ou Jiang",
-      "seccion": "musica",
-      "lugar": "Caja Negra, Centro Cultural Las Cigarreras",
-      "ciudad": "Alicante",
-      "enlace": "https://www.alicante.es/es/agenda/doble-concierto-cigarreras"
-    },
-    {
-      "id": "adda-banda-ciudad-de-asis-0920",
-      "fecha": "2026-09-20",
-      "titulo": "XIII Ciclo Las bandas de la provincia: Unión Musical Ciudad de Asís de Alicante",
-      "seccion": "musica",
-      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-union-musical-ciudad-de-asis-de-alicante/",
-      "hora": "10:00"
-    },
-    {
-      "id": "adda-banda-benidorm-0920",
-      "fecha": "2026-09-20",
-      "titulo": "XIII Ciclo Las bandas de la provincia: Unión Musical de Benidorm",
-      "seccion": "musica",
-      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-union-musical-de-benidorm/",
-      "hora": "13:00"
-    },
-    {
-      "id": "cm-averroes-dialogo-0921",
-      "fecha": "2026-09-21",
-      "hora": "19:00",
-      "titulo": "«Averroes y el diálogo necesario: la razón como fundamento de la paz», con Carmen Calvo y Emilio González Ferrín. 900 aniversario de Averroes",
-      "seccion": "charlas",
-      "lugar": "Casa Mediterráneo",
-      "ciudad": "Alicante",
-      "entradas": "libre",
-      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
-    },
-    {
-      "id": "fm-conferencia-rey-juan-0922",
-      "fecha": "2026-09-22",
-      "titulo": "Conferencia «La pregunta por la herencia en Rey Juan de Shakespeare», con Andreu Jaume",
-      "seccion": "charlas",
-      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
-      "ciudad": "Alicante",
-      "enlace": "https://fundacionmediterraneo.es/actividades/"
-    },
-    {
-      "id": "ua-jornadas-mujeres-artistas-0922",
-      "fecha": "2026-09-22",
-      "hora": "15:00",
-      "titulo": "III Jornadas «Mujeres artistas y trabajo en colectivos en la provincia de Alicante»",
-      "seccion": "charlas",
-      "lugar": "Aula Magna de la Facultad de Filosofía y Letras (UA)",
-      "ciudad": "San Vicente del Raspeig",
-      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218335"
-    },
-    {
-      "id": "cm-rai-oran-0922",
-      "fecha": "2026-09-22",
-      "hora": "19:00",
-      "titulo": "Semana Alicante-Orán: sesión dedicada a la música raï, con José Carlos Cabrera (Ruta Mediterránea)",
-      "seccion": "charlas",
-      "lugar": "Casa Mediterráneo",
-      "ciudad": "Alicante",
-      "entradas": "libre",
-      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
-    },
-    {
-      "id": "sede-espla-expandido-0922",
-      "fecha": "2026-09-22",
-      "titulo": "Conferencia y concierto «Óscar Esplá y sus contemporáneos». Ciclo Esplá expandido",
-      "seccion": "musica",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/espla-expandido.-musica-creacion-y-dialogo-entre-las-artes.html",
-      "hora": "19:15"
-    },
-    {
-      "id": "sede-camino-centenario-0922",
-      "fecha": "2026-09-22",
-      "titulo": "Camino del Centenario 1928-2028: «Fogueres 1933 y 1934. Crecimiento, desarrollo y diversificación»",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2025-2026/jornadas-y-ciclos-de-conferencias/camino-del-centenario-1928-2028.html",
-      "hora": "19:45"
-    },
-    {
-      "id": "sede-corrupcion-espana-0923",
-      "fecha": "2026-09-23",
-      "titulo": "Presentación del libro «La corrupción en España: un problema enquistado», con Joaquim Bosch y Fernando Jiménez",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/septiembre/septiembre-en-la-sede-2026.html"
-    },
-    {
-      "id": "sede-julio-just-0923",
-      "fecha": "2026-09-23",
-      "titulo": "Jornada «Julio Just Gimeno. La herencia de la Segunda República», con Emilio Rosillo",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/julio-just-gimeno-la-herencia-de-la-segunda-republica.pdf",
-      "hora": "11:00"
-    },
-    {
-      "id": "cm-argelia-magreb-0923",
-      "fecha": "2026-09-23",
-      "hora": "19:00",
-      "titulo": "Semana Alicante-Orán: conferencia «Argelia en el nuevo Magreb» (CEARC y universidades)",
-      "seccion": "charlas",
-      "lugar": "Casa Mediterráneo",
-      "ciudad": "Alicante",
-      "entradas": "libre",
-      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
-    },
-    {
-      "id": "sede-parlem-educacio-0924",
-      "fecha": "2026-09-24",
-      "titulo": "«Parlem d'educació: construïm la mobilització». Inicio de curso de la Cívica - Escola Valenciana de l'Alacantí",
-      "seccion": "varios",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/parlem-d-educacio-construim-la-mobilitzacio.pdf"
-    },
-    {
-      "id": "cm-ruta-oranesa-0924",
-      "fecha": "2026-09-24",
+      "id": "sede-natur-art-ecofeminismo-0928",
+      "fecha": "2026-09-28",
       "hora": "18:00",
-      "titulo": "Ruta por la Alicante oranesa, con la historiadora Belén Cuenca (unas 2 horas), con inscripción previa",
-      "seccion": "varios",
-      "lugar": "Salida desde Casa Mediterráneo",
-      "ciudad": "Alicante",
-      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
-    },
-    {
-      "id": "sede-y-que-menos-drama-0924",
-      "fecha": "2026-09-24",
-      "hora": "19:00",
-      "titulo": "Presentación del libro «¿Y qué? El arte de vivir con menos drama», de Andrés Martín Martos",
+      "titulo": "Natur-Art: charla-coloquio «Tejiendo redes para un futuro sostenible: ecofeminismo, arte, patrimonio y educación», con Laura Lucas Palacios",
       "seccion": "charlas",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/observatorios-y-aulas-debate/natur-art-ecofeminismo-arte-patrimonio-y-educacion.html",
       "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218492"
-    },
-    {
-      "id": "ua-john-dowland-0924",
-      "fecha": "2026-09-24",
-      "hora": "19:00",
-      "titulo": "Conferencia «John Dowland, les passions de l’ànima»",
-      "seccion": "charlas",
-      "lugar": "Vilamuseu, sala A",
-      "ciudad": "Villajoyosa",
-      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218463"
-    },
-    {
-      "id": "ceb-ultraderecha-0924",
-      "fecha": "2026-09-24",
-      "hora": "19:00",
-      "titulo": "Coloquio «Más claro agua»: presentación de «Historia de la Ultraderecha en España», con el historiador Gerardo Muñoz",
-      "seccion": "charlas",
-      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
-      "ciudad": "Alicante",
-      "precio": "gratis",
-      "entradas": "libre",
-      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
-    },
-    {
-      "id": "ua-nit-investigacio-0925",
-      "fecha": "2026-09-25",
-      "titulo": "European Researchers’ Night – Nit de la Investigació 2026",
-      "seccion": "varios",
-      "lugar": "Campus de la UA",
-      "ciudad": "San Vicente del Raspeig",
-      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218459"
-    },
-    {
-      "id": "fm-rey-juan-lectura-0925",
-      "fecha": "2026-09-25",
-      "titulo": "«El rey Juan», de Shakespeare. Lectura dramatizada, Cía. El Club de la Serpiente",
-      "seccion": "teatro",
-      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
-      "ciudad": "Alicante",
-      "enlace": "https://fundacionmediterraneo.es/actividades/"
-    },
-    {
-      "id": "cigarreras-atronador-fest-0925",
-      "fecha": "2026-09-25",
-      "titulo": "Atronador Fest, 10ª edición: noise, experimental y electrónica (25 y 26 de septiembre)",
-      "seccion": "musica",
-      "lugar": "Centro Cultural Las Cigarreras",
-      "ciudad": "Alicante",
-      "precio": "gratis",
-      "enlace": "https://www.alicante.es/es/agenda/atronador-fest-3"
-    },
-    {
-      "id": "cm-torre-sarrio-0925",
-      "fecha": "2026-09-25",
-      "titulo": "Charla sobre arquitectura defensiva y torres de vigía, en la reabierta Torre Sarrió",
-      "seccion": "charlas",
-      "lugar": "Torre Sarrió",
-      "ciudad": "Alicante",
-      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
-    },
-    {
-      "id": "sede-revista-auca-65-0925",
-      "fecha": "2026-09-25",
-      "hora": "19:00",
-      "titulo": "Presentación del nº 65 de la revista AUCA de las Letras. Homenaje a Adolfo Celdrán",
-      "seccion": "varios",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218493"
-    },
-    {
-      "id": "cm-cineclub-dia-noche-0925",
-      "fecha": "2026-09-25",
-      "hora": "19:00",
-      "titulo": "Cineclub Mediterráneo: «Lo que el día debe a la noche», de Alexandre Arcady (Argelia colonial e independencia)",
-      "seccion": "cine",
-      "lugar": "Casa Mediterráneo",
-      "ciudad": "Alicante",
-      "entradas": "libre",
-      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
-    },
-    {
-      "id": "fm-bourbon-street-stompers-0926",
-      "fecha": "2026-09-26",
-      "titulo": "The Bourbon Street Stompers. Classic New Orleans Jazz, Swing & Blues",
-      "seccion": "musica",
-      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
-      "ciudad": "Alicante",
-      "precio": "18€",
-      "enlace": "https://fundacionmediterraneo.es/actividades/"
-    },
-    {
-      "id": "adda-anillo-sin-palabras-0926",
-      "fecha": "2026-09-26",
-      "hora": "20:00",
-      "titulo": "«El anillo sin palabras» (Wagner). ADDA Simfònica, Josep Vicent",
-      "seccion": "musica",
-      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://addaalicante.es/concierto/el-anillo-sin-palabras/"
-    },
-    {
-      "id": "cm-ruta-oranesa-0927",
-      "fecha": "2026-09-27",
-      "hora": "10:30",
-      "titulo": "Ruta por la Alicante oranesa, con la historiadora Belén Cuenca (segundo pase), con inscripción previa",
-      "seccion": "varios",
-      "lugar": "Salida desde Casa Mediterráneo",
-      "ciudad": "Alicante",
-      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
+      "ciudad": "Alicante"
     },
     {
       "id": "cm-europa-levante-0928",
@@ -374,6 +23,18 @@
       "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
     },
     {
+      "id": "ua-odio-a-la-gente-0929",
+      "fecha": "2026-09-29",
+      "hora": "19:00",
+      "titulo": "«Odio a la gente», podcast de humor en directo con Bianca Kovacs y Carmen Romero",
+      "seccion": "varios",
+      "precio": "7€",
+      "lugar": "Paraninfo, Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "venta",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
+    },
+    {
       "id": "ceb-arte-naturaleza-1001",
       "fecha": "2026-10-01",
       "hora": "18:00",
@@ -384,6 +45,37 @@
       "precio": "gratis",
       "entradas": "libre",
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "arniches-filmo-rosas-blancas-1001",
+      "fecha": "2026-10-01",
+      "titulo": "La Filmoteca: «¡Caigan las rosas blancas!», de Albertina Carri",
+      "seccion": "cine",
+      "lugar": "Teatre Arniches (La Filmoteca)",
+      "ciudad": "Alicante",
+      "hora": "19:30",
+      "entradas": "venta",
+      "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
+    },
+    {
+      "id": "sede-de-rerum-natura-1001",
+      "fecha": "2026-10-01",
+      "hora": "19:30",
+      "titulo": "Presentación de «De la Naturaleza – De Rerum Natura», de Lucrecio, en traducción en verso de Luis T. Bonmatí y Ángel L. Prieto de Paula",
+      "seccion": "charlas",
+      "enlace": "https://web.ua.es/es/sedealicante/",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante"
+    },
+    {
+      "id": "sede-las-sinsombrero-1002",
+      "fecha": "2026-10-02",
+      "hora": "19:00",
+      "titulo": "«Las Sinsombrero». Recital poético-musical",
+      "seccion": "musica",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/musica/las-sinsombrero.-recital-poetico-musical.html",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante"
     },
     {
       "id": "tp-la-partenaire-1002",
@@ -406,16 +98,6 @@
       "enlace": "https://fundacionmediterraneo.es/actividades/"
     },
     {
-      "id": "tp-gigante-1003",
-      "fecha": "2026-10-03",
-      "titulo": "«Gigante», de Mark Rosenblatt",
-      "seccion": "teatro",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/gigante/"
-    },
-    {
       "id": "adda-sueno-de-eros-1003",
       "fecha": "2026-10-03",
       "titulo": "«El sueño de Eros». Óscar Esplá 50",
@@ -425,6 +107,16 @@
       "entradas": "venta",
       "enlace": "https://addaalicante.es/concierto/el-sueno-de-eros-oscar-espla-50/",
       "hora": "20:00"
+    },
+    {
+      "id": "tp-gigante-1003",
+      "fecha": "2026-10-03",
+      "titulo": "«Gigante», de Mark Rosenblatt",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/gigante/"
     },
     {
       "id": "tp-orquesta-jovenes-1004",
@@ -437,6 +129,25 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/orquesta-de-jovenes-de-la-provincia-de-alicante-2/"
     },
     {
+      "id": "sca-trio-wanderer-1005",
+      "fecha": "2026-10-05",
+      "titulo": "Sociedad de Conciertos: Trío Wanderer (trío con piano)",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "hora": "20:00",
+      "enlace": "https://sociedadconciertosalicante.com/avance-programacion/"
+    },
+    {
+      "id": "sede-cartas-perdidas-1005",
+      "fecha": "2026-10-05",
+      "titulo": "Documental «Las cartas perdidas. La cárcel y el exilio de las mujeres republicanas», de Amparo Climent",
+      "seccion": "cine",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/las-cartas-perdidas.pdf",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante"
+    },
+    {
       "id": "fm-literatura-gotica-1006",
       "fecha": "2026-10-06",
       "titulo": "Conferencia «La sombra de lo extraño. El legado de la literatura gótica en la cultura popular actual», con Antonio Ballesteros",
@@ -444,6 +155,29 @@
       "lugar": "Aula de Cultura de la Fundación Mediterráneo",
       "ciudad": "Alicante",
       "enlace": "https://fundacionmediterraneo.es/actividades/"
+    },
+    {
+      "id": "ua-tres-tristos-traumes-1008",
+      "fecha": "2026-10-08",
+      "hora": "19:00",
+      "titulo": "«Tres Tristos Traumes», Col·lectiu Intermitent (en valenciano)",
+      "seccion": "teatro",
+      "precio": "7€",
+      "lugar": "Paraninfo, Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "venta",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
+    },
+    {
+      "id": "arniches-filmo-luces-atardecer-1008",
+      "fecha": "2026-10-08",
+      "titulo": "La Filmoteca, ciclo Kaurismäki: «Luces al atardecer»",
+      "seccion": "cine",
+      "lugar": "Teatre Arniches (La Filmoteca)",
+      "ciudad": "Alicante",
+      "hora": "19:30",
+      "entradas": "venta",
+      "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
     },
     {
       "id": "tp-la-cubana-1008",
@@ -454,6 +188,15 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/la-cubana/"
+    },
+    {
+      "id": "sede-o-quam-tu-pulchra-1008",
+      "fecha": "2026-10-08",
+      "titulo": "Concierto «O quam tu pulchra es». Música italiana del seicento",
+      "seccion": "musica",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/musica/o-quam-tu-pulchra-es.html",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante"
     },
     {
       "id": "cigarreras-circarte-jornada-1010",
@@ -486,6 +229,17 @@
       "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-sociedad-musical-la-amistad-de-villafranqueza/"
     },
     {
+      "id": "ua-rito-mua-1014",
+      "fecha": "2026-10-14",
+      "hora": "20:00",
+      "titulo": "«Rito», de Asun Noales y Susana Guerrero: danza e instalación en el MUA, con inscripción previa",
+      "seccion": "teatro",
+      "lugar": "Museo de la UA (MUA)",
+      "ciudad": "San Vicente del Raspeig",
+      "precio": "gratis",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
+    },
+    {
       "id": "sede-flamenco-rosalia-1015",
       "fecha": "2026-10-15",
       "hora": "20:00",
@@ -494,15 +248,6 @@
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
-    },
-    {
-      "id": "arniches-antes-de-caer-1016",
-      "fecha": "2026-10-16",
-      "titulo": "«Antes de caer», de Barreto y La Victoria. Circo, estreno absoluto: apertura de temporada del Arniches",
-      "seccion": "teatro",
-      "lugar": "Teatre Arniches (Arniches Espai Cultural)",
-      "ciudad": "Alicante",
-      "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
     },
     {
       "id": "ceb-matinal-banda-1016",
@@ -539,14 +284,55 @@
       "hora": "20:00"
     },
     {
-      "id": "tp-callas-pilar-jurado-1022",
-      "fecha": "2026-10-22",
-      "titulo": "«Callas», por Pilar Jurado",
+      "id": "arniches-antes-de-caer-1016",
+      "fecha": "2026-10-16",
+      "titulo": "«Antes de caer», de Barreto y La Victoria. Circo, estreno absoluto: apertura de temporada del Arniches",
+      "seccion": "teatro",
+      "lugar": "Teatre Arniches (Arniches Espai Cultural)",
+      "ciudad": "Alicante",
+      "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
+    },
+    {
+      "id": "cigarreras-ficciones-compartidas-1016",
+      "fecha": "2026-10-16",
+      "titulo": "Ficciones Compartidas, V festival de experimentación material, de La Cuarta Piel (16 y 17 de octubre)",
+      "seccion": "varios",
+      "lugar": "Las Cigarreras, Secadero",
+      "ciudad": "Alicante",
+      "enlace": "https://quefas.es/ficciones-compartidas-lleva-la-pinada-del-benacantil-a-las-cigarreras/"
+    },
+    {
+      "id": "ua-mahmud-1020",
+      "fecha": "2026-10-20",
+      "hora": "19:00",
+      "titulo": "«Mahmud y no solo Mahmud», de Puntocero Company. Circo, dentro de Circarte",
+      "seccion": "teatro",
+      "precio": "5€",
+      "lugar": "Paraninfo, Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "venta",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
+    },
+    {
+      "id": "sca-janine-jansen-1021",
+      "fecha": "2026-10-21",
+      "titulo": "Sociedad de Conciertos: Janine Jansen (violín) y Denis Kozhukhin (piano)",
       "seccion": "musica",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
+      "hora": "20:00",
+      "enlace": "https://sociedadconciertosalicante.com/avance-programacion/"
+    },
+    {
+      "id": "arniches-filmo-qui-som-1022",
+      "fecha": "2026-10-22",
+      "titulo": "La Filmoteca: «Qui som», de Salvador Sunyer",
+      "seccion": "cine",
+      "lugar": "Teatre Arniches (La Filmoteca)",
+      "ciudad": "Alicante",
+      "hora": "19:30",
       "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/callas-by-pilar-jurado/"
+      "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
     },
     {
       "id": "sede-flamenco-tecnologias-1022",
@@ -557,6 +343,16 @@
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
+    },
+    {
+      "id": "tp-callas-pilar-jurado-1022",
+      "fecha": "2026-10-22",
+      "titulo": "«Callas», por Pilar Jurado",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/callas-by-pilar-jurado/"
     },
     {
       "id": "tp-panorama-desde-el-puente-1023",
@@ -616,16 +412,6 @@
       "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
     },
     {
-      "id": "tp-circarte-1025",
-      "fecha": "2026-10-25",
-      "titulo": "17º Festival de circo: Gran Gala de Circo Circarte",
-      "seccion": "varios",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/gran-gala-de-circo-circarte/"
-    },
-    {
       "id": "adda-banda-carolinas-1025",
       "fecha": "2026-10-25",
       "hora": "10:00",
@@ -646,13 +432,14 @@
       "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-sociedad-musical-la-paz-sant-joan-dalacant/"
     },
     {
-      "id": "tp-gala-estruch-1026",
-      "fecha": "2026-10-26",
-      "titulo": "X Gala Premios de Temporada José Estruch",
+      "id": "tp-circarte-1025",
+      "fecha": "2026-10-25",
+      "titulo": "17º Festival de circo: Gran Gala de Circo Circarte",
       "seccion": "varios",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/x-gala-premis-de-temporada-jose-estruch-2026/"
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/gran-gala-de-circo-circarte/"
     },
     {
       "id": "adda-cielo-y-tierra-1026",
@@ -666,6 +453,15 @@
       "hora": "20:00"
     },
     {
+      "id": "tp-gala-estruch-1026",
+      "fecha": "2026-10-26",
+      "titulo": "X Gala Premios de Temporada José Estruch",
+      "seccion": "varios",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/x-gala-premis-de-temporada-jose-estruch-2026/"
+    },
+    {
       "id": "tp-flauta-magica-1027",
       "fecha": "2026-10-27",
       "titulo": "«La flauta mágica», de W. A. Mozart",
@@ -676,14 +472,16 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/la-flauta-magica/"
     },
     {
-      "id": "tp-sheryl-youngblood-1029",
-      "fecha": "2026-10-29",
-      "titulo": "Sheryl Youngblood Blues Band: «A Meeting with the Blues»",
-      "seccion": "musica",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
+      "id": "ua-lana-osa-mujika-1028",
+      "fecha": "2026-10-28",
+      "hora": "19:00",
+      "titulo": "«LANA», de Osa + Mujika. Danza",
+      "seccion": "teatro",
+      "precio": "10€",
+      "lugar": "Paraninfo, Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
       "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/sheryl-youngblood-blues-band/"
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
     },
     {
       "id": "sede-flamenco-folclore-1029",
@@ -694,6 +492,16 @@
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
+    },
+    {
+      "id": "tp-sheryl-youngblood-1029",
+      "fecha": "2026-10-29",
+      "titulo": "Sheryl Youngblood Blues Band: «A Meeting with the Blues»",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/sheryl-youngblood-blues-band/"
     },
     {
       "id": "tp-comicas-1030",
@@ -755,6 +563,27 @@
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
     },
     {
+      "id": "sca-balthasar-neumann-1104",
+      "fecha": "2026-11-04",
+      "titulo": "Sociedad de Conciertos: Orquesta Balthasar Neumann",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "hora": "20:00",
+      "enlace": "https://sociedadconciertosalicante.com/avance-programacion/"
+    },
+    {
+      "id": "arniches-filmo-bano-diablo-1105",
+      "fecha": "2026-11-05",
+      "titulo": "La Filmoteca: «El baño del diablo», de Severin Fiala y Veronika Franz",
+      "seccion": "cine",
+      "lugar": "Teatre Arniches (La Filmoteca)",
+      "ciudad": "Alicante",
+      "hora": "19:30",
+      "entradas": "venta",
+      "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
+    },
+    {
       "id": "tp-madama-butterfly-1105",
       "fecha": "2026-11-05",
       "titulo": "«Madama Butterfly», de Giacomo Puccini",
@@ -763,16 +592,6 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/madama-butterfly/"
-    },
-    {
-      "id": "tp-david-suarez-1106",
-      "fecha": "2026-11-06",
-      "titulo": "David Suárez: «Humor blanco por última vez»",
-      "seccion": "varios",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/david-suarez/"
     },
     {
       "id": "adda-genesis-1106",
@@ -786,14 +605,14 @@
       "enlace": "https://addaalicante.es/concierto/genesis/"
     },
     {
-      "id": "tp-hijo-de-la-comica-1107",
-      "fecha": "2026-11-07",
-      "titulo": "«El hijo de la cómica», de Fernando Fernán-Gómez (funciones 7 y 8 de noviembre)",
-      "seccion": "teatro",
+      "id": "tp-david-suarez-1106",
+      "fecha": "2026-11-06",
+      "titulo": "David Suárez: «Humor blanco por última vez»",
+      "seccion": "varios",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/el-hijo-de-la-comica/"
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/david-suarez/"
     },
     {
       "id": "ceb-tomas-villa-1107",
@@ -806,6 +625,27 @@
       "precio": "gratis",
       "entradas": "libre",
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "tp-hijo-de-la-comica-1107",
+      "fecha": "2026-11-07",
+      "titulo": "«El hijo de la cómica», de Fernando Fernán-Gómez (funciones 7 y 8 de noviembre)",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/el-hijo-de-la-comica/"
+    },
+    {
+      "id": "ua-authentic-student-1109",
+      "fecha": "2026-11-09",
+      "hora": "19:00",
+      "titulo": "«Authentic Student Experience®», de Noé Vicente. Estreno, XXXIV Muestra de Teatro Español de Autores Contemporáneos",
+      "seccion": "teatro",
+      "precio": "3€",
+      "lugar": "Paraninfo, Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
     },
     {
       "id": "tp-julio-iglesias-experience-1111",
@@ -828,16 +668,6 @@
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
     },
     {
-      "id": "tp-vaquero-1113",
-      "fecha": "2026-11-13",
-      "titulo": "J.J. Vaquero: «Vaquero»",
-      "seccion": "varios",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/vaquero/"
-    },
-    {
       "id": "ceb-matinal-banda-espla-1113",
       "fecha": "2026-11-13",
       "hora": "11:00",
@@ -849,14 +679,14 @@
       "enlace": "https://alicantesociocultura.eventbrite.es"
     },
     {
-      "id": "tp-libres-1114",
-      "fecha": "2026-11-14",
-      "titulo": "«Libres!!!». Un cabaré anarkosicalíptico",
-      "seccion": "teatro",
+      "id": "tp-vaquero-1113",
+      "fecha": "2026-11-13",
+      "titulo": "J.J. Vaquero: «Vaquero»",
+      "seccion": "varios",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/libres/"
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/vaquero/"
     },
     {
       "id": "ceb-veus-dana-1114",
@@ -882,6 +712,16 @@
       "enlace": "https://addaalicante.es/concierto/la-danza/"
     },
     {
+      "id": "tp-libres-1114",
+      "fecha": "2026-11-14",
+      "titulo": "«Libres!!!». Un cabaré anarkosicalíptico",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/libres/"
+    },
+    {
       "id": "ceb-flamenco-dia-mundial-1115",
       "fecha": "2026-11-15",
       "hora": "12:00",
@@ -892,6 +732,37 @@
       "precio": "gratis",
       "entradas": "libre",
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "ua-poeta-perdido-ny-1119",
+      "fecha": "2026-11-19",
+      "hora": "19:00",
+      "titulo": "«Poeta [perdido] en Nueva York», El Aedo Teatro",
+      "seccion": "teatro",
+      "precio": "10€",
+      "lugar": "Paraninfo, Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "venta",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
+    },
+    {
+      "id": "tp-fantasma-opera-1119",
+      "fecha": "2026-11-19",
+      "titulo": "«El Fantasma de la Ópera», musical de Andrew Lloyd Webber (funciones del 19 de noviembre al 6 de diciembre)",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/el-fantasma-de-la-opera/"
+    },
+    {
+      "id": "arniches-cuerpo-espin-1128",
+      "fecha": "2026-11-28",
+      "titulo": "«Cuerpo Espín», de Marroch. Estreno absoluto",
+      "seccion": "teatro",
+      "lugar": "Teatre Arniches (Arniches Espai Cultural)",
+      "ciudad": "Alicante",
+      "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
     }
   ]
 }

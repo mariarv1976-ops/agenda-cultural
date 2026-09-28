@@ -1,26 +1,6 @@
 {
-  "actualizado": "2026-09-16",
+  "actualizado": "2026-09-28",
   "eventos": [
-    {
-      "id": "ivam-candiani-radix",
-      "inicio": "2026-04-29",
-      "fin": "2026-09-20",
-      "titulo": "«Tania Candiani. Radix»",
-      "seccion": "exposiciones",
-      "lugar": "IVAM Centre Julio González",
-      "ciudad": "Valencia",
-      "enlace": "https://ivam.es/es/exposiciones/tania-candiani-radix/"
-    },
-    {
-      "id": "mubag-emilio-varela",
-      "inicio": "2026-04-22",
-      "fin": "2026-09-27",
-      "titulo": "«Emilio Varela. Una ensoñación intimista». 75 aniversario",
-      "seccion": "exposiciones",
-      "lugar": "MUBAG",
-      "ciudad": "Alicante",
-      "enlace": "https://agendacultural.diputacionalicante.es/event/emilio-varela-una-ensonacion-intimista-75-aniversario/"
-    },
     {
       "id": "cvongd-uraqi-terra",
       "inicio": "2026-09-01",
@@ -72,6 +52,16 @@
       "enlace": "http://www.muvim.es/es/exposiciones"
     },
     {
+      "id": "ua-expo-julio-just",
+      "inicio": "2026-09-22",
+      "fin": "2026-10-08",
+      "titulo": "«Julio Just Gimeno. La herencia de la Segunda República». Exposición documental",
+      "seccion": "exposiciones",
+      "lugar": "Vestíbulo de la Biblioteca General, Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218651"
+    },
+    {
       "id": "nau-comics-calatayud",
       "inicio": "2026-04-23",
       "fin": "2026-10-11",
@@ -93,6 +83,16 @@
       "lugar": "IVAM Centre Julio González",
       "ciudad": "Valencia",
       "enlace": "https://ivam.es/es/exposiciones/cristina-de-middel-apoteosis-now/"
+    },
+    {
+      "id": "ua-expo-stop-vides-detingudes",
+      "inicio": "2026-09-16",
+      "fin": "2026-10-15",
+      "titulo": "«STOP Vidas detenidas. Mujeres refugiadas de Palestina en Cisjordania y Jerusalén Este»",
+      "seccion": "exposiciones",
+      "lugar": "Hall de la Facultad de Ciencias de la Salud, Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218664"
     },
     {
       "id": "ivam-la-albufera",
@@ -137,6 +137,16 @@
       "enlace": "https://agendacultural.diputacionalicante.es/event/gisbert-1834-1901/"
     },
     {
+      "id": "sede-de-subditas-a-ciudadanas",
+      "inicio": "2026-10-05",
+      "fin": "2026-10-28",
+      "titulo": "«De súbditas a ciudadanas. España 1965-1995»",
+      "seccion": "exposiciones",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/exposiciones/de-subditas-a-ciudadanas.-espana-1965-1995.html",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante"
+    },
+    {
       "id": "ceb-expo-zapateando",
       "inicio": "2026-10-22",
       "fin": "2026-11-15",
@@ -159,6 +169,16 @@
       "enlace": "https://ivam.es/es/exposiciones/territorios-en-transito-solo-duo-irene-grau-marco-giordano/"
     },
     {
+      "id": "cigarreras-utopian-stone",
+      "inicio": "2026-09-26",
+      "fin": "2026-12-05",
+      "titulo": "«The Utopian Stone», de Pedro Luis Cembranos (Sala Negre)",
+      "seccion": "exposiciones",
+      "enlace": "https://quefas.es/the-utopian-stone-conecta-geologia-utopia-y-educacion-en-las-cigarreras/",
+      "lugar": "Centro Cultural Las Cigarreras",
+      "ciudad": "Alicante"
+    },
+    {
       "id": "sede-mentira-contra-verdad",
       "inicio": "2026-09-25",
       "fin": "2026-12-17",
@@ -177,6 +197,16 @@
       "lugar": "IVAM Centre Julio González",
       "ciudad": "Valencia",
       "enlace": "https://ivam.es/es/exposiciones/melanie-smith-solo-una-cosa-era-extrana-seguir-pensando-como-antes/"
+    },
+    {
+      "id": "cigarreras-sube-hervas",
+      "inicio": "2026-09-26",
+      "fin": "2027-01-23",
+      "titulo": "«Sube», de Antoni Hervàs: la memoria de la Ruta valenciana",
+      "seccion": "exposiciones",
+      "enlace": "https://quefas.es/antoni-hervas-revisita-la-memoria-de-la-ruta-valenciana-en-sube/",
+      "lugar": "Centro Cultural Las Cigarreras",
+      "ciudad": "Alicante"
     },
     {
       "id": "ivam-regina-de-miguel",
