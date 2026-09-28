@@ -119,6 +119,40 @@
       "hora": "20:00"
     },
     {
+      "id": "elche-gt-nacho-vegas-1002",
+      "fecha": "2026-10-02",
+      "hora": "20:00",
+      "titulo": "Nacho Vegas: gira «Vidas semipreciosas»",
+      "seccion": "musica",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "30€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "mutxamel-sleepy-hollow-1002",
+      "fecha": "2026-10-02",
+      "hora": "20:00",
+      "titulo": "Mutxamel a Escena: «La llegenda de Sleepy Hollow», Escola de Teatre de Sueca",
+      "seccion": "teatro",
+      "lugar": "Auditorio de la Casa de Cultura de Mutxamel",
+      "ciudad": "Mutxamel",
+      "precio": "gratis",
+      "enlace": "https://ayto.mutxamel.org/mutxamel-a-escena-alcanza-su-xii-edicion-con-cuatro-obras-seleccionadas-entre-sesenta-y-cuatro-propuestas-presentadas-al-certamen-de-teatro-amateur/"
+    },
+    {
+      "id": "cigarreras-habia-luz-1002",
+      "fecha": "2026-10-02",
+      "hora": "20:30",
+      "titulo": "«Había luz pero no era nuestra», de Jose Vera con Guille Mocholí y Alba Tesías. Estreno, Alacant a Escena, con inscripción previa",
+      "seccion": "teatro",
+      "lugar": "Centro Cultural Las Cigarreras",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "enlace": "https://www.alicante.es/es/agenda/alacant-escena-estreno-habia-luz-pero-no-era-nuestra"
+    },
+    {
       "id": "tp-la-partenaire-1002",
       "fecha": "2026-10-02",
       "titulo": "«La Partenaire», de LaMedinaEs",
@@ -139,6 +173,28 @@
       "enlace": "https://bit.ly/TastantGranada"
     },
     {
+      "id": "cigarreras-shhh6-1003",
+      "fecha": "2026-10-03",
+      "hora": "19:30",
+      "titulo": "Shhh #6: doble concierto de músicas de vanguardia (ciclo de SIGILA)",
+      "seccion": "musica",
+      "lugar": "Centro Cultural Las Cigarreras",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/agenda/vuelve-shhh6-doble-concierto"
+    },
+    {
+      "id": "campello-tributo-1003",
+      "fecha": "2026-10-03",
+      "hora": "19:30",
+      "titulo": "«Tributo», de La Teta Calva",
+      "seccion": "teatro",
+      "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
+      "ciudad": "El Campello",
+      "precio": "12€",
+      "entradas": "venta",
+      "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
       "id": "adda-sueno-de-eros-1003",
       "fecha": "2026-10-03",
       "titulo": "«El sueño de Eros». Óscar Esplá 50",
@@ -150,6 +206,29 @@
       "hora": "20:00"
     },
     {
+      "id": "elche-gt-barbero-picasso-1003",
+      "fecha": "2026-10-03",
+      "hora": "20:00",
+      "titulo": "«El barbero de Picasso», de Borja Ortiz de Gondra, con Pepe Viyuela y Antonio Molero",
+      "seccion": "teatro",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 18€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "mutxamel-ultima-planta-1003",
+      "fecha": "2026-10-03",
+      "hora": "20:00",
+      "titulo": "Mutxamel a Escena: «La última planta», de Pànic Escènic",
+      "seccion": "teatro",
+      "lugar": "Auditorio de la Casa de Cultura de Mutxamel",
+      "ciudad": "Mutxamel",
+      "precio": "gratis",
+      "enlace": "https://ayto.mutxamel.org/mutxamel-a-escena-alcanza-su-xii-edicion-con-cuatro-obras-seleccionadas-entre-sesenta-y-cuatro-propuestas-presentadas-al-certamen-de-teatro-amateur/"
+    },
+    {
       "id": "tp-gigante-1003",
       "fecha": "2026-10-03",
       "titulo": "«Gigante», de Mark Rosenblatt",
@@ -158,6 +237,26 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/gigante/"
+    },
+    {
+      "id": "catral-el-pollito-1003",
+      "fecha": "2026-10-03",
+      "titulo": "XIV Certamen de Teatro Amateur Villa de Catral: «El pollito», de Maniquí Teatre",
+      "seccion": "teatro",
+      "lugar": "Casa de Cultura de Catral",
+      "ciudad": "Catral",
+      "enlace": "https://www.catral.es/acta-de-la-sesion-para-la-seleccion-de-los-grupos-participantes-en-el-xiv-certamen-nacional-de-teatro-amateur-villa-de-catral/"
+    },
+    {
+      "id": "campello-musica-festera-1004",
+      "fecha": "2026-10-04",
+      "hora": "19:00",
+      "titulo": "XXXVII Concierto de Música Festera Pedro Vaello: Associació Musical L'Avanç",
+      "seccion": "musica",
+      "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
+      "ciudad": "El Campello",
+      "precio": "gratis",
+      "enlace": "https://www.elcampello.es/index.php?s=agenda"
     },
     {
       "id": "tp-orquesta-jovenes-1004",
@@ -198,6 +297,16 @@
       "enlace": "https://fundacionmediterraneo.es/actividades/"
     },
     {
+      "id": "ua-cemab-ulloa-1008",
+      "fecha": "2026-10-08",
+      "hora": "17:00",
+      "titulo": "CeMaB: «El miedo terrible de ser una escritora expatriada», charla-diálogo con Claudia Ulloa Donoso",
+      "seccion": "charlas",
+      "lugar": "Universidad de Alicante",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://www.infobae.com/america/agencias/2026/09/28/el-cemab-de-la-ua-programa-una-veintena-de-actividades-sobre-literatura-iberoamericana-hasta-enero/"
+    },
+    {
       "id": "ua-tres-tristos-traumes-1008",
       "fecha": "2026-10-08",
       "hora": "19:00",
@@ -221,6 +330,18 @@
       "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
     },
     {
+      "id": "elche-gt-sara-baras-1008",
+      "fecha": "2026-10-08",
+      "hora": "20:00",
+      "titulo": "Sara Baras: «Infinita». Danza, 30 aniversario de la reapertura del Gran Teatro",
+      "seccion": "teatro",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 52€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
       "id": "tp-la-cubana-1008",
       "fecha": "2026-10-08",
       "titulo": "La Cubana: «La cuisine de ma cousine» (funciones del 8 al 18 de octubre)",
@@ -240,6 +361,16 @@
       "ciudad": "Alicante"
     },
     {
+      "id": "euterpe-rafa-pons-1009",
+      "fecha": "2026-10-09",
+      "titulo": "Rafa Pons",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
       "id": "cigarreras-circarte-jornada-1010",
       "fecha": "2026-10-10",
       "hora": "11:00",
@@ -248,6 +379,27 @@
       "lugar": "Centro Cultural Las Cigarreras",
       "ciudad": "Alicante",
       "enlace": "https://diariodealicante.net/circarte-2026-alicante-espectaculos-octubre/"
+    },
+    {
+      "id": "elche-gt-vicente-pomares-1010",
+      "fecha": "2026-10-10",
+      "hora": "20:00",
+      "titulo": "Vicente Pomares: «Ara ve el bo!»",
+      "seccion": "musica",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "10€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "catral-pedro-capitan-1010",
+      "fecha": "2026-10-10",
+      "titulo": "XIV Certamen de Teatro Amateur Villa de Catral: «Pedro y el capitán», de Comboi Mediterrani",
+      "seccion": "teatro",
+      "lugar": "Casa de Cultura de Catral",
+      "ciudad": "Catral",
+      "enlace": "https://www.catral.es/acta-de-la-sesion-para-la-seleccion-de-los-grupos-participantes-en-el-xiv-certamen-nacional-de-teatro-amateur-villa-de-catral/"
     },
     {
       "id": "adda-banda-el-tossal-1011",
@@ -291,6 +443,25 @@
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
     },
     {
+      "id": "elche-escorxador-orilla-1015",
+      "fecha": "2026-10-15",
+      "titulo": "Orilla, festival de improvisación (del 15 al 18 de octubre)",
+      "seccion": "teatro",
+      "lugar": "CCC L'Escorxador",
+      "ciudad": "Elche",
+      "enlace": "https://www.elche.es/2026/09/el-teatro-la-danza-y-la-musica-vuelven-a-lescorxador-de-septiembre-a-diciembre/"
+    },
+    {
+      "id": "euterpe-mermelada-de-impro-con-d-1015",
+      "fecha": "2026-10-15",
+      "titulo": "Mermelada de impro, con Dani Bravo",
+      "seccion": "teatro",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
       "id": "ceb-matinal-banda-1016",
       "fecha": "2026-10-16",
       "hora": "11:00",
@@ -314,6 +485,17 @@
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
     },
     {
+      "id": "cigarreras-blues-oso-1016",
+      "fecha": "2026-10-16",
+      "hora": "19:00",
+      "titulo": "VIII Festival Internacional de Blues de Alicante: El Oso y sus Sabandijas",
+      "seccion": "musica",
+      "lugar": "Las Cigarreras, explanada exterior",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "enlace": "https://alicantemag.com/musica/programacion-del-viii-festival-internacional-de-blues-de-alicante"
+    },
+    {
       "id": "adda-zen-garden-1016",
       "fecha": "2026-10-16",
       "titulo": "«Zen Garden». Naturaleza, vida y amor I",
@@ -323,6 +505,29 @@
       "entradas": "venta",
       "enlace": "https://addaalicante.es/concierto/zen-garden-naturaleza-vida-y-amor-i/",
       "hora": "20:00"
+    },
+    {
+      "id": "elche-gt-revolver-1016",
+      "fecha": "2026-10-16",
+      "hora": "20:00",
+      "titulo": "Revólver: «LA 03010 Tour»",
+      "seccion": "musica",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 35,20€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "mutxamel-en-la-luna-1016",
+      "fecha": "2026-10-16",
+      "hora": "20:00",
+      "titulo": "Mutxamel a Escena: «En la luna», de Alfredo Sanzol, por Alpí Teatro",
+      "seccion": "teatro",
+      "lugar": "Auditorio de la Casa de Cultura de Mutxamel",
+      "ciudad": "Mutxamel",
+      "precio": "gratis",
+      "enlace": "https://ayto.mutxamel.org/mutxamel-a-escena-alcanza-su-xii-edicion-con-cuatro-obras-seleccionadas-entre-sesenta-y-cuatro-propuestas-presentadas-al-certamen-de-teatro-amateur/"
     },
     {
       "id": "arniches-antes-de-caer-1016",
@@ -341,6 +546,103 @@
       "lugar": "Las Cigarreras, Secadero",
       "ciudad": "Alicante",
       "enlace": "https://quefas.es/ficciones-compartidas-lleva-la-pinada-del-benacantil-a-las-cigarreras/"
+    },
+    {
+      "id": "euterpe-sobrezero-1016",
+      "fecha": "2026-10-16",
+      "titulo": "Sobrezero",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "cigarreras-blues-1017",
+      "fecha": "2026-10-17",
+      "hora": "17:30",
+      "titulo": "VIII Festival Internacional de Blues de Alicante: Los Fabulosos Blueshakers (17:30) y Jimmy Barnatán & The Cocooners (20:00)",
+      "seccion": "musica",
+      "lugar": "Las Cigarreras, explanada exterior",
+      "ciudad": "Alicante",
+      "precio": "gratis",
+      "enlace": "https://alicantemag.com/musica/programacion-del-viii-festival-internacional-de-blues-de-alicante"
+    },
+    {
+      "id": "elche-gt-gigante-1017",
+      "fecha": "2026-10-17",
+      "hora": "19:00",
+      "titulo": "«Gigante», de Mark Rosenblatt, con José María Pou",
+      "seccion": "teatro",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 20€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "campello-rambalaya-1017",
+      "fecha": "2026-10-17",
+      "hora": "19:30",
+      "titulo": "Rambalaya: rhythm & blues",
+      "seccion": "musica",
+      "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
+      "ciudad": "El Campello",
+      "precio": "12€",
+      "entradas": "venta",
+      "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
+      "id": "mutxamel-la-vina-1017",
+      "fecha": "2026-10-17",
+      "hora": "20:00",
+      "titulo": "Mutxamel a Escena: «La viña», de Paraskenia Teatro",
+      "seccion": "teatro",
+      "lugar": "Auditorio de la Casa de Cultura de Mutxamel",
+      "ciudad": "Mutxamel",
+      "precio": "gratis",
+      "enlace": "https://ayto.mutxamel.org/mutxamel-a-escena-alcanza-su-xii-edicion-con-cuatro-obras-seleccionadas-entre-sesenta-y-cuatro-propuestas-presentadas-al-certamen-de-teatro-amateur/"
+    },
+    {
+      "id": "vila-esclavo-siervo-amigo-1017",
+      "fecha": "2026-10-17",
+      "titulo": "«Un esclavo, un siervo, un amigo», de Sanra Produce-Iria Producciones. Comedia",
+      "seccion": "teatro",
+      "lugar": "Teatre Auditori la Vila Joiosa",
+      "ciudad": "Villajoyosa",
+      "entradas": "venta",
+      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
+    },
+    {
+      "id": "catral-chica-luciernaga-1017",
+      "fecha": "2026-10-17",
+      "titulo": "XIV Certamen de Teatro Amateur Villa de Catral: «La chica de la luciérnaga», de Squizo Teatro",
+      "seccion": "teatro",
+      "lugar": "Casa de Cultura de Catral",
+      "ciudad": "Catral",
+      "enlace": "https://www.catral.es/acta-de-la-sesion-para-la-seleccion-de-los-grupos-participantes-en-el-xiv-certamen-nacional-de-teatro-amateur-villa-de-catral/"
+    },
+    {
+      "id": "euterpe-tocatealgoferran-1017",
+      "fecha": "2026-10-17",
+      "titulo": "#TócateAlgoFerran (Ferran Exceso)",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "elche-gt-eugeni-alemany-1018",
+      "fecha": "2026-10-18",
+      "hora": "19:00",
+      "titulo": "Eugeni Alemany: «La persona no descansa». Humor en valenciano",
+      "seccion": "teatro",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 18€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
     {
       "id": "ua-mahmud-1020",
@@ -405,6 +707,17 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/callas-by-pilar-jurado/"
     },
     {
+      "id": "campello-club-lectura-marta-sanz-1023",
+      "fecha": "2026-10-23",
+      "hora": "18:00",
+      "titulo": "Club de lectura: «Los íntimos», con la autora, Marta Sanz (para socios de la biblioteca), con inscripción previa",
+      "seccion": "charlas",
+      "lugar": "Biblioteca Municipal, Sala Ramón Llull",
+      "ciudad": "El Campello",
+      "precio": "gratis",
+      "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
       "id": "tp-panorama-desde-el-puente-1023",
       "fecha": "2026-10-23",
       "titulo": "«Panorama desde el puente», de Arthur Miller",
@@ -422,6 +735,74 @@
       "lugar": "Ilustre Colegio de Abogados de Valencia",
       "ciudad": "Valencia",
       "enlace": "https://www.cvongd.org/es/agenda/ix-congreso-sobre-derechos-humanos-derechos-humanos-desastres-y-resiliencia/"
+    },
+    {
+      "id": "euterpe-twanguero-1023",
+      "fecha": "2026-10-23",
+      "titulo": "Twanguero",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "campello-circarte-arriba-1024",
+      "fecha": "2026-10-24",
+      "hora": "13:00",
+      "titulo": "Circarte: «Arriba», de José Luis Redondo",
+      "seccion": "teatro",
+      "lugar": "Casa de Cultura, Ágora",
+      "ciudad": "El Campello",
+      "precio": "gratis",
+      "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
+      "id": "campello-circarte-piedra-madera-1024",
+      "fecha": "2026-10-24",
+      "hora": "17:00",
+      "titulo": "Circarte: «La piedra de madera», de EIA",
+      "seccion": "teatro",
+      "lugar": "Casa de Cultura, Ágora",
+      "ciudad": "El Campello",
+      "precio": "gratis",
+      "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
+      "id": "elche-gt-osce-1024",
+      "fecha": "2026-10-24",
+      "hora": "19:00",
+      "titulo": "Orquestra Simfònica Ciutat d'Elx: «Inspiració infinita» (Rossini, Gianella, García-Tomás, Stravinski)",
+      "seccion": "musica",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 18€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "campello-circarte-trastienda-1024",
+      "fecha": "2026-10-24",
+      "hora": "19:00",
+      "titulo": "Circarte: «La trastienda», de La Gata Japonesa",
+      "seccion": "teatro",
+      "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
+      "ciudad": "El Campello",
+      "precio": "6€",
+      "entradas": "venta",
+      "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
+      "id": "fm-festival-flamenco-1024",
+      "fecha": "2026-10-24",
+      "hora": "20:00",
+      "titulo": "X Festival Flamenco Mediterráneo: Pedro «El Granaíno», «Granaíno Jondo». Inauguración (el festival sigue hasta el 28 de noviembre)",
+      "seccion": "musica",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "precio": "desde 20€",
+      "entradas": "venta",
+      "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
     },
     {
       "id": "tp-dani-mateo-1024",
@@ -443,16 +824,6 @@
       "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/concierto-homenaje-a-ruperto-chapi-y-oscar-espla.pdf"
     },
     {
-      "id": "fm-festival-flamenco-1024",
-      "fecha": "2026-10-24",
-      "titulo": "X Festival Flamenco Mediterráneo (del 24 de octubre al 28 de noviembre, cuatro citas)",
-      "seccion": "musica",
-      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
-      "ciudad": "Alicante",
-      "precio": "desde 20€",
-      "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
-    },
-    {
       "id": "arniches-afines-marcat-1024",
       "fecha": "2026-10-24",
       "titulo": "«Afines», de Marcat Dance. Danza",
@@ -460,6 +831,25 @@
       "lugar": "Teatre Arniches (Arniches Espai Cultural)",
       "ciudad": "Alicante",
       "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
+    },
+    {
+      "id": "vila-mirada-kubrick-1024",
+      "fecha": "2026-10-24",
+      "titulo": "Encuentros de Cine de Autor: «La mirada de Kubrick»",
+      "seccion": "cine",
+      "lugar": "Villajoyosa (sala no indicada en la fuente)",
+      "ciudad": "Villajoyosa",
+      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
+    },
+    {
+      "id": "euterpe-maria-parrado-1024",
+      "fecha": "2026-10-24",
+      "titulo": "María Parrado",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
       "id": "adda-banda-carolinas-1025",
@@ -482,6 +872,17 @@
       "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-sociedad-musical-la-paz-sant-joan-dalacant/"
     },
     {
+      "id": "campello-la-prudencia-1025",
+      "fecha": "2026-10-25",
+      "hora": "19:00",
+      "titulo": "«La prudencia», de Sensaciones",
+      "seccion": "teatro",
+      "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
+      "ciudad": "El Campello",
+      "precio": "gratis",
+      "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
       "id": "tp-circarte-1025",
       "fecha": "2026-10-25",
       "titulo": "17º Festival de circo: Gran Gala de Circo Circarte",
@@ -490,6 +891,16 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/gran-gala-de-circo-circarte/"
+    },
+    {
+      "id": "vila-mara-aranda-1025",
+      "fecha": "2026-10-25",
+      "titulo": "Mara Aranda: «Trobairitz»",
+      "seccion": "musica",
+      "lugar": "Teatre Auditori la Vila Joiosa",
+      "ciudad": "Villajoyosa",
+      "entradas": "venta",
+      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
     },
     {
       "id": "adda-cielo-y-tierra-1026",
@@ -522,6 +933,16 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/la-flauta-magica/"
     },
     {
+      "id": "ua-cemab-lefere-borges-1028",
+      "fecha": "2026-10-28",
+      "hora": "17:30",
+      "titulo": "CeMaB: «Borges y Franco Maria Ricci: una colaboración muy fecunda», conferencia de Robin Lefere",
+      "seccion": "charlas",
+      "lugar": "CeMaB, Universidad de Alicante",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://www.infobae.com/america/agencias/2026/09/28/el-cemab-de-la-ua-programa-una-veintena-de-actividades-sobre-literatura-iberoamericana-hasta-enero/"
+    },
+    {
       "id": "ua-lana-osa-mujika-1028",
       "fecha": "2026-10-28",
       "hora": "19:00",
@@ -552,6 +973,16 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/sheryl-youngblood-blues-band/"
+    },
+    {
+      "id": "euterpe-penultimo-suspiro-1029",
+      "fecha": "2026-10-29",
+      "titulo": "Penúltimo Suspiro",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
       "id": "adda-enigma-siglo-xxi-1030",
@@ -590,6 +1021,16 @@
       "lugar": "Aula de Cultura de la Fundación Mediterráneo",
       "ciudad": "Alicante",
       "enlace": "https://fundacionmediterraneo.es/actividades/"
+    },
+    {
+      "id": "euterpe-pez-mago-1030",
+      "fecha": "2026-10-30",
+      "titulo": "Pez Mago",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
       "id": "tp-rey-pasmado-1031",
@@ -642,6 +1083,16 @@
       "enlace": "https://sociedadconciertosalicante.com/avance-programacion/"
     },
     {
+      "id": "euterpe-milongas-extremas-1104",
+      "fecha": "2026-11-04",
+      "titulo": "Milongas Extremas",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
       "id": "arniches-filmo-bano-diablo-1105",
       "fecha": "2026-11-05",
       "titulo": "La Filmoteca: «El baño del diablo», de Severin Fiala y Veronika Franz",
@@ -663,6 +1114,16 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/madama-butterfly/"
     },
     {
+      "id": "euterpe-las-nietas-del-charli-1105",
+      "fecha": "2026-11-05",
+      "titulo": "Las Nietas del Charli (AIEnRUTa)",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
       "id": "adda-genesis-1106",
       "fecha": "2026-11-06",
       "hora": "20:00",
@@ -674,6 +1135,18 @@
       "enlace": "https://addaalicante.es/concierto/genesis/"
     },
     {
+      "id": "elche-gt-esencia-1106",
+      "fecha": "2026-11-06",
+      "hora": "20:00",
+      "titulo": "«Esencia», de Ignacio García May, con Juan Echanove y Joaquín Climent",
+      "seccion": "teatro",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "20€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
       "id": "tp-david-suarez-1106",
       "fecha": "2026-11-06",
       "titulo": "David Suárez: «Humor blanco por última vez»",
@@ -682,6 +1155,16 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/david-suarez/"
+    },
+    {
+      "id": "euterpe-carlos-vudu-y-el-clan-ju-1106",
+      "fecha": "2026-11-06",
+      "titulo": "Carlos Vudú y el Clan Jukebox",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
       "id": "ceb-tomas-villa-1107",
@@ -696,6 +1179,18 @@
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
     },
     {
+      "id": "elche-gt-butterfly-1107",
+      "fecha": "2026-11-07",
+      "hora": "19:00",
+      "titulo": "«Madama Butterfly», de Puccini. Cía. LGAM y Orquesta Nacional de Moldavia",
+      "seccion": "musica",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 30€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
       "id": "tp-hijo-de-la-comica-1107",
       "fecha": "2026-11-07",
       "titulo": "«El hijo de la cómica», de Fernando Fernán-Gómez (funciones 7 y 8 de noviembre)",
@@ -704,6 +1199,48 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/el-hijo-de-la-comica/"
+    },
+    {
+      "id": "fm-flamenco-ballet-andalucia-1107",
+      "fecha": "2026-11-07",
+      "titulo": "X Festival Flamenco Mediterráneo: Ballet Flamenco de Andalucía, dirigido por Patricia Guerrero",
+      "seccion": "teatro",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "precio": "desde 20€",
+      "entradas": "venta",
+      "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
+    },
+    {
+      "id": "euterpe-alpargata-1107",
+      "fecha": "2026-11-07",
+      "titulo": "Alpargata",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "vila-flauta-magica-1108",
+      "fecha": "2026-11-08",
+      "hora": "18:00",
+      "titulo": "«La flauta mágica», de Mozart, por Ópera 2001 (en alemán con traducción simultánea)",
+      "seccion": "musica",
+      "lugar": "Teatre Auditori la Vila Joiosa",
+      "ciudad": "Villajoyosa",
+      "entradas": "venta",
+      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
+    },
+    {
+      "id": "euterpe-bajo-79-1108",
+      "fecha": "2026-11-08",
+      "titulo": "Bajo 79 (Circuit CàntER)",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
       "id": "ua-authentic-student-1109",
@@ -737,6 +1274,27 @@
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
     },
     {
+      "id": "elche-gt-dani-fez-1112",
+      "fecha": "2026-11-12",
+      "hora": "20:00",
+      "titulo": "Dani Fez: «Estamos cucú de la cabeza». Humor",
+      "seccion": "teatro",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 22€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "elche-escorxador-achmed-1112",
+      "fecha": "2026-11-12",
+      "titulo": "Inauguración de Fantaelx: proyección musicada de «Las aventuras del príncipe Achmed»",
+      "seccion": "cine",
+      "lugar": "CCC L'Escorxador, Espai Escènic",
+      "ciudad": "Elche",
+      "enlace": "https://www.elche.es/2026/09/el-teatro-la-danza-y-la-musica-vuelven-a-lescorxador-de-septiembre-a-diciembre/"
+    },
+    {
       "id": "ceb-matinal-banda-espla-1113",
       "fecha": "2026-11-13",
       "hora": "11:00",
@@ -748,6 +1306,18 @@
       "enlace": "https://alicantesociocultura.eventbrite.es"
     },
     {
+      "id": "elche-gt-locuras-paralelas-1113",
+      "fecha": "2026-11-13",
+      "hora": "20:00",
+      "titulo": "«Locuras paralelas», de Gabriela García y Paco Mir",
+      "seccion": "teatro",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 20€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
       "id": "tp-vaquero-1113",
       "fecha": "2026-11-13",
       "titulo": "J.J. Vaquero: «Vaquero»",
@@ -756,6 +1326,16 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/vaquero/"
+    },
+    {
+      "id": "euterpe-koskoja-1113",
+      "fecha": "2026-11-13",
+      "titulo": "Koskoja",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
       "id": "ceb-veus-dana-1114",
@@ -789,6 +1369,25 @@
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/libres/"
+    },
+    {
+      "id": "elche-escorxador-tulsa-1114",
+      "fecha": "2026-11-14",
+      "titulo": "Tulsa en concierto",
+      "seccion": "musica",
+      "lugar": "CCC L'Escorxador",
+      "ciudad": "Elche",
+      "enlace": "https://www.elche.es/2026/09/el-teatro-la-danza-y-la-musica-vuelven-a-lescorxador-de-septiembre-a-diciembre/"
+    },
+    {
+      "id": "euterpe-mabu-1114",
+      "fecha": "2026-11-14",
+      "titulo": "MäBu",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
       "id": "adda-banda-la-lira-1115",
@@ -845,6 +1444,113 @@
       "enlace": "https://www.teatroprincipaldealicante.com/obra/el-fantasma-de-la-opera/"
     },
     {
+      "id": "euterpe-borja-pico-1119",
+      "fecha": "2026-11-19",
+      "titulo": "Borja Picó",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "elche-gt-sabina-1120",
+      "fecha": "2026-11-20",
+      "hora": "20:30",
+      "titulo": "Malas Compañías: «El mejor homenaje a Sabina»",
+      "seccion": "musica",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 27€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "elche-escorxador-danzad-malditos-1120",
+      "fecha": "2026-11-20",
+      "titulo": "«Danzad malditos», coproducción de Carafur y Teatro de la Baranda (funciones 20, 21 y 22 de noviembre)",
+      "seccion": "teatro",
+      "lugar": "CCC L'Escorxador",
+      "ciudad": "Elche",
+      "enlace": "https://www.elche.es/2026/09/el-teatro-la-danza-y-la-musica-vuelven-a-lescorxador-de-septiembre-a-diciembre/"
+    },
+    {
+      "id": "euterpe-alberto-vela-1120",
+      "fecha": "2026-11-20",
+      "titulo": "alberto.vela",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "fm-flamenco-encarna-anillo-1121",
+      "fecha": "2026-11-21",
+      "hora": "20:00",
+      "titulo": "X Festival Flamenco Mediterráneo: Encarna Anillo y «Pituquete», «Camino de flores»",
+      "seccion": "musica",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "precio": "desde 20€",
+      "entradas": "venta",
+      "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
+    },
+    {
+      "id": "elche-gt-techno-pop-1121",
+      "fecha": "2026-11-21",
+      "hora": "21:00",
+      "titulo": "«Night of Techno Pop»: clásicos del techno-pop de los 80 y 90",
+      "seccion": "musica",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 38€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "euterpe-georgina-1121",
+      "fecha": "2026-11-21",
+      "titulo": "Georgina (Circuit Viu)",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "vila-montgo-manhattan-1126",
+      "fecha": "2026-11-26",
+      "hora": "18:00",
+      "titulo": "Documental «Del Montgó a Manhattan. 100 anys del somni americà»",
+      "seccion": "cine",
+      "lugar": "Auditorio del Centre Social Llar del Pensionista",
+      "ciudad": "Villajoyosa",
+      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
+    },
+    {
+      "id": "elche-gt-malefiga-1126",
+      "fecha": "2026-11-26",
+      "hora": "20:00",
+      "titulo": "«Maléfiga», de y con Elisa Lledó (Bomba Teatro)",
+      "seccion": "teatro",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 10€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "euterpe-chica-sobresalto-1126",
+      "fecha": "2026-11-26",
+      "titulo": "Chica Sobresalto",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
       "id": "adda-natura-1127",
       "fecha": "2026-11-27",
       "hora": "20:00",
@@ -855,6 +1561,52 @@
       "enlace": "https://addaalicante.es/concierto/natura-naturaleza-vida-y-amor-ii/"
     },
     {
+      "id": "elche-gt-james-rhodes-1127",
+      "fecha": "2026-11-27",
+      "hora": "20:00",
+      "titulo": "James Rhodes: «Manía». Piano (Chopin, Brahms, Rachmaninov)",
+      "seccion": "musica",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 32€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "euterpe-entre-los-dos-no-hacemos-1127",
+      "fecha": "2026-11-27",
+      "titulo": "«Entre los dos no hacemos uno»: Txextu Altube y Soloeme",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "elche-gt-julio-iglesias-jr-1128",
+      "fecha": "2026-11-28",
+      "hora": "20:00",
+      "titulo": "«Julio Iglesias Experience», por Julio Iglesias Jr.",
+      "seccion": "musica",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "precio": "desde 54€",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "fm-flamenco-maria-moreno-1128",
+      "fecha": "2026-11-28",
+      "hora": "20:00",
+      "titulo": "X Festival Flamenco Mediterráneo: María Moreno, «Magnificat». Clausura",
+      "seccion": "teatro",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "precio": "desde 20€",
+      "entradas": "venta",
+      "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
+    },
+    {
       "id": "arniches-cuerpo-espin-1128",
       "fecha": "2026-11-28",
       "titulo": "«Cuerpo Espín», de Marroch. Estreno absoluto",
@@ -862,6 +1614,16 @@
       "lugar": "Teatre Arniches (Arniches Espai Cultural)",
       "ciudad": "Alicante",
       "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
+    },
+    {
+      "id": "euterpe-nito-serrano-y-lapurasan-1128",
+      "fecha": "2026-11-28",
+      "titulo": "Nito Serrano y Lapurasangre",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     }
   ]
 }

@@ -52,6 +52,19 @@
       "enlace": "http://www.muvim.es/es/exposiciones"
     },
     {
+      "id": "campello-foto-festera",
+      "inicio": "2026-09-21",
+      "fin": "2026-10-04",
+      "titulo": "Fotografía festera: obras premiadas del concurso «Vicente Rodenas Alberola»",
+      "seccion": "exposiciones",
+      "etiquetas": [
+        "foto"
+      ],
+      "lugar": "Casa de Cultura, vestíbulo del auditorio",
+      "ciudad": "El Campello",
+      "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
       "id": "ua-expo-julio-just",
       "inicio": "2026-09-22",
       "fin": "2026-10-08",
@@ -157,6 +170,26 @@
       "ciudad": "Alicante"
     },
     {
+      "id": "vila-pop-art-melus",
+      "inicio": "2026-09-28",
+      "fin": "2026-10-30",
+      "titulo": "«Una història de pop art», de Javier Melús",
+      "seccion": "exposiciones",
+      "lugar": "Espai d'Art Contemporani la Barbera",
+      "ciudad": "Villajoyosa",
+      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
+    },
+    {
+      "id": "cigarreras-juego-pallar",
+      "inicio": "2026-10-03",
+      "fin": "2026-10-31",
+      "titulo": "«El juego del pallar», de Martín López Lam: serigrafías, dibujos y cerámicas",
+      "seccion": "exposiciones",
+      "lugar": "Centro Cultural Las Cigarreras, Caja Cero",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/agenda/exposicion-juego-del-pallar"
+    },
+    {
       "id": "ceb-expo-zapateando",
       "inicio": "2026-10-22",
       "fin": "2026-11-15",
@@ -167,6 +200,19 @@
       "ciudad": "Alicante",
       "precio": "gratis",
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "fm-flamenco-expo-foto",
+      "inicio": "2026-10-24",
+      "fin": "2026-11-28",
+      "titulo": "Fotografías premiadas en el concurso del X Festival Flamenco Mediterráneo",
+      "seccion": "exposiciones",
+      "etiquetas": [
+        "foto"
+      ],
+      "lugar": "Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://www.guiaflama.com/festivales-flamenco/festival-flamenco-mediterraneo-alicante-fundacion-caja-mediterraneo/"
     },
     {
       "id": "ivam-territorios-en-transito",
@@ -201,7 +247,7 @@
     {
       "id": "ivam-melanie-smith",
       "inicio": "2026-10-07",
-      "fin": "2027-01-17",
+      "fin": "2027-01-10",
       "titulo": "«Solo una cosa era extraña, seguir pensando como antes», de Melanie Smith",
       "seccion": "exposiciones",
       "lugar": "IVAM Centre Julio González",
@@ -220,7 +266,7 @@
     },
     {
       "id": "ivam-regina-de-miguel",
-      "inicio": "2026-10-29",
+      "inicio": "2026-10-28",
       "fin": "2027-04-11",
       "titulo": "«Regina de Miguel. Aguas intoxicadas»",
       "seccion": "exposiciones",
