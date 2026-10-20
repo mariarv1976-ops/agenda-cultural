@@ -1,649 +1,7 @@
 {
-  "actualizado": "2026-09-28",
-  "ventana": "2026-09-28 / 2026-11-28",
+  "actualizado": "2026-10-20",
+  "ventana": "2026-10-20 / 2026-12-20",
   "eventos": [
-    {
-      "id": "sede-natur-art-ecofeminismo-0928",
-      "fecha": "2026-09-28",
-      "hora": "18:00",
-      "titulo": "Natur-Art: charla-coloquio «Tejiendo redes para un futuro sostenible: ecofeminismo, arte, patrimonio y educación», con Laura Lucas Palacios",
-      "seccion": "charlas",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/observatorios-y-aulas-debate/natur-art-ecofeminismo-arte-patrimonio-y-educacion.html",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante"
-    },
-    {
-      "id": "cm-europa-levante-0928",
-      "fecha": "2026-09-28",
-      "titulo": "Jornada «Europa y el Mediterráneo: diálogo para el futuro del Levante», de Equipo Europa",
-      "seccion": "charlas",
-      "lugar": "Casa Mediterráneo",
-      "ciudad": "Alicante",
-      "entradas": "libre",
-      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
-    },
-    {
-      "id": "ua-odio-a-la-gente-0929",
-      "fecha": "2026-09-29",
-      "hora": "19:00",
-      "titulo": "«Odio a la gente», podcast de humor en directo con Bianca Kovacs y Carmen Romero",
-      "seccion": "varios",
-      "precio": "7€",
-      "lugar": "Paraninfo, Campus de la UA",
-      "ciudad": "San Vicente del Raspeig",
-      "entradas": "venta",
-      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
-    },
-    {
-      "id": "gilalbert-club-comic-0930",
-      "fecha": "2026-09-30",
-      "hora": "19:00",
-      "titulo": "Club de cómic del Gil-Albert: «Autoras de cómic», con Daniel Simón Pla",
-      "seccion": "charlas",
-      "lugar": "Casa Bardin",
-      "ciudad": "Alicante",
-      "enlace": "https://agendacultural.diputacionalicante.es/"
-    },
-    {
-      "id": "ceb-arte-naturaleza-1001",
-      "fecha": "2026-10-01",
-      "hora": "18:00",
-      "titulo": "Charla-coloquio «El arte y la naturaleza»",
-      "seccion": "charlas",
-      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
-      "ciudad": "Alicante",
-      "precio": "gratis",
-      "entradas": "libre",
-      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
-    },
-    {
-      "id": "gilalbert-rostros-lopez-sarasua-1001",
-      "fecha": "2026-10-01",
-      "hora": "19:00",
-      "titulo": "Ciclo «Rostros con historia»: Concha López Sarasúa, con Ana Cristina Baidal",
-      "seccion": "charlas",
-      "lugar": "Casa Bardin",
-      "ciudad": "Alicante",
-      "enlace": "https://agendacultural.diputacionalicante.es/"
-    },
-    {
-      "id": "arniches-filmo-rosas-blancas-1001",
-      "fecha": "2026-10-01",
-      "titulo": "La Filmoteca: «¡Caigan las rosas blancas!», de Albertina Carri",
-      "seccion": "cine",
-      "lugar": "Teatre Arniches (La Filmoteca)",
-      "ciudad": "Alicante",
-      "hora": "19:30",
-      "entradas": "venta",
-      "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
-    },
-    {
-      "id": "sede-de-rerum-natura-1001",
-      "fecha": "2026-10-01",
-      "hora": "19:30",
-      "titulo": "Presentación de «De la Naturaleza – De Rerum Natura», de Lucrecio, en traducción en verso de Luis T. Bonmatí y Ángel L. Prieto de Paula",
-      "seccion": "charlas",
-      "enlace": "https://web.ua.es/es/sedealicante/",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante"
-    },
-    {
-      "id": "sede-las-sinsombrero-1002",
-      "fecha": "2026-10-02",
-      "hora": "19:00",
-      "titulo": "«Las Sinsombrero». Recital poético-musical",
-      "seccion": "musica",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/musica/las-sinsombrero.-recital-poetico-musical.html",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante"
-    },
-    {
-      "id": "gilalbert-musicos-dolores-sendra-1002",
-      "fecha": "2026-10-02",
-      "hora": "19:00",
-      "titulo": "Ciclo «Músicos en el recuerdo»: Dolores Sendra, con Amelia Medina",
-      "seccion": "charlas",
-      "lugar": "Biblioteca municipal de Pego",
-      "ciudad": "Pego",
-      "enlace": "https://agendacultural.diputacionalicante.es/"
-    },
-    {
-      "id": "fm-festival-blues-1002",
-      "fecha": "2026-10-02",
-      "titulo": "Festival de Blues de Alicante: Wax & Boogie",
-      "seccion": "musica",
-      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
-      "ciudad": "Alicante",
-      "precio": "15€",
-      "enlace": "https://fundacionmediterraneo.es/actividades/",
-      "hora": "20:00"
-    },
-    {
-      "id": "elche-gt-nacho-vegas-1002",
-      "fecha": "2026-10-02",
-      "hora": "20:00",
-      "titulo": "Nacho Vegas: gira «Vidas semipreciosas»",
-      "seccion": "musica",
-      "lugar": "Gran Teatro de Elche",
-      "ciudad": "Elche",
-      "precio": "30€",
-      "entradas": "venta",
-      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
-    },
-    {
-      "id": "mutxamel-sleepy-hollow-1002",
-      "fecha": "2026-10-02",
-      "hora": "20:00",
-      "titulo": "Mutxamel a Escena: «La llegenda de Sleepy Hollow», Escola de Teatre de Sueca",
-      "seccion": "teatro",
-      "lugar": "Auditorio de la Casa de Cultura de Mutxamel",
-      "ciudad": "Mutxamel",
-      "precio": "gratis",
-      "enlace": "https://ayto.mutxamel.org/mutxamel-a-escena-alcanza-su-xii-edicion-con-cuatro-obras-seleccionadas-entre-sesenta-y-cuatro-propuestas-presentadas-al-certamen-de-teatro-amateur/"
-    },
-    {
-      "id": "cigarreras-habia-luz-1002",
-      "fecha": "2026-10-02",
-      "hora": "20:30",
-      "titulo": "«Había luz pero no era nuestra», de Jose Vera con Guille Mocholí y Alba Tesías. Estreno, Alacant a Escena, con inscripción previa",
-      "seccion": "teatro",
-      "lugar": "Centro Cultural Las Cigarreras",
-      "ciudad": "Alicante",
-      "precio": "gratis",
-      "enlace": "https://www.alicante.es/es/agenda/alacant-escena-estreno-habia-luz-pero-no-era-nuestra"
-    },
-    {
-      "id": "tp-la-partenaire-1002",
-      "fecha": "2026-10-02",
-      "titulo": "«La Partenaire», de LaMedinaEs",
-      "seccion": "teatro",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/la-partenaire/"
-    },
-    {
-      "id": "gilalbert-tastant-granada-1003",
-      "fecha": "2026-10-03",
-      "hora": "19:00",
-      "titulo": "Ciclo «Tastant territori»: la granada mollar, con visita al campo de granados, con inscripción previa",
-      "seccion": "varios",
-      "lugar": "Estación Experimental Agraria de Elche (CV-855, km 1)",
-      "ciudad": "Elche",
-      "enlace": "https://bit.ly/TastantGranada"
-    },
-    {
-      "id": "cigarreras-shhh6-1003",
-      "fecha": "2026-10-03",
-      "hora": "19:30",
-      "titulo": "Shhh #6: doble concierto de músicas de vanguardia (ciclo de SIGILA)",
-      "seccion": "musica",
-      "lugar": "Centro Cultural Las Cigarreras",
-      "ciudad": "Alicante",
-      "enlace": "https://www.alicante.es/es/agenda/vuelve-shhh6-doble-concierto"
-    },
-    {
-      "id": "campello-tributo-1003",
-      "fecha": "2026-10-03",
-      "hora": "19:30",
-      "titulo": "«Tributo», de La Teta Calva",
-      "seccion": "teatro",
-      "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
-      "ciudad": "El Campello",
-      "precio": "12€",
-      "entradas": "venta",
-      "enlace": "https://www.elcampello.es/index.php?s=agenda"
-    },
-    {
-      "id": "adda-sueno-de-eros-1003",
-      "fecha": "2026-10-03",
-      "titulo": "«El sueño de Eros». Óscar Esplá 50",
-      "seccion": "musica",
-      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://addaalicante.es/concierto/el-sueno-de-eros-oscar-espla-50/",
-      "hora": "20:00"
-    },
-    {
-      "id": "elche-gt-barbero-picasso-1003",
-      "fecha": "2026-10-03",
-      "hora": "20:00",
-      "titulo": "«El barbero de Picasso», de Borja Ortiz de Gondra, con Pepe Viyuela y Antonio Molero",
-      "seccion": "teatro",
-      "lugar": "Gran Teatro de Elche",
-      "ciudad": "Elche",
-      "precio": "desde 18€",
-      "entradas": "venta",
-      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
-    },
-    {
-      "id": "mutxamel-ultima-planta-1003",
-      "fecha": "2026-10-03",
-      "hora": "20:00",
-      "titulo": "Mutxamel a Escena: «La última planta», de Pànic Escènic",
-      "seccion": "teatro",
-      "lugar": "Auditorio de la Casa de Cultura de Mutxamel",
-      "ciudad": "Mutxamel",
-      "precio": "gratis",
-      "enlace": "https://ayto.mutxamel.org/mutxamel-a-escena-alcanza-su-xii-edicion-con-cuatro-obras-seleccionadas-entre-sesenta-y-cuatro-propuestas-presentadas-al-certamen-de-teatro-amateur/"
-    },
-    {
-      "id": "tp-gigante-1003",
-      "fecha": "2026-10-03",
-      "titulo": "«Gigante», de Mark Rosenblatt",
-      "seccion": "teatro",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/gigante/"
-    },
-    {
-      "id": "catral-el-pollito-1003",
-      "fecha": "2026-10-03",
-      "titulo": "XIV Certamen de Teatro Amateur Villa de Catral: «El pollito», de Maniquí Teatre",
-      "seccion": "teatro",
-      "lugar": "Casa de Cultura de Catral",
-      "ciudad": "Catral",
-      "enlace": "https://www.catral.es/acta-de-la-sesion-para-la-seleccion-de-los-grupos-participantes-en-el-xiv-certamen-nacional-de-teatro-amateur-villa-de-catral/"
-    },
-    {
-      "id": "campello-musica-festera-1004",
-      "fecha": "2026-10-04",
-      "hora": "19:00",
-      "titulo": "XXXVII Concierto de Música Festera Pedro Vaello: Associació Musical L'Avanç",
-      "seccion": "musica",
-      "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
-      "ciudad": "El Campello",
-      "precio": "gratis",
-      "enlace": "https://www.elcampello.es/index.php?s=agenda"
-    },
-    {
-      "id": "tp-orquesta-jovenes-1004",
-      "fecha": "2026-10-04",
-      "titulo": "Orquesta de Jóvenes de la Provincia de Alicante",
-      "seccion": "musica",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/orquesta-de-jovenes-de-la-provincia-de-alicante-2/"
-    },
-    {
-      "id": "sca-trio-wanderer-1005",
-      "fecha": "2026-10-05",
-      "titulo": "Sociedad de Conciertos: Trío Wanderer (trío con piano)",
-      "seccion": "musica",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
-      "hora": "20:00",
-      "enlace": "https://sociedadconciertosalicante.com/avance-programacion/"
-    },
-    {
-      "id": "sede-cartas-perdidas-1005",
-      "fecha": "2026-10-05",
-      "titulo": "Documental «Las cartas perdidas. La cárcel y el exilio de las mujeres republicanas», de Amparo Climent",
-      "seccion": "cine",
-      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/las-cartas-perdidas.pdf",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante"
-    },
-    {
-      "id": "fm-literatura-gotica-1006",
-      "fecha": "2026-10-06",
-      "titulo": "Conferencia «La sombra de lo extraño. El legado de la literatura gótica en la cultura popular actual», con Antonio Ballesteros",
-      "seccion": "charlas",
-      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
-      "ciudad": "Alicante",
-      "enlace": "https://fundacionmediterraneo.es/actividades/"
-    },
-    {
-      "id": "ua-cemab-ulloa-1008",
-      "fecha": "2026-10-08",
-      "hora": "17:00",
-      "titulo": "CeMaB: «El miedo terrible de ser una escritora expatriada», charla-diálogo con Claudia Ulloa Donoso",
-      "seccion": "charlas",
-      "lugar": "Universidad de Alicante",
-      "ciudad": "San Vicente del Raspeig",
-      "enlace": "https://www.infobae.com/america/agencias/2026/09/28/el-cemab-de-la-ua-programa-una-veintena-de-actividades-sobre-literatura-iberoamericana-hasta-enero/"
-    },
-    {
-      "id": "ua-tres-tristos-traumes-1008",
-      "fecha": "2026-10-08",
-      "hora": "19:00",
-      "titulo": "«Tres Tristos Traumes», Col·lectiu Intermitent (en valenciano)",
-      "seccion": "teatro",
-      "precio": "7€",
-      "lugar": "Paraninfo, Campus de la UA",
-      "ciudad": "San Vicente del Raspeig",
-      "entradas": "venta",
-      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
-    },
-    {
-      "id": "arniches-filmo-luces-atardecer-1008",
-      "fecha": "2026-10-08",
-      "titulo": "La Filmoteca, ciclo Kaurismäki: «Luces al atardecer»",
-      "seccion": "cine",
-      "lugar": "Teatre Arniches (La Filmoteca)",
-      "ciudad": "Alicante",
-      "hora": "19:30",
-      "entradas": "venta",
-      "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
-    },
-    {
-      "id": "elche-gt-sara-baras-1008",
-      "fecha": "2026-10-08",
-      "hora": "20:00",
-      "titulo": "Sara Baras: «Infinita». Danza, 30 aniversario de la reapertura del Gran Teatro",
-      "seccion": "teatro",
-      "lugar": "Gran Teatro de Elche",
-      "ciudad": "Elche",
-      "precio": "desde 52€",
-      "entradas": "venta",
-      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
-    },
-    {
-      "id": "tp-la-cubana-1008",
-      "fecha": "2026-10-08",
-      "titulo": "La Cubana: «La cuisine de ma cousine» (funciones del 8 al 18 de octubre)",
-      "seccion": "teatro",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/la-cubana/"
-    },
-    {
-      "id": "sede-o-quam-tu-pulchra-1008",
-      "fecha": "2026-10-08",
-      "titulo": "Concierto «O quam tu pulchra es». Música italiana del seicento",
-      "seccion": "musica",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/musica/o-quam-tu-pulchra-es.html",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante"
-    },
-    {
-      "id": "euterpe-rafa-pons-1009",
-      "fecha": "2026-10-09",
-      "titulo": "Rafa Pons",
-      "seccion": "musica",
-      "lugar": "Sala Euterpe",
-      "ciudad": "Sant Joan d'Alacant",
-      "entradas": "venta",
-      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
-    },
-    {
-      "id": "cigarreras-circarte-jornada-1010",
-      "fecha": "2026-10-10",
-      "hora": "11:00",
-      "titulo": "Circarte, 17º Festival de circo: jornada completa en Las Cigarreras (de 11:00 a 20:00)",
-      "seccion": "varios",
-      "lugar": "Centro Cultural Las Cigarreras",
-      "ciudad": "Alicante",
-      "enlace": "https://diariodealicante.net/circarte-2026-alicante-espectaculos-octubre/"
-    },
-    {
-      "id": "elche-gt-vicente-pomares-1010",
-      "fecha": "2026-10-10",
-      "hora": "20:00",
-      "titulo": "Vicente Pomares: «Ara ve el bo!»",
-      "seccion": "musica",
-      "lugar": "Gran Teatro de Elche",
-      "ciudad": "Elche",
-      "precio": "10€",
-      "entradas": "venta",
-      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
-    },
-    {
-      "id": "catral-pedro-capitan-1010",
-      "fecha": "2026-10-10",
-      "titulo": "XIV Certamen de Teatro Amateur Villa de Catral: «Pedro y el capitán», de Comboi Mediterrani",
-      "seccion": "teatro",
-      "lugar": "Casa de Cultura de Catral",
-      "ciudad": "Catral",
-      "enlace": "https://www.catral.es/acta-de-la-sesion-para-la-seleccion-de-los-grupos-participantes-en-el-xiv-certamen-nacional-de-teatro-amateur-villa-de-catral/"
-    },
-    {
-      "id": "adda-banda-el-tossal-1011",
-      "fecha": "2026-10-11",
-      "hora": "10:00",
-      "titulo": "XIII Ciclo Las bandas de la provincia: Associació Musical El Tossal",
-      "seccion": "musica",
-      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-associacio-musical-el-tossal/"
-    },
-    {
-      "id": "adda-banda-la-amistad-1011",
-      "fecha": "2026-10-11",
-      "hora": "13:00",
-      "titulo": "XIII Ciclo Las bandas de la provincia: Sociedad Musical La Amistad de Villafranqueza",
-      "seccion": "musica",
-      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-sociedad-musical-la-amistad-de-villafranqueza/"
-    },
-    {
-      "id": "ua-rito-mua-1014",
-      "fecha": "2026-10-14",
-      "hora": "20:00",
-      "titulo": "«Rito», de Asun Noales y Susana Guerrero: danza e instalación en el MUA, con inscripción previa",
-      "seccion": "teatro",
-      "lugar": "Museo de la UA (MUA)",
-      "ciudad": "San Vicente del Raspeig",
-      "precio": "gratis",
-      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
-    },
-    {
-      "id": "sede-flamenco-rosalia-1015",
-      "fecha": "2026-10-15",
-      "hora": "20:00",
-      "titulo": "Mundo y formas del flamenco: «Rosalía, la vanguardia y la innovación en el capitalismo de las redes», con Pablo Martínez",
-      "seccion": "charlas",
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
-    },
-    {
-      "id": "elche-escorxador-orilla-1015",
-      "fecha": "2026-10-15",
-      "titulo": "Orilla, festival de improvisación (del 15 al 18 de octubre)",
-      "seccion": "teatro",
-      "lugar": "CCC L'Escorxador",
-      "ciudad": "Elche",
-      "enlace": "https://www.elche.es/2026/09/el-teatro-la-danza-y-la-musica-vuelven-a-lescorxador-de-septiembre-a-diciembre/"
-    },
-    {
-      "id": "euterpe-mermelada-de-impro-con-d-1015",
-      "fecha": "2026-10-15",
-      "titulo": "Mermelada de impro, con Dani Bravo",
-      "seccion": "teatro",
-      "lugar": "Sala Euterpe",
-      "ciudad": "Sant Joan d'Alacant",
-      "entradas": "venta",
-      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
-    },
-    {
-      "id": "ceb-matinal-banda-1016",
-      "fecha": "2026-10-16",
-      "hora": "11:00",
-      "titulo": "Matinales de la Banda: Banda Sinfónica Municipal de Alicante, con inscripción previa",
-      "seccion": "musica",
-      "lugar": "Las Cigarreras, Casa de la Música",
-      "ciudad": "Alicante",
-      "precio": "gratis",
-      "enlace": "https://alicantesociocultura.eventbrite.es"
-    },
-    {
-      "id": "ceb-sukijazz-1016",
-      "fecha": "2026-10-16",
-      "hora": "19:00",
-      "titulo": "Concierto de Sukijazz, clausura de la exposición «Plantoj»",
-      "seccion": "musica",
-      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
-      "ciudad": "Alicante",
-      "precio": "gratis",
-      "entradas": "libre",
-      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
-    },
-    {
-      "id": "cigarreras-blues-oso-1016",
-      "fecha": "2026-10-16",
-      "hora": "19:00",
-      "titulo": "VIII Festival Internacional de Blues de Alicante: El Oso y sus Sabandijas",
-      "seccion": "musica",
-      "lugar": "Las Cigarreras, explanada exterior",
-      "ciudad": "Alicante",
-      "precio": "gratis",
-      "enlace": "https://alicantemag.com/musica/programacion-del-viii-festival-internacional-de-blues-de-alicante"
-    },
-    {
-      "id": "adda-zen-garden-1016",
-      "fecha": "2026-10-16",
-      "titulo": "«Zen Garden». Naturaleza, vida y amor I",
-      "seccion": "musica",
-      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://addaalicante.es/concierto/zen-garden-naturaleza-vida-y-amor-i/",
-      "hora": "20:00"
-    },
-    {
-      "id": "elche-gt-revolver-1016",
-      "fecha": "2026-10-16",
-      "hora": "20:00",
-      "titulo": "Revólver: «LA 03010 Tour»",
-      "seccion": "musica",
-      "lugar": "Gran Teatro de Elche",
-      "ciudad": "Elche",
-      "precio": "desde 35,20€",
-      "entradas": "venta",
-      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
-    },
-    {
-      "id": "mutxamel-en-la-luna-1016",
-      "fecha": "2026-10-16",
-      "hora": "20:00",
-      "titulo": "Mutxamel a Escena: «En la luna», de Alfredo Sanzol, por Alpí Teatro",
-      "seccion": "teatro",
-      "lugar": "Auditorio de la Casa de Cultura de Mutxamel",
-      "ciudad": "Mutxamel",
-      "precio": "gratis",
-      "enlace": "https://ayto.mutxamel.org/mutxamel-a-escena-alcanza-su-xii-edicion-con-cuatro-obras-seleccionadas-entre-sesenta-y-cuatro-propuestas-presentadas-al-certamen-de-teatro-amateur/"
-    },
-    {
-      "id": "arniches-antes-de-caer-1016",
-      "fecha": "2026-10-16",
-      "titulo": "«Antes de caer», de Barreto y La Victoria. Circo, estreno absoluto: apertura de temporada del Arniches",
-      "seccion": "teatro",
-      "lugar": "Teatre Arniches (Arniches Espai Cultural)",
-      "ciudad": "Alicante",
-      "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
-    },
-    {
-      "id": "cigarreras-ficciones-compartidas-1016",
-      "fecha": "2026-10-16",
-      "titulo": "Ficciones Compartidas, V festival de experimentación material, de La Cuarta Piel (16 y 17 de octubre)",
-      "seccion": "varios",
-      "lugar": "Las Cigarreras, Secadero",
-      "ciudad": "Alicante",
-      "enlace": "https://quefas.es/ficciones-compartidas-lleva-la-pinada-del-benacantil-a-las-cigarreras/"
-    },
-    {
-      "id": "euterpe-sobrezero-1016",
-      "fecha": "2026-10-16",
-      "titulo": "Sobrezero",
-      "seccion": "musica",
-      "lugar": "Sala Euterpe",
-      "ciudad": "Sant Joan d'Alacant",
-      "entradas": "venta",
-      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
-    },
-    {
-      "id": "cigarreras-blues-1017",
-      "fecha": "2026-10-17",
-      "hora": "17:30",
-      "titulo": "VIII Festival Internacional de Blues de Alicante: Los Fabulosos Blueshakers (17:30) y Jimmy Barnatán & The Cocooners (20:00)",
-      "seccion": "musica",
-      "lugar": "Las Cigarreras, explanada exterior",
-      "ciudad": "Alicante",
-      "precio": "gratis",
-      "enlace": "https://alicantemag.com/musica/programacion-del-viii-festival-internacional-de-blues-de-alicante"
-    },
-    {
-      "id": "elche-gt-gigante-1017",
-      "fecha": "2026-10-17",
-      "hora": "19:00",
-      "titulo": "«Gigante», de Mark Rosenblatt, con José María Pou",
-      "seccion": "teatro",
-      "lugar": "Gran Teatro de Elche",
-      "ciudad": "Elche",
-      "precio": "desde 20€",
-      "entradas": "venta",
-      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
-    },
-    {
-      "id": "campello-rambalaya-1017",
-      "fecha": "2026-10-17",
-      "hora": "19:30",
-      "titulo": "Rambalaya: rhythm & blues",
-      "seccion": "musica",
-      "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
-      "ciudad": "El Campello",
-      "precio": "12€",
-      "entradas": "venta",
-      "enlace": "https://www.elcampello.es/index.php?s=agenda"
-    },
-    {
-      "id": "mutxamel-la-vina-1017",
-      "fecha": "2026-10-17",
-      "hora": "20:00",
-      "titulo": "Mutxamel a Escena: «La viña», de Paraskenia Teatro",
-      "seccion": "teatro",
-      "lugar": "Auditorio de la Casa de Cultura de Mutxamel",
-      "ciudad": "Mutxamel",
-      "precio": "gratis",
-      "enlace": "https://ayto.mutxamel.org/mutxamel-a-escena-alcanza-su-xii-edicion-con-cuatro-obras-seleccionadas-entre-sesenta-y-cuatro-propuestas-presentadas-al-certamen-de-teatro-amateur/"
-    },
-    {
-      "id": "vila-esclavo-siervo-amigo-1017",
-      "fecha": "2026-10-17",
-      "titulo": "«Un esclavo, un siervo, un amigo», de Sanra Produce-Iria Producciones. Comedia",
-      "seccion": "teatro",
-      "lugar": "Teatre Auditori la Vila Joiosa",
-      "ciudad": "Villajoyosa",
-      "entradas": "venta",
-      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
-    },
-    {
-      "id": "catral-chica-luciernaga-1017",
-      "fecha": "2026-10-17",
-      "titulo": "XIV Certamen de Teatro Amateur Villa de Catral: «La chica de la luciérnaga», de Squizo Teatro",
-      "seccion": "teatro",
-      "lugar": "Casa de Cultura de Catral",
-      "ciudad": "Catral",
-      "enlace": "https://www.catral.es/acta-de-la-sesion-para-la-seleccion-de-los-grupos-participantes-en-el-xiv-certamen-nacional-de-teatro-amateur-villa-de-catral/"
-    },
-    {
-      "id": "euterpe-tocatealgoferran-1017",
-      "fecha": "2026-10-17",
-      "titulo": "#TócateAlgoFerran (Ferran Exceso)",
-      "seccion": "musica",
-      "lugar": "Sala Euterpe",
-      "ciudad": "Sant Joan d'Alacant",
-      "entradas": "venta",
-      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
-    },
-    {
-      "id": "elche-gt-eugeni-alemany-1018",
-      "fecha": "2026-10-18",
-      "hora": "19:00",
-      "titulo": "Eugeni Alemany: «La persona no descansa». Humor en valenciano",
-      "seccion": "teatro",
-      "lugar": "Gran Teatro de Elche",
-      "ciudad": "Elche",
-      "precio": "desde 18€",
-      "entradas": "venta",
-      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
-    },
     {
       "id": "ua-mahmud-1020",
       "fecha": "2026-10-20",
@@ -657,6 +15,18 @@
       "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
     },
     {
+      "id": "sede-espla-visiones-1020",
+      "fecha": "2026-10-20",
+      "hora": "20:00",
+      "titulo": "Esplá expandido: «Visiones y versiones de la música de Óscar Esplá», con Sixto Herrero (saxofón) y Jesús Gómez (piano)",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/musica/visiones-y-versiones-de-la-musica-de-oscar-espla.html"
+    },
+    {
       "id": "fm-literatura-gotica-1020",
       "fecha": "2026-10-20",
       "titulo": "Ciclo «La sombra de lo extraño» (literatura gótica): conferencia de Julio Ángel Olivares",
@@ -666,25 +36,87 @@
       "enlace": "https://fundacionmediterraneo.es/actividades/"
     },
     {
+      "id": "svr-teatro-ibiza-80-1020",
+      "fecha": "2026-10-20",
+      "titulo": "XXXIV Semana del Teatro: «Ibiza 80», de Félix Albo",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Auditorio Municipal",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "libre",
+      "enlace": "https://raspeig.es/la-semana-del-teatro-de-san-vicente-crece-con-mas-actuaciones-y-una-programacion-ininterrumpida-del-17-al-25-de-octubre/"
+    },
+    {
+      "id": "sede-salud-economia-1021",
+      "fecha": "2026-10-21",
+      "hora": "19:15",
+      "titulo": "Economía y Sociedad: «Salud y economía», con Beatriz González López-Valcárcel",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/aula-ciencia-tecnologia/actividades-2026-2027/salud-y-economia.html"
+    },
+    {
       "id": "sca-janine-jansen-1021",
       "fecha": "2026-10-21",
+      "hora": "20:00",
       "titulo": "Sociedad de Conciertos: Janine Jansen (violín) y Denis Kozhukhin (piano)",
       "seccion": "musica",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
-      "hora": "20:00",
       "enlace": "https://sociedadconciertosalicante.com/avance-programacion/"
+    },
+    {
+      "id": "svr-teatro-misery-1021",
+      "fecha": "2026-10-21",
+      "titulo": "XXXIV Semana del Teatro: «Misery», de Saga Producciones, con Carmen Conesa, Marcial Álvarez y Alberto Vázquez",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Auditorio Municipal",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "libre",
+      "enlace": "https://raspeig.es/la-semana-del-teatro-de-san-vicente-crece-con-mas-actuaciones-y-una-programacion-ininterrumpida-del-17-al-25-de-octubre/"
+    },
+    {
+      "id": "ua-villena-geoingenieria-1022",
+      "fecha": "2026-10-22",
+      "hora": "17:30",
+      "titulo": "Sede UA de Villena: conferencia «Geoingeniería para combatir el cambio climático» (ciclo Trobades de fe, cultura i ciència)",
+      "seccion": "charlas",
+      "lugar": "CAMV, Cercle Agrícola Mercantil Villenense",
+      "ciudad": "Villena",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/Home/Details/218918?agenda=&idioma=ca"
+    },
+    {
+      "id": "ua-orihuela-velazquez-1022",
+      "fecha": "2026-10-22",
+      "hora": "19:00",
+      "titulo": "«Por la fuerza del arte: el Velázquez de Orihuela a la luz de los estudios técnicos del Museo Nacional del Prado», conferencia de Jaime García-Máiquez",
+      "seccion": "charlas",
+      "lugar": "Biblioteca Pública y Archivo Histórico Fernando de Loazes",
+      "ciudad": "Orihuela",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/Home/Details/218718?agenda=&idioma=ca"
     },
     {
       "id": "arniches-filmo-qui-som-1022",
       "fecha": "2026-10-22",
+      "hora": "19:30",
       "titulo": "La Filmoteca: «Qui som», de Salvador Sunyer",
       "seccion": "cine",
       "lugar": "Teatre Arniches (La Filmoteca)",
       "ciudad": "Alicante",
-      "hora": "19:30",
       "entradas": "venta",
       "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
+    },
+    {
+      "id": "sede-vida-digna-barrios-1022",
+      "fecha": "2026-10-22",
+      "hora": "19:30",
+      "titulo": "«Vida digna en los barrios de nuestra ciudad», con José Ramón Navarro Vera y Carmen Sánchez Brufal (ciclo Por una vida digna y solidaria en nuestra ciudad)",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/boletin-semanal/2026-2027/boletin-quincenal-del-19-al-31-de-octubre-de-2026.html"
     },
     {
       "id": "sede-flamenco-tecnologias-1022",
@@ -699,12 +131,36 @@
     {
       "id": "tp-callas-pilar-jurado-1022",
       "fecha": "2026-10-22",
+      "hora": "20:00",
       "titulo": "«Callas», por Pilar Jurado",
       "seccion": "musica",
+      "precio": "desde 12€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/callas-by-pilar-jurado/"
+    },
+    {
+      "id": "svr-teatro-senoras-bingo-1022",
+      "fecha": "2026-10-22",
+      "titulo": "XXXIV Semana del Teatro: «Señoras al bingo», teatro de improvisación de Improvidencia",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Auditorio Municipal",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "libre",
+      "enlace": "https://raspeig.es/la-semana-del-teatro-de-san-vicente-crece-con-mas-actuaciones-y-una-programacion-ininterrumpida-del-17-al-25-de-octubre/"
+    },
+    {
+      "id": "ceb-biblioteca-viviente-1023",
+      "fecha": "2026-10-23",
+      "hora": "10:30",
+      "titulo": "«Biblioteca viviente», experiencia vivencial (mayores de 14 años), con inscripción previa",
+      "seccion": "varios",
+      "precio": "gratis",
+      "lugar": "Biblioteca municipal (sede en el folleto de Cultura en Barrios)",
+      "ciudad": "Alicante",
+      "enlace": "https://alicantesociocultura.eventbrite.es"
     },
     {
       "id": "campello-club-lectura-marta-sanz-1023",
@@ -712,16 +168,49 @@
       "hora": "18:00",
       "titulo": "Club de lectura: «Los íntimos», con la autora, Marta Sanz (para socios de la biblioteca), con inscripción previa",
       "seccion": "charlas",
+      "precio": "gratis",
       "lugar": "Biblioteca Municipal, Sala Ramón Llull",
       "ciudad": "El Campello",
-      "precio": "gratis",
       "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
+      "id": "ceb-guitarra-mestiza-1023",
+      "fecha": "2026-10-23",
+      "hora": "18:00",
+      "titulo": "«La guitarra mestiza», Antonino Croce Trío (Escena d'Ací), con inscripción previa",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "sede-documental-desnudas-1023",
+      "fecha": "2026-10-23",
+      "hora": "18:15",
+      "titulo": "Ciclo de Cine, Psicoanálisis y Cultura: documental «Desnudas. Desnudas de prejuicios, vestidas de verdad», de Esmeralda Marugán",
+      "seccion": "cine",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/cine/xx-ciclo-de-cine-psicoanalisis-y-cultura-el-psicoanalisis-entre-sujeto-del-inconsciente-y-sujeto-social.html"
+    },
+    {
+      "id": "cigarreras-ay-campaneras-1023",
+      "fecha": "2026-10-23",
+      "hora": "19:00",
+      "titulo": "«Ay, campaneras», podcast en directo",
+      "seccion": "varios",
+      "lugar": "Centro Cultural Las Cigarreras",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/agenda/ay-campaneras-podcast-directo"
     },
     {
       "id": "tp-panorama-desde-el-puente-1023",
       "fecha": "2026-10-23",
+      "hora": "20:00",
       "titulo": "«Panorama desde el puente», de Arthur Miller",
       "seccion": "teatro",
+      "precio": "desde 12€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
@@ -747,14 +236,44 @@
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
+      "id": "fm-jorge-juan-astronomia-1023",
+      "fecha": "2026-10-23",
+      "titulo": "Conferencia «Jorge Juan y Santacilia y la astronomía del siglo XVIII», con inscripción previa",
+      "seccion": "charlas",
+      "lugar": "Fundación Mediterráneo en Crevillent",
+      "ciudad": "Crevillent",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
+    },
+    {
+      "id": "svr-teatro-ser-algo-senor-1023",
+      "fecha": "2026-10-23",
+      "titulo": "XXXIV Semana del Teatro: «Ser algo señor te pido», de Esperanza Candela",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Auditorio Municipal",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "libre",
+      "enlace": "https://raspeig.es/la-semana-del-teatro-de-san-vicente-crece-con-mas-actuaciones-y-una-programacion-ininterrumpida-del-17-al-25-de-octubre/"
+    },
+    {
+      "id": "sede-simposio-alacant-terra-valenciana-1024",
+      "fecha": "2026-10-24",
+      "hora": "09:00",
+      "titulo": "Simposio «Alicante tierra valenciana» (en valenciano)",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://dfc.ua.es/es/programa-definitiu-alacant-terra-valenciana.pdf"
+    },
+    {
       "id": "campello-circarte-arriba-1024",
       "fecha": "2026-10-24",
       "hora": "13:00",
       "titulo": "Circarte: «Arriba», de José Luis Redondo",
       "seccion": "teatro",
+      "precio": "gratis",
       "lugar": "Casa de Cultura, Ágora",
       "ciudad": "El Campello",
-      "precio": "gratis",
       "enlace": "https://www.elcampello.es/index.php?s=agenda"
     },
     {
@@ -763,9 +282,21 @@
       "hora": "17:00",
       "titulo": "Circarte: «La piedra de madera», de EIA",
       "seccion": "teatro",
+      "precio": "gratis",
       "lugar": "Casa de Cultura, Ágora",
       "ciudad": "El Campello",
-      "precio": "gratis",
+      "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
+      "id": "campello-circarte-trastienda-1024",
+      "fecha": "2026-10-24",
+      "hora": "19:00",
+      "titulo": "Circarte: «La trastienda», de La Gata Japonesa",
+      "seccion": "teatro",
+      "precio": "6€",
+      "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
+      "ciudad": "El Campello",
+      "entradas": "venta",
       "enlace": "https://www.elcampello.es/index.php?s=agenda"
     },
     {
@@ -774,23 +305,11 @@
       "hora": "19:00",
       "titulo": "Orquestra Simfònica Ciutat d'Elx: «Inspiració infinita» (Rossini, Gianella, García-Tomás, Stravinski)",
       "seccion": "musica",
+      "precio": "desde 18€",
       "lugar": "Gran Teatro de Elche",
       "ciudad": "Elche",
-      "precio": "desde 18€",
       "entradas": "venta",
       "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
-    },
-    {
-      "id": "campello-circarte-trastienda-1024",
-      "fecha": "2026-10-24",
-      "hora": "19:00",
-      "titulo": "Circarte: «La trastienda», de La Gata Japonesa",
-      "seccion": "teatro",
-      "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
-      "ciudad": "El Campello",
-      "precio": "6€",
-      "entradas": "venta",
-      "enlace": "https://www.elcampello.es/index.php?s=agenda"
     },
     {
       "id": "fm-festival-flamenco-1024",
@@ -798,30 +317,33 @@
       "hora": "20:00",
       "titulo": "X Festival Flamenco Mediterráneo: Pedro «El Granaíno», «Granaíno Jondo». Inauguración (el festival sigue hasta el 28 de noviembre)",
       "seccion": "musica",
+      "precio": "desde 20€",
       "lugar": "Aula de Cultura de la Fundación Mediterráneo",
       "ciudad": "Alicante",
-      "precio": "desde 20€",
       "entradas": "venta",
       "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
     },
     {
-      "id": "tp-dani-mateo-1024",
-      "fecha": "2026-10-24",
-      "titulo": "Dani Mateo: «¿Por qué no te callas?»",
-      "seccion": "varios",
-      "lugar": "Teatro Principal de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://www.teatroprincipaldealicante.com/obra/dani-mateo/"
-    },
-    {
       "id": "ua-concierto-chapi-espla-1024",
       "fecha": "2026-10-24",
+      "hora": "20:00",
       "titulo": "Concierto homenaje a Ruperto Chapí y Óscar Esplá",
       "seccion": "musica",
       "lugar": "Paraninfo de la UA",
       "ciudad": "San Vicente del Raspeig",
       "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/concierto-homenaje-a-ruperto-chapi-y-oscar-espla.pdf"
+    },
+    {
+      "id": "tp-dani-mateo-1024",
+      "fecha": "2026-10-24",
+      "hora": "21:00",
+      "titulo": "Dani Mateo: «¿Por qué no te callas?»",
+      "seccion": "varios",
+      "precio": "desde 29€",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/obra/dani-mateo/"
     },
     {
       "id": "arniches-afines-marcat-1024",
@@ -833,13 +355,13 @@
       "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
     },
     {
-      "id": "vila-mirada-kubrick-1024",
+      "id": "elche-escorxador-stellium-1024",
       "fecha": "2026-10-24",
-      "titulo": "Encuentros de Cine de Autor: «La mirada de Kubrick»",
-      "seccion": "cine",
-      "lugar": "Villajoyosa (sala no indicada en la fuente)",
-      "ciudad": "Villajoyosa",
-      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
+      "titulo": "«Stellium», de Eyas Dance Project. Danza",
+      "seccion": "teatro",
+      "lugar": "CCC L'Escorxador",
+      "ciudad": "Elche",
+      "enlace": "https://www.revistauala.com/escena/eyas_dance_project_presenta_stellium_en_lescorxador_de_elche-10932.html"
     },
     {
       "id": "euterpe-maria-parrado-1024",
@@ -852,6 +374,26 @@
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
+      "id": "svr-teatro-mas-vale-pronto-1024",
+      "fecha": "2026-10-24",
+      "titulo": "XXXIV Semana del Teatro: «Más vale pronto», dirigida por Adán Rodríguez",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Auditorio Municipal",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "libre",
+      "enlace": "https://raspeig.es/la-semana-del-teatro-de-san-vicente-crece-con-mas-actuaciones-y-una-programacion-ininterrumpida-del-17-al-25-de-octubre/"
+    },
+    {
+      "id": "vila-mirada-kubrick-1024",
+      "fecha": "2026-10-24",
+      "titulo": "Encuentros de Cine de Autor: «La mirada de Kubrick»",
+      "seccion": "cine",
+      "lugar": "Villajoyosa (sala no indicada en la fuente)",
+      "ciudad": "Villajoyosa",
+      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
+    },
+    {
       "id": "adda-banda-carolinas-1025",
       "fecha": "2026-10-25",
       "hora": "10:00",
@@ -860,6 +402,18 @@
       "lugar": "ADDA. Auditorio de la Diputación de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-agrupacion-musical-s-c-d-carolinas/"
+    },
+    {
+      "id": "museo-aguas-boletus-1025",
+      "fecha": "2026-10-25",
+      "hora": "12:00",
+      "titulo": "Boletus en concierto (indie pop-rock)",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/Home/Details/218542?agenda=&idioma=ca"
     },
     {
       "id": "adda-banda-la-paz-1025",
@@ -877,20 +431,73 @@
       "hora": "19:00",
       "titulo": "«La prudencia», de Sensaciones",
       "seccion": "teatro",
+      "precio": "gratis",
       "lugar": "Casa de Cultura, Teatro-Auditorio Pedro Vaello",
       "ciudad": "El Campello",
-      "precio": "gratis",
       "enlace": "https://www.elcampello.es/index.php?s=agenda"
+    },
+    {
+      "id": "elche-fm-ana-alcaide-1025",
+      "fecha": "2026-10-25",
+      "hora": "19:00",
+      "titulo": "Festival Medieval d'Elx: Ana Alcaide, «Essentia»",
+      "seccion": "musica",
+      "precio": "5€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://festivalmedieval.com/programacion/"
     },
     {
       "id": "tp-circarte-1025",
       "fecha": "2026-10-25",
+      "hora": "19:00",
       "titulo": "17º Festival de circo: Gran Gala de Circo Circarte",
       "seccion": "varios",
+      "precio": "desde 10€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/gran-gala-de-circo-circarte/"
+    },
+    {
+      "id": "alcoi-flauta-magica-1025",
+      "fecha": "2026-10-25",
+      "titulo": "«La flauta mágica», de Mozart",
+      "seccion": "musica",
+      "lugar": "Teatre Calderón",
+      "ciudad": "Alcoy",
+      "enlace": "https://www.revistauala.com/escena/la_apera_de_la_flauta_magica_llega_al_teatre_calderan_dalcoi-10931.html"
+    },
+    {
+      "id": "cvongd-concierto-entreculturas-1025",
+      "fecha": "2026-10-25",
+      "titulo": "Concierto solidario de la Orquesta Solidaria Camp de Morvedre, con Entreculturas",
+      "seccion": "musica",
+      "lugar": "Centro Arrupe - Jesuitas Valencia",
+      "ciudad": "Valencia",
+      "enlace": "https://www.cvongd.org/es/agenda/concierto-solidario-orquesta-solidaria-camp-de-morvedre-entreculturas/"
+    },
+    {
+      "id": "euterpe-homenaje-silvio-1025",
+      "fecha": "2026-10-25",
+      "titulo": "Homenaje a Silvio Rodríguez, por la Asociación Murcia Canción de Autor y la Asociación de Cantautores de Alicante",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "svr-teatro-saltar-armario-1025",
+      "fecha": "2026-10-25",
+      "titulo": "XXXIV Semana del Teatro: «Saltar del armario», de Teatro Raspeig",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Auditorio Municipal",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "libre",
+      "enlace": "https://raspeig.es/la-semana-del-teatro-de-san-vicente-crece-con-mas-actuaciones-y-una-programacion-ininterrumpida-del-17-al-25-de-octubre/"
     },
     {
       "id": "vila-mara-aranda-1025",
@@ -903,34 +510,87 @@
       "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
     },
     {
-      "id": "adda-cielo-y-tierra-1026",
-      "fecha": "2026-10-26",
-      "titulo": "«Cielo y Tierra»",
-      "seccion": "musica",
-      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
-      "ciudad": "Alicante",
-      "entradas": "venta",
-      "enlace": "https://addaalicante.es/concierto/cielo-y-tierra/",
-      "hora": "20:00"
-    },
-    {
       "id": "tp-gala-estruch-1026",
       "fecha": "2026-10-26",
+      "hora": "19:00",
       "titulo": "X Gala Premios de Temporada José Estruch",
       "seccion": "varios",
+      "precio": "gratis",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/x-gala-premis-de-temporada-jose-estruch-2026/"
     },
     {
+      "id": "sede-mision-hera-1026",
+      "fecha": "2026-10-26",
+      "hora": "19:30",
+      "titulo": "Jornadas «Misión espacial HERA: llegando a Didymos», con Andrea Pellacani (ESA), Laura Parro y Adriano Campo Bagatin",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mision-espacial-hera-llegando-a-didymos.html"
+    },
+    {
+      "id": "adda-cielo-y-tierra-1026",
+      "fecha": "2026-10-26",
+      "hora": "20:00",
+      "titulo": "«Cielo y Tierra»",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://addaalicante.es/concierto/cielo-y-tierra/"
+    },
+    {
+      "id": "sede-educacion-memoria-1027",
+      "fecha": "2026-10-27",
+      "hora": "19:15",
+      "titulo": "Charla «Educación y memoria. Por una formación del profesorado para una educación basada en los Derechos Humanos y por la libertad de cátedra» (Comisión Cívica para la Recuperación de la Memoria Histórica)",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/educacion-y-memoria.pdf"
+    },
+    {
+      "id": "sede-trashumantes-1027",
+      "fecha": "2026-10-27",
+      "hora": "19:15",
+      "titulo": "Jornadas L'Assagador: documental «Trashumantes, Suso & Eliseo», de Tato Moreno",
+      "seccion": "cine",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/transhumantes-suso-eliseo.pdf"
+    },
+    {
+      "id": "sede-fogueres-1935-1027",
+      "fecha": "2026-10-27",
+      "hora": "19:45",
+      "titulo": "Camino del centenario: «Fogueres 1935 y 1936. Les fogueres en auge en un país en declive», con Armando Parodi",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2025-2026/jornadas-y-ciclos-de-conferencias/camino-del-centenario-1928-2028.html"
+    },
+    {
       "id": "tp-flauta-magica-1027",
       "fecha": "2026-10-27",
+      "hora": "20:00",
       "titulo": "«La flauta mágica», de W. A. Mozart",
       "seccion": "musica",
+      "precio": "desde 26€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/la-flauta-magica/"
+    },
+    {
+      "id": "fm-arquitectura-poder-1027",
+      "fecha": "2026-10-27",
+      "titulo": "Conferencia «Arquitectura del poder y memoria: de las pirámides al faro de Alejandría», con Fernando Prados Martínez",
+      "seccion": "charlas",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
     },
     {
       "id": "ua-cemab-lefere-borges-1028",
@@ -941,6 +601,26 @@
       "lugar": "CeMaB, Universidad de Alicante",
       "ciudad": "San Vicente del Raspeig",
       "enlace": "https://www.infobae.com/america/agencias/2026/09/28/el-cemab-de-la-ua-programa-una-veintena-de-actividades-sobre-literatura-iberoamericana-hasta-enero/"
+    },
+    {
+      "id": "sede-educacion-villar-1028",
+      "fecha": "2026-10-28",
+      "hora": "19:00",
+      "titulo": "Economía y Sociedad: «Educación. Lo que hemos estudiado y lo que hemos aprendido», con Antonio Villar",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/aula-ciencia-tecnologia/actividades-2026-2027/educacion.-lo-que-hemos-estudiado-y-lo-que-hemos-aprendido.html"
+    },
+    {
+      "id": "ua-elda-veinte-pasos-fama-1028",
+      "fecha": "2026-10-28",
+      "hora": "19:00",
+      "titulo": "Documental «A veinte pasos de la fama», de Morgan Neville (ciclo de cine Idella, raíces & blues, Sede UA de Elda)",
+      "seccion": "cine",
+      "lugar": "Fundació Paurides",
+      "ciudad": "Elda",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/Home/Details/218758?agenda=&idioma=ca"
     },
     {
       "id": "ua-lana-osa-mujika-1028",
@@ -955,6 +635,47 @@
       "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
     },
     {
+      "id": "sede-fragata-cinta-1028",
+      "fecha": "2026-10-28",
+      "hora": "19:15",
+      "titulo": "Presentación del libro «La fragata Nuestra Señora de la Cinta», de Carlos Vicuña Montalbán",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/documentos/programa-de-actividades/2026-2027/la-fragata-nuestra-senora-de-la-cinta.pdf"
+    },
+    {
+      "id": "ua-villena-sahara-1029",
+      "fecha": "2026-10-29",
+      "hora": "17:30",
+      "titulo": "Sede UA de Villena: «Sáhara Occidental: la última colonia», con Felipe Briones, Ángela Carrillo y Lehbib Ali Salem, delegado saharaui en Alicante",
+      "seccion": "charlas",
+      "lugar": "CAMV, Cercle Agrícola Mercantil Villenense",
+      "ciudad": "Villena",
+      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/Home/Details/218919?agenda=&idioma=ca"
+    },
+    {
+      "id": "ceb-isla-flores-amarillas-1029",
+      "fecha": "2026-10-29",
+      "hora": "19:00",
+      "titulo": "Coloquio «Más claro agua»: «La isla de las flores amarillas», con Joaquín Hernández, con inscripción previa",
+      "seccion": "charlas",
+      "precio": "gratis",
+      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "sede-centenario-rabal-1029",
+      "fecha": "2026-10-29",
+      "hora": "19:30",
+      "titulo": "Inauguración de la exposición «Centenario Francisco Rabal» y conferencia de Benito Rabal",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/exposiciones/centenario-francisco-rabal.html"
+    },
+    {
       "id": "sede-flamenco-folclore-1029",
       "fecha": "2026-10-29",
       "hora": "20:00",
@@ -967,12 +688,35 @@
     {
       "id": "tp-sheryl-youngblood-1029",
       "fecha": "2026-10-29",
+      "hora": "20:00",
       "titulo": "Sheryl Youngblood Blues Band: «A Meeting with the Blues»",
       "seccion": "musica",
+      "precio": "desde 15€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/sheryl-youngblood-blues-band/"
+    },
+    {
+      "id": "elche-fm-rey-se-muere-1029",
+      "fecha": "2026-10-29",
+      "hora": "20:30",
+      "titulo": "Festival Medieval d'Elx: «El rey se muere», de Atalaya - TNT",
+      "seccion": "teatro",
+      "precio": "5€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://festivalmedieval.com/programacion/"
+    },
+    {
+      "id": "cigarreras-ensolab-1029",
+      "fecha": "2026-10-29",
+      "titulo": "ENSOlab, X edición: diez años de producción y música electrónica (29 al 31 de octubre)",
+      "seccion": "musica",
+      "lugar": "Centro Cultural Las Cigarreras",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/agenda/ensolab-x-edicion-celebra-diez-anos-produccion-y-musica-electronica"
     },
     {
       "id": "euterpe-penultimo-suspiro-1029",
@@ -985,6 +729,26 @@
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
+      "id": "octubre-pen-memoria-terra-1030",
+      "fecha": "2026-10-30",
+      "hora": "18:30",
+      "titulo": "PEN Català: mesa redonda «La memòria i la terra»",
+      "seccion": "charlas",
+      "lugar": "Octubre Centre de Cultura Contemporània",
+      "ciudad": "Valencia",
+      "enlace": "https://octubre.cat/programacio/"
+    },
+    {
+      "id": "sede-50-anos-sin-espla-1030",
+      "fecha": "2026-10-30",
+      "hora": "19:00",
+      "titulo": "Conferencia-concierto «50 años sin Óscar Esplá, para piano y electrónica», con Héctor J. Hurtado y Jorge Burillo Ferrer",
+      "seccion": "musica",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/musica/conferencia-concierto-50-anos-sin-oscar-espla.html"
+    },
+    {
       "id": "adda-enigma-siglo-xxi-1030",
       "fecha": "2026-10-30",
       "hora": "20:00",
@@ -995,14 +759,48 @@
       "enlace": "https://addaalicante.es/concierto/adda%c2%b7simfonica-alicante-josep-vicent-javier-eguillor-enigma-del-siglo-xxi/"
     },
     {
+      "id": "sede-flamenco-palmas-1030",
+      "fecha": "2026-10-30",
+      "hora": "20:00",
+      "titulo": "Mundo y formas del flamenco: taller «La sazón del flamenco: el ingenioso lenguaje de las palmas», con Bernat Jiménez de Cisneros",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
+    },
+    {
       "id": "tp-comicas-1030",
       "fecha": "2026-10-30",
+      "hora": "20:30",
       "titulo": "«Cómicas»: Martita de Graná, Patricia Espejo y Antonia Triviño",
       "seccion": "varios",
+      "precio": "desde 20€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/comicas/"
+    },
+    {
+      "id": "elche-fm-blanca-paloma-1030",
+      "fecha": "2026-10-30",
+      "hora": "21:00",
+      "titulo": "Festival Medieval d'Elx: Blanca Paloma, «Trenza mía»",
+      "seccion": "musica",
+      "precio": "16€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://festivalmedieval.com/programacion/"
+    },
+    {
+      "id": "elche-fm-misteri-ensayo-1030",
+      "fecha": "2026-10-30",
+      "hora": "21:30",
+      "titulo": "Representaciones extraordinarias del Misteri d'Elx: ensayo general (La Vespra y La Festa)",
+      "seccion": "teatro",
+      "lugar": "Basílica de Santa María",
+      "ciudad": "Elche",
+      "enlace": "https://festivalmedieval.com/programacion/"
     },
     {
       "id": "arniches-goya-pinturas-negras-1030",
@@ -1012,15 +810,6 @@
       "lugar": "Teatre Arniches (Arniches Espai Cultural)",
       "ciudad": "Alicante",
       "enlace": "https://ivc.gva.es/es/escena/programacion-escena/teatro-arniches-de-alicante"
-    },
-    {
-      "id": "fm-literatura-gotica-1030",
-      "fecha": "2026-10-30",
-      "titulo": "Ciclo «La sombra de lo extraño» (literatura gótica): conferencia de Alberto Martínez, de Noviembre Nocturno",
-      "seccion": "charlas",
-      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
-      "ciudad": "Alicante",
-      "enlace": "https://fundacionmediterraneo.es/actividades/"
     },
     {
       "id": "euterpe-pez-mago-1030",
@@ -1033,30 +822,120 @@
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
+      "id": "fm-literatura-gotica-1030",
+      "fecha": "2026-10-30",
+      "titulo": "Ciclo «La sombra de lo extraño» (literatura gótica): conferencia de Alberto Martínez, de Noviembre Nocturno",
+      "seccion": "charlas",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "enlace": "https://fundacionmediterraneo.es/actividades/"
+    },
+    {
       "id": "tp-rey-pasmado-1031",
       "fecha": "2026-10-31",
+      "hora": "19:00",
       "titulo": "«Crónica del rey pasmado», de Gonzalo Torrente Ballester",
       "seccion": "teatro",
+      "precio": "desde 12€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/cronica-del-rey-pasmado/"
     },
     {
+      "id": "adda-orfeones-1031",
+      "fecha": "2026-10-31",
+      "hora": "20:00",
+      "titulo": "125 aniversario del Orfeón Alicante: encuentro de orfeones",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/programacion/mes/2026-10/"
+    },
+    {
+      "id": "elche-fm-rey-farandula-1031",
+      "fecha": "2026-10-31",
+      "hora": "20:30",
+      "titulo": "Festival Medieval d'Elx: «El rey de la farándula», con Ángel Ruiz",
+      "seccion": "teatro",
+      "precio": "5€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://festivalmedieval.com/programacion/"
+    },
+    {
+      "id": "elche-fm-misteri-1031",
+      "fecha": "2026-10-31",
+      "titulo": "Representaciones extraordinarias del Misteri d'Elx",
+      "seccion": "teatro",
+      "lugar": "Basílica de Santa María",
+      "ciudad": "Elche",
+      "enlace": "https://festivalmedieval.com/programacion/"
+    },
+    {
+      "id": "euterpe-pasapogas-1031",
+      "fecha": "2026-10-31",
+      "titulo": "Pasapogas Hammond Quartet",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
       "id": "tp-don-juan-tenorio-1101",
       "fecha": "2026-11-01",
+      "hora": "18:00",
       "titulo": "«Don Juan Tenorio» solidario, de José Zorrilla",
       "seccion": "teatro",
+      "precio": "desde 15€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/don-juan-tenorio-solidario/"
     },
     {
+      "id": "elche-fm-gran-inquisidor-1101",
+      "fecha": "2026-11-01",
+      "hora": "19:00",
+      "titulo": "Festival Medieval d'Elx: «El gran inquisidor», con Lluís Homar y el Dúo Brugalla & Stambolov",
+      "seccion": "teatro",
+      "precio": "5€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://festivalmedieval.com/programacion/"
+    },
+    {
+      "id": "sede-cine-lenny-1102",
+      "fecha": "2026-11-02",
+      "hora": "18:30",
+      "titulo": "Ciclo «Humor y humoristas»: «Lenny», de Bob Fosse (1974), con presentación y coloquio",
+      "seccion": "cine",
+      "precio": "gratis",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/ciclo-de-cine-humor-y-humoristas.html"
+    },
+    {
+      "id": "adda-dudamel-1102",
+      "fecha": "2026-11-02",
+      "hora": "20:00",
+      "titulo": "«Conexión Latina I»: Joven Orquesta Nacional de Venezuela, dirigida por Gustavo Dudamel",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/programacion/mes/2026-11/"
+    },
+    {
       "id": "tp-el-corsario-1102",
       "fecha": "2026-11-02",
+      "hora": "20:00",
       "titulo": "«El Corsario», Ballet de Kiev",
       "seccion": "teatro",
+      "precio": "desde 25€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
@@ -1073,19 +952,29 @@
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
     },
     {
+      "id": "sede-estado-bienestar-1104",
+      "fecha": "2026-11-04",
+      "hora": "19:00",
+      "titulo": "Economía y Sociedad: «Origen, desarrollo y retos del Estado del bienestar», con Antonio Escudero",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/aula-ciencia-tecnologia/actividades-2026-2027/origen-desarrollo-y-retos-del-estado-del-bienestar.html"
+    },
+    {
       "id": "sca-balthasar-neumann-1104",
       "fecha": "2026-11-04",
+      "hora": "20:00",
       "titulo": "Sociedad de Conciertos: Orquesta Balthasar Neumann",
       "seccion": "musica",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
-      "hora": "20:00",
       "enlace": "https://sociedadconciertosalicante.com/avance-programacion/"
     },
     {
       "id": "euterpe-milongas-extremas-1104",
       "fecha": "2026-11-04",
-      "titulo": "Milongas Extremas",
+      "titulo": "Milongas Extremas (3 y 4 de noviembre)",
       "seccion": "musica",
       "lugar": "Sala Euterpe",
       "ciudad": "Sant Joan d'Alacant",
@@ -1093,25 +982,49 @@
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
+      "id": "elche-fm-susurros-alandalus-1105",
+      "fecha": "2026-11-05",
+      "hora": "18:00",
+      "titulo": "Festival Medieval d'Elx: «Susurros de Al-Àndalus», de la Cía. Danseu-vos (pases a las 18:00 y 19:00), con inscripción previa",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "C.C. Las Clarisas",
+      "ciudad": "Elche",
+      "enlace": "https://festivalmedieval.com/programacion/"
+    },
+    {
       "id": "arniches-filmo-bano-diablo-1105",
       "fecha": "2026-11-05",
+      "hora": "19:30",
       "titulo": "La Filmoteca: «El baño del diablo», de Severin Fiala y Veronika Franz",
       "seccion": "cine",
       "lugar": "Teatre Arniches (La Filmoteca)",
       "ciudad": "Alicante",
-      "hora": "19:30",
       "entradas": "venta",
       "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
     },
     {
       "id": "tp-madama-butterfly-1105",
       "fecha": "2026-11-05",
+      "hora": "20:00",
       "titulo": "«Madama Butterfly», de Giacomo Puccini",
       "seccion": "musica",
+      "precio": "desde 27€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/madama-butterfly/"
+    },
+    {
+      "id": "elche-fm-la-galana-1105",
+      "fecha": "2026-11-05",
+      "hora": "20:30",
+      "titulo": "Festival Medieval d'Elx: «La galana», De Soprano y Arpa, con inscripción previa",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "C.C. Las Clarisas",
+      "ciudad": "Elche",
+      "enlace": "https://festivalmedieval.com/programacion/"
     },
     {
       "id": "euterpe-las-nietas-del-charli-1105",
@@ -1122,6 +1035,39 @@
       "ciudad": "Sant Joan d'Alacant",
       "entradas": "venta",
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "ceb-gran-golpe-solidario-1106",
+      "fecha": "2026-11-06",
+      "hora": "18:30",
+      "titulo": "«El gran golpe solidario», de Racatrá Teatro (Sentimbarris), con inscripción previa",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "ceb-musica-ritmos-repiques-1106",
+      "fecha": "2026-11-06",
+      "hora": "18:30",
+      "titulo": "«Música y ritmos», Asociación Cuarteto Repiques (Mes de la Música), con inscripción previa",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "elche-fm-aurora-musicae-1106",
+      "fecha": "2026-11-06",
+      "hora": "19:00",
+      "titulo": "Festival Medieval d'Elx: «Aurora Musicae: del Medievo al Renacimiento», Ensemble Musicantes, con inscripción previa",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "Hort del Xocolater",
+      "ciudad": "Elche",
+      "enlace": "https://festivalmedieval.com/programacion/"
     },
     {
       "id": "adda-genesis-1106",
@@ -1140,17 +1086,19 @@
       "hora": "20:00",
       "titulo": "«Esencia», de Ignacio García May, con Juan Echanove y Joaquín Climent",
       "seccion": "teatro",
+      "precio": "20€",
       "lugar": "Gran Teatro de Elche",
       "ciudad": "Elche",
-      "precio": "20€",
       "entradas": "venta",
       "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
     {
       "id": "tp-david-suarez-1106",
       "fecha": "2026-11-06",
+      "hora": "21:00",
       "titulo": "David Suárez: «Humor blanco por última vez»",
       "seccion": "varios",
+      "precio": "desde 23€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
@@ -1172,11 +1120,33 @@
       "hora": "12:00",
       "titulo": "Concierto de guitarra clásica de Tomás Villa",
       "seccion": "musica",
+      "precio": "gratis",
       "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
       "ciudad": "Alicante",
-      "precio": "gratis",
       "entradas": "libre",
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "ceb-pequenos-secretos-1107",
+      "fecha": "2026-11-07",
+      "hora": "18:30",
+      "titulo": "«Pequeños secretos de familia», de Melpómene Teatro, con inscripción previa",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "elche-fm-sefarad-1107",
+      "fecha": "2026-11-07",
+      "hora": "19:00",
+      "titulo": "Festival Medieval d'Elx: «Sefarad en la memoria», Dúo Zemer, con inscripción previa",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "C.C. Las Clarisas",
+      "ciudad": "Elche",
+      "enlace": "https://festivalmedieval.com/programacion/"
     },
     {
       "id": "elche-gt-butterfly-1107",
@@ -1184,32 +1154,23 @@
       "hora": "19:00",
       "titulo": "«Madama Butterfly», de Puccini. Cía. LGAM y Orquesta Nacional de Moldavia",
       "seccion": "musica",
+      "precio": "desde 30€",
       "lugar": "Gran Teatro de Elche",
       "ciudad": "Elche",
-      "precio": "desde 30€",
       "entradas": "venta",
       "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
     {
       "id": "tp-hijo-de-la-comica-1107",
       "fecha": "2026-11-07",
+      "hora": "19:00",
       "titulo": "«El hijo de la cómica», de Fernando Fernán-Gómez (funciones 7 y 8 de noviembre)",
       "seccion": "teatro",
+      "precio": "desde 12€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/el-hijo-de-la-comica/"
-    },
-    {
-      "id": "fm-flamenco-ballet-andalucia-1107",
-      "fecha": "2026-11-07",
-      "titulo": "X Festival Flamenco Mediterráneo: Ballet Flamenco de Andalucía, dirigido por Patricia Guerrero",
-      "seccion": "teatro",
-      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
-      "ciudad": "Alicante",
-      "precio": "desde 20€",
-      "entradas": "venta",
-      "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
     },
     {
       "id": "euterpe-alpargata-1107",
@@ -1220,6 +1181,28 @@
       "ciudad": "Sant Joan d'Alacant",
       "entradas": "venta",
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "fm-flamenco-ballet-andalucia-1107",
+      "fecha": "2026-11-07",
+      "titulo": "X Festival Flamenco Mediterráneo: Ballet Flamenco de Andalucía, dirigido por Patricia Guerrero",
+      "seccion": "teatro",
+      "precio": "desde 20€",
+      "lugar": "Aula de Cultura de la Fundación Mediterráneo",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
+    },
+    {
+      "id": "elche-fm-cuarteto-valencia-1108",
+      "fecha": "2026-11-08",
+      "hora": "18:00",
+      "titulo": "Festival Medieval d'Elx: «Una historia de película», Cuarteto de Cuerda Valencia, con inscripción previa",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "Hort del Xocolater",
+      "ciudad": "Elche",
+      "enlace": "https://festivalmedieval.com/programacion/"
     },
     {
       "id": "vila-flauta-magica-1108",
@@ -1243,6 +1226,18 @@
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
+      "id": "sede-cine-annie-hall-1109",
+      "fecha": "2026-11-09",
+      "hora": "18:30",
+      "titulo": "Ciclo «Humor y humoristas»: «Annie Hall», de Woody Allen (1977), con presentación y coloquio",
+      "seccion": "cine",
+      "precio": "gratis",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/ciclo-de-cine-humor-y-humoristas.html"
+    },
+    {
       "id": "ua-authentic-student-1109",
       "fecha": "2026-11-09",
       "hora": "19:00",
@@ -1256,12 +1251,26 @@
     {
       "id": "tp-julio-iglesias-experience-1111",
       "fecha": "2026-11-11",
+      "hora": "20:00",
       "titulo": "«Julio Iglesias Experience», por Julio Iglesias Jr. (funciones 11 y 12 de noviembre)",
       "seccion": "musica",
+      "precio": "desde 50€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
       "enlace": "https://www.teatroprincipaldealicante.com/obra/julio-iglesias-experience-por-julio-iglesias-jr/"
+    },
+    {
+      "id": "elche-gt-dani-fez-1112",
+      "fecha": "2026-11-12",
+      "hora": "20:00",
+      "titulo": "Dani Fez: «Estamos cucú de la cabeza». Humor",
+      "seccion": "teatro",
+      "precio": "desde 22€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
     {
       "id": "sede-flamenco-cante-1112",
@@ -1272,18 +1281,6 @@
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
-    },
-    {
-      "id": "elche-gt-dani-fez-1112",
-      "fecha": "2026-11-12",
-      "hora": "20:00",
-      "titulo": "Dani Fez: «Estamos cucú de la cabeza». Humor",
-      "seccion": "teatro",
-      "lugar": "Gran Teatro de Elche",
-      "ciudad": "Elche",
-      "precio": "desde 22€",
-      "entradas": "venta",
-      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
     {
       "id": "elche-escorxador-achmed-1112",
@@ -1300,10 +1297,31 @@
       "hora": "11:00",
       "titulo": "Matinales de la Banda: «La huella sonora de Óscar Esplá, 50 años de su legado», con inscripción previa",
       "seccion": "musica",
+      "precio": "gratis",
       "lugar": "Las Cigarreras, Casa de la Música",
       "ciudad": "Alicante",
-      "precio": "gratis",
       "enlace": "https://alicantesociocultura.eventbrite.es"
+    },
+    {
+      "id": "ceb-cine-africano-shakara-1113",
+      "fecha": "2026-11-13",
+      "hora": "16:00",
+      "titulo": "Fiesta de cierre de la Muestra de Cine Africano Shakara Fáyé, con inscripción previa",
+      "seccion": "cine",
+      "precio": "gratis",
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "adda-dia-guitarra-canizares-1113",
+      "fecha": "2026-11-13",
+      "hora": "20:00",
+      "titulo": "Día de la Guitarra: ADDA·Simfònica Alicante con Juan Manuel Cañizares (guitarra) y Miquel Ortega (director invitado)",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/programacion/mes/2026-11/"
     },
     {
       "id": "elche-gt-locuras-paralelas-1113",
@@ -1311,17 +1329,19 @@
       "hora": "20:00",
       "titulo": "«Locuras paralelas», de Gabriela García y Paco Mir",
       "seccion": "teatro",
+      "precio": "desde 20€",
       "lugar": "Gran Teatro de Elche",
       "ciudad": "Elche",
-      "precio": "desde 20€",
       "entradas": "venta",
       "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
     {
       "id": "tp-vaquero-1113",
       "fecha": "2026-11-13",
+      "hora": "21:00",
       "titulo": "J.J. Vaquero: «Vaquero»",
       "seccion": "varios",
+      "precio": "desde 23€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
@@ -1338,14 +1358,24 @@
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
+      "id": "adda-cum-laude-guitarra-1114",
+      "fecha": "2026-11-14",
+      "hora": "18:00",
+      "titulo": "Alumnos Cum Laude: la guitarra",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/programacion/mes/2026-11/"
+    },
+    {
       "id": "ceb-veus-dana-1114",
       "fecha": "2026-11-14",
       "hora": "18:00",
       "titulo": "Muestra de Teatro Español de Autores Contemporáneos: «Veus per a després de la dana»",
       "seccion": "teatro",
+      "precio": "gratis",
       "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
       "ciudad": "Alicante",
-      "precio": "gratis",
       "entradas": "libre",
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
     },
@@ -1363,8 +1393,10 @@
     {
       "id": "tp-libres-1114",
       "fecha": "2026-11-14",
+      "hora": "20:00",
       "titulo": "«Libres!!!». Un cabaré anarkosicalíptico",
       "seccion": "teatro",
+      "precio": "desde 12€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
@@ -1405,9 +1437,9 @@
       "hora": "12:00",
       "titulo": "Espectáculo flamenco por el Día Mundial del Flamenco",
       "seccion": "musica",
+      "precio": "gratis",
       "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
       "ciudad": "Alicante",
-      "precio": "gratis",
       "entradas": "libre",
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
     },
@@ -1422,6 +1454,28 @@
       "enlace": "https://addaalicante.es/concierto/xiii-ciclo-las-bandas-de-la-provincia-en-el-adda-centro-instructivo-musical-de-onil/"
     },
     {
+      "id": "sede-cine-rey-comedia-1116",
+      "fecha": "2026-11-16",
+      "hora": "18:30",
+      "titulo": "Ciclo «Humor y humoristas»: «El rey de la comedia», de Martin Scorsese (1982), con presentación y coloquio",
+      "seccion": "cine",
+      "precio": "gratis",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/ciclo-de-cine-humor-y-humoristas.html"
+    },
+    {
+      "id": "sede-factura-luz-1118",
+      "fecha": "2026-11-18",
+      "hora": "19:00",
+      "titulo": "Economía y Sociedad: «Competencia y oligopolios. ¿Qué pasa con mi factura de la luz?», con Jorge Padilla",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/aula-ciencia-tecnologia/actividades-2026-2027/competencia-y-oligopolios.-que-pasa-con-mi-factura-de-la-luz.html"
+    },
+    {
       "id": "ua-poeta-perdido-ny-1119",
       "fecha": "2026-11-19",
       "hora": "19:00",
@@ -1434,10 +1488,22 @@
       "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
     },
     {
+      "id": "sede-flamenco-guitarra-1119",
+      "fecha": "2026-11-19",
+      "hora": "20:00",
+      "titulo": "Mundo y formas del flamenco: «Desarrollo y evolución de la guitarra flamenca de concierto», con Alejandro Hurtado",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/mundo-y-formas-del-flamenco-flamenco-en-transformacion-memoria-tecnologia-y-futuro.html"
+    },
+    {
       "id": "tp-fantasma-opera-1119",
       "fecha": "2026-11-19",
+      "hora": "20:30",
       "titulo": "«El Fantasma de la Ópera», musical de Andrew Lloyd Webber (funciones del 19 de noviembre al 6 de diciembre)",
       "seccion": "teatro",
+      "precio": "desde 45€",
       "lugar": "Teatro Principal de Alicante",
       "ciudad": "Alicante",
       "entradas": "venta",
@@ -1454,14 +1520,58 @@
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
+      "id": "ceb-estaciones-portenas-1120",
+      "fecha": "2026-11-20",
+      "hora": "18:30",
+      "titulo": "«Las estaciones porteñas y el nuevo tango», Cuarteto Luminus (Mes de la Música), con inscripción previa",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "ceb-fuegos-aula-teatro-ua-1120",
+      "fecha": "2026-11-20",
+      "hora": "18:30",
+      "titulo": "«Fuegos», del Aula de Teatro de la Universidad de Alicante, con inscripción previa",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "sede-cemab-lopez-guil-1120",
+      "fecha": "2026-11-20",
+      "hora": "19:15",
+      "titulo": "CeMaB: presentación del poemario «Un refugio en la espesura», de Itziar López Guil",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/actualidad-universitaria/2026/septiembre-2026/28-31/el-cemab-programa-una-veintena-de-actividades-sobre-literatura-iberoamericana-para-el-primer-cuatrimestre-del-curso.html"
+    },
+    {
+      "id": "arniches-liliana-1120",
+      "fecha": "2026-11-20",
+      "hora": "20:30",
+      "titulo": "«El invencible verano de Liliana», de Cristina Rivera Garza, con Cecilia Suárez. Adaptación de Amaranta Osorio, dirección de Juan Carlos Fisher",
+      "seccion": "teatro",
+      "precio": "15€",
+      "lugar": "Teatre Arniches (Arniches Espai Cultural)",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://ivc.gva.es/es/ivc/agenda-ivc/el-invencible-verano-de-liliana"
+    },
+    {
       "id": "elche-gt-sabina-1120",
       "fecha": "2026-11-20",
       "hora": "20:30",
       "titulo": "Malas Compañías: «El mejor homenaje a Sabina»",
       "seccion": "musica",
+      "precio": "desde 27€",
       "lugar": "Gran Teatro de Elche",
       "ciudad": "Elche",
-      "precio": "desde 27€",
       "entradas": "venta",
       "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
@@ -1490,9 +1600,9 @@
       "hora": "20:00",
       "titulo": "X Festival Flamenco Mediterráneo: Encarna Anillo y «Pituquete», «Camino de flores»",
       "seccion": "musica",
+      "precio": "desde 20€",
       "lugar": "Aula de Cultura de la Fundación Mediterráneo",
       "ciudad": "Alicante",
-      "precio": "desde 20€",
       "entradas": "venta",
       "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
     },
@@ -1502,9 +1612,9 @@
       "hora": "21:00",
       "titulo": "«Night of Techno Pop»: clásicos del techno-pop de los 80 y 90",
       "seccion": "musica",
+      "precio": "desde 38€",
       "lugar": "Gran Teatro de Elche",
       "ciudad": "Elche",
-      "precio": "desde 38€",
       "entradas": "venta",
       "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
@@ -1517,6 +1627,48 @@
       "ciudad": "Sant Joan d'Alacant",
       "entradas": "venta",
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "sede-cine-saben-aquell-1123",
+      "fecha": "2026-11-23",
+      "hora": "18:30",
+      "titulo": "Ciclo «Humor y humoristas»: «Saben aquell», de David Trueba (2023), con presentación y coloquio",
+      "seccion": "cine",
+      "precio": "gratis",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "libre",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/ciclo-de-cine-humor-y-humoristas.html"
+    },
+    {
+      "id": "sede-fogueres-1939-1124",
+      "fecha": "2026-11-24",
+      "hora": "19:45",
+      "titulo": "Camino del centenario: «Fogueres 1939 y 1940. El difícil proceso de recuperación de les Fogueres», con Armando Parodi",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2025-2026/jornadas-y-ciclos-de-conferencias/camino-del-centenario-1928-2028.html"
+    },
+    {
+      "id": "sede-futuro-democracia-1125",
+      "fecha": "2026-11-25",
+      "hora": "18:30",
+      "titulo": "Economía y Sociedad: «El futuro de la democracia», con Jordi Sevilla",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/aula-ciencia-tecnologia/actividades-2026-2027/el-futuro-de-la-democracia.html"
+    },
+    {
+      "id": "ua-cemab-durante-1126",
+      "fecha": "2026-11-26",
+      "hora": "17:30",
+      "titulo": "CeMaB: «Puntada tras puntada hacia el infierno: violencia de género y femigenocidio en las narradoras latinoamericanas del siglo XXI», conferencia de Erica Durante",
+      "seccion": "charlas",
+      "lugar": "CeMaB, Universidad de Alicante",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://web.ua.es/es/actualidad-universitaria/2026/septiembre-2026/28-31/el-cemab-programa-una-veintena-de-actividades-sobre-literatura-iberoamericana-para-el-primer-cuatrimestre-del-curso.html"
     },
     {
       "id": "vila-montgo-manhattan-1126",
@@ -1534,9 +1686,9 @@
       "hora": "20:00",
       "titulo": "«Maléfiga», de y con Elisa Lledó (Bomba Teatro)",
       "seccion": "teatro",
+      "precio": "desde 10€",
       "lugar": "Gran Teatro de Elche",
       "ciudad": "Elche",
-      "precio": "desde 10€",
       "entradas": "venta",
       "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
@@ -1566,9 +1718,9 @@
       "hora": "20:00",
       "titulo": "James Rhodes: «Manía». Piano (Chopin, Brahms, Rachmaninov)",
       "seccion": "musica",
+      "precio": "desde 32€",
       "lugar": "Gran Teatro de Elche",
       "ciudad": "Elche",
-      "precio": "desde 32€",
       "entradas": "venta",
       "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
@@ -1583,14 +1735,25 @@
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
     },
     {
+      "id": "ceb-aqui-nunca-pasa-nada-1128",
+      "fecha": "2026-11-28",
+      "hora": "18:30",
+      "titulo": "«Aquí nunca pasa nada», de Teatro Sin Papeles, con inscripción previa",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Centro Social Felicidad Sánchez",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
       "id": "elche-gt-julio-iglesias-jr-1128",
       "fecha": "2026-11-28",
       "hora": "20:00",
       "titulo": "«Julio Iglesias Experience», por Julio Iglesias Jr.",
       "seccion": "musica",
+      "precio": "desde 54€",
       "lugar": "Gran Teatro de Elche",
       "ciudad": "Elche",
-      "precio": "desde 54€",
       "entradas": "venta",
       "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
     },
@@ -1600,9 +1763,9 @@
       "hora": "20:00",
       "titulo": "X Festival Flamenco Mediterráneo: María Moreno, «Magnificat». Clausura",
       "seccion": "teatro",
+      "precio": "desde 20€",
       "lugar": "Aula de Cultura de la Fundación Mediterráneo",
       "ciudad": "Alicante",
-      "precio": "desde 20€",
       "entradas": "venta",
       "enlace": "https://fundacionmediterraneo.es/ciclos-y-festivales/"
     },
@@ -1624,6 +1787,433 @@
       "ciudad": "Sant Joan d'Alacant",
       "entradas": "venta",
       "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "santjoan-extrana-pareja-1128",
+      "fecha": "2026-11-28",
+      "titulo": "«La extraña pareja», homenaje a Modesto Martínez, dirigida por Paco Durá (funciones 28 y 29 de noviembre)",
+      "seccion": "teatro",
+      "lugar": "Sant Joan d'Alacant (sala no indicada en la nota)",
+      "ciudad": "Sant Joan d'Alacant",
+      "enlace": "https://somoslalacanti.com/2026/10/01/noticias-sant-joan-dalacant2/sant-joan-programa-un-otono-cultural-con-42-actividades-repartidas-en-varias-ubicaciones-y-dirigidas-a-todas-las-edades-y-todos-los-publicos/"
+    },
+    {
+      "id": "adda-banda-hondon-1129",
+      "fecha": "2026-11-29",
+      "hora": "10:00",
+      "titulo": "XIII Ciclo Las bandas de la provincia: Unión Musical de Hondón de las Nieves",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/programacion/mes/2026-11/"
+    },
+    {
+      "id": "ceb-lectura-barroco-1129",
+      "fecha": "2026-11-29",
+      "hora": "12:00",
+      "titulo": "Lectura dramatizada de clásicos del Barroco internacional, del Centro Dramatúrgico Marino de Alicante, con inscripción previa",
+      "seccion": "teatro",
+      "precio": "gratis",
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "adda-banda-santa-pola-1129",
+      "fecha": "2026-11-29",
+      "hora": "13:00",
+      "titulo": "XIII Ciclo Las bandas de la provincia: Unió Musical de Santa Pola",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/programacion/mes/2026-11/"
+    },
+    {
+      "id": "vila-mejor-no-decirlo-1129",
+      "fecha": "2026-11-29",
+      "hora": "19:00",
+      "titulo": "«Mejor no decirlo», de Pentación Producciones",
+      "seccion": "teatro",
+      "lugar": "Villajoyosa (sala no indicada en la nota)",
+      "ciudad": "Villajoyosa",
+      "entradas": "venta",
+      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
+    },
+    {
+      "id": "ua-coral-invierno-1202",
+      "fecha": "2026-12-02",
+      "hora": "19:00",
+      "titulo": "Concierto de Invierno de la Coral UA",
+      "seccion": "musica",
+      "precio": "3€",
+      "lugar": "Paraninfo, Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "venta",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
+    },
+    {
+      "id": "sede-espla-varela-miro-1202",
+      "fecha": "2026-12-02",
+      "titulo": "Esplá expandido: «Emilio Varela, Gabriel Miró, la visión del paisaje que musicó Óscar Esplá», con Eduardo Lastres y Laura Palomo",
+      "seccion": "charlas",
+      "lugar": "Sede Universitaria Ciudad de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/jornadas-y-ciclos-de-conferencias/espla-expandido.-musica-creacion-y-dialogo-entre-las-artes.html"
+    },
+    {
+      "id": "arniches-filmo-otro-lado-esperanza-1203",
+      "fecha": "2026-12-03",
+      "hora": "19:30",
+      "titulo": "La Filmoteca: «El otro lado de la esperanza», de Aki Kaurismäki (ciclo Aki Kaurismäki, VOSE)",
+      "seccion": "cine",
+      "lugar": "Teatre Arniches (La Filmoteca)",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
+    },
+    {
+      "id": "elche-gt-bestseller-1204",
+      "fecha": "2026-12-04",
+      "hora": "20:00",
+      "titulo": "«Bestseller. La obra que Lorca nunca escribió», de Ozkar Galán, con Nacho Guerreros",
+      "seccion": "teatro",
+      "precio": "desde 18€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "euterpe-nito-serrano-1204",
+      "fecha": "2026-12-04",
+      "titulo": "Nito Serrano y Lapurasangre (segunda fecha)",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "euterpe-colors-horta-1205",
+      "fecha": "2026-12-05",
+      "titulo": "IV Aniversari Colors de l'Horta",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "euterpe-yo-estoy-bien-1207",
+      "fecha": "2026-12-07",
+      "titulo": "«Yo estoy bien, el mundo está mal» (AIEnRUTa)",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "tp-la-bruja-1208",
+      "fecha": "2026-12-08",
+      "hora": "18:00",
+      "titulo": "«La Bruja», zarzuela, por liricAl",
+      "seccion": "musica",
+      "precio": "desde 20€",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/programacion/septiembre-2026-febrero-2027/"
+    },
+    {
+      "id": "vila-mi-querida-senorita-1209",
+      "fecha": "2026-12-09",
+      "hora": "18:00",
+      "titulo": "Cine clásico: «Mi querida señorita»",
+      "seccion": "cine",
+      "lugar": "Auditorio del Centre Social Llar del Pensionista",
+      "ciudad": "Villajoyosa",
+      "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
+    },
+    {
+      "id": "ua-caos-abast-1209",
+      "fecha": "2026-12-09",
+      "hora": "19:00",
+      "titulo": "«CAOS», de Teatre de l'Abast",
+      "seccion": "teatro",
+      "precio": "7€",
+      "lugar": "Paraninfo, Campus de la UA",
+      "ciudad": "San Vicente del Raspeig",
+      "entradas": "venta",
+      "enlace": "https://veu.ua.es/es/noticias/2026/9/programacion-paranimf-de-artes-escenicas-para-el-primer-cuatrimestre-del-curso-2026-2027.html"
+    },
+    {
+      "id": "tp-berlanga-new-dance-1209",
+      "fecha": "2026-12-09",
+      "hora": "20:00",
+      "titulo": "«Berlanga, New dance», de ECCAD y el Conservatorio José Espadero",
+      "seccion": "teatro",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/programacion/septiembre-2026-febrero-2027/"
+    },
+    {
+      "id": "arniches-filmo-espejos-3-1210",
+      "fecha": "2026-12-10",
+      "hora": "19:30",
+      "titulo": "La Filmoteca: «Espejos nº 3», de Christian Petzold (VOSE)",
+      "seccion": "cine",
+      "lugar": "Teatre Arniches (La Filmoteca)",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
+    },
+    {
+      "id": "tp-techno-pop-1210",
+      "fecha": "2026-12-10",
+      "hora": "20:00",
+      "titulo": "«Techno Pop»",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/programacion/septiembre-2026-febrero-2027/"
+    },
+    {
+      "id": "adda-canto-de-luz-1211",
+      "fecha": "2026-12-11",
+      "hora": "20:00",
+      "titulo": "«Canto de luz». ADDA·Simfònica Alicante con Margarita Balanas y Benedict Kloeckner",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/programacion/mes/2026-12/"
+    },
+    {
+      "id": "elche-gt-stars-gala-1211",
+      "fecha": "2026-12-11",
+      "hora": "20:00",
+      "titulo": "«Stars Gala. Estrellas de Ballet Internacional», de Freed Ballet",
+      "seccion": "teatro",
+      "precio": "desde 25€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "euterpe-extra-mile-1211",
+      "fecha": "2026-12-11",
+      "titulo": "Extra Mile",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "ceb-cellissimo-femme-1212",
+      "fecha": "2026-12-12",
+      "hora": "12:00",
+      "titulo": "Cellissimo Femme Duo, con inscripción previa",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "ceb-navidad-bandas-1212",
+      "fecha": "2026-12-12",
+      "hora": "12:00",
+      "titulo": "Concierto de Navidad: Sociedad Musical La Amistad de Villafranqueza y Unión Musical Ciudad de Asís, con inscripción previa",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "elche-gt-miguel-campello-1212",
+      "fecha": "2026-12-12",
+      "hora": "20:00",
+      "titulo": "Miguel Campello: «Gira 25 años de canciones y volteretas»",
+      "seccion": "musica",
+      "precio": "desde 35€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "euterpe-santi-campos-1212",
+      "fecha": "2026-12-12",
+      "titulo": "Santi Campos e Hijos",
+      "seccion": "musica",
+      "lugar": "Sala Euterpe",
+      "ciudad": "Sant Joan d'Alacant",
+      "entradas": "venta",
+      "enlace": "https://entradas.salaeuterpe.com/web/?menu=36&pagina=eventos&siteID=salaeuterpe"
+    },
+    {
+      "id": "tp-asesinato-para-dos-1213",
+      "fecha": "2026-12-13",
+      "hora": "18:00",
+      "titulo": "«Asesinato para dos», teatro musical de El tío caracoles",
+      "seccion": "teatro",
+      "precio": "desde 12€",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/programacion/septiembre-2026-febrero-2027/"
+    },
+    {
+      "id": "elche-gt-luisa-fernanda-1213",
+      "fecha": "2026-12-13",
+      "hora": "19:00",
+      "titulo": "«Luisa Fernanda», zarzuela, por la Coral Il·licitana",
+      "seccion": "musica",
+      "precio": "desde 8€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "sca-martinez-zaugg-1214",
+      "fecha": "2026-12-14",
+      "hora": "20:00",
+      "titulo": "Sociedad de Conciertos: Elionor Martínez (soprano) y Olivia Zaugg (piano)",
+      "seccion": "musica",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://www.teatroprincipaldealicante.com/programacion/septiembre-2026-febrero-2027/"
+    },
+    {
+      "id": "tp-lago-cisnes-1215",
+      "fecha": "2026-12-15",
+      "hora": "20:00",
+      "titulo": "«El lago de los cisnes», Classical Ballet Theatre - Berlin",
+      "seccion": "teatro",
+      "precio": "desde 25€",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/programacion/septiembre-2026-febrero-2027/"
+    },
+    {
+      "id": "ua-cemab-venegas-1216",
+      "fecha": "2026-12-16",
+      "hora": "17:30",
+      "titulo": "CeMaB: «Vindictas, la Atlántida de escritoras hispanoamericanas», charla-diálogo con Socorro Venegas",
+      "seccion": "charlas",
+      "lugar": "CeMaB, Universidad de Alicante",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://web.ua.es/es/actualidad-universitaria/2026/septiembre-2026/28-31/el-cemab-programa-una-veintena-de-actividades-sobre-literatura-iberoamericana-para-el-primer-cuatrimestre-del-curso.html"
+    },
+    {
+      "id": "tp-cascanueces-1216",
+      "fecha": "2026-12-16",
+      "hora": "20:00",
+      "titulo": "«El cascanueces», Classical Ballet Theatre - Berlin",
+      "seccion": "teatro",
+      "precio": "desde 25€",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/programacion/septiembre-2026-febrero-2027/"
+    },
+    {
+      "id": "arniches-filmo-fallen-leaves-1217",
+      "fecha": "2026-12-17",
+      "hora": "19:30",
+      "titulo": "La Filmoteca: «Fallen Leaves», de Aki Kaurismäki (ciclo Aki Kaurismäki, VOSE)",
+      "seccion": "cine",
+      "lugar": "Teatre Arniches (La Filmoteca)",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://ivc.gva.es/es/audiovisuales/programacion/alicante-teatro-arniches"
+    },
+    {
+      "id": "adda-navidad-ua-1217",
+      "fecha": "2026-12-17",
+      "hora": "20:00",
+      "titulo": "Concierto de Navidad de la Orquesta Filarmónica y la Coral de la Universidad de Alicante",
+      "seccion": "musica",
+      "lugar": "ADDA. Auditorio de la Diputación de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://addaalicante.es/programacion/mes/2026-12/"
+    },
+    {
+      "id": "tp-farrucos-fernandez-1217",
+      "fecha": "2026-12-17",
+      "hora": "20:00",
+      "titulo": "«Farrucos & Fernández», zambomba flamenca",
+      "seccion": "musica",
+      "precio": "desde 25€",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/programacion/septiembre-2026-febrero-2027/"
+    },
+    {
+      "id": "ceb-matinal-banda-1218",
+      "fecha": "2026-12-18",
+      "hora": "11:00",
+      "titulo": "Matinales de la Banda: Banda Sinfónica Municipal de Alicante, con inscripción previa",
+      "seccion": "musica",
+      "precio": "gratis",
+      "lugar": "Las Cigarreras, Casa de la Música",
+      "ciudad": "Alicante",
+      "enlace": "https://alicantesociocultura.eventbrite.es"
+    },
+    {
+      "id": "elche-gt-pijama-para-seis-1218",
+      "fecha": "2026-12-18",
+      "hora": "20:00",
+      "titulo": "«Pijama para seis», de Marc Camoletti, con Gabino Diego",
+      "seccion": "teatro",
+      "precio": "desde 20€",
+      "lugar": "Gran Teatro de Elche",
+      "ciudad": "Elche",
+      "entradas": "venta",
+      "enlace": "https://www.elche.es/wp-content/uploads/2026/06/GT-Sept26-Enero27-VAL-web-1-1.pdf"
+    },
+    {
+      "id": "tp-salva-reina-1218",
+      "fecha": "2026-12-18",
+      "hora": "20:00",
+      "titulo": "Salva Reina. Comedia",
+      "seccion": "varios",
+      "precio": "desde 18€",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/programacion/septiembre-2026-febrero-2027/"
+    },
+    {
+      "id": "tp-malquerida-1219",
+      "fecha": "2026-12-19",
+      "hora": "19:00",
+      "titulo": "«Malquerida», de Producciones OFF (funciones 19 y 20 de diciembre)",
+      "seccion": "teatro",
+      "precio": "desde 12€",
+      "lugar": "Teatro Principal de Alicante",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://www.teatroprincipaldealicante.com/programacion/septiembre-2026-febrero-2027/"
+    },
+    {
+      "id": "arniches-la-corporacio-1220",
+      "fecha": "2026-12-20",
+      "hora": "19:00",
+      "titulo": "«La Corporació», de Daniel Tormo, por CRIT Companyia de Teatre (en valenciano)",
+      "seccion": "teatro",
+      "lugar": "Teatre Arniches (Arniches Espai Cultural)",
+      "ciudad": "Alicante",
+      "entradas": "venta",
+      "enlace": "https://ivc.gva.es/es/ivc/agenda-ivc/la-corporacio-arn"
     }
   ]
 }

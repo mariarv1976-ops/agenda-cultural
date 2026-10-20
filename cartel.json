@@ -1,154 +1,6 @@
 {
-  "actualizado": "2026-09-28",
+  "actualizado": "2026-10-20",
   "eventos": [
-    {
-      "id": "cvongd-uraqi-terra",
-      "inicio": "2026-09-01",
-      "fin": "2026-09-30",
-      "titulo": "«Uraqi, terra». Exposición de CERAI",
-      "seccion": "exposiciones",
-      "lugar": "Biblioteca Central del Campus de Vera, Universitat Politècnica de València",
-      "ciudad": "Valencia",
-      "enlace": "https://www.cvongd.org/es/agenda/exposicion-uraqi-terra-en-la-universitat-politecnica-de-valencia/"
-    },
-    {
-      "id": "cm-expo-ferrocarriles",
-      "inicio": "2026-09-01",
-      "fin": "2026-09-30",
-      "titulo": "«Alicante: punto de partida de ferrocarriles mediterráneos», de José Vicente Coves",
-      "seccion": "exposiciones",
-      "etiquetas": [],
-      "recurrente": "de 10:00 a 14:00",
-      "lugar": "Casa Mediterráneo",
-      "ciudad": "Alicante",
-      "precio": "gratis",
-      "enlace": "https://casa-mediterraneo.es/septiembre-en-casa-mediterraneo-semana-alicante-oran-averroes-y-el-legado-de-al-andalus-como-protagonistas/"
-    },
-    {
-      "id": "sede-una-sede-con-vida",
-      "inicio": "2026-09-18",
-      "fin": "2026-10-02",
-      "titulo": "«Una Sede con vida». Exposición de fotografías del concurso",
-      "seccion": "exposiciones",
-      "etiquetas": [
-        "foto"
-      ],
-      "lugar": "Sede Universitaria Ciudad de Alicante",
-      "ciudad": "Alicante",
-      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/exposiciones/exposicion-concurso-una-sede-con-vida.html"
-    },
-    {
-      "id": "muvim-que-tengo-en-la-cabeza",
-      "inicio": "2026-06-18",
-      "fin": "2026-10-04",
-      "titulo": "«¿Qué tengo en la cabeza?»",
-      "seccion": "exposiciones",
-      "etiquetas": [
-        "foto"
-      ],
-      "lugar": "MuVIM",
-      "ciudad": "Valencia",
-      "precio": "gratis",
-      "enlace": "http://www.muvim.es/es/exposiciones"
-    },
-    {
-      "id": "campello-foto-festera",
-      "inicio": "2026-09-21",
-      "fin": "2026-10-04",
-      "titulo": "Fotografía festera: obras premiadas del concurso «Vicente Rodenas Alberola»",
-      "seccion": "exposiciones",
-      "etiquetas": [
-        "foto"
-      ],
-      "lugar": "Casa de Cultura, vestíbulo del auditorio",
-      "ciudad": "El Campello",
-      "enlace": "https://www.elcampello.es/index.php?s=agenda"
-    },
-    {
-      "id": "ua-expo-julio-just",
-      "inicio": "2026-09-22",
-      "fin": "2026-10-08",
-      "titulo": "«Julio Just Gimeno. La herencia de la Segunda República». Exposición documental",
-      "seccion": "exposiciones",
-      "lugar": "Vestíbulo de la Biblioteca General, Campus de la UA",
-      "ciudad": "San Vicente del Raspeig",
-      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218651"
-    },
-    {
-      "id": "mubag-alc-videoart-2026",
-      "inicio": "2026-09-26",
-      "fin": "2026-10-10",
-      "titulo": "VII ALC Videoart Festival, con la videoinstalación «Seyeol 13», de Rafäel",
-      "seccion": "exposiciones",
-      "lugar": "MUBAG (planta baja y La Ventana del Arte)",
-      "ciudad": "Alicante",
-      "enlace": "https://noveldadigital.es/actualidad/765654/el-mubag-se-une-de-nuevo-al-festival-alc-videoart-y-presenta-una-propuesta-inedita-del-artista-rafael/"
-    },
-    {
-      "id": "nau-comics-calatayud",
-      "inicio": "2026-04-23",
-      "fin": "2026-10-11",
-      "titulo": "«Línea, luz, color. Los cómics de Miguel Calatayud»",
-      "seccion": "exposiciones",
-      "lugar": "Centre Cultural La Nau",
-      "ciudad": "Valencia",
-      "enlace": "https://www.uv.es/uvweb/cultura/es/centros-programacion-cultural/centre-cultural-nau/programacion-cultural/programacion-actual-1285874240901.html"
-    },
-    {
-      "id": "ivam-de-middel-apoteosis",
-      "inicio": "2026-05-21",
-      "fin": "2026-10-12",
-      "titulo": "«Cristina de Middel. Apoteosis Now»",
-      "seccion": "exposiciones",
-      "etiquetas": [
-        "foto"
-      ],
-      "lugar": "IVAM Centre Julio González",
-      "ciudad": "Valencia",
-      "enlace": "https://ivam.es/es/exposiciones/cristina-de-middel-apoteosis-now/"
-    },
-    {
-      "id": "ua-expo-stop-vides-detingudes",
-      "inicio": "2026-09-16",
-      "fin": "2026-10-15",
-      "titulo": "«STOP Vidas detenidas. Mujeres refugiadas de Palestina en Cisjordania y Jerusalén Este»",
-      "seccion": "exposiciones",
-      "lugar": "Hall de la Facultad de Ciencias de la Salud, Campus de la UA",
-      "ciudad": "San Vicente del Raspeig",
-      "enlace": "https://cvnet.cpd.ua.es/AgendaUA/V/218664"
-    },
-    {
-      "id": "ivam-la-albufera",
-      "inicio": "2026-07-08",
-      "fin": "2026-10-18",
-      "titulo": "«La Albufera»",
-      "seccion": "exposiciones",
-      "lugar": "IVAM Centre Julio González",
-      "ciudad": "Valencia",
-      "enlace": "https://ivam.es/es/exposiciones/la-albufera/"
-    },
-    {
-      "id": "ceb-expo-plantoj",
-      "inicio": "2026-09-18",
-      "fin": "2026-10-18",
-      "titulo": "«Plantoj». La contemplación de la naturaleza",
-      "seccion": "exposiciones",
-      "etiquetas": [],
-      "lugar": "Museo de Aguas de Alicante (Pozos de Garrigós)",
-      "ciudad": "Alicante",
-      "precio": "gratis",
-      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
-    },
-    {
-      "id": "marq-lluria-cocentaina",
-      "inicio": "2025-10-14",
-      "fin": "2026-10-19",
-      "titulo": "«Llúria, señores y señoras de la tierra». Exposición del MARQ",
-      "seccion": "exposiciones",
-      "lugar": "Palau Comtal",
-      "ciudad": "Cocentaina",
-      "enlace": "https://agendacultural.diputacionalicante.es/event/marq-en-cocentaina/"
-    },
     {
       "id": "mubag-gisbert",
       "inicio": "2026-06-12",
@@ -158,6 +10,16 @@
       "lugar": "MUBAG",
       "ciudad": "Alicante",
       "enlace": "https://agendacultural.diputacionalicante.es/event/gisbert-1834-1901/"
+    },
+    {
+      "id": "nau-espacios-compartidos-heras",
+      "inicio": "2026-09-22",
+      "fin": "2026-10-25",
+      "titulo": "«Espacios compartidos. Cultura, pensamiento y resistencia. A Artur Heras, in memoriam»",
+      "seccion": "exposiciones",
+      "lugar": "Centre Cultural La Nau",
+      "ciudad": "Valencia",
+      "enlace": "https://www.uv.es/uvweb/cultura/es/lista-actividad/-espacios-compartidos-div-cultura-pensamiento-resistencia-/br-artur-heras-in-memoriam-/div-1285871673078/Activitat.html?id=1286476180633"
     },
     {
       "id": "sede-de-subditas-a-ciudadanas",
@@ -170,6 +32,19 @@
       "ciudad": "Alicante"
     },
     {
+      "id": "octubre-vint-anys-fotos",
+      "inicio": "2026-10-16",
+      "fin": "2026-10-30",
+      "titulo": "«Octubre. Vint anys. 200 fotografies»",
+      "seccion": "exposiciones",
+      "etiquetas": [
+        "foto"
+      ],
+      "lugar": "Octubre Centre de Cultura Contemporània",
+      "ciudad": "Valencia",
+      "enlace": "https://octubre.cat/programacio/"
+    },
+    {
       "id": "vila-pop-art-melus",
       "inicio": "2026-09-28",
       "fin": "2026-10-30",
@@ -178,6 +53,16 @@
       "lugar": "Espai d'Art Contemporani la Barbera",
       "ciudad": "Villajoyosa",
       "enlace": "https://marinabaixadigital.es/art/7017/de-stephen-king-a-mozart-villajoyosa-despliega-cuatro-meses-teatro-musica-cine-y-espectaculos-familiares"
+    },
+    {
+      "id": "ateneo-enderrocart",
+      "inicio": "2026-09-29",
+      "fin": "2026-10-31",
+      "titulo": "«Enderrocart», de Inmaculada José Seguí Sempere",
+      "seccion": "exposiciones",
+      "lugar": "Ateneo Científico, Literario y Artístico de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://agendacultural.diputacionalicante.es/event/exposicion-enderrocart-de-inmaculada-jose-segui-sempere/"
     },
     {
       "id": "cigarreras-juego-pallar",
@@ -190,6 +75,40 @@
       "enlace": "https://www.alicante.es/es/agenda/exposicion-juego-del-pallar"
     },
     {
+      "id": "svr-20-formas-agua",
+      "inicio": "2026-10-15",
+      "fin": "2026-10-31",
+      "titulo": "«20 formas de agua». Exposición de acuarelas",
+      "seccion": "exposiciones",
+      "precio": "gratis",
+      "lugar": "Sala de Proyectos del Ayuntamiento",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://www.turismosanvicentedelraspeig.com/en/post/374/-20-forms-of-water-"
+    },
+    {
+      "id": "palacio-recodos-eda",
+      "inicio": "2026-10-05",
+      "fin": "2026-11-07",
+      "titulo": "«Los recodos de Eda», de la Asociación Espejo de Alicante",
+      "seccion": "exposiciones",
+      "etiquetas": [
+        "foto"
+      ],
+      "lugar": "Palacio Provincial de la Diputación",
+      "ciudad": "Alicante",
+      "enlace": "https://agendacultural.diputacionalicante.es/event/exposicion-los-recodos-de-eda-de-la-asociacion-espejo-de-alicante/"
+    },
+    {
+      "id": "elche-mercado-medieval",
+      "inicio": "2026-11-05",
+      "fin": "2026-11-08",
+      "titulo": "Mercado Medieval del Festival Medieval d'Elx",
+      "seccion": "fiestas",
+      "lugar": "Centro histórico (Plaza de Baix, calles adyacentes y Glorieta)",
+      "ciudad": "Elche",
+      "enlace": "https://festivalmedieval.com/programacion/"
+    },
+    {
       "id": "ceb-expo-zapateando",
       "inicio": "2026-10-22",
       "fin": "2026-11-15",
@@ -200,6 +119,16 @@
       "ciudad": "Alicante",
       "precio": "gratis",
       "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
+    },
+    {
+      "id": "nau-botanica-domestica",
+      "inicio": "2026-09-17",
+      "fin": "2026-11-22",
+      "titulo": "«Botánica doméstica / Herbario nuovo»",
+      "seccion": "exposiciones",
+      "lugar": "Centre Cultural La Nau",
+      "ciudad": "Valencia",
+      "enlace": "https://www.uv.es/uvweb/cultura/es/lista-actividad/botanica-domestica-/-herbario-nuovo-div-proyecto-mitocondria-maria-angeles-vila-alicia-herrero-/div-1285871673078/Activitat.html?id=1286460200863"
     },
     {
       "id": "fm-flamenco-expo-foto",
@@ -215,6 +144,16 @@
       "enlace": "https://www.guiaflama.com/festivales-flamenco/festival-flamenco-mediterraneo-alicante-fundacion-caja-mediterraneo/"
     },
     {
+      "id": "elche-castejon-cercant-bellesa",
+      "inicio": "2026-09-24",
+      "fin": "2026-11-29",
+      "titulo": "Joan Castejón: «Cercant bellesa»",
+      "seccion": "exposiciones",
+      "lugar": "Sala Kursaal (Gran Teatro de Elche)",
+      "ciudad": "Elche",
+      "enlace": "https://festivalmedieval.com/programacion/"
+    },
+    {
       "id": "ivam-territorios-en-transito",
       "inicio": "2026-07-16",
       "fin": "2026-11-29",
@@ -223,6 +162,16 @@
       "lugar": "IVAM Centre Julio González",
       "ciudad": "Valencia",
       "enlace": "https://ivam.es/es/exposiciones/territorios-en-transito-solo-duo-irene-grau-marco-giordano/"
+    },
+    {
+      "id": "nau-arquitecturas-complices",
+      "inicio": "2026-09-24",
+      "fin": "2026-11-29",
+      "titulo": "«Con adivinaciones del amor construía tu rostro. Arquitecturas cómplices 1939-1999»",
+      "seccion": "exposiciones",
+      "lugar": "Centre Cultural La Nau",
+      "ciudad": "Valencia",
+      "enlace": "https://www.uv.es/uvweb/cultura/es/lista-actividad/adivinaciones-del-amor-construia-rostro-div-arquitecturas-complices-1939-1999-/div-1285871673078/Activitat.html?id=1286480018818"
     },
     {
       "id": "cigarreras-utopian-stone",
@@ -235,6 +184,26 @@
       "ciudad": "Alicante"
     },
     {
+      "id": "mua-temps-art-miro",
+      "inicio": "2026-09-17",
+      "fin": "2026-12-13",
+      "titulo": "«Temps d'Art». Càtedra Antoni Miró d'Art Contemporani: Xavier Colomer, Rafael Hernández y Anna Pastor",
+      "seccion": "exposiciones",
+      "lugar": "MUA, Museo de la Universidad de Alicante",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://mua.ua.es/pagina.php?opc=3&lang=1&id=497"
+    },
+    {
+      "id": "sede-centenario-rabal",
+      "inicio": "2026-10-29",
+      "fin": "2026-12-16",
+      "titulo": "«Centenario Francisco Rabal». Exposición comisariada por John Sanderson",
+      "seccion": "exposiciones",
+      "lugar": "Sede Universitaria Ciudad de Alicante, Sala Miguel Hernández",
+      "ciudad": "Alicante",
+      "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/exposiciones/centenario-francisco-rabal.html"
+    },
+    {
       "id": "sede-mentira-contra-verdad",
       "inicio": "2026-09-25",
       "fin": "2026-12-17",
@@ -243,6 +212,19 @@
       "lugar": "Sede Universitaria Ciudad de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://web.ua.es/es/sedealicante/programa-de-actividades/2026-2027/exposiciones/mentira-contra-verdad.-pepe-calvo.html"
+    },
+    {
+      "id": "ceb-maraton-fotografico",
+      "inicio": "2026-12-03",
+      "fin": "2027-01-06",
+      "titulo": "III Maratón fotográfico de Aguas de Alicante (Arts als Barris, Cultura en Barrios)",
+      "seccion": "exposiciones",
+      "etiquetas": [
+        "foto"
+      ],
+      "lugar": "Cultura en Barrios (sede en el folleto)",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/contenidos/cultura-barrios-octubre-diciembre-2026"
     },
     {
       "id": "ivam-melanie-smith",
@@ -255,6 +237,36 @@
       "enlace": "https://ivam.es/es/exposiciones/melanie-smith-solo-una-cosa-era-extrana-seguir-pensando-como-antes/"
     },
     {
+      "id": "maca-coloramas",
+      "inicio": "2026-06-12",
+      "fin": "2027-01-10",
+      "titulo": "«Del color en el arte (Coloramas)»",
+      "seccion": "exposiciones",
+      "lugar": "MACA. Museo de Arte Contemporáneo de Alicante",
+      "ciudad": "Alicante",
+      "enlace": "https://www.alicante.es/es/noticias/maca-amplia-al-10-enero-exposicion-temporal-del-color-arte-coloramas"
+    },
+    {
+      "id": "mua-residencias-12",
+      "inicio": "2026-09-25",
+      "fin": "2027-01-10",
+      "titulo": "12ª Residencias de creación e investigación artística del MUA",
+      "seccion": "exposiciones",
+      "lugar": "MUA, Museo de la Universidad de Alicante (Sala Sempere)",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://mua.ua.es/index.php?lang=3"
+    },
+    {
+      "id": "nau-arte-dolor-compromiso",
+      "inicio": "2026-05-28",
+      "fin": "2027-01-10",
+      "titulo": "«Arte, dolor y compromiso. Mujeres en la Colección Martínez Guerricabeitia»",
+      "seccion": "exposiciones",
+      "lugar": "Centre Cultural La Nau",
+      "ciudad": "Valencia",
+      "enlace": "https://www.uv.es/uvweb/cultura/es/lista-actividad/arte-dolor-compromiso-/br-div-mujeres-coleccion-martinez-guerricabeitia-/div-1285871673078/Activitat.html?id=1286439281599"
+    },
+    {
       "id": "cigarreras-sube-hervas",
       "inicio": "2026-09-26",
       "fin": "2027-01-23",
@@ -265,10 +277,53 @@
       "ciudad": "Alicante"
     },
     {
+      "id": "nau-mapas-del-silencio",
+      "inicio": "2026-12-03",
+      "fin": "2027-02-07",
+      "titulo": "«Varios mapas del silencio. Pérez Contel, Isadora Duncan, Vicente Talens y tantos otros»",
+      "seccion": "exposiciones",
+      "lugar": "Centre Cultural La Nau",
+      "ciudad": "Valencia",
+      "enlace": "https://www.uv.es/uvweb/cultura/es/lista-actividad/varios-mapas-del-silencio-div-perez-contel-isadora-duncan-vicente-talens-tantos-otros-/div-1285871673078/Activitat.html?id=1286501443050"
+    },
+    {
+      "id": "nau-pre-textos-50",
+      "inicio": "2026-12-17",
+      "fin": "2027-02-28",
+      "titulo": "«Un erizo, tres juncos, dos rocas. 50 años de la Editorial Pre-Textos»",
+      "seccion": "exposiciones",
+      "lugar": "Centre Cultural La Nau",
+      "ciudad": "Valencia",
+      "enlace": "https://www.uv.es/uvweb/cultura/es/lista-actividad/erizo-tres-juncos-dos-rocas-div-50-anos-editorial-pre-textos-/div-1285871673078/Activitat.html?id=1286474145880"
+    },
+    {
+      "id": "nau-obertament-25-anys",
+      "inicio": "2026-11-10",
+      "fin": "2027-03-12",
+      "titulo": "«Fotografía, activismo y creatividad en salud mental. Los primeros 25 años del Col·lectiu Obertament»",
+      "seccion": "exposiciones",
+      "etiquetas": [
+        "foto"
+      ],
+      "lugar": "Centre Cultural La Nau",
+      "ciudad": "Valencia",
+      "enlace": "https://www.uv.es/uvweb/cultura/es/lista-actividad/fotografia-activismo-creatividad-salud-mental-div-primeros-25-anos-del-col-lectiu-obertament-/div-1285871673078/Activitat.html?id=1286497105646"
+    },
+    {
+      "id": "ivam-joana-vasconcelos",
+      "inicio": "2026-12-10",
+      "fin": "2027-04-05",
+      "titulo": "«Joana Vasconcelos»",
+      "seccion": "exposiciones",
+      "lugar": "IVAM Centre Julio González",
+      "ciudad": "Valencia",
+      "enlace": "https://ivam.es/es/exposiciones/joana-vasconcelos/"
+    },
+    {
       "id": "ivam-regina-de-miguel",
       "inicio": "2026-10-28",
       "fin": "2027-04-11",
-      "titulo": "«Regina de Miguel. Aguas intoxicadas»",
+      "titulo": "«Regina de Miguel. Un mundo turbiamente vivo»",
       "seccion": "exposiciones",
       "lugar": "IVAM Centre Julio González",
       "ciudad": "Valencia",
@@ -283,6 +338,16 @@
       "lugar": "MARQ. Museo Arqueológico de Alicante",
       "ciudad": "Alicante",
       "enlace": "https://www.marqalicante.com/es/"
+    },
+    {
+      "id": "mua-formatopias",
+      "inicio": "2026-09-09",
+      "fin": "2027-07-25",
+      "titulo": "«Formatopías». Exposición colectiva (Sala Arcadi Blasco)",
+      "seccion": "exposiciones",
+      "lugar": "MUA, Museo de la Universidad de Alicante",
+      "ciudad": "San Vicente del Raspeig",
+      "enlace": "https://mua.ua.es/index.php?lang=3"
     }
   ]
 }
